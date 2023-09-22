@@ -1,0 +1,93 @@
+Name: DataLogger
+Id: g=fcb5551ec6871ca77391497b966a89bd
+Type: FolderType
+Children:
+- Name: dataloggerVariable1
+  Id: g=b7b4d8f20bff98db631c3ac9724d0d9c
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Id: g=590fa46789a557a1de85183143c95a48
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../NetLogic/VariablesSimulator/iSin"
+    Children:
+    - Name: Mode
+      Id: g=08681cf17548ccd0d55d627a52b81038
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: dataloggerVariable2
+  Id: g=ec151bca604dd8d234c1e173bfdeacde
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Id: g=80e6f168403a65385a2c0cf7c7064f34
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../NetLogic/VariablesSimulator/iCos"
+    Children:
+    - Name: Mode
+      Id: g=041709bffdda9ea7dd19b90f4f6bc02a
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: dataloggerVariable3
+  Id: g=2f477037a8e6ef080c0d7f9af236b41e
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: ns=0;EURange
+    Id: g=9d98fb7ae048e51405e299249f822a20
+    Type: RangeType
+    DataType: EURange
+    Value: 
+     {
+      "TypeId": {
+       "Id": 884
+      },
+      "Body": {
+       "low": 0.0,
+       "high": 0.0
+      }
+     }
+    Children:
+    - Name: Low
+      Id: g=c4fbee6f897351ce56b4aeeca11259cc
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+    - Name: High
+      Id: g=bcd5d06d8f066a12c81f2bf257d6acb5
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 100.0
+    - Name: Constrain
+      Id: g=3b4b9c3a0aa3157813a8e19d01cc06fe
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
+  - Name: DynamicLink
+    Id: g=9fcb380b38cf961859ecf5c93c452c00
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../NetLogic/VariablesSimulator/iRamp"
+    Children:
+    - Name: Mode
+      Id: g=0fc30e705cf847389402dd6ecdfdbc27
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: FolderPath
+  Id: g=ea7f6a489a672436a47928dc18a09d5a
+  Type: BaseDataVariableType
+  DataType: AbsoluteResourceUri
+  Value: "%PROJECTDIR%\\CSV"

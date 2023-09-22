@@ -1,0 +1,21 @@
+Name: Recipes
+Id: g=75839ad986c859cb17a36e85aaa2e466
+Type: FolderType
+Children:
+- Name: Component1
+  Id: g=35144d2ba75448b6e3ead5cbbe31a621
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Component2
+  Id: g=8c22c46189e6fc8dd847c5fa9fcae8d2
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Component3
+  Id: g=643cd1b9deea106c239732f7d4035768
+  Type: BaseDataVariableType
+  DataType: Int32
+  ValueRank: OneDimension
+  ArrayDimensions: [3]
+  Value: [0,0,0]

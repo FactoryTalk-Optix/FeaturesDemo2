@@ -1,0 +1,19 @@
+Name: Auditing
+Id: g=0cfbd6f8f9af6f0538777ba1b6af30b7
+Type: FolderType
+Children:
+- Name: Variable1
+  Id: g=8726822127ce40294f88ce962fec4250
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Variable2
+  Id: g=bc042bd37fe9c284ed66dab33b15f056
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Variable3
+  Id: g=9b3a648d1c3a7eb75049218e84a7ffce
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"

@@ -1,0 +1,19 @@
+Name: Reports
+Id: g=618eba772abf33eb2c29c315aa145de1
+Type: FolderType
+Children:
+- Name: Variable7
+  Id: g=7fd8e989df7fc607a47f7cad60def482
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Variable8
+  Id: g=0b860c042e5f0ec7ba85e2f1a3cd80f1
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Variable9
+  Id: g=60e6d2d44029753e8da4359b7d575374
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0

@@ -1,0 +1,19 @@
+Name: Type
+Id: g=c0ee8944872bc238f17ca0269062b882
+Type: FolderType
+Children:
+- Name: MotorWithBehavior
+  Id: g=62a7d50dcafe522c0b99cef3634b79a0
+  Supertype: BaseObjectType
+  Children:
+  - Name: Running
+    Id: g=d032a45077a011a1d017b6a53d4d402d
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Class: Method
+    Name: StartMotor
+    Id: g=399dcdca44aad4daeae55a0eb34148d8
+  - Class: Method
+    Name: StopMotor
+    Id: g=d528e977e3aade525bdf35fcb87b836b

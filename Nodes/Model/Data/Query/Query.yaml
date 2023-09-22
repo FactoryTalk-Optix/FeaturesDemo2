@@ -1,0 +1,59 @@
+Name: Query
+Id: g=fa2289001e476751d7dca1dce2bb91ca
+Type: FolderType
+Children:
+- Name: DataLogger
+  Id: g=49ee7c4abc3438ef02d8cddffe2d7bac
+  Type: BaseObjectType
+  Children:
+  - Name: dataloggerVariable1
+    Id: g=c9af0777648e503b5ea5c207f0516bfc
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: dataloggerVariable2
+    Id: g=c5575b3d1b8a4afe6c18faaca003be89
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: dataloggerVariable3
+    Id: g=879dcd2172123e3823b0b74f8739bbf1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: DBColumns
+  Id: g=563ab314b1a75763f6edfc05afd75283
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [4]
+  Value: ["Timestamp","dataloggerVariable1","dataloggerVariable2","dataloggerVariable3"]
+- Name: InsertValues
+  Id: g=913acee0d98767ddb839c6c63dee24fc
+  Type: BaseDataVariableType
+  DataType: BaseDataType
+  ValueRank: 2
+  ArrayDimensions: [1,4]
+  Value: 
+   {
+    "Type": 12,
+    "Dimensions": [1,4],
+    "Body": [
+     "\u0000","\u0000","\u0000","\u0000"
+    ]
+   }
+- Name: InsertVariable1
+  Id: g=730078ff31b5e3f7913bb5227c0d9e42
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: InsertVariable2
+  Id: g=3c998e54a4ba8b005eb70e64f03f7345
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: InsertVariable3
+  Id: g=2c2e0d228ea2420f328a448da8ec3503
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0

@@ -1,0 +1,164 @@
+Name: Alarms
+Id: g=c46f6430fa9ca3dbf804522eb1176a6f
+Type: AlarmsCategoryFolder
+Children:
+- Name: VoltageAnomaly
+  Id: g=2519b8c226365ae19ae3690b399b9d5e
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=51f69f14127d0a188a891f20634a722d
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Id: g=ee4d2197fcbb3282afdee66dfa029f26
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=fc6f622cf38eb125e79217c8de46f8de
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Alarms/Voltage"
+      Children:
+      - Name: Mode
+        Id: g=b71d2c05f1c0365e673049d455369570
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=9c5e8bfc0e83b89ef1694f2a5d5e2779
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Name: Message
+    Id: g=c5bd13bcdeba3f166c1f2941d8687e65
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":8,"TextId":"A001V"}
+  - Name: Severity
+    Id: g=31941d2de3c1ffd097886e76ea53f284
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 300
+- Name: LowPressure
+  Id: g=0573527e68ad9f751ff952ce15e0544f
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=be96712b82844d22700396892a30d878
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Id: g=31fca4f17b60440cd10c3112cdc2b0f2
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=fe3da79a3c865fb27b74c2abe0de5404
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Alarms/Pressure"
+      Children:
+      - Name: Mode
+        Id: g=234ae633e3af85fe57a6a01399650113
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=3f7e114165cfd88b4b569ad3592c7f84
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Name: Message
+    Id: g=f276bb80902841b9c16caa366e66696b
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":8,"TextId":"A001P"}
+  - Name: Severity
+    Id: g=796dfcfcba822f4c0c313d5444b890d1
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 600
+- Name: HighTemperature
+  Id: g=f421cfa57d004b7f2bd57724a9f31cb1
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=74a25b32a5779e62d7b316d52ce9bfd9
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=97280e625c9cd145928907a1491ab91f
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Alarms/Temperature"
+      Children:
+      - Name: Mode
+        Id: g=c0ec2cba6405d5af5071816e49d0b101
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=0142cc7e0186557221c067b805e0fa24
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=19;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=83
+    Direction: Forward
+  - Name: Message
+    Id: g=1b03ccf814965ffb41f5cbfb9444e5af
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":8,"TextId":"A001T"}
+  - Name: Severity
+    Id: g=1fa884b8cc9453aa97327ed74087cb95
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 900
+  - Name: HighLimit
+    Id: g=73b83b27161d22896b097a0f935e2791
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 75.0
+  - Name: AutoConfirm
+    Id: g=161b4239e4c35f2e615578250496beff
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- File: AlarmsWithArea/AlarmsWithArea.yaml
+- File: RuntimeAlarms/RuntimeAlarms.yaml

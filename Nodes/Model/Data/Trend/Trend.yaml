@@ -1,0 +1,34 @@
+Name: Trend
+Id: g=d171c8df6ff25a6aa6501941a6fe1608
+Type: FolderType
+Children:
+- Name: Variable1
+  Id: g=90b30047387b6677c64b3d608940a877
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Variable2
+  Id: g=08ef8189303bef96c5eb23260962a4b9
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Variable3
+  Id: g=5ea25368e45ea0ce022c25e64d7b61a1
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: DateTime
+  Id: g=637104c09245b8d8f97675a6ef1a7b82
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2021-01-01T09:30:00.0000000"
+- Name: DateTimeQuery
+  Id: g=8a77017e2364b9a5b811b9e195de738e
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2021-01-01T09:30:00.0000000"
+- Name: TimeWindow
+  Id: g=583a7f73e8c7a6d8177fda8a223d7399
+  Type: BaseDataVariableType
+  DataType: Duration
+  Value: "0:00:01:0.0000000"

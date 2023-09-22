@@ -1,0 +1,19 @@
+Name: ObjectOrientedProgramming
+Id: g=0d2a7d1284a79bc74e8a25ad3477e579
+Type: FolderType
+Children:
+- Name: CustomMotor
+  Id: g=3e8c8082a2418fafb151a5266d3eb6ea
+  Supertype: BaseObjectType
+  Children:
+  - Name: Running
+    Id: g=553d3314b85118e498b3d4e4e11edd8b
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Mode
+    Id: g=3dc67acd1c523788825f6774db4cb04c
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- File: Instances/Instances.yaml

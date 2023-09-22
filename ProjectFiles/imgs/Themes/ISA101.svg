@@ -1,0 +1,7 @@
+<svg width="112" height="90" viewBox="0 0 112 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="MaterialDark">
+<rect id="Background" width="112" height="90" rx="4" fill="#F6F6F6"/>
+<rect id="control" x="66" y="44" width="42" height="42" rx="4" fill="#808080"/>
+<path id="focus" d="M76 72C76 70.8954 76.8954 70 78 70H96C97.1046 70 98 70.8954 98 72V76C98 77.1046 97.1046 78 96 78H78C76.8954 78 76 77.1046 76 76V72Z" fill="#B3B3B3"/>
+</g>
+</svg>

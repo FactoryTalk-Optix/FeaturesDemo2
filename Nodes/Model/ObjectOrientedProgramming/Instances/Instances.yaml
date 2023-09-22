@@ -1,0 +1,60 @@
+Name: Instances
+Id: g=0121acb63e1f2e1fcf6a814a8b9da2c0
+Type: FolderType
+Children:
+- Name: CustomMotor1
+  Id: g=cbad28ac11d5c2c8c293bc902ab6d97e
+  Type: CustomMotor
+  Children:
+  - Name: Running
+    Id: g=19a64d940b6740d51af20fed1e50a4af
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Mode
+    Id: g=e37b39d2ed17ac5c47995b4cd64958f4
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- Name: CustomMotor2
+  Id: g=7823dfe62229437a0e3a75170ca9e0a8
+  Type: CustomMotor
+  Children:
+  - Name: Running
+    Id: g=6731c6346a32645d6120b44701078aeb
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Mode
+    Id: g=f408e0d0531db58a7044891f6e0a0d8e
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- Name: CustomMotor3
+  Id: g=c7521f70358172c2242e3b22af44553c
+  Type: CustomMotor
+  Children:
+  - Name: Running
+    Id: g=8c86a3a2c35442b723272e35a0b933be
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Mode
+    Id: g=18352ae6f30972cc70dca89711364cda
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- Name: CustomMotor4
+  Id: g=6d54d2dc03a6571d70db10367018a50f
+  Type: CustomMotor
+  Children:
+  - Name: Running
+    Id: g=71a2ab2df9a723022a95d0260f30c43f
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Mode
+    Id: g=22e41206bb088ecbd896daa51f046907
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false

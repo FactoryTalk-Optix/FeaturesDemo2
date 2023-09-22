@@ -1,0 +1,81 @@
+Name: 'OPC-UA'
+Id: g=f52c63bb43fe064ab97cdafe7a4fbe81
+Type: OPCUACategoryFolder
+Children:
+- Name: OPCUAServer
+  Id: g=298670e6b1a1557fca2c0c8867a8284d
+  Type: OPCUAServer
+  Children:
+  - Name: EndpointURL
+    Id: g=50dee8771c6a3a8f057140620e6c1fab
+    Type: PropertyType
+    DataType: ResourceUri
+    Value: "opc.tcp://0.0.0.0:59100"
+  - Name: NodesToPublish
+    Id: g=6c077c3496f620023c08732e7f22d52c
+    Type: BaseObjectType
+    Children:
+    - Name: Configuration1
+      Id: g=92c11d1bc8fc9766d204fdb58f3a2626
+      Type: NodesToPublishConfigurationEntry
+      Children:
+      - Name: Nodes
+        Id: g=c64b24dd5f6046995224ec420e045871
+        Type: BaseObjectType
+        Children:
+        - Name: Node1
+          Id: g=b3b0368bdde7c072e5b81ffb2e82d607
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":2,"Id":"0fd4e58624e227dc68bb170f9b0dc3fa","Namespace":8}
+          Children:
+          - Name: Kind
+            Id: g=b288e416003186dcb89833c81da75187
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: NodeClass
+            Id: g=3714079fb728ecd2793fd94c35243b51
+            Type: PropertyType
+            DataType: NodePointerNodeClass
+            Value: 2
+      - Name: Users
+        Id: g=5804fb8b4ab5defba41171dd49ba5611
+        Type: BaseObjectType
+        Children:
+        - Name: User1
+          Id: g=9df365cf47f86b3bdf80b488ba2150c5
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"Id":46,"Namespace":1}
+          Children:
+          - Name: Kind
+            Id: g=56f27efdf6237b201fa06242b83ee180
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":14,"Namespace":1}
+          - Name: NodeClass
+            Id: g=09949d1994e2e132523c58c4b1a4c4f1
+            Type: PropertyType
+            DataType: NodePointerNodeClass
+            Value: 0
+      - Name: PublishDynamicConfiguration
+        Id: g=84e8652d965866fc24c2983d389c65ef
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+  - Name: MinimumMessageSecurityMode
+    Id: g=d5483df826bbe92bf2f60803dc6037a2
+    Type: PropertyType
+    DataType: MessageSecurityModeEnum
+    Value: 0
+  - Name: MinimumSecurityPolicy
+    Id: g=90e565d21a0c2fa4af9627c422d5fad2
+    Type: PropertyType
+    DataType: SecurityPolicyEnum
+    Value: 0
+  - Name: MaxNumberOfConnections
+    Id: g=56e348b8781e849aa60500df0d6ed622
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 5

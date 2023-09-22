@@ -1,0 +1,38 @@
+Name: Favorites
+Id: g=04a9beca3223aa46bce6b356ab53f494
+Type: FolderType
+Children:
+- Name: FavoriteTab
+  Id: g=a5968f81e70d1330b98bdc421399ca97
+  Supertype: BaseObjectType
+  Children:
+  - Name: Tile_Title
+    Id: g=e71285c595cbdcf3557c88aebf3f5282
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: Tile_Subtitle
+    Id: g=3ab7fe00e186f689dcb1a7535271d376
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: Tile_Icon
+    Id: g=48e5aed02aaa68ed855fff7d786a3fd4
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: ""
+  - Name: Tile_Open_Panel
+    Id: g=cc5b428410ac1cee9f05dfefb824c919
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: Tile_Favorite
+    Id: g=a3a1543ebced3915a87695c6df84e86c
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Tile_Description
+    Id: g=5435e50f54f72e0a5af7e4599ece2170
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""

@@ -1,0 +1,100 @@
+Name: LoginForm1
+Id: g=2974c2394b0cdb937f55f57bf28c30b8
+Type: FolderType
+Children:
+- Name: LoginForm
+  Id: g=d0fba00ff93f064d6e1cb546eea27209
+  Supertype: PanelLoader
+  ReferenceType: HasComponent
+  Children:
+  - Name: Panel
+    Id: g=61186f05135831f151613f130dc3a52b
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Id: g=9c5905bd23728df07e4adcbc3b33fc3c
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":71,"Namespace":3}
+    - Name: ConditionalConverter1
+      Id: g=2948196ea276e5e8e9b636ead4e67e4d
+      Type: ns=2;ConditionalConverter
+      Children:
+      - Name: Condition
+        Id: g=714dc72e1f06cefb749c6eae3ce7e01d
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ReferenceType: HasSource
+        Value: false
+        Children:
+        - Name: DynamicLink
+          Id: g=0468928e928c8037bd1517fc779937bc
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Session}/LoggedIn"
+      - Name: TrueValue
+        Id: g=9af238480930805f1738a27dc8dabf89
+        Type: BaseDataVariableType
+        DataType: NodeId
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+        Value: {"IdType":2,"Id":"2eebfd3def044e747aa57952fc13c70d","Namespace":8}
+      - Name: FalseValue
+        Id: g=a149c621686d7f29ee53dbbaf0875dc8
+        Type: BaseDataVariableType
+        DataType: NodeId
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+        Value: {"IdType":2,"Id":"ce814fddddd607c776a3b9a6e0b90c27","Namespace":8}
+  - Name: CurrentPanel
+    Id: g=f1d953d077506378eaec60e36cdc33cf
+    Type: NodePointer
+    DataType: NodeId
+    AccessLevel: Read
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Id: g=e4bf0674039363206a90c2e09f852aa3
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":6,"Namespace":3}
+  - Class: Reference
+    Target: ns=3;i=478
+    Direction: Forward
+  - Name: Width
+    Id: g=049aec4cbead4617984a827822bb3b9d
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Id: g=9e946774255dc48904c11e8d13b178ca
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Users
+    Id: g=aaddc4b58f24a4155e1a3c9c3ad1bb85
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Id: g=4058fadd477ae978e2a60fffa85de963
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":61}
+  - Name: PanelAliasNode
+    Id: g=581b5eee4c29bf55c3f280582d46a7ab
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: DynamicLink
+      Id: g=2f643832ac392448899dcfb014876ecf
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../Users@NodeId"
+- File: LoginFormComponents/LoginFormComponents.yaml

@@ -1,0 +1,6 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Error-md">
+<path id="Bottom Color" fill-rule="evenodd" clip-rule="evenodd" d="M8 1C4.14 1 1 4.14 1 8C1 11.859 4.14 15 8 15C11.859 15 15 11.859 15 8C15 4.14 11.859 1 8 1" fill="#AA0000"/>
+<path id="Top Color" fill-rule="evenodd" clip-rule="evenodd" d="M7 9H9V4H7V9ZM7 12H9V10H7V12ZM8 15C4.14 15 1 11.86 1 8C1 4.14 4.14 1 8 1C11.859 1 15 4.14 15 8C15 11.86 11.859 15 8 15V15ZM8 0C3.581 0 0 3.581 0 8C0 12.418 3.581 16 8 16C12.418 16 16 12.418 16 8C16 3.581 12.418 0 8 0V0Z" fill="black"/>
+</g>
+</svg>

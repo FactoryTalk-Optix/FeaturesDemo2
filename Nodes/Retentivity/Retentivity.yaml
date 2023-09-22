@@ -1,0 +1,197 @@
+Name: Retentivity
+Id: g=afa2f70ab4d44672214064358e0cef36
+Type: RetentivityCategoryFolder
+Children:
+- Name: SecurityRetentivityStorage
+  Id: g=e42b254d74db67135c993fb1818ae82f
+  Type: RetentivityStorage
+  Children:
+  - Name: Nodes
+    Id: g=2983ccc92208867f87c0ea2591db680b
+    Type: BaseObjectType
+    Children:
+    - Name: Node1
+      Id: g=59a4e7a43e763a99359ec55a74717cea
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"69b63ec1680bb66226168ed8c16521a0","Namespace":8}
+      Children:
+      - Name: Kind
+        Id: g=5d0727f3784175ff89249a23a29a3529
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: NodeClass
+        Id: g=4e5b5756884fb136e47c1c187e34f2c5
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+  - Name: WriteDelay
+    Id: g=ea56f4451ebafa5f2f48727129693a22
+    Type: BaseDataVariableType
+    DataType: Duration
+    ReferenceType: HasProperty
+    Value: "0:00:00:0.0000000"
+  - Name: DeltaObserverEnabled
+    Id: g=46293ac3e8bbbd5434922998952fb656
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ReferenceType: HasProperty
+    Value: true
+- Name: Dictionary
+  Id: g=5b6d99133c52857caf198764ae9083d3
+  Type: RetentivityStorage
+  Children:
+  - Name: Nodes
+    Id: g=70e28fc20c6d5d3fbe0b2b1d4ac29479
+    Type: BaseObjectType
+    Children:
+    - Name: Node1
+      Id: g=2dde683d9d3b528ebf7ec33ebaee3126
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"c8a7ac8967fb82add730aa764151209d","Namespace":8}
+      Children:
+      - Name: Kind
+        Id: g=ba701d50b0bf1938de62f1e073aadca1
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: NodeClass
+        Id: g=e0890a052d0712f2013839cbcd11707e
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+  - Name: WriteDelay
+    Id: g=7b2155ebebaa72acb5d87d89028bcc69
+    Type: BaseDataVariableType
+    DataType: Duration
+    ReferenceType: HasProperty
+    Value: "0:00:00:0.0000000"
+  - Name: DeltaObserverEnabled
+    Id: g=5c36c7a37ad539af068371d816380511
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ReferenceType: HasProperty
+    Value: true
+- Name: ObjectsDragging1
+  Id: g=8b6a411c24410c54164562c679efdfbe
+  Type: RetentivityStorage
+  Children:
+  - Name: Nodes
+    Id: g=7848b9bcc8f3eca7fef299055a9e6bd3
+    Type: BaseObjectType
+    Children:
+    - Name: Node1
+      Id: g=cd7edecb0f2de76779a96a8a7c334c5c
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"725689228684eae8251031e511ea7dd9","Namespace":8}
+      Children:
+      - Name: Kind
+        Id: g=f516f8dcde913a35b766a7aea4fe4d64
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: NodeClass
+        Id: g=ed9f9ed4a6f0811358a6e7972ecd4911
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 0
+    - Name: Node2
+      Id: g=56592e6c7a3ac3d705f305db28b324e3
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"8fec37ab36abc4ca39d7ded9e760a66a","Namespace":8}
+      Children:
+      - Name: Kind
+        Id: g=998996db9d881b8855acd1d02d423c65
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: Node3
+      Id: g=4b3a5e978cd8747f4c046b739fe6cb71
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"ab0c0ea95f4cf8c4a35f288b8e819588","Namespace":8}
+      Children:
+      - Name: Kind
+        Id: g=9ca137baebf996a4295bf0a5b1b0d411
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: NodeClass
+        Id: g=9f39b86a23c3f42027a219ebb76910b3
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+  - Name: WriteDelay
+    Id: g=edae698a9efefe4b873d8641c7223bb0
+    Type: BaseDataVariableType
+    DataType: Duration
+    ReferenceType: HasProperty
+    Value: "0:00:00:0.0000000"
+  - Name: DeltaObserverEnabled
+    Id: g=ab0c0ea95f4cf8c4a35f288b8e819588
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ReferenceType: HasProperty
+    Value: true
+- Name: ObjectsDragging2
+  Id: g=f6d57181387ddf25609cf27db452e131
+  Type: RetentivityStorage
+  Children:
+  - Name: Nodes
+    Id: g=90f5458b9e2b67b8fd2ad5aeadd51a04
+    Type: BaseObjectType
+    Children:
+    - Name: Node1
+      Id: g=fe5c51225bf0e6816fd86abbe06b9203
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"a89ca5a67a2f88f48577a46b34868bf9","Namespace":8}
+      Children:
+      - Name: Kind
+        Id: g=7110630e6112623c90ccd5a1dc225f28
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: Node2
+      Id: g=81cccb787750409c8ce66e65af6eda10
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"90d28e842745bc91d5a70c6fdd69ff5c","Namespace":8}
+      Children:
+      - Name: Kind
+        Id: g=ddbec73b819a8116099796eaa0b687e0
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: Node3
+      Id: g=7202ee4638d7e2cd316dbc602ade3ed7
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"275c8266e00761baabef1d4187b7cac9","Namespace":8}
+      Children:
+      - Name: Kind
+        Id: g=44672e50532040b6e1c7e5f03a8cae49
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: NodeClass
+        Id: g=4f103b273d5c5e84e626d56e8a7d37ae
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+  - Name: WriteDelay
+    Id: g=e5842ea15782f6beda7f619719a5e388
+    Type: BaseDataVariableType
+    DataType: Duration
+    ReferenceType: HasProperty
+    Value: "0:00:00:0.0000000"
+  - Name: DeltaObserverEnabled
+    Id: g=275c8266e00761baabef1d4187b7cac9
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ReferenceType: HasProperty
+    Value: true

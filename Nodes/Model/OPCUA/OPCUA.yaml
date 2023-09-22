@@ -1,0 +1,6 @@
+Name: OPCUA
+Id: g=07ae5b3898beea977d5a700d4190a5c9
+Type: FolderType
+Children:
+- File: MachineToMachine/MachineToMachine.yaml
+- File: CallMethodsFromOPC/CallMethodsFromOPC.yaml

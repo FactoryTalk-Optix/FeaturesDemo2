@@ -1,0 +1,86 @@
+Name: FeaturesDemo2
+Id: g=0fd4e58624e227dc68bb170f9b0dc3fa
+Type: ProjectFolder
+Children:
+- Name: Localization
+  Id: g=0a096825573eee0550599b27a76d1714
+  Type: PropertyGroup
+  Children:
+  - Name: Locales
+    Id: g=60ca3dd8528bdb475d70b043d706b210
+    Type: PropertyType
+    DataType: String
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US","it-IT","zh-CN"]
+  - Name: LocaleFallbackList
+    Id: g=23351da6726740af235626427094487e
+    Type: PropertyType
+    DataType: String
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]
+- Name: Authentication
+  Id: g=d29a62729badf14a10ab8750ff0f9d24
+  Type: PropertyGroup
+- Name: PasswordPolicy
+  Id: g=7a095ca32c6f67f6d79d86c3eea85d1c
+  Type: PasswordPolicy
+  Children:
+  - Name: MaximumPasswordAge
+    Id: g=97d2f7f5dd6ba7e327418abe3a608a61
+    Type: PropertyType
+    DataType: UInt16
+    Value: 0
+  - Name: EnforcePasswordHistory
+    Id: g=7f1010c90a73da52f4c95d9137f396d2
+    Type: PropertyType
+    DataType: Byte
+    Value: 1
+  - Name: MinimumPasswordAge
+    Id: g=42e27a7dd28a141796bf5282b52f4986
+    Type: PropertyType
+    DataType: UInt16
+    Value: 0
+  - Name: MinimumPasswordLength
+    Id: g=2284193791d3a99b2ebe82abcdfe1109
+    Type: PropertyType
+    DataType: Byte
+    Value: 8
+- Name: AlarmConfiguration
+  Id: g=7f6fa97b056e9683b21f6f4856ca1a01
+  Type: PropertyGroup
+  Children:
+  - Name: DynamicVariablesPollingTime
+    Id: g=0f1f24e064625f6bfcfcea16b0c3333a
+    Type: PropertyType
+    DataType: Duration
+    ReferenceType: HasComponent
+    Value: "0:00:00:0.1000000"
+- File: UI/UI.yaml
+- File: Model/Model.yaml
+- File: Converters/Converters.yaml
+- File: Alarms/Alarms.yaml
+- File: Recipes/Recipes.yaml
+- File: Loggers/Loggers.yaml
+- File: DataStores/DataStores.yaml
+- File: Reports/Reports.yaml
+- File: 'OPC-UA/OPC-UA.yaml'
+- File: CommDrivers/CommDrivers.yaml
+- File: NetLogic/NetLogic.yaml
+- File: Security/Security.yaml
+- File: System/System.yaml
+- File: Translations/Translations.yaml
+- File: Retentivity/Retentivity.yaml
+- File: AlarmTypes/AlarmTypes.yaml
+- Name: RecipeSchema
+  Id: g=883d91146989da19cb2986ba968be49f
+  Type: Alias
+  DataType: NodeId
+  Value: {"IdType":2,"Id":"3d31fa247e31bc0be083c851b89ce8ae","Namespace":8}
+  Children:
+  - Name: Kind
+    Id: g=33d9789a11067bb82f0697b6e07218e4
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"3d31fa247e31bc0be083c851b89ce8ae","Namespace":8}

@@ -1,0 +1,29 @@
+Name: Histogram
+Id: g=fd18377be50453d5a539243ae4157af4
+Type: FolderType
+Children:
+- Name: Variable1
+  Id: g=c207c928a4ca1746c6aceb78e61ddfcf
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 10
+- Name: Variable2
+  Id: g=bb5a56e03996f08491334b8d8400f0a7
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 20
+- Name: Variable3
+  Id: g=07a2c224103151b11fc6511fbf60bd8e
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 30
+- Name: Variable4
+  Id: g=8e763237f3f1f24c912d7ed698dc8b21
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 40
+- Name: Variable5
+  Id: g=7a6f89a59042a4ab430c164a8bcc1aae
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 50

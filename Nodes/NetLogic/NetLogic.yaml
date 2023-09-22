@@ -1,0 +1,130 @@
+Name: NetLogic
+Id: g=4e1486bdfc59b3e0935535daec823327
+Type: NetLogicCategoryFolder
+Children:
+- Name: VariablesSimulator
+  Id: g=dbf00ac38a27d6f14fa2ebea54051299
+  Type: NetLogic
+  Children:
+  - Name: iSin
+    Id: g=b4ac2525f865e15b8b9bb36e289308b4
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: iCos
+    Id: g=93812db29a081d0a1244de14df071250
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: iRamp
+    Id: g=3864919a00268c748ebe09f715f017e0
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: bRunSimulation
+    Id: g=3b28df5e89c33e27cb02fc4af8e99b84
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- Name: DataLoggerExporter
+  Id: g=6cf0aea2f73ea0a44b44d889e55ddeba
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: CSVPath
+    Id: g=319f70af00b16f96468391d0db4fe3da
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=8;%PROJECTDIR%/Export/DataLogger.csv"
+  - Name: FieldDelimiter
+    Id: g=a0724c42f241239355cfd3a97d2e88f7
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ","
+  - Name: Table
+    Id: g=664994ffe6c05c1976e6527048e24dd6
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"253d14c8681620db7c856f8352e586a3","Namespace":8}
+    Children:
+    - Name: Kind
+      Id: g=ae468dd0e7b958331a3df7d5f03da992
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":3,"Namespace":25}
+  - Class: Method
+    Name: Export
+    Id: g=62270ded943c2ade55928096c6c96d66
+  - Name: Query
+    Id: g=adaecbe0b434be7fdb2af09bb44e0821
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: StringFormatter1
+      Id: g=5ed6f9b323558bacd9b865eb1f6e4701
+      Type: ns=2;StringFormatter
+      Children:
+      - Name: Format
+        Id: g=15fbaad2fd551295a9203e1feadbffb2
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        Value: {"LocaleId":"en-US","Text":"Timestamp BETWEEN {1:sql_literal} AND {2:sql_literal}"}
+      - Name: Source1
+        Id: g=ffe7a7f3e956ce10cc8e723ace236896
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=d79d79bd3272b7c4ab28e7f7d4f29b24
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../From"
+      - Name: Source2
+        Id: g=dff3ff4c8235077e8dd37286f93e1437
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=a66fcaeaa15c8323cf13e35caa3bd058
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../To"
+  - Name: From
+    Id: g=0dcf54aa4e6dc7802d81d6589e1d86f9
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2023-01-01T00:00:00.0000000"
+  - Name: To
+    Id: g=160a0a1166e17911aab5ff459c513c19
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2023-01-01T00:00:00.0000000"
+  - Name: WrapFields
+    Id: g=32125727d8b1d3459328affdc823f6f2
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: ExportResult
+    Id: g=1b50798f1e69f1ae364c5ba1cad78178
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- Name: ClockLogic
+  Id: g=c1ec005911b3406eb587c8db4b92b6d4
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: Time
+    Id: g=3c157b91d9a8ce1a9cc97b2fe0813966
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: UTCTime
+    Id: g=94d24445e08f49bbeec81b21159a9f21
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"

@@ -1,0 +1,24 @@
+Name: Runtime
+Id: g=4ba8eb1d94720482eaf85ace80ff2f5a
+Type: FolderType
+Children:
+- Name: RtAlarmVar1
+  Id: g=0e7639b53e78bd4db245b1a6a1fcacdd
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: RtAlarmVar2
+  Id: g=ddbcf28770982b7ab75a7484d9b9954f
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: RtAlarmVar3
+  Id: g=735955be44131f88774394e2ff06953a
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: RtAlarmVar4
+  Id: g=347c8df23549777c4bff07087b04557e
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0

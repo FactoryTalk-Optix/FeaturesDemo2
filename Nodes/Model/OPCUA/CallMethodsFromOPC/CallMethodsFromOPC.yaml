@@ -1,0 +1,6 @@
+Name: CallMethodsFromOPC
+Id: g=0ad4448f8ed1efeb0b23905352512e4d
+Type: FolderType
+Children:
+- File: Type/Type.yaml
+- File: Instances/Instances.yaml

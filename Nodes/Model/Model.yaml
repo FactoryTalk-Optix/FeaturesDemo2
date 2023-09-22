@@ -1,0 +1,437 @@
+Name: Model
+Id: g=7da04df863b9700793be5656b1124f40
+Type: ModelCategoryFolder
+Children:
+- File: Data/Data.yaml
+- File: Favorites/Favorites.yaml
+- File: ObjectOrientedProgramming/ObjectOrientedProgramming.yaml
+- File: Alarms/Alarms.yaml
+- File: Reports/Reports.yaml
+- File: OPCUA/OPCUA.yaml
+- File: Auditing/Auditing.yaml
+- Class: DataType
+  Name: DateAndTimeFormatEnum
+  Id: g=2f4be27b875cbb2fd8089da23715e36a
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "DateAndTimeEnum",
+    "DataType": {
+     "IdType": 2,
+     "Id": "2f4be27b875cbb2fd8089da23715e36a",
+     "Namespace": 8
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Short date and time, local"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "g"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Extended date and time, local"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "F"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "ShortDateAndTime, UTC"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "X"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 3,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "ExtendedDateAndTime, UTC"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "x"
+      }
+     },{
+      "Name": "Value4",
+      "Value": 4,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Complete Universal date and time, UTC"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "U"
+      }
+     },{
+      "Name": "Value5",
+      "Value": 5,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Short date, local"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "p"
+      }
+     },{
+      "Name": "Value6",
+      "Value": 6,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Extended date, local"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "P"
+      }
+     },{
+      "Name": "Value7",
+      "Value": 7,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Short date, UTC"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "d"
+      }
+     },{
+      "Name": "Value8",
+      "Value": 8,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Extended date, UTC"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "D"
+      }
+     },{
+      "Name": "Value9",
+      "Value": 9,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Short time, local"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "t"
+      }
+     },{
+      "Name": "Value10",
+      "Value": 10,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Extended time, local"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "T"
+      }
+     },{
+      "Name": "Value11",
+      "Value": 11,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Short time, UTC"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "h"
+      }
+     },{
+      "Name": "Value12",
+      "Value": 12,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "ExtendedTime,UTC"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "H"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Id: g=33e7cfe6547b35a17edf5ece92f87135
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"NamespaceIndex":8,"TextId":"ShortDateTimeLocal"},"Description":{"LocaleId":"en-US","Text":"g"}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"NamespaceIndex":8,"TextId":"ExtendedDateTimeLocal"},"Description":{"LocaleId":"en-US","Text":"F"}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"NamespaceIndex":8,"TextId":"ShortDateTimeUtc"},"Description":{"LocaleId":"en-US","Text":"X"}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"NamespaceIndex":8,"TextId":"ExtendedDateTimeUtc"},"Description":{"LocaleId":"en-US","Text":"x"}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"NamespaceIndex":8,"TextId":"CompleteUniversalDateTimeUtc"},"Description":{"LocaleId":"en-US","Text":"U"}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"NamespaceIndex":8,"TextId":"ShortDateLocal"},"Description":{"LocaleId":"en-US","Text":"p"}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"NamespaceIndex":8,"TextId":"ExtendedDateLocal"},"Description":{"LocaleId":"en-US","Text":"P"}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"NamespaceIndex":8,"TextId":"ShortDateUtc"},"Description":{"LocaleId":"en-US","Text":"d"}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"NamespaceIndex":8,"TextId":"ExtendedDateUtc"},"Description":{"LocaleId":"en-US","Text":"D"}}},{"TypeId":{"Id":7594},"Body":{"Value":9,"DisplayName":{"NamespaceIndex":8,"TextId":"ShortTimeLocal"},"Description":{"LocaleId":"en-US","Text":"t"}}},{"TypeId":{"Id":7594},"Body":{"Value":10,"DisplayName":{"NamespaceIndex":8,"TextId":"ExtendedTimeLocal"},"Description":{"LocaleId":"en-US","Text":"T"}}},{"TypeId":{"Id":7594},"Body":{"Value":11,"DisplayName":{"NamespaceIndex":8,"TextId":"ShortTimeUtc"},"Description":{"LocaleId":"en-US","Text":"h"}}},{"TypeId":{"Id":7594},"Body":{"Value":12,"DisplayName":{"NamespaceIndex":8,"TextId":"ExtendedTimeUtc"},"Description":{"LocaleId":"en-US","Text":"H"}}}]
+- Class: DataType
+  Name: NumericFormatEnum
+  Id: g=4098c6effa6d407128022aa8840d787b
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "NumericFormatEnum",
+    "DataType": {
+     "IdType": 2,
+     "Id": "4098c6effa6d407128022aa8840d787b",
+     "Namespace": 8
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Numerical, without thousands separator"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "d"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Numerical, with thousands separator"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "n"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Exponential notation"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "e"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 3,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Fixed-point notation"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "f"
+      }
+     },{
+      "Name": "Value4",
+      "Value": 4,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Percentage"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "p"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Id: g=1c6fde1d4884db90d3f077d16260c1b1
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"NamespaceIndex":8,"TextId":"NumericalNoSeparator"},"Description":{"LocaleId":"en-US","Text":"d"}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"NamespaceIndex":8,"TextId":"NumericalThousandsSeparator"},"Description":{"LocaleId":"en-US","Text":"n"}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"NamespaceIndex":8,"TextId":"ExponentialNotation"},"Description":{"LocaleId":"en-US","Text":"e"}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"NamespaceIndex":8,"TextId":"FixedPointNotation"},"Description":{"LocaleId":"en-US","Text":"f"}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"NamespaceIndex":8,"TextId":"Percentage"},"Description":{"LocaleId":"en-US","Text":"p"}}}]
+- Class: DataType
+  Name: BinaryFormatEnum
+  Id: g=97e2eb036b97ad3c155ad99519dd7dbb
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "BinaryFormatEnum",
+    "DataType": {
+     "IdType": 2,
+     "Id": "97e2eb036b97ad3c155ad99519dd7dbb",
+     "Namespace": 8
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Hexadecimal notation"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "x"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Binary notation"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "b"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Octal notation"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "o"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Id: g=d918bce6c87e36ba6ecae608a961fd7a
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"NamespaceIndex":8,"TextId":"HexadecimalNotation"},"Description":{"LocaleId":"en-US","Text":"x"}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"NamespaceIndex":8,"TextId":"BinaryNotation"},"Description":{"LocaleId":"en-US","Text":"b"}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"NamespaceIndex":8,"TextId":"OctalNotation"},"Description":{"LocaleId":"en-US","Text":"o"}}}]
+- Class: DataType
+  Name: UpperLowerFormatEnum
+  Id: g=177c91ef9223819e794c6e2b13ebbf0b
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "UpperLowerFormatEnum",
+    "DataType": {
+     "IdType": 2,
+     "Id": "177c91ef9223819e794c6e2b13ebbf0b",
+     "Namespace": 8
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "All lowercase"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "l"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "All uppercase"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "u"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "All first letters uppercase"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "t"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 3,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Case independent"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "f"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Id: g=7af49d8517db7643d30e38a1e72b2143
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"NamespaceIndex":8,"TextId":"Lowercase"},"Description":{"LocaleId":"en-US","Text":"l"}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"NamespaceIndex":8,"TextId":"Uppercase"},"Description":{"LocaleId":"en-US","Text":"u"}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"NamespaceIndex":8,"TextId":"PascalCase"},"Description":{"LocaleId":"en-US","Text":"t"}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"NamespaceIndex":8,"TextId":"CaseIndependent"},"Description":{"LocaleId":"en-US","Text":"f"}}}]
+- Class: DataType
+  Name: ZoomModeEnum
+  Id: g=7145432984a0a97b2ed75a5b73c82564
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "ZoomModeEnum",
+    "DataType": {
+     "IdType": 2,
+     "Id": "7145432984a0a97b2ed75a5b73c82564",
+     "Namespace": 8
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "NamespaceIndex": 8,
+       "TextId": "FitWidth"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "NamespaceIndex": 8,
+       "TextId": "FitHeight"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "NamespaceIndex": 8,
+       "TextId": "FitPage"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 3,
+      "DisplayName": {
+       "NamespaceIndex": 8,
+       "TextId": "ActualSize"
+      }
+     },{
+      "Name": "Value4",
+      "Value": 4,
+      "DisplayName": {
+       "NamespaceIndex": 8,
+       "TextId": "CustomLevel"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Id: g=c34fe0fa750318bbe2db3906ab018b19
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"NamespaceIndex":8,"TextId":"FitWidth"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"NamespaceIndex":8,"TextId":"FitHeight"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"NamespaceIndex":8,"TextId":"FitPage"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"NamespaceIndex":8,"TextId":"ActualSize"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"NamespaceIndex":8,"TextId":"CustomLevel"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- File: MarginsForRetentivity/MarginsForRetentivity.yaml

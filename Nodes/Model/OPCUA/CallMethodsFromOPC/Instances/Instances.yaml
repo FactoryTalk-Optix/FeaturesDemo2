@@ -1,0 +1,49 @@
+Name: Instances
+Id: g=f6cbecfd1fd99bbbe2e03ae2d4bd47dc
+Type: FolderType
+Children:
+- Name: MotorWithBehavior1
+  Id: g=e658c25f8cdd0e603b37df92801167b0
+  Type: MotorWithBehavior
+  Children:
+  - Name: Running
+    Id: g=9dbf4c10b9ab48ce56494bbd5cd68ec2
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Class: Reference
+    Target: g=399dcdca44aad4daeae55a0eb34148d8
+    Direction: Forward
+  - Class: Reference
+    Target: g=d528e977e3aade525bdf35fcb87b836b
+    Direction: Forward
+- Name: MotorWithBehavior2
+  Id: g=2c7e33461b57a69a24d391edf0d5e5b4
+  Type: MotorWithBehavior
+  Children:
+  - Name: Running
+    Id: g=dd162379c79e8c9579411caf8513e637
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Class: Reference
+    Target: g=399dcdca44aad4daeae55a0eb34148d8
+    Direction: Forward
+  - Class: Reference
+    Target: g=d528e977e3aade525bdf35fcb87b836b
+    Direction: Forward
+- Name: MotorWithBehavior3
+  Id: g=21b5aaaf5f62742647297083073078af
+  Type: MotorWithBehavior
+  Children:
+  - Name: Running
+    Id: g=7b017c2d3bc983a834885d8cd281ad96
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Class: Reference
+    Target: g=399dcdca44aad4daeae55a0eb34148d8
+    Direction: Forward
+  - Class: Reference
+    Target: g=d528e977e3aade525bdf35fcb87b836b
+    Direction: Forward

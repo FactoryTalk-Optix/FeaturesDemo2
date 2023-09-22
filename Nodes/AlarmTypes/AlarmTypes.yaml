@@ -1,0 +1,178 @@
+Name: AlarmTypes
+Id: g=9b6323458f4f873c166e2677d7971b04
+Type: FolderType
+Children:
+- Name: AlarmType_DigitalAlarmWithAreaType
+  Id: g=cb7b11436db2cbf5101ebc1be628a6a6
+  Supertype: OffNormalAlarmType
+  DisplayName: {"NamespaceIndex":8,"TextId":"DigitalAlarmWithAreaType"}
+  Children:
+  - Name: NormalState
+    Id: g=0b83f0a7551c0143e558bee9b27548f5
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: ActiveState
+    Id: g=cd81772803496098aaf294e1f76c8258
+    Type: TwoStateVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: Id
+      Id: g=2c44b9f574a6715504f39b2add08b254
+      Type: PropertyType
+      DataType: Boolean
+      Value: false
+  - Name: InputNode
+    Id: g=63c35bad5eb37261751b88a50712f40b
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: SuppressedOrShelved
+    Id: g=59f2a1cfee4f3bb93d10fa30aa5b4f4c
+    Type: PropertyType
+    DataType: Boolean
+    Value: false
+  - Name: AckedState
+    Id: g=98bd980e392f820fd802fea2d0574029
+    Type: TwoStateVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: Id
+      Id: g=bb8bf3dd5ddf544f6f5b020c0635fed1
+      Type: PropertyType
+      DataType: Boolean
+      Value: false
+  - Class: Reference
+    Target: ns=0;i=9111
+    Direction: Forward
+  - Name: ConditionClassId
+    Id: g=8ccc3c5b7880afb23fb0709dba41e627
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: ConditionClassName
+    Id: g=1b200a3e6006daba9721d1a72e4b514e
+    Type: PropertyType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+  - Name: ConditionName
+    Id: g=ac046849458676ca3a1aeb0e246bea23
+    Type: PropertyType
+    DataType: String
+    Value: ""
+  - Name: BranchId
+    Id: g=3763e3c93c1fe09faaf348208d931148
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: Retain
+    Id: g=6565fc4420dcff72ec408609cf087ed6
+    Type: PropertyType
+    DataType: Boolean
+    Value: false
+  - Name: EnabledState
+    Id: g=7889c6cf96725abd9f8dbd788ed03bf7
+    Type: TwoStateVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: Id
+      Id: g=1546fbf511ae95a3ff3d5eaf7802ebb2
+      Type: PropertyType
+      DataType: Boolean
+      Value: false
+  - Name: Quality
+    Id: g=dbf7f249044f4bd53b3cf72e80279238
+    Type: ConditionVariableType
+    DataType: StatusCode
+    Value: 0
+    Children:
+    - Name: SourceTimestamp
+      Id: g=6ef040490533202501ed369637073311
+      Type: PropertyType
+      DataType: UtcTime
+      Value: "1601-01-01T00:00:00.0000000"
+  - Name: LastSeverity
+    Id: g=99b35ec08c102259afc956ea7794b5ad
+    Type: ConditionVariableType
+    DataType: UInt16
+    Value: 0
+    Children:
+    - Name: SourceTimestamp
+      Id: g=ea1560fa90c9fa90a7a99e38b1c06dd1
+      Type: PropertyType
+      DataType: UtcTime
+      Value: "1601-01-01T00:00:00.0000000"
+  - Name: Comment
+    Id: g=2a33182b81c79481363ea7b008054ada
+    Type: ConditionVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: SourceTimestamp
+      Id: g=8be7b546ff8fefebf27a7b18fc44d88a
+      Type: PropertyType
+      DataType: UtcTime
+      Value: "1601-01-01T00:00:00.0000000"
+  - Name: ClientUserId
+    Id: g=afa8b5ce6bd53dada9f60a89991154fa
+    Type: PropertyType
+    DataType: String
+    ReferenceType: HasComponent
+    Value: ""
+  - Class: Reference
+    Target: ns=0;i=9027
+    Direction: Forward
+  - Class: Reference
+    Target: ns=0;i=9028
+    Direction: Forward
+  - Class: Reference
+    Target: ns=0;i=9029
+    Direction: Forward
+  - Name: EventId
+    Id: g=6ffdfb8fb8faacb2d92a9b5b3b67d534
+    Type: PropertyType
+    DataType: ByteString
+    Value: ""
+  - Name: EventType
+    Id: g=f7a132fb0293391d6b1ec9cc54bcc4e8
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: SourceNode
+    Id: g=3fa11b5fc22e55a3d30fd16d4c49053a
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: SourceName
+    Id: g=b33f105324fb870b0642ea7b6e7611ed
+    Type: PropertyType
+    DataType: String
+    Value: ""
+  - Name: Time
+    Id: g=05a7644c16079fec39421019a249cdf2
+    Type: PropertyType
+    DataType: UtcTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: ReceiveTime
+    Id: g=9ccbdcda7085fe6c6911ae6f38365223
+    Type: PropertyType
+    DataType: UtcTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: Message
+    Id: g=13b27b1fcc44bd43e4d997c2bce1003b
+    Type: PropertyType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+  - Name: Severity
+    Id: g=64b2b6c2b762042b1b3538807c935471
+    Type: PropertyType
+    DataType: UInt16
+    Value: 0
+  - Name: Area
+    Id: g=fada8e3a56776c0edfbd11ca960cedf9
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"

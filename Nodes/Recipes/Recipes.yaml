@@ -1,0 +1,113 @@
+Name: Recipes
+Id: g=cde40d9f9448248fbb993a3162e684a3
+Type: RecipesCategoryFolder
+Children:
+- Name: RecipeSchema
+  Id: g=9704c71dace3a7455839b13623ef54dc
+  Type: RecipeSchema
+  Children:
+  - Name: Root
+    Id: g=63b0534b5d7421808e9a291e2a3d24ca
+    Type: BaseObjectType
+    Children:
+    - Name: Component1
+      Id: g=153049be7c1348623c011eeefd624448
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Component2
+      Id: g=d0702cfa33022a42c95d9250f7adccce
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: Component3
+      Id: g=c58d136730d88f4d6a61f6a979dbc738
+      Type: BaseDataVariableType
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [3]
+      Value: [0,0,0]
+  - Class: Reference
+    Target: ns=29;i=27
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=33
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=31
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=35
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=37
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=76
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=62
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=58
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=60
+    Direction: Forward
+  - Name: Store
+    Id: g=5b7c16bd3c7dffcdea7e55ad530fde31
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"9a82e5e71d1a3a634a88a77ec729daef","Namespace":8}
+    Children:
+    - Name: Kind
+      Id: g=4a90d3877e5e6ce04d9523f268576ed8
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":1,"Namespace":25}
+  - Name: TableName
+    Id: g=9da649669e875034939b8e9e2f343948
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Recipes"
+  - Name: TargetNode
+    Id: g=066be0f1515464200ba721405af5facb
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"75839ad986c859cb17a36e85aaa2e466","Namespace":8}
+    Children:
+    - Name: Kind
+      Id: g=a942cb85458618f0eadfea411b6af9b1
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: EditModel
+    Id: g=3d31fa247e31bc0be083c851b89ce8ae
+    Type: BaseObjectType
+    Children:
+    - Name: Component1
+      Id: g=88dd0bd60af571eb02995d58cd868d0d
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Component2
+      Id: g=cdb9296a48b22c623982afc79b96ecbe
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: Component3
+      Id: g=4917ccee40e974a1e6be9cb6c388f4c3
+      Type: BaseDataVariableType
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [3]
+      Value: [0,0,0]

@@ -1,0 +1,19 @@
+Name: Zone
+Id: g=6c5dcabfc32706f942cc0b557b10a07a
+Type: FolderType
+Children:
+- Name: Zone1
+  Id: g=ecafc2c2669d625ad6143a9676437a2f
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Zone2
+  Id: g=6a3164e6d4bf56ec37f5c054e1d9fe7c
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Zone3
+  Id: g=a341d9da72015cad25c9ffd46a12de5e
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0

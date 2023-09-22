@@ -1,0 +1,24 @@
+Name: MarginsForRetentivity
+Id: g=1ff7f0e0737fb499cd6012325b790749
+Type: FolderType
+Children:
+- Name: Card1LeftMargin
+  Id: g=725689228684eae8251031e511ea7dd9
+  Type: BaseDataVariableType
+  DataType: Size
+  Value: 16.0
+- Name: Card1ToptMargin
+  Id: g=8fec37ab36abc4ca39d7ded9e760a66a
+  Type: BaseDataVariableType
+  DataType: Size
+  Value: 16.0
+- Name: Card2LeftMargin
+  Id: g=a89ca5a67a2f88f48577a46b34868bf9
+  Type: BaseDataVariableType
+  DataType: Size
+  Value: 352.0
+- Name: Card2TopMargin
+  Id: g=90d28e842745bc91d5a70c6fdd69ff5c
+  Type: BaseDataVariableType
+  DataType: Size
+  Value: 16.0

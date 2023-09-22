@@ -1,0 +1,133 @@
+Project:
+ Name: FeaturesDemo2
+ GUID: 857a574195cd895f8a2a72f6242b3c7f
+ ProjectNamespaceIndex: 8
+ Description: ''
+ Company: ''
+ Copyright: ''
+ FormatVersion: 1
+ ProductVersion: 1.2
+ CoreVersion: 2.0
+ Dependencies:
+  2:
+   Uri: 'urn:FTOptix:CoreBase'
+   Module: FTOptix.CoreBase
+   Version: 2.1
+  3:
+   Uri: 'urn:FTOptix:UI'
+   Module: FTOptix.UI
+   Version: 2.0
+  4:
+   Uri: 'urn:FTOptix:HMIProject'
+   Module: FTOptix.HMIProject
+   Version: 4.2
+  5:
+   Uri: 'urn:FTOptix:NativeUI'
+   Module: FTOptix.NativeUI
+   Version: 2.0
+  6:
+   Uri: 'urn:FTOptix:Retentivity'
+   Module: FTOptix.Retentivity
+   Version: 1.0
+  7:
+   Uri: 'urn:FTOptix:WebUI'
+   Module: FTOptix.WebUI
+   Version: 1.1
+  9:
+   Uri: 'urn:FTOptix:Core:Net'
+   Module: FTOptix.Core.Net
+   Version: 1.1
+  10:
+   Uri: 'urn:FTOptix:CoreBase:Net'
+   Module: FTOptix.CoreBase.Net
+   Version: 1.0
+  11:
+   Uri: 'urn:FTOptix:UI:Net'
+   Module: FTOptix.UI.Net
+   Version: 2.0
+  12:
+   Uri: 'urn:FTOptix:HMIProject:Net'
+   Module: FTOptix.HMIProject.Net
+   Version: 4.2
+  13:
+   Uri: 'urn:FTOptix:NativeUI:Net'
+   Module: FTOptix.NativeUI.Net
+   Version: 1.0
+  14:
+   Uri: 'urn:FTOptix:NetLogic'
+   Module: FTOptix.NetLogic
+   Version: 1.0
+  15:
+   Uri: 'urn:FTOptix:Retentivity:Net'
+   Module: FTOptix.Retentivity.Net
+   Version: 1.0
+  16:
+   Uri: 'urn:FTOptix:WebUI:Net'
+   Module: FTOptix.WebUI.Net
+   Version: 1.1
+  17:
+   Uri: 'urn:FTOptix:OPCUAServer'
+   Module: FTOptix.OPCUAServer
+   Version: 1.1
+  18:
+   Uri: 'urn:FTOptix:OPCUAServer:Net'
+   Module: FTOptix.OPCUAServer.Net
+   Version: 1.1
+  19:
+   Uri: 'urn:FTOptix:Alarm'
+   Module: FTOptix.Alarm
+   Version: 1.1
+  20:
+   Uri: 'urn:FTOptix:Alarm:Net'
+   Module: FTOptix.Alarm.Net
+   Version: 1.0
+  21:
+   Uri: 'urn:FTOptix:Report'
+   Module: FTOptix.Report
+   Version: 1.2
+  22:
+   Uri: 'urn:FTOptix:Report:Net'
+   Module: FTOptix.Report.Net
+   Version: 1.1
+  23:
+   Uri: 'urn:FTOptix:DataLogger'
+   Module: FTOptix.DataLogger
+   Version: 1.0
+  24:
+   Uri: 'urn:FTOptix:DataLogger:Net'
+   Module: FTOptix.DataLogger.Net
+   Version: 1.0
+  25:
+   Uri: 'urn:FTOptix:Store'
+   Module: FTOptix.Store
+   Version: 1.0
+  26:
+   Uri: 'urn:FTOptix:Store:Net'
+   Module: FTOptix.Store.Net
+   Version: 1.0
+  27:
+   Uri: 'urn:FTOptix:SQLiteStore'
+   Module: FTOptix.SQLiteStore
+   Version: 1.0
+  28:
+   Uri: 'urn:FTOptix:SQLiteStore:Net'
+   Module: FTOptix.SQLiteStore.Net
+   Version: 1.0
+  29:
+   Uri: 'urn:FTOptix:Recipe'
+   Module: FTOptix.Recipe
+   Version: 1.0
+  30:
+   Uri: 'urn:FTOptix:Recipe:Net'
+   Module: FTOptix.Recipe.Net
+   Version: 1.0
+  31:
+   Uri: 'urn:FTOptix:EventLogger'
+   Module: FTOptix.EventLogger
+   Version: 1.0
+  32:
+   Uri: 'urn:FTOptix:EventLogger:Net'
+   Module: FTOptix.EventLogger.Net
+   Version: 1.0
+ Nodes:
+ - File: Nodes/FeaturesDemo2.yaml

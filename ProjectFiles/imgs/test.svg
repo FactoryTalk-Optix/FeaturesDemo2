@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Background - Gradient -->
+  <defs>
+    <linearGradient id="background-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff00ff" />
+      <stop offset="100%" stop-color="#00ffff" />
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="400" height="400" fill="url(#background-gradient)" />
+
+  <!-- 1990's Shape -->
+  <path d="M200 50 L100 350 L300 350 Z" fill="#ffd700" stroke="#ff00ff" stroke-width="4" />
+
+  <!-- Text - 1990's -->
+  <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle" font-family="Arial, sans-serif" font-size="48" fill="#ffffff">
+    1990's
+  </text>
+</svg>

@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module version="1">
+    <Name>FeaturesDemo2UserDefinedModule</Name>
+    <Company></Company>
+    <Version>0.0.0</Version>
+    <MinUpgradableVersion>0.0.0</MinUpgradableVersion>
+    <Binding name="Net" />
+
+    <Namespaces/>
+
+    <Dependencies>
+        <Core version="0.0.0" />
+        <Binding version="0.0.0" />
+        <Module name="FTOptix.HMIProject.Net" version="0.0.0" />
+    </Dependencies>
+
+    <Nodes/>
+
+    <TypeMappings>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="4b0f34bf92e0134bdcb58947a21d30f9" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="91f9ba581412f1454f73871f755a9e6a" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="96351005ce1ad82470a8c3442dace394" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="fc9a4b1715de47ed2155ec8c96cde8ac" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="f0cf8b946fd42eb4dab6b5a169dc179b" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="e35ee9f1fd7224f063b7f8fb38ed5c50" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="01a7e8933afd7c95fe894b0859308138" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="88833e4e41b3ca7762c1ad74a5187cba" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="5cbec2d0101b7af5910e2cea99566109" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="46d502e45d447daf8b80f7802623d3df" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="dc4a311c6b767bb7d92d302c2ff083cb" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="14ce878356a6a6618157f3d9f6325239" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="bd3ed0b354c9e54840b7195b4e7ff8a6" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="535489223e3e9dbc8d1961307660c297" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="ce198cc9ba8689d3edd10bae90c763b0" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="b368c40cc6d4e1a3dd641322ccf637fe" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="e45649ea1ce75589b127783390f90c18" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="a98c3f927193616ab8ad44f409fe6fc7" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="23aa64d100d55501dca100bac3541b8c" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="a5968f81e70d1330b98bdc421399ca97" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="e332acf60ad8ab133261fe60546db71f" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="3e8c8082a2418fafb151a5266d3eb6ea" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="cef85446637f96f78a635cae805a1266" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="07e4abe8f67ef74818b9f07391d213d0" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="f6b4c831d46de9b2b321a1cbf1ffb83a" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="6a36f8661c43fc0a99fc35391f282295" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="e6468705b0e338094ea431f36d411d7f" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="75397058af2f6947b71e2ebf5e4fd643" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="f0fb3210fbdb40b9b12bef75c410d517" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="6c18cc88febbc66784e91bf9639fd818" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="8db95290b21d2bcb0f746d50d2eb667e" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="7f7ebe9832a3f21393d6ff0e12364a50" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="ef4d50ca059a844fc5920b06a0e4121b" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="cc44e7015552d687a8f75d751377b2ee" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="4f5ad6731a5ca2c2cc83818093ae0a1c" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="9d9e98710e031b9faa235f74498495b8" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="fc0d46c3cf6fc6f7faace8fa13bde2b5" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="e1f17cb022eba935b6515dbbaf67a68e" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="d94d330180df7460d04c7d0a0f5cd675" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="cb6f5758b539b96d2f8ee71d0bb265a8" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="0b05e7662cc2b340ebf8ef1de19c9b09" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="4e76775bfa8c3ddd51c2e4a40da7a1b3" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="62489ca5ba9010cd8acc82dbde20e911" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="105b0385a50087fe91ebf73107efa956" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="d6d9e76d7dd5455fa8658d68f6171504" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="9b967d27cc62edec7c3df86f0658ac14" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="22c32b90a27e35aa7b80e7d7a479c95b" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="b640c3269a46bef63ebd9fc00dbf2a95" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="ed1264ad6d476d958c224bdc583684ed" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="d82e6a194b3970df2676247afcafba04" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="b8087329b8f033079a5f578b6563c4ab" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="2f5dd4d80fc4fb6400e75c9297ebcbaf" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="ade5c0fe58885d39998291b35a1e4edc" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="89c43a0a52162dce4bbe467415bd7b79" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="b396635dda82b5a640e731cff3f77358" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="79ed67b552863cf04ef99254b545e3cd" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="e98b0eeaa63c0383836d0cb7c9a18c55" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="200a4c16d6cb4bf3463ada54c9404421" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="16b09f1ed3ee04af94f97d0d95a4a17c" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="ee499e2dd11f823daa73a16b8beefaea" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="bf6d4c6f1ea3d56a21f409ba97440b60" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="04c47c4e4aa33d4faa069944bc4fdd52" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="4fe7b19850c6ec287ceacffa02892646" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="0bdf6d2013f15c0e3646e9eab072af0a" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="95a48217d340761cbe6260cfb553d662" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="0fefbfb065ccb028a398f1d5a8e32078" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="5c74f7dd269225f041b630bf70fa9fb1" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="7be928cdaab2ddee7c533d58bd1ea96b" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="2ea3552d751df81a429596695b48f38c" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="3270ffc1cfeaeae6ac5a8c7fd288764d" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="9a0646b3484e7a3014b3faa421b6ad3a" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="7d4c371cb7bad8787a9d0152062f0e5f" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="5bb21a44c8b572e6f6de8955b2fca44c" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="2f3b2811772f80d4a1ac9cc84685ecc5" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="2642ee688b6a5448aa455b0defdc5954" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="6b7069af5a6a70f753fb00306ddc9054" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="3a69807346f3d1675ae3418490426cde" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="fd52139656c4cab63738095f771343a3" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="638838acd9f5ae93ca75b058c300b43b" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="5bd1738d3f60d47ba30b9df411fa0050" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="d312f5365c7d886a7a689a7c61bf2412" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="937bdaeca748212659105fb563595c0b" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="59f233a86b88133bc07cecf82da51463" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="76c6b9dc24666b9297ce397d3fb2b9fe" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="b6239b77b31bba48a937ee481e521c37" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="b79963902470322237bc097995347acf" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="95f09e375079b81c49fe2871985197f5" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="87e5c1e9baa827ed0efc927a0c47e4a1" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="5b8f67e8bb79df9272083171944802c5" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="9ed44a86bf56af622a449ec8d98ac3c9" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="c2c45f03b625c372070c4c47d3f23fee" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="4f655bff5c3fc10e065863fbee528a66" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="d0fba00ff93f064d6e1cb546eea27209" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="b2dd8d5e3ed6efc15f96280815273ba1" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="ab9067669c59e640d79796e6d19e5ed3" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="6d4efe6e5e97c6e891f486a36901af39" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="5458760c923f75d588601d103d94220d" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="37fd86f99579a8b650b3e927950c0e6c" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="0927e48b0a9fa3083ede48cd8b26af4d" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="276dbcbf25527d7f68025a4e4a86c4bf" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="3c7a106daca4df2f5a9155e5a8d320a6" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="3f028585e3e567aa409d1d882de96ae9" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="43b6e16ff795d2e5efd555dd24d7fce1" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="ce814fddddd607c776a3b9a6e0b90c27" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="53b1bd1b17b4de66926108a7dfdf143e" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="FeaturesDemo2" guid="2eebfd3def044e747aa57952fc13c70d" />
+            </TargetType>
+        </TypeMapping>
+    </TypeMappings>
+</Module>
