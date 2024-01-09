@@ -352,7 +352,7 @@ Children:
         Id: g=32a8218abbbb643e1ef2da2c4d86b3c9
         Type: PropertyType
         DataType: NodeId
-        Value: {"Id":16,"Namespace":3}
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
       - Name: MethodsToCall
         Id: g=f146f1fc10b91cc97d9e19d18c0651f9
         Type: BaseObjectType
@@ -371,7 +371,7 @@ Children:
               Id: g=43264a4d98614a9103a36d6048386906
               Type: PropertyType
               DataType: NodeId
-              Value: {"Id":58}
+              Value: "/Types/ObjectTypes/BaseObjectType"
             - Name: DynamicLink
               Id: g=692195e6b405dcaa71c9fb0dfe8ac164
               Type: DynamicLink
@@ -716,18 +716,18 @@ Children:
       Id: g=7af3c29497b337d084116f50777c227d
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":61}
+      Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
   - Name: PasswordExpiredDialogType
     Id: g=8f4dd57a4a4396e459e0478396bcd503
     Type: Alias
     DataType: NodeId
-    Value: {"IdType":2,"Id":"53b1bd1b17b4de66926108a7dfdf143e","Namespace":8}
+    Value: "/Objects/FeaturesDemo2/UI/Templates/Localization/LoginForm1/LoginFormComponents/LoginPasswordExpiredDialog"
     Children:
     - Name: Kind
       Id: g=ae6f39e85e49030fffb4c021bbb752d0
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":515,"Namespace":3}
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container/Dialog"
 - Name: LoginPasswordExpiredDialog
   Id: g=53b1bd1b17b4de66926108a7dfdf143e
   Supertype: Dialog
@@ -875,7 +875,7 @@ Children:
             Id: g=c118889e64477422bc525777873d3f3c
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":16,"Namespace":3}
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
           - Name: MethodsToCall
             Id: g=1b08e0fc37206e44b449c67527f50ca2
             Type: BaseObjectType
@@ -894,7 +894,7 @@ Children:
                   Id: g=c6ebb3f022fa6e891962db0ed98e8f4c
                   Type: PropertyType
                   DataType: NodeId
-                  Value: {"Id":58}
+                  Value: "/Types/ObjectTypes/BaseObjectType"
                 - Name: DynamicLink
                   Id: g=fa22136d9b2aa45672d6b47e5566dc08
                   Type: DynamicLink
@@ -972,7 +972,7 @@ Children:
                   Id: g=81e37f58630e9aaa526479f67c887479
                   Type: PropertyType
                   DataType: NodeId
-                  Value: {"Id":58}
+                  Value: "/Types/ObjectTypes/BaseObjectType"
                 - Name: DynamicLink
                   Id: g=16251539101c94fe8aa44fb7581878a8
                   Type: DynamicLink
@@ -1270,7 +1270,7 @@ Children:
       Id: g=a1dca24c8129990e066ccf3e9158d815
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":14,"Namespace":1}
+      Value: "/Types/ObjectTypes/BaseObjectType/UserType"
 - Name: LoginChangePasswordForm
   Id: g=fc0d46c3cf6fc6f7faace8fa13bde2b5
   Supertype: Panel
@@ -1302,7 +1302,7 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"Old password"}
+      Value: {"NamespaceIndex":8,"TextId":"OldPassword"}
     - Name: ContentType
       Id: g=e8d2b18e979c1237e53a023da1e55d8f
       Type: BaseVariableType
@@ -1499,7 +1499,7 @@ Children:
         Id: g=adfad449f67d0d539f2b4631339270e8
         Type: PropertyType
         DataType: NodeId
-        Value: {"Id":16,"Namespace":3}
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
       - Name: MethodsToCall
         Id: g=dadabea6a7570838e6fec2b7549aa45b
         Type: BaseObjectType
@@ -1518,7 +1518,7 @@ Children:
               Id: g=af3050f2ed4c507f78016c6497c26f81
               Type: PropertyType
               DataType: NodeId
-              Value: {"Id":58}
+              Value: "/Types/ObjectTypes/BaseObjectType"
             - Name: DynamicLink
               Id: g=a47fad3d88f9cabce2d72082bc4d79f8
               Type: DynamicLink
@@ -1617,7 +1617,7 @@ Children:
               Id: g=9a5856897261ba7acacaa72d12155c0c
               Type: PropertyType
               DataType: NodeId
-              Value: {"Id":58}
+              Value: "/Types/ObjectTypes/BaseObjectType"
             - Name: DynamicLink
               Id: g=766e4914dc0820be586e077a797a85de
               Type: DynamicLink
@@ -2059,7 +2059,7 @@ Children:
         Id: g=617b4b9a40fc32a23223e1c55dca2611
         Type: PropertyType
         DataType: NodeId
-        Value: {"Id":16,"Namespace":3}
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
       - Name: MethodsToCall
         Id: g=fd2ebedfa42765103587e90639f418b8
         Type: BaseObjectType
@@ -2078,7 +2078,7 @@ Children:
               Id: g=9e8d084eb2c55fff42a19348175e34d1
               Type: PropertyType
               DataType: NodeId
-              Value: {"Id":58}
+              Value: "/Types/ObjectTypes/BaseObjectType"
             - Name: DynamicLink
               Id: g=ecfdb66ed28fa2827d0f6f7eb16312f4
               Type: DynamicLink

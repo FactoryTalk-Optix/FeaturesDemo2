@@ -244,7 +244,7 @@ Children:
             Id: g=a3a18d7a85b66867910324a6a4eac4d9
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":14,"Namespace":1}
+            Value: "/Types/ObjectTypes/BaseObjectType/UserType"
           - Name: Kind
             Id: g=45577e396a66e5a32647ec28689e6bf7
             Type: PropertyType
@@ -275,7 +275,7 @@ Children:
             Id: g=608be65f3e6aae8c9c4bad6c26e83538
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":14,"Namespace":1}
+            Value: "/Types/ObjectTypes/BaseObjectType/UserType"
         - Name: Width
           Id: g=8196169b9d71cae5782db02a1ad0571b
           Type: BaseVariableType
@@ -298,7 +298,7 @@ Children:
             Id: g=0d026ea33375d5abf928a68309d7d693
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":14,"Namespace":1}
+            Value: "/Types/ObjectTypes/BaseObjectType/UserType"
         - Name: VerticalAlignment
           Id: g=b70391ce94a9cf1e31700cc0328fe66a
           Type: BaseVariableType
@@ -377,13 +377,13 @@ Children:
           Id: g=0694cfe992300a814165ed284dd81c01
           Type: NodePointer
           DataType: NodeId
-          Value: {"IdType":2,"Id":"5bd1738d3f60d47ba30b9df411fa0050","Namespace":8}
+          Value: "/Objects/FeaturesDemo2/UI/Screens/UsersManagement/UserEditor/EditUserDetailPanel"
           Children:
           - Name: Kind
             Id: g=b1f00272874d54d54e5102d3597f65a1
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":71,"Namespace":3}
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
           - Name: NodeClass
             Id: g=3fb1a39ee448204e7fb88f94cb58673b
             Type: PropertyType
@@ -400,7 +400,7 @@ Children:
             Id: g=e8100a319861ce7832ddc3e887dbe87a
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":6,"Namespace":3}
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
         - Name: Width
           Id: g=71d3cf438858ec3c2d76d1c8c875351b
           Type: BaseVariableType
@@ -429,6 +429,7 @@ Children:
           Id: g=8fefd07c2e65c1e5a7be6baf4a585129
           Type: BaseDataVariableType
           DataType: NodeId
+          ValueRank: ScalarOrOneDimension
           Value: {"IdType":0,"Id":0,"Namespace":-1}
           Children:
           - Name: DynamicLink
@@ -467,7 +468,7 @@ Children:
             Id: g=280769db36ec47af840e692858735949
             Type: NodePointer
             DataType: NodeId
-            Value: {"IdType":2,"Id":"638838acd9f5ae93ca75b058c300b43b","Namespace":8}
+            Value: "/Objects/FeaturesDemo2/UI/Screens/UsersManagement/UserEditor/NoUsersPanel"
             Children:
             - Name: Kind
               Id: g=3ac632fb27f7609ad23797b9238917d9
@@ -484,7 +485,7 @@ Children:
             Id: g=d36403ed46700a6ad16ae6e0f275462d
             Type: NodePointer
             DataType: NodeId
-            Value: {"IdType":2,"Id":"5bd1738d3f60d47ba30b9df411fa0050","Namespace":8}
+            Value: "/Objects/FeaturesDemo2/UI/Screens/UsersManagement/UserEditor/EditUserDetailPanel"
             Children:
             - Name: Kind
               Id: g=c37f64d6e8f654802b4c15355cb7a19c
@@ -573,7 +574,7 @@ Children:
             Id: g=1f0fce41e4fa6f7b3087276c261eee10
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":16,"Namespace":3}
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
           - Name: MethodsToCall
             Id: g=c3d142a80433401d08295362966be7a3
             Type: BaseObjectType
@@ -592,7 +593,7 @@ Children:
                   Id: g=30e24da1e0975d8897f679917397c52a
                   Type: PropertyType
                   DataType: NodeId
-                  Value: {"Id":58}
+                  Value: "/Types/ObjectTypes/BaseObjectType"
                 - Name: NodeClass
                   Id: g=7243c81441e4aa637f877dead480dcfa
                   Type: PropertyType
@@ -618,12 +619,13 @@ Children:
                   Type: BaseDataVariableType
                   DataType: NodeId
                   Description: {"NamespaceIndex":3,"TextId":"ChangePanelNewPanelDescription"}
-                  Value: {"IdType":2,"Id":"76c6b9dc24666b9297ce397d3fb2b9fe","Namespace":8}
+                  Value: "/Objects/FeaturesDemo2/UI/Screens/UsersManagement/UserEditor/CreateUserPanel"
                 - Name: AliasNode
                   Id: g=bb2ea7b6a682c3d5ffbea1cdc3248f51
                   Type: BaseDataVariableType
                   DataType: NodeId
                   Description: {"NamespaceIndex":3,"TextId":"ChangePanelAliasNodeDescription"}
+                  ValueRank: ScalarOrOneDimension
                   Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: EventArguments
             Id: g=0d078bc42f0d723ef3056b2921850553
@@ -740,7 +742,7 @@ Children:
             Id: g=ad16d961219bf4754ea43d944957557f
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":16,"Namespace":3}
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
           - Name: MethodsToCall
             Id: g=85fe1f59295d82dd781d9e27e9e56d8e
             Type: BaseObjectType
@@ -759,7 +761,7 @@ Children:
                   Id: g=50ef360d81858facfa6952cd018fddc2
                   Type: PropertyType
                   DataType: NodeId
-                  Value: {"Id":58}
+                  Value: "/Types/ObjectTypes/BaseObjectType"
                 - Name: DynamicLink
                   Id: g=e478da0cde80ee3605ac1694132cbc17
                   Type: DynamicLink
@@ -799,7 +801,7 @@ Children:
                   Id: g=4ccd4beb299c02129b9afd9f3a4bfc15
                   Type: PropertyType
                   DataType: NodeId
-                  Value: {"Id":58}
+                  Value: "/Types/ObjectTypes/BaseObjectType"
                 - Name: DynamicLink
                   Id: g=09c2be6714f7e56055c3c9d03d4bd344
                   Type: DynamicLink
@@ -1003,7 +1005,7 @@ Children:
       Id: g=42f67ccbd7c28387cad9771ac617c2d9
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":14,"Namespace":1}
+      Value: "/Types/ObjectTypes/BaseObjectType/UserType"
   - Name: Width
     Id: g=b6698a74df6668f2f38d79a5cf95337a
     Type: BaseVariableType
@@ -1305,7 +1307,7 @@ Children:
                     Id: g=47325e1869e956c8cbec3c232dfbe801
                     Type: PropertyType
                     DataType: NodeId
-                    Value: {"Id":42,"Namespace":2}
+                    Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableValueChangedEvent"
                   - Name: MethodsToCall
                     Id: g=6334557987c2e66c6894714283371050
                     Type: BaseObjectType
@@ -1318,13 +1320,13 @@ Children:
                         Id: g=953288edce4e4ca67708dc9988ef3b48
                         Type: NodePointer
                         DataType: NodeId
-                        Value: {"Id":22,"Namespace":2}
+                        Value: "/Objects/Commands/VariableCommands"
                         Children:
                         - Name: Kind
                           Id: g=e12c6f0d058e277e304f0da172e42d0f
                           Type: PropertyType
                           DataType: NodeId
-                          Value: {"Id":58}
+                          Value: "/Types/ObjectTypes/BaseObjectType"
                       - Name: ns=2;Method
                         Id: g=3022154e8e458b761897229c69af03b2
                         Type: BaseDataVariableType
@@ -2302,7 +2304,7 @@ Children:
               Id: g=16f42b362a9555193c3d09424bd4d513
               Type: PropertyType
               DataType: NodeId
-              Value: {"Id":16,"Namespace":3}
+              Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
             - Name: MethodsToCall
               Id: g=54a984745c90b559de4ca378762c2502
               Type: BaseObjectType
@@ -2321,7 +2323,7 @@ Children:
                     Id: g=b563e34cded637c6eae33371cceb65b2
                     Type: PropertyType
                     DataType: NodeId
-                    Value: {"Id":58}
+                    Value: "/Types/ObjectTypes/BaseObjectType"
                   - Name: DynamicLink
                     Id: g=a74b12a90b13b43efb377c899fa955ad
                     Type: DynamicLink
@@ -3956,7 +3958,7 @@ Children:
               Id: g=2564f7d46c65f1ef6099d78039b6f82a
               Type: PropertyType
               DataType: NodeId
-              Value: {"Id":16,"Namespace":3}
+              Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
             - Name: MethodsToCall
               Id: g=33f030cef0c59850a04c331006071027
               Type: BaseObjectType
@@ -3975,7 +3977,7 @@ Children:
                     Id: g=404a3ea6a860f146a57e91f238734948
                     Type: PropertyType
                     DataType: NodeId
-                    Value: {"Id":58}
+                    Value: "/Types/ObjectTypes/BaseObjectType"
                   - Name: DynamicLink
                     Id: g=cdecc2f876abcbd8cd31bd6d5d77812c
                     Type: DynamicLink
@@ -4046,7 +4048,7 @@ Children:
                     Id: g=13ed483803095c6b4b7a48d046497c25
                     Type: PropertyType
                     DataType: NodeId
-                    Value: {"Id":58}
+                    Value: "/Types/ObjectTypes/BaseObjectType"
                   - Name: DynamicLink
                     Id: g=13c1191d61a6fa15613541b8c10811c3
                     Type: DynamicLink
@@ -4178,7 +4180,7 @@ Children:
               Id: g=3710be8befcc5927e29456e7bcce8c5b
               Type: PropertyType
               DataType: NodeId
-              Value: {"Id":16,"Namespace":3}
+              Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
             - Name: MethodsToCall
               Id: g=385f27568bd51bdbf6a2160edcce7d81
               Type: BaseObjectType
@@ -4197,7 +4199,7 @@ Children:
                     Id: g=2255dd74692b71ab9c56b7aa7c0a0673
                     Type: PropertyType
                     DataType: NodeId
-                    Value: {"Id":58}
+                    Value: "/Types/ObjectTypes/BaseObjectType"
                   - Name: DynamicLink
                     Id: g=1f69a724a9b8973d3bf29f9ff312d8dc
                     Type: DynamicLink

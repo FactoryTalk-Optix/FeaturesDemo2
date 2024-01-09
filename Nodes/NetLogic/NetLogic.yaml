@@ -45,13 +45,13 @@ Children:
     Id: g=664994ffe6c05c1976e6527048e24dd6
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"253d14c8681620db7c856f8352e586a3","Namespace":8}
+    Value: "/Objects/FeaturesDemo2/DataStores/EmbeddedDatabase/Tables/DataLogger"
     Children:
     - Name: Kind
       Id: g=ae468dd0e7b958331a3df7d5f03da992
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":3,"Namespace":25}
+      Value: "/Types/ObjectTypes/BaseObjectType/Table"
   - Class: Method
     Name: Export
     Id: g=62270ded943c2ade55928096c6c96d66
@@ -63,7 +63,7 @@ Children:
     Children:
     - Name: StringFormatter1
       Id: g=5ed6f9b323558bacd9b865eb1f6e4701
-      Type: ns=2;StringFormatter
+      Type: StringFormatter
       Children:
       - Name: Format
         Id: g=15fbaad2fd551295a9203e1feadbffb2

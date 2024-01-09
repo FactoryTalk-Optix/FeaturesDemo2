@@ -11,7 +11,7 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [576,4],
+    "Dimensions": [582,4],
     "Body": [
      "","en-US","it-IT","zh-CN",
      "Acknowledge","Ack","Riconosci","确认",
@@ -586,9 +586,15 @@ Children:
      "US customary measurement system","US customary measurement system","Sistema di misurazione consuetudinario statunitense","美国习惯测量系统",
      "Locale Settings","Locale Settings","Impostazioni locali","区域设置设置",
      "Move target: Card1","Move target: Card1","Oggetto mofimentato: Card1","移动目标：卡1",
-     "Retain Position after reboot","Retain Position after reboot","","",
+     "Retain Position after reboot","Retain Position after reboot","Mantieni la posizione dopo il riavvio","",
      "NOT ","NOT ","NON ","不 ",
-     "Change detection is set to: {0}._From now on, all changes to this control will {1}be saved.","Change detection is set to: {0}.\nFrom now on, all changes to this control will {1}be saved.","Il rilevamento delle modifiche è impostato su: {0}.\nD'ora in poi, tutte le modifiche apportate a questo controllo {1}verranno salvate.","更改检测设置为：{0}。\n从现在开始，对此控件的所有更改都将{1}保存。"
+     "Change detection is set to: {0}._From now on, all changes to this control will {1}be saved.","Change detection is set to: {0}.\nFrom now on, all changes to this control will {1}be saved.","Il rilevamento delle modifiche è impostato su: {0}.\nD'ora in poi, tutte le modifiche apportate a questo controllo {1}verranno salvate.","更改检测设置为：{0}。\n从现在开始，对此控件的所有更改都将{1}保存。",
+     "AnimationsDescription","Shows how FT Optix can animate some properties of a UI element","Mostra come animare le proprietà degli oggetti UI","",
+     "LikeDescription","Check if a string matches a defined pattern","Controlla se una stringa contiene un pattern specifico","",
+     "ComingSoon","COMING SOON!","In arrivo!","",
+     "EnablePens","Enable Pens","Abilita Penne","",
+     "IfElseCondition","Executes an inline if-else condition","Verifica una condizione tramite if-else","",
+     "Variable5","Variable 5","Variabile 5",""
     ]
    }
 - Name: ImportAndExportTranslations
@@ -626,10 +632,10 @@ Children:
     Id: g=97f2ac041c7128722a111d9ecb6e3069
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"c8a7ac8967fb82add730aa764151209d","Namespace":8}
+    Value: "/Objects/FeaturesDemo2/Translations/LocalizationDictionary"
     Children:
     - Name: Kind
       Id: g=2a584bd92a9db0b6504499c7a267a415
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":42,"Namespace":1}
+      Value: "/Types/VariableTypes/BaseVariableType/LocalizationDictionary"

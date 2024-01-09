@@ -27,7 +27,7 @@ Children:
           Id: g=b3b0368bdde7c072e5b81ffb2e82d607
           Type: NodePointer
           DataType: NodeId
-          Value: {"IdType":2,"Id":"0fd4e58624e227dc68bb170f9b0dc3fa","Namespace":8}
+          Value: "/Objects/FeaturesDemo2"
           Children:
           - Name: Kind
             Id: g=b288e416003186dcb89833c81da75187
@@ -47,13 +47,13 @@ Children:
           Id: g=9df365cf47f86b3bdf80b488ba2150c5
           Type: NodePointer
           DataType: NodeId
-          Value: {"Id":46,"Namespace":1}
+          Value: "/Objects/Users/Anonymous"
           Children:
           - Name: Kind
             Id: g=56f27efdf6237b201fa06242b83ee180
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":14,"Namespace":1}
+            Value: "/Types/ObjectTypes/BaseObjectType/UserType"
           - Name: NodeClass
             Id: g=09949d1994e2e132523c58c4b1a4c4f1
             Type: PropertyType

@@ -83,6 +83,18 @@ Children:
       Type: PropertyType
       DataType: Boolean
       Value: false
+    - Class: Reference
+      Type: HasTrueSubState
+      Target: ns=0;i=9160
+    - Class: Reference
+      Type: HasTrueSubState
+      Target: ns=0;i=9093
+    - Class: Reference
+      Type: HasTrueSubState
+      Target: ns=0;i=9160
+    - Class: Reference
+      Type: HasTrueSubState
+      Target: ns=0;i=9093
   - Name: Quality
     Id: g=dbf7f249044f4bd53b3cf72e80279238
     Type: ConditionVariableType

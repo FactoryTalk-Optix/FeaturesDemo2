@@ -80,21 +80,9 @@ public class FavoritesLogic : BaseNetLogic {
             child.Delete();
         }
         int piecesCounter = 0;
-        int rowsCounter = 0;
         // Generate all the tiles
         foreach (var child in myUser.Children.OfType<IUAObject>()) {
-            if (piecesCounter % 4 == 0) {
-                // Every four pieces we generate a new row
-                rowsCounter++;
-                var newRow = InformationModel.Make<RowLayout>($"Row{rowsCounter}");
-                newRow.HorizontalAlignment = HorizontalAlignment.Stretch;
-                newRow.VerticalAlignment = VerticalAlignment.Top;
-                newRow.Height = -1;
-                newRow.LeftMargin = 16;
-                newRow.TopMargin = 16;
-                scrollViewRows.Add(newRow);
-            }
-            // Add the new tile
+            // Prepare tiles to put in page
             piecesCounter++;
             var newTile = InformationModel.Make<FeatureTileObject>($"Tile{piecesCounter}");
             newTile.GetVariable("Tile_Favorite").Value = child.GetVariable("Tile_Favorite").Value;
@@ -103,8 +91,8 @@ public class FavoritesLogic : BaseNetLogic {
             newTile.GetVariable("Tile_Icon").Value = child.GetVariable("Tile_Icon").Value;
             newTile.GetVariable("Tile_Open_Panel").Value = child.GetVariable("Tile_Open_Panel").Value;
             newTile.GetVariable("Tile_Description").Value = new LocalizedText(newTile.NodeId.NamespaceIndex, child.GetVariable("Tile_Description").Value);
-
-            scrollViewRows.Get($"Row{rowsCounter}").Add(newTile);
+            // Add tile to the row
+            scrollViewRows.Add(newTile);
         }
     }
 }

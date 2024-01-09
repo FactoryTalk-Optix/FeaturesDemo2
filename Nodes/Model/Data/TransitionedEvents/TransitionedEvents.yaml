@@ -44,7 +44,7 @@ Children:
       Id: g=7f8303d1b577d9e9c8b22f68f1e51eae
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":108,"Namespace":2}
+      Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableTransitionEvent"
     - Name: MethodsToCall
       Id: g=1488e69f6512c9541c9465fd3a2daed7
       Type: BaseObjectType
@@ -63,7 +63,7 @@ Children:
             Id: g=940379e3addb780791fb864b1b484aee
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":58}
+            Value: "/Types/ObjectTypes/BaseObjectType"
           - Name: DynamicLink
             Id: g=c4e8f02de08e97914bbcc406dab542e3
             Type: DynamicLink
@@ -169,7 +169,7 @@ Children:
       Id: g=2507c6a9871ed955c07509380bb98db2
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":120,"Namespace":2}
+      Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableRangeTransitionEvent"
     - Name: MethodsToCall
       Id: g=df8b9a7f305603e097e6a34cb746ee22
       Type: BaseObjectType
@@ -188,7 +188,7 @@ Children:
             Id: g=5f9bec197b0004391078690534be9772
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":58}
+            Value: "/Types/ObjectTypes/BaseObjectType"
           - Name: DynamicLink
             Id: g=8e09e7eb86ab7af6a4f966b5c933155f
             Type: DynamicLink
@@ -279,7 +279,7 @@ Children:
       Id: g=e2ae1696f9a6779d1f9f1fdf0dec2124
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":42,"Namespace":2}
+      Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableValueChangedEvent"
     - Name: MethodsToCall
       Id: g=10eccc9154544454218f52ad87951e4e
       Type: BaseObjectType
@@ -298,7 +298,7 @@ Children:
             Id: g=1a9650d40f75539380ee056ce0147d1b
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":58}
+            Value: "/Types/ObjectTypes/BaseObjectType"
           - Name: DynamicLink
             Id: g=2c2d13da1f37add48d3567478e1c485c
             Type: DynamicLink

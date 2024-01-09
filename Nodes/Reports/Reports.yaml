@@ -21,26 +21,6 @@ Children:
       Id: g=7cb399d82b238343db81443afa709f2a
       Type: EUInformationType
       DataType: EUInformation
-      Value: 
-       {
-        "TypeId": {
-         "Id": 887
-        },
-        "Body": {
-         "namespaceUri": "",
-         "unitId": 0,
-         "displayName": {
-          "NamespaceIndex": -1,
-          "LocaleId": "",
-          "Text": ""
-         },
-         "description": {
-          "NamespaceIndex": -1,
-          "LocaleId": "",
-          "Text": ""
-         }
-        }
-       }
       Children:
       - Name: UnitId
         Id: g=eb7e01f2a4e3958071119abace507642
@@ -71,26 +51,6 @@ Children:
       Id: g=c95233f156abdebf9f6e72356c694bea
       Type: EUInformationType
       DataType: EUInformation
-      Value: 
-       {
-        "TypeId": {
-         "Id": 887
-        },
-        "Body": {
-         "namespaceUri": "",
-         "unitId": 0,
-         "displayName": {
-          "NamespaceIndex": -1,
-          "LocaleId": "",
-          "Text": ""
-         },
-         "description": {
-          "NamespaceIndex": -1,
-          "LocaleId": "",
-          "Text": ""
-         }
-        }
-       }
       Children:
       - Name: UnitId
         Id: g=8ce7ab016adce83c4beaa5a3289accba
@@ -115,13 +75,13 @@ Children:
     Id: g=6d28ae886a27b907e1a70d6b8f3f1e58
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"3c48ece0df09e372cca2c828a24383af","Namespace":8}
+    Value: "/Objects/FeaturesDemo2/Reports/StyleSheet1"
     Children:
     - Name: Kind
       Id: g=c65cd25b94ab45ac4efc9bb3d3059a7f
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":192,"Namespace":21}
+      Value: "/Types/ObjectTypes/BaseObjectType/StyleSheet/ReportStyleSheet"
   - Name: PageCount
     Id: g=d5ec645bc8ede966e63babc61833610c
     Type: BaseDataVariableType
@@ -154,26 +114,6 @@ Children:
         Id: g=d39f7c60cd2db35e72be7657e29f5e90
         Type: EUInformationType
         DataType: EUInformation
-        Value: 
-         {
-          "TypeId": {
-           "Id": 887
-          },
-          "Body": {
-           "namespaceUri": "",
-           "unitId": 0,
-           "displayName": {
-            "NamespaceIndex": -1,
-            "LocaleId": "",
-            "Text": ""
-           },
-           "description": {
-            "NamespaceIndex": -1,
-            "LocaleId": "",
-            "Text": ""
-           }
-          }
-         }
         Children:
         - Name: UnitId
           Id: g=8b6aff2d239af55bbf0e5605bca5c58d
@@ -213,26 +153,6 @@ Children:
           Id: g=d8b798363217137bdf55ee39e28fc03d
           Type: EUInformationType
           DataType: EUInformation
-          Value: 
-           {
-            "TypeId": {
-             "Id": 887
-            },
-            "Body": {
-             "namespaceUri": "",
-             "unitId": 0,
-             "displayName": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             },
-             "description": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             }
-            }
-           }
           Children:
           - Name: UnitId
             Id: g=342db87667385334fa7ee0a71938f8c5
@@ -263,26 +183,6 @@ Children:
           Id: g=a8d7f9dc39afbc7783826daa23b202a8
           Type: EUInformationType
           DataType: EUInformation
-          Value: 
-           {
-            "TypeId": {
-             "Id": 887
-            },
-            "Body": {
-             "namespaceUri": "",
-             "unitId": 0,
-             "displayName": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             },
-             "description": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             }
-            }
-           }
           Children:
           - Name: UnitId
             Id: g=357950b595c715e53ff014dfa2f22d7e
@@ -323,26 +223,6 @@ Children:
           Id: g=e7e704931ca4c1223d8871ac52d37dc3
           Type: EUInformationType
           DataType: EUInformation
-          Value: 
-           {
-            "TypeId": {
-             "Id": 887
-            },
-            "Body": {
-             "namespaceUri": "",
-             "unitId": 0,
-             "displayName": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             },
-             "description": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             }
-            }
-           }
           Children:
           - Name: UnitId
             Id: g=161fec8690a483d118dd9c3352ddaf8b
@@ -373,26 +253,6 @@ Children:
           Id: g=33684905b52cf9a844c49bbd066a9cef
           Type: EUInformationType
           DataType: EUInformation
-          Value: 
-           {
-            "TypeId": {
-             "Id": 887
-            },
-            "Body": {
-             "namespaceUri": "",
-             "unitId": 0,
-             "displayName": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             },
-             "description": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             }
-            }
-           }
           Children:
           - Name: UnitId
             Id: g=73a01ca9cbaf237f2446e761ec71d2ef
@@ -423,26 +283,6 @@ Children:
           Id: g=14a7c85c999bc65a1477764213703fd5
           Type: EUInformationType
           DataType: EUInformation
-          Value: 
-           {
-            "TypeId": {
-             "Id": 887
-            },
-            "Body": {
-             "namespaceUri": "",
-             "unitId": 0,
-             "displayName": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             },
-             "description": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             }
-            }
-           }
           Children:
           - Name: UnitId
             Id: g=72adfd644a194bc83f77546f3ea42f9f
@@ -475,7 +315,7 @@ Children:
         Children:
         - Name: StringFormatter1
           Id: g=af7219afde779d70ebd3c36085666234
-          Type: ns=2;StringFormatter
+          Type: StringFormatter
           Children:
           - Name: Format
             Id: g=51bd67caa3cc9358005da695a2803cca
@@ -514,26 +354,6 @@ Children:
           Id: g=edc5917690e7651f6be60a61e2a38926
           Type: EUInformationType
           DataType: EUInformation
-          Value: 
-           {
-            "TypeId": {
-             "Id": 887
-            },
-            "Body": {
-             "namespaceUri": "",
-             "unitId": 0,
-             "displayName": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             },
-             "description": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             }
-            }
-           }
           Children:
           - Name: UnitId
             Id: g=ad7804ef3396aa15378e7151ec6f2f81
@@ -564,26 +384,6 @@ Children:
           Id: g=7c17bcc76d8a6b34638e00ca574ff1b5
           Type: EUInformationType
           DataType: EUInformation
-          Value: 
-           {
-            "TypeId": {
-             "Id": 887
-            },
-            "Body": {
-             "namespaceUri": "",
-             "unitId": 0,
-             "displayName": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             },
-             "description": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             }
-            }
-           }
           Children:
           - Name: UnitId
             Id: g=dbc600b7c990001e41d7c99ff794551e
@@ -619,26 +419,6 @@ Children:
           Id: g=5fdb9fd3fc47d7b4dc5b79c5c46d92e0
           Type: EUInformationType
           DataType: EUInformation
-          Value: 
-           {
-            "TypeId": {
-             "Id": 887
-            },
-            "Body": {
-             "namespaceUri": "",
-             "unitId": 0,
-             "displayName": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             },
-             "description": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             }
-            }
-           }
           Children:
           - Name: UnitId
             Id: g=7a707b75e3b0f93954ffe248c18c54d4
@@ -669,26 +449,6 @@ Children:
           Id: g=07035354c97eb3fe7dadf4a0d8d00807
           Type: EUInformationType
           DataType: EUInformation
-          Value: 
-           {
-            "TypeId": {
-             "Id": 887
-            },
-            "Body": {
-             "namespaceUri": "",
-             "unitId": 0,
-             "displayName": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             },
-             "description": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             }
-            }
-           }
           Children:
           - Name: UnitId
             Id: g=e347e959c600330fe87c750646dde04a
@@ -723,26 +483,6 @@ Children:
           Id: g=b42d02f35f8609142247a91fff9d76ad
           Type: EUInformationType
           DataType: EUInformation
-          Value: 
-           {
-            "TypeId": {
-             "Id": 887
-            },
-            "Body": {
-             "namespaceUri": "",
-             "unitId": 0,
-             "displayName": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             },
-             "description": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             }
-            }
-           }
           Children:
           - Name: UnitId
             Id: g=43519b69622abb85ef2ce4adc38a6346
@@ -797,26 +537,6 @@ Children:
           Id: g=72a7a141565319d3261f5eb5b4b22c65
           Type: EUInformationType
           DataType: EUInformation
-          Value: 
-           {
-            "TypeId": {
-             "Id": 887
-            },
-            "Body": {
-             "namespaceUri": "",
-             "unitId": 0,
-             "displayName": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             },
-             "description": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             }
-            }
-           }
           Children:
           - Name: UnitId
             Id: g=1fbc9118c3b811465d9651889c0ac2e9
@@ -863,26 +583,6 @@ Children:
               Id: g=086412acf5b46767ae7bcda75a4c19ff
               Type: EUInformationType
               DataType: EUInformation
-              Value: 
-               {
-                "TypeId": {
-                 "Id": 887
-                },
-                "Body": {
-                 "namespaceUri": "",
-                 "unitId": 0,
-                 "displayName": {
-                  "NamespaceIndex": -1,
-                  "LocaleId": "",
-                  "Text": ""
-                 },
-                 "description": {
-                  "NamespaceIndex": -1,
-                  "LocaleId": "",
-                  "Text": ""
-                 }
-                }
-               }
               Children:
               - Name: UnitId
                 Id: g=06bd9696a2e74a621c0cbd92edace270
@@ -952,26 +652,6 @@ Children:
               Id: g=54cdf666c3932f4b7368e37ed600d56f
               Type: EUInformationType
               DataType: EUInformation
-              Value: 
-               {
-                "TypeId": {
-                 "Id": 887
-                },
-                "Body": {
-                 "namespaceUri": "",
-                 "unitId": 0,
-                 "displayName": {
-                  "NamespaceIndex": -1,
-                  "LocaleId": "",
-                  "Text": ""
-                 },
-                 "description": {
-                  "NamespaceIndex": -1,
-                  "LocaleId": "",
-                  "Text": ""
-                 }
-                }
-               }
               Children:
               - Name: UnitId
                 Id: g=f071f9b1f4c6e82e959b548cf9f7acc1
@@ -1041,26 +721,6 @@ Children:
               Id: g=7cef0d343efcd4b5f9d9c7fcd069f923
               Type: EUInformationType
               DataType: EUInformation
-              Value: 
-               {
-                "TypeId": {
-                 "Id": 887
-                },
-                "Body": {
-                 "namespaceUri": "",
-                 "unitId": 0,
-                 "displayName": {
-                  "NamespaceIndex": -1,
-                  "LocaleId": "",
-                  "Text": ""
-                 },
-                 "description": {
-                  "NamespaceIndex": -1,
-                  "LocaleId": "",
-                  "Text": ""
-                 }
-                }
-               }
               Children:
               - Name: UnitId
                 Id: g=74e64f72f1f334023a38b9fce6ae0e04
@@ -1130,26 +790,6 @@ Children:
               Id: g=263ade20d4a7a1198e50f9e5547031fa
               Type: EUInformationType
               DataType: EUInformation
-              Value: 
-               {
-                "TypeId": {
-                 "Id": 887
-                },
-                "Body": {
-                 "namespaceUri": "",
-                 "unitId": 0,
-                 "displayName": {
-                  "NamespaceIndex": -1,
-                  "LocaleId": "",
-                  "Text": ""
-                 },
-                 "description": {
-                  "NamespaceIndex": -1,
-                  "LocaleId": "",
-                  "Text": ""
-                 }
-                }
-               }
               Children:
               - Name: UnitId
                 Id: g=c6a8a841b945e620e34242765da1642e
@@ -1221,7 +861,7 @@ Children:
         Id: g=33e5a7e800d68b477fa6ed6d027de012
         Type: NodePointer
         DataType: NodeId
-        Value: {"IdType":2,"Id":"9a82e5e71d1a3a634a88a77ec729daef","Namespace":8}
+        Value: "/Objects/FeaturesDemo2/DataStores/EmbeddedDatabase"
         Children:
         - Name: ItemKind
           Id: g=adc9f7f4ba1c0c2605232ed3b3cd63e8
@@ -1254,26 +894,6 @@ Children:
           Id: g=f7583df03e001c5a1bf80c9668037141
           Type: EUInformationType
           DataType: EUInformation
-          Value: 
-           {
-            "TypeId": {
-             "Id": 887
-            },
-            "Body": {
-             "namespaceUri": "",
-             "unitId": 0,
-             "displayName": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             },
-             "description": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             }
-            }
-           }
           Children:
           - Name: UnitId
             Id: g=9e341b91222ea854a8f96c0ecfbba59d
@@ -1309,7 +929,7 @@ Children:
         Id: g=801e740a59baa54e9102a2e5bca125f9
         Type: BaseDataVariableType
         DataType: NodeId
-        Value: {"IdType":2,"Id":"5f1030f00054d7da3e863ccabe41bbf6","Namespace":8}
+        Value: "/Objects/FeaturesDemo2/Reports/Reports/Sections/DataloggerReport/Columns/LocalTimestamp"
       - Name: SortOrder
         Id: g=85642d0a7f211f6135d1a191440c9ac7
         Type: BaseDataVariableType
@@ -1325,26 +945,6 @@ Children:
           Id: g=dd71881c2bc44bd9041ce42a2fe6bf4a
           Type: EUInformationType
           DataType: EUInformation
-          Value: 
-           {
-            "TypeId": {
-             "Id": 887
-            },
-            "Body": {
-             "namespaceUri": "",
-             "unitId": 0,
-             "displayName": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             },
-             "description": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             }
-            }
-           }
           Children:
           - Name: UnitId
             Id: g=f31b1fab88a569447743137af71cc4d0
@@ -1375,26 +975,6 @@ Children:
           Id: g=8150fb1e133a2817900f5fc310d285d8
           Type: EUInformationType
           DataType: EUInformation
-          Value: 
-           {
-            "TypeId": {
-             "Id": 887
-            },
-            "Body": {
-             "namespaceUri": "",
-             "unitId": 0,
-             "displayName": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             },
-             "description": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             }
-            }
-           }
           Children:
           - Name: UnitId
             Id: g=45e095daa2b17a105f0c2a9ac0bb4019
@@ -1425,26 +1005,6 @@ Children:
           Id: g=2eb875d8cbedda22199ce8261f5bbf40
           Type: EUInformationType
           DataType: EUInformation
-          Value: 
-           {
-            "TypeId": {
-             "Id": 887
-            },
-            "Body": {
-             "namespaceUri": "",
-             "unitId": 0,
-             "displayName": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             },
-             "description": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             }
-            }
-           }
           Children:
           - Name: UnitId
             Id: g=fda377d18b7af2ae29770e1cb1650bea
@@ -1482,26 +1042,6 @@ Children:
         Id: g=75897caa8cdc05db5960f3bd5e74ab21
         Type: EUInformationType
         DataType: EUInformation
-        Value: 
-         {
-          "TypeId": {
-           "Id": 887
-          },
-          "Body": {
-           "namespaceUri": "",
-           "unitId": 0,
-           "displayName": {
-            "NamespaceIndex": -1,
-            "LocaleId": "",
-            "Text": ""
-           },
-           "description": {
-            "NamespaceIndex": -1,
-            "LocaleId": "",
-            "Text": ""
-           }
-          }
-         }
         Children:
         - Name: UnitId
           Id: g=50a54702a54dfb0d044ee170d57ee44a
@@ -1551,26 +1091,6 @@ Children:
           Id: g=ac93440000f67e66f3ed4edb9037926a
           Type: EUInformationType
           DataType: EUInformation
-          Value: 
-           {
-            "TypeId": {
-             "Id": 887
-            },
-            "Body": {
-             "namespaceUri": "",
-             "unitId": 0,
-             "displayName": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             },
-             "description": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             }
-            }
-           }
           Children:
           - Name: UnitId
             Id: g=0e88828a38be0638d4dacf88166cbaa3
@@ -1606,26 +1126,6 @@ Children:
           Id: g=6bf57ca896f1c06a51bccfdf65ac5ad5
           Type: EUInformationType
           DataType: EUInformation
-          Value: 
-           {
-            "TypeId": {
-             "Id": 887
-            },
-            "Body": {
-             "namespaceUri": "",
-             "unitId": 0,
-             "displayName": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             },
-             "description": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             }
-            }
-           }
           Children:
           - Name: UnitId
             Id: g=1125a6cf2b8768fd06b94b9e441f541c
@@ -1656,26 +1156,6 @@ Children:
           Id: g=fad6f9f14e2cf7eb3198f4b46b3015db
           Type: EUInformationType
           DataType: EUInformation
-          Value: 
-           {
-            "TypeId": {
-             "Id": 887
-            },
-            "Body": {
-             "namespaceUri": "",
-             "unitId": 0,
-             "displayName": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             },
-             "description": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             }
-            }
-           }
           Children:
           - Name: UnitId
             Id: g=41fbaf0e58fd2e0fa5d840229d64c94e
@@ -1706,26 +1186,6 @@ Children:
           Id: g=1f9a3ed41ea766ab6a6a4b57baa50d9a
           Type: EUInformationType
           DataType: EUInformation
-          Value: 
-           {
-            "TypeId": {
-             "Id": 887
-            },
-            "Body": {
-             "namespaceUri": "",
-             "unitId": 0,
-             "displayName": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             },
-             "description": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             }
-            }
-           }
           Children:
           - Name: UnitId
             Id: g=90514b115d56ad6f50a07033830863e7
@@ -1756,26 +1216,6 @@ Children:
           Id: g=097346db89f2ef963ce39c80d6fdf653
           Type: EUInformationType
           DataType: EUInformation
-          Value: 
-           {
-            "TypeId": {
-             "Id": 887
-            },
-            "Body": {
-             "namespaceUri": "",
-             "unitId": 0,
-             "displayName": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             },
-             "description": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             }
-            }
-           }
           Children:
           - Name: UnitId
             Id: g=abde8e2f5a1a401dc35b042b1470f00d
@@ -1845,26 +1285,6 @@ Children:
           Id: g=7848ddd33ebbbc41fcad124b551520cd
           Type: EUInformationType
           DataType: EUInformation
-          Value: 
-           {
-            "TypeId": {
-             "Id": 887
-            },
-            "Body": {
-             "namespaceUri": "",
-             "unitId": 0,
-             "displayName": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             },
-             "description": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             }
-            }
-           }
           Children:
           - Name: UnitId
             Id: g=2a5e6e613faee06b51c5a3216b424bbd
@@ -1895,26 +1315,6 @@ Children:
           Id: g=a35083db075552dcd44e939706f6b147
           Type: EUInformationType
           DataType: EUInformation
-          Value: 
-           {
-            "TypeId": {
-             "Id": 887
-            },
-            "Body": {
-             "namespaceUri": "",
-             "unitId": 0,
-             "displayName": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             },
-             "description": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             }
-            }
-           }
           Children:
           - Name: UnitId
             Id: g=1ecf70cad2864e4c8e88de8893d659fb
@@ -1945,26 +1345,6 @@ Children:
           Id: g=06f74e793b63448739cc45e125d4ca9b
           Type: EUInformationType
           DataType: EUInformation
-          Value: 
-           {
-            "TypeId": {
-             "Id": 887
-            },
-            "Body": {
-             "namespaceUri": "",
-             "unitId": 0,
-             "displayName": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             },
-             "description": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             }
-            }
-           }
           Children:
           - Name: UnitId
             Id: g=3fa32feba677f83785f7ddc9441fcd18
@@ -1995,26 +1375,6 @@ Children:
           Id: g=75a0ba85fd53feb0e6eb74dc9bb9d510
           Type: EUInformationType
           DataType: EUInformation
-          Value: 
-           {
-            "TypeId": {
-             "Id": 887
-            },
-            "Body": {
-             "namespaceUri": "",
-             "unitId": 0,
-             "displayName": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             },
-             "description": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             }
-            }
-           }
           Children:
           - Name: UnitId
             Id: g=194ab0bf1e7b46719eee8cebc95ab983
@@ -2047,7 +1407,7 @@ Children:
         Children:
         - Name: StringFormatter1
           Id: g=7d11939111f59fa0de28bfe4ca1497bc
-          Type: ns=2;StringFormatter
+          Type: StringFormatter
           Children:
           - Name: Format
             Id: g=964a9abfc8b712042e93d3956831e02e
@@ -2097,26 +1457,6 @@ Children:
           Id: g=5a61f069377a3df7b7740b83c8d240f6
           Type: EUInformationType
           DataType: EUInformation
-          Value: 
-           {
-            "TypeId": {
-             "Id": 887
-            },
-            "Body": {
-             "namespaceUri": "",
-             "unitId": 0,
-             "displayName": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             },
-             "description": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             }
-            }
-           }
           Children:
           - Name: UnitId
             Id: g=b62091c0d8d1ccc8df3bcf34e1156b17
@@ -2147,26 +1487,6 @@ Children:
           Id: g=5356febbcfdd2a43b58653af75ce350c
           Type: EUInformationType
           DataType: EUInformation
-          Value: 
-           {
-            "TypeId": {
-             "Id": 887
-            },
-            "Body": {
-             "namespaceUri": "",
-             "unitId": 0,
-             "displayName": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             },
-             "description": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             }
-            }
-           }
           Children:
           - Name: UnitId
             Id: g=1b99cb8c5a42c309b9b9c87e11f30e2a
@@ -2197,26 +1517,6 @@ Children:
           Id: g=654627f6bbc98d58068b5129747ee7c2
           Type: EUInformationType
           DataType: EUInformation
-          Value: 
-           {
-            "TypeId": {
-             "Id": 887
-            },
-            "Body": {
-             "namespaceUri": "",
-             "unitId": 0,
-             "displayName": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             },
-             "description": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             }
-            }
-           }
           Children:
           - Name: UnitId
             Id: g=ffe452ab2219a7f4ac8bed589a8ab42f
@@ -2247,26 +1547,6 @@ Children:
           Id: g=916d7d2b4416c67e50da5ccfd40584ac
           Type: EUInformationType
           DataType: EUInformation
-          Value: 
-           {
-            "TypeId": {
-             "Id": 887
-            },
-            "Body": {
-             "namespaceUri": "",
-             "unitId": 0,
-             "displayName": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             },
-             "description": {
-              "NamespaceIndex": -1,
-              "LocaleId": "",
-              "Text": ""
-             }
-            }
-           }
           Children:
           - Name: UnitId
             Id: g=92754534074fa944c456ee095b8835c2
@@ -2305,57 +1585,6 @@ Children:
   Type: ReportStyleSheet
   WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
   Children:
-  - Name: ButtonStyle
-    Id: g=4f61ef8b405aaffe2325c92163755e12
-    Type: ButtonStyle
-  - Name: ButtonAccentStyle
-    Id: g=a6c2b1f261d013e43350632b6b59fa66
-    Type: ButtonStyle
-  - Name: DataInputStyle
-    Id: g=dbf556365b42f0eebffa83da47a0b358
-    Type: DataInputStyle
-  - Name: SwitchStyle
-    Id: g=c1606bbd5b4f59b9c46dfdb9e9bd36e7
-    Type: SwitchStyle
-  - Name: GaugeStyle
-    Id: g=decd3cc00e536589689c9d92833fc15e
-    Type: GaugeStyle
-  - Name: NavigationPanelStyle
-    Id: g=23a0515918684f1a279aa1bdce398fb6
-    Type: NavigationPanelStyle
-    Children:
-    - Name: IconUsesTextColor
-      Id: g=9f7fd89d4ff407e795dfc3387937c26d
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: true
-  - Name: ChartStyle
-    Id: g=dd3771ce48d63333b9b22d793ccc312c
-    Type: ChartStyle
-  - Name: DataListStyle
-    Id: g=69711b6f7cd8306a92a219af9db1e781
-    Type: DataListStyle
-    Children:
-    - Name: HeaderBackgroundColor
-      Id: g=b8f2e8467665a56772b802bd3ff7a355
-      Type: BaseDataVariableType
-      DataType: Color
-      Value: "#e6e6e6"
-  - Name: ToolTipStyle
-    Id: g=c3ffafdc079000c0d7960ab51e11390b
-    Type: ToolTipStyle
-  - Name: ScrollBarStyle
-    Id: g=6e364c230061740961ee1b3c783c2feb
-    Type: ScrollBarStyle
-  - Name: AccordionStyle
-    Id: g=940f026f322af46bff76da6bc3cc954b
-    Type: AccordionStyle
-  - Name: PieChartStyle
-    Id: g=25c624397796565439057f5f186104e4
-    Type: PieChartStyle
-  - Name: HistogramChartStyle
-    Id: g=277897a041b0df084e476f0d9007c154
-    Type: HistogramChartStyle
   - Name: BorderWidth
     Id: g=34afdf6e8dfaa0a5c4e92e344ea0c1b0
     Type: BaseDataVariableType
@@ -2366,26 +1595,6 @@ Children:
       Id: g=4d75b44e03b04b7ce2fbccce8b6e536a
       Type: EUInformationType
       DataType: EUInformation
-      Value: 
-       {
-        "TypeId": {
-         "Id": 887
-        },
-        "Body": {
-         "namespaceUri": "",
-         "unitId": 0,
-         "displayName": {
-          "NamespaceIndex": -1,
-          "LocaleId": "",
-          "Text": ""
-         },
-         "description": {
-          "NamespaceIndex": -1,
-          "LocaleId": "",
-          "Text": ""
-         }
-        }
-       }
       Children:
       - Name: UnitId
         Id: g=065bbf4d2fe1777145f9e3d09fe10270
@@ -2406,72 +1615,260 @@ Children:
         DataType: LocalizedText
         ReferenceType: HasProperty
         Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+  - Name: ButtonStyles
+    Id: g=3882485f776a7a33aa8d4578456df332
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=4f61ef8b405aaffe2325c92163755e12
+      Type: ButtonStyle
+    - Name: Accent
+      Id: g=a6c2b1f261d013e43350632b6b59fa66
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Id: g=ee9442f7a4f871df0f189a68045f798a
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: BorderColor
+        Id: g=ff41fce161e561ed18e9c5c7e025725f
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#075982"
+      - Name: TextColor
+        Id: g=8d92f3eb233678bcd9d5cfd3527d9ed1
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+    - Name: BorderedRectangular
+      Id: g=82db162a41cfd61ee283b7642039bfd8
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Id: g=cc3cc2de21fca5f60fa70607a3ac8314
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: TextColor
+        Id: g=9631a14609b49f7636634ca4db1e0029
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Id: g=46b27c34a06a682d2756961f96c1bc5b
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Id: g=ad178106ba0fe0d7521591402770779e
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+    - Name: BorderedCircular
+      Id: g=37a652a65dff1851c089fe3614500106
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Id: g=e7910db5cc12956f8751cdab77d04e0c
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: TextColor
+        Id: g=a8860153aee27e7a32af84bfc9bc9122
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Id: g=0ea29c12b81ede890e362fcd675c3fa7
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Id: g=77b2b16cf0a5f579142d5673316166d9
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Id: g=a136a3d8ea91fcf3ae60becb8424c201
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Emergency
+      Id: g=341cf91970b93b986027328cef8dbae4
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Id: g=c914996df7eef3bb66dc4c44baf83502
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#eb001b"
+      - Name: TextColor
+        Id: g=4a80bb59e1db3a86fa4a1137b2f337f5
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Id: g=fd31ee1a335b3b1a6234f7832e431054
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f8e71c"
+      - Name: BorderWidth
+        Id: g=c8b2fd784d47a5d1f290358524436ad6
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Id: g=851dea59f294f3097fa6784664cbe6b2
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Transparent
+      Id: g=e0afb30d33b47006615613efbaab24cb
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Id: g=43efe6378b59631d521982096faeb808
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#000000"
+      - Name: BorderColor
+        Id: g=9f8b10ca870f29fe193ec892584c2ca3
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#00000000"
+      - Name: BorderWidth
+        Id: g=1a12ee4b7a13b5081f664ab4eec55e9e
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 0.0
+  - Name: InputBoxStyles
+    Id: g=ddbdf04b46cf829315f02435624b2f9a
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=dbf556365b42f0eebffa83da47a0b358
+      Type: InputBoxStyle
+  - Name: SwitchStyles
+    Id: g=1c0c354054369e747e7e0f03f882d540
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=c1606bbd5b4f59b9c46dfdb9e9bd36e7
+      Type: SwitchStyle
+  - Name: GaugeStyles
+    Id: g=05539218d687cb3798c28e7a0b73fbea
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=decd3cc00e536589689c9d92833fc15e
+      Type: GaugeStyle
+  - Name: NavigationPanelStyles
+    Id: g=05f76d21385cd7c48521f9036f30001d
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=23a0515918684f1a279aa1bdce398fb6
+      Type: NavigationPanelStyle
+      Children:
+      - Name: IconUsesTextColor
+        Id: g=9f7fd89d4ff407e795dfc3387937c26d
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+  - Name: ChartStyles
+    Id: g=8f5c7fd729255a76c9bab4d3da0daab8
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=dd3771ce48d63333b9b22d793ccc312c
+      Type: ChartStyle
+  - Name: DataListStyles
+    Id: g=b92f2114b34b5f6076c488386b460903
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=69711b6f7cd8306a92a219af9db1e781
+      Type: DataListStyle
+      Children:
+      - Name: HeaderBackgroundColor
+        Id: g=b8f2e8467665a56772b802bd3ff7a355
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e6e6e6"
+  - Name: ToolTipStyles
+    Id: g=5bdcd239e23b2ac6a4274407548badad
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=c3ffafdc079000c0d7960ab51e11390b
+      Type: ToolTipStyle
+  - Name: ScrollBarStyles
+    Id: g=a408400b530dac861be00041f1fc0007
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=6e364c230061740961ee1b3c783c2feb
+      Type: ScrollBarStyle
+  - Name: AccordionStyles
+    Id: g=e6ace44a5da87d8315d8a1b0acf6e1a0
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=940f026f322af46bff76da6bc3cc954b
+      Type: AccordionStyle
+  - Name: PieChartStyles
+    Id: g=aba6559489e7136ec413344db029449c
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=25c624397796565439057f5f186104e4
+      Type: PieChartStyle
+  - Name: HistogramChartStyles
+    Id: g=32c14ed8864ac5aa13e5693c46d6821b
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=277897a041b0df084e476f0d9007c154
+      Type: HistogramChartStyle
+  - Name: LabelStyles
+    Id: g=01c3dd8c059e7153fbc35187aeadce3f
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=0058f6de14d4c004b72a20c4fdb8dafa
+      Type: LabelStyle
+  - Name: RadioButtonStyles
+    Id: g=4877312c72dac6eb61ee5ad99250ae57
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=c3e21e9c72d8d948fd6726e73adb2e5f
+      Type: RadioButtonStyle
+      Children:
+      - Name: IndicatorSize
+        Id: g=0b106c6d7d052a1712d8c4a043fcdd56
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 20.0
+  - Name: CheckBoxStyles
+    Id: g=f52c0a0edecba8b7881618e73cf5abad
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=bb2cc2b384d97ce21df07feeeea170a7
+      Type: CheckBoxStyle
+      Children:
+      - Name: IndicatorSize
+        Id: g=fc8cb534d8a2d852170b3242a5a64024
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 18.0
 - Name: StyleSheet2
   Id: g=c3e6d9d14473c919e71239c87f47262d
   Type: ReportStyleSheet
   WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
   Children:
-  - Name: ButtonStyle
-    Id: g=4077fe246951ed8c9d6e780581653d26
-    Type: ButtonStyle
-  - Name: ButtonAccentStyle
-    Id: g=2560696076cbbee756e638d110de91d8
-    Type: ButtonStyle
-  - Name: DataInputStyle
-    Id: g=f81568a8cf4b24d777088271600eb834
-    Type: DataInputStyle
-  - Name: SwitchStyle
-    Id: g=2412c3089c78a12117035ee5f08aeed1
-    Type: SwitchStyle
-  - Name: GaugeStyle
-    Id: g=f4f44910b15e338d6883b597c559d15f
-    Type: GaugeStyle
-  - Name: NavigationPanelStyle
-    Id: g=67100a34e3a417a7ba107eb35388c530
-    Type: NavigationPanelStyle
-    Children:
-    - Name: IconUsesTextColor
-      Id: g=d94c3bbfe2d237172d4bee6f0cb16c66
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: true
-  - Name: ChartStyle
-    Id: g=ce2e7dbd5187886cb812e9398963f06a
-    Type: ChartStyle
-  - Name: DataListStyle
-    Id: g=edf7039203eb4ab3b486773099068fb2
-    Type: DataListStyle
-    Children:
-    - Name: HeaderBackgroundColor
-      Id: g=ada73945c1bbe835e38d3e106af1c2c2
-      Type: BaseDataVariableType
-      DataType: Color
-      Value: "#0fafff"
-    - Name: AlternateBackgroundColor
-      Id: g=715a83615b751ced31483a5877b148b8
-      Type: BaseDataVariableType
-      DataType: Color
-      Value: "#f0f0f0"
-    - Name: HeaderTextColor
-      Id: g=58d34847cf199560a5912237d8094da6
-      Type: BaseDataVariableType
-      DataType: Color
-      Value: "#ffffff"
-  - Name: ToolTipStyle
-    Id: g=78782290a5d19c345da3fdbff5da9736
-    Type: ToolTipStyle
-  - Name: ScrollBarStyle
-    Id: g=f88b219f0f61bfb5f3f8a5a4df3d9b4f
-    Type: ScrollBarStyle
-  - Name: AccordionStyle
-    Id: g=c64ee21c7f80769ccd2bf397d021f0bf
-    Type: AccordionStyle
-  - Name: PieChartStyle
-    Id: g=5c908fe054b2cbe9bb12ff8e103aeadf
-    Type: PieChartStyle
-  - Name: HistogramChartStyle
-    Id: g=26803f78d2ddeab06448b29d6b073ef5
-    Type: HistogramChartStyle
   - Name: BorderWidth
     Id: g=2bab4228084cf29f1c43e56c3a139a85
     Type: BaseDataVariableType
@@ -2482,26 +1879,6 @@ Children:
       Id: g=61d7776f704238eaac0372429b9d6c0e
       Type: EUInformationType
       DataType: EUInformation
-      Value: 
-       {
-        "TypeId": {
-         "Id": 887
-        },
-        "Body": {
-         "namespaceUri": "",
-         "unitId": 0,
-         "displayName": {
-          "NamespaceIndex": -1,
-          "LocaleId": "",
-          "Text": ""
-         },
-         "description": {
-          "NamespaceIndex": -1,
-          "LocaleId": "",
-          "Text": ""
-         }
-        }
-       }
       Children:
       - Name: UnitId
         Id: g=c6fa9a220226b3a5ed5741f60afdf050
@@ -2527,3 +1904,262 @@ Children:
     Type: BaseDataVariableType
     DataType: Color
     Value: "#ffffff"
+  - Name: ButtonStyles
+    Id: g=735c3adec9c9055a00c7ca35534c8e01
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=4077fe246951ed8c9d6e780581653d26
+      Type: ButtonStyle
+    - Name: Accent
+      Id: g=2560696076cbbee756e638d110de91d8
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Id: g=0f2145d8e8a8a0b11d5cf2deb21472c3
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: BorderColor
+        Id: g=6541e7d9d87f3bb1cba61dd0452b921b
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#075982"
+      - Name: TextColor
+        Id: g=085552a5750a7ede32e89a3e22e8d478
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+    - Name: BorderedRectangular
+      Id: g=50e72e157c16283a210e7952a72788bd
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Id: g=8f4263d4f2179e91122cdbc3435980c9
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: TextColor
+        Id: g=018c5017ef0823a41be71b0e46b7caf1
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Id: g=0855a4e12fbfccdfc8b531c239551bff
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Id: g=e5c79cd97709b66fffc26eedd1810fb3
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+    - Name: BorderedCircular
+      Id: g=618147b55a7940f5c940f5919c0200e4
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Id: g=030c790037abf25013cf6e3dfd8b1bce
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: TextColor
+        Id: g=aad649dd27f5e72c441110f6d33afa21
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Id: g=e6fd27668f5dda3fde95d78d142ca9a8
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Id: g=5b6b59dd51d09d4805423198e42073b7
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Id: g=55ccaa8177cdd4469652825adbc54ad6
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Emergency
+      Id: g=498a27e40a98c7d9d1a5ebe8453c44da
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Id: g=f22c6a36fdac06cbc0d334e40d7b4a6f
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#eb001b"
+      - Name: TextColor
+        Id: g=08b80f2dc9b069e0c6975ee26db30aa3
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Id: g=4ca3cb86871009683fb4fb3ef0141df9
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f8e71c"
+      - Name: BorderWidth
+        Id: g=12271c317915f3d5025d1f0f57151caf
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Id: g=59f99eb40b32a63ae9594601b8b0fd50
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Transparent
+      Id: g=9bf1e5a3e3f49bb82e40652b87fea70a
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Id: g=649b762510918fae06246f1af0195f06
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#000000"
+      - Name: BorderColor
+        Id: g=2d2d00c86019b215d039b3e50aee1ff1
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#00000000"
+      - Name: BorderWidth
+        Id: g=d117c801c174c1524f21e8d20da449fe
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 0.0
+  - Name: InputBoxStyles
+    Id: g=5ed7b31defaeb05392efd7d26e0d437d
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=f81568a8cf4b24d777088271600eb834
+      Type: InputBoxStyle
+  - Name: SwitchStyles
+    Id: g=5f6b87fb5ccb09019fa759a24a213a89
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=2412c3089c78a12117035ee5f08aeed1
+      Type: SwitchStyle
+  - Name: GaugeStyles
+    Id: g=e65ccde3fc4a0e5f7021fb7e0022b5cd
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=f4f44910b15e338d6883b597c559d15f
+      Type: GaugeStyle
+  - Name: NavigationPanelStyles
+    Id: g=4735084d1a22a9483e2542185ef7783e
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=67100a34e3a417a7ba107eb35388c530
+      Type: NavigationPanelStyle
+      Children:
+      - Name: IconUsesTextColor
+        Id: g=d94c3bbfe2d237172d4bee6f0cb16c66
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+  - Name: ChartStyles
+    Id: g=5fc185a024f9da30f5546c482cf24878
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=ce2e7dbd5187886cb812e9398963f06a
+      Type: ChartStyle
+  - Name: DataListStyles
+    Id: g=a8e98b8026771d88667ce9c8d1f74933
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=edf7039203eb4ab3b486773099068fb2
+      Type: DataListStyle
+      Children:
+      - Name: HeaderBackgroundColor
+        Id: g=ada73945c1bbe835e38d3e106af1c2c2
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: AlternateBackgroundColor
+        Id: g=715a83615b751ced31483a5877b148b8
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f0f0f0"
+      - Name: HeaderTextColor
+        Id: g=58d34847cf199560a5912237d8094da6
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+  - Name: ToolTipStyles
+    Id: g=9bd5ff298eeb661cedeeb5761833c6b6
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=78782290a5d19c345da3fdbff5da9736
+      Type: ToolTipStyle
+  - Name: ScrollBarStyles
+    Id: g=b62136e85db0d8d514a36dcf9a14f4db
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=f88b219f0f61bfb5f3f8a5a4df3d9b4f
+      Type: ScrollBarStyle
+  - Name: AccordionStyles
+    Id: g=0c0d091c8ad976f5b93f835696a2225e
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=c64ee21c7f80769ccd2bf397d021f0bf
+      Type: AccordionStyle
+  - Name: PieChartStyles
+    Id: g=3335afb5f671d389827774394ee3bb84
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=5c908fe054b2cbe9bb12ff8e103aeadf
+      Type: PieChartStyle
+  - Name: HistogramChartStyles
+    Id: g=5e3b544c9b38e7a0e2e8b596c93f438e
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=26803f78d2ddeab06448b29d6b073ef5
+      Type: HistogramChartStyle
+  - Name: LabelStyles
+    Id: g=00d0996e0157c00b131d41a2fc2c0faa
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=687ddee674f09d8c5f4967a8951c0173
+      Type: LabelStyle
+  - Name: RadioButtonStyles
+    Id: g=6e21d6b31beffc60f7449bc3e810614a
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=32c7e136879e9a419f96879e18a898a4
+      Type: RadioButtonStyle
+      Children:
+      - Name: IndicatorSize
+        Id: g=c7d70da686d57134659b4fe48318272d
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 20.0
+  - Name: CheckBoxStyles
+    Id: g=32f5843e1575fe62afc4a2f6a048113b
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=d5d47e7766f0bdcb399a3309d02e868d
+      Type: CheckBoxStyle
+      Children:
+      - Name: IndicatorSize
+        Id: g=5989545573ebcd720e59335d0f464b17
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 18.0

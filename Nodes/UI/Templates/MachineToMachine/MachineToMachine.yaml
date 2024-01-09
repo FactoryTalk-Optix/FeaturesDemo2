@@ -45,13 +45,13 @@ Children:
       Id: g=182d037d339331da1248fe38472814fd
       Type: NodePointer
       DataType: NodeId
-      Value: {"IdType":2,"Id":"8f3e2611d069091fa8e22a153d7feee1","Namespace":8}
+      Value: "/Objects/FeaturesDemo2/UI/Templates/MachineToMachine/Page1"
       Children:
       - Name: Kind
         Id: g=f0875dfa511c3458aea52d0a9cb46ca1
         Type: PropertyType
         DataType: NodeId
-        Value: {"Id":71,"Namespace":3}
+        Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
     - Name: CurrentPanel
       Id: g=6de526d4a7f3b656ca32d3bcf19a8b3f
       Type: NodePointer
@@ -63,7 +63,7 @@ Children:
         Id: g=1f89c7ba703a86953ee0296797791fc0
         Type: PropertyType
         DataType: NodeId
-        Value: {"Id":6,"Namespace":3}
+        Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
     - Class: Reference
       Target: ns=3;i=478
       Direction: Forward
@@ -163,7 +163,7 @@ Children:
         Id: g=e6156765136397439f77cda2c32f23c5
         Type: PropertyType
         DataType: NodeId
-        Value: {"Id":16,"Namespace":3}
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
       - Name: MethodsToCall
         Id: g=da7f235b734af2d6e104db3dc75ec189
         Type: BaseObjectType
@@ -182,7 +182,7 @@ Children:
               Id: g=49fe8de0a13461014d77690475fbcf9c
               Type: PropertyType
               DataType: NodeId
-              Value: {"Id":58}
+              Value: "/Types/ObjectTypes/BaseObjectType"
             - Name: CollegamentoDinamico
               Id: g=b4d8850dd0993f06539398bcc8faf213
               Type: DynamicLink
@@ -209,12 +209,13 @@ Children:
               Type: BaseDataVariableType
               DataType: NodeId
               Description: {"NamespaceIndex":3,"TextId":"ChangePanelNewPanelDescription"}
-              Value: {"IdType":2,"Id":"8f3e2611d069091fa8e22a153d7feee1","Namespace":8}
+              Value: "/Objects/FeaturesDemo2/UI/Templates/MachineToMachine/Page1"
             - Name: AliasNode
               Id: g=06a6d45f71ec103f23ef0db3b3d6f534
               Type: BaseDataVariableType
               DataType: NodeId
               Description: {"NamespaceIndex":3,"TextId":"ChangePanelAliasNodeDescription"}
+              ValueRank: ScalarOrOneDimension
               Value: {"IdType":0,"Id":0,"Namespace":-1}
       - Name: EventArguments
         Id: g=1f80acee7bcf51819bbcbb3ac64c09da
@@ -326,7 +327,7 @@ Children:
         Id: g=17688da1c9cebf9876e7325a7f39f540
         Type: PropertyType
         DataType: NodeId
-        Value: {"Id":16,"Namespace":3}
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
       - Name: MethodsToCall
         Id: g=1e120498bd007cce00a3b72ee454952d
         Type: BaseObjectType
@@ -345,7 +346,7 @@ Children:
               Id: g=7627634764d618e05b79278dcbc232d1
               Type: PropertyType
               DataType: NodeId
-              Value: {"Id":58}
+              Value: "/Types/ObjectTypes/BaseObjectType"
             - Name: CollegamentoDinamico
               Id: g=536ffd79f81e5f50cd86db50c1154ee7
               Type: DynamicLink
@@ -372,12 +373,13 @@ Children:
               Type: BaseDataVariableType
               DataType: NodeId
               Description: {"NamespaceIndex":3,"TextId":"ChangePanelNewPanelDescription"}
-              Value: {"IdType":2,"Id":"d0bfc34d5b1f9b82d7916b09f789d764","Namespace":8}
+              Value: "/Objects/FeaturesDemo2/UI/Templates/MachineToMachine/Page2"
             - Name: AliasNode
               Id: g=4a1be54c414a3a36dc40439973aa606f
               Type: BaseDataVariableType
               DataType: NodeId
               Description: {"NamespaceIndex":3,"TextId":"ChangePanelAliasNodeDescription"}
+              ValueRank: ScalarOrOneDimension
               Value: {"IdType":0,"Id":0,"Namespace":-1}
       - Name: EventArguments
         Id: g=761f46a34add74c7d5145c40a93923fa
@@ -568,7 +570,7 @@ Children:
         Id: g=5730dcae181d6ab14a30635a42cb43cd
         Type: DynamicLink
         DataType: NodePath
-        Value: "{NodeId:ns=8;g=0c729385-9273-d800-705c-bdd7058c16fb}"
+        Value: "/Objects/FeaturesDemo2/Model/OPCUA/MachineToMachine/Variable1"
         Children:
         - Name: Mode
           Id: g=19bb460bc43dab5909d17b6b1de5606a
@@ -633,7 +635,7 @@ Children:
         Id: g=46e20643e0233eaea6b15f6b9e68236e
         Type: DynamicLink
         DataType: NodePath
-        Value: "{NodeId:ns=8;g=54ab5be0-42ab-6a5b-3cbb-bd752f4d262b}"
+        Value: "/Objects/FeaturesDemo2/Model/OPCUA/MachineToMachine/Variable2"
         Children:
         - Name: Mode
           Id: g=33dafbb58700bacd8953a0f44708e382
@@ -788,7 +790,7 @@ Children:
         Id: g=b63b8d1680d3d400e5d49e5e19ab2edb
         Type: DynamicLink
         DataType: NodePath
-        Value: "{NodeId:ns=8;g=1851176d-6ee3-8ade-f9dc-86b94cc8b410}"
+        Value: "/Objects/FeaturesDemo2/Model/Alarms/Voltage"
         Children:
         - Name: Mode
           Id: g=004eb03d9a34d03f8cee6e33154b3e10
@@ -840,7 +842,7 @@ Children:
         Id: g=5e0ba96019633272ef884768ab6b5a9b
         Type: DynamicLink
         DataType: NodePath
-        Value: "{NodeId:ns=8;g=09477e8f-7c2c-ac8b-2783-d7d76e28824a}"
+        Value: "/Objects/FeaturesDemo2/Model/Alarms/Pressure"
         Children:
         - Name: Mode
           Id: g=1b680ac74d13519d4a224ab92433b829

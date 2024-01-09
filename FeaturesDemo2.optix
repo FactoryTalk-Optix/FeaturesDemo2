@@ -6,21 +6,21 @@ Project:
  Company: ''
  Copyright: ''
  FormatVersion: 1
- ProductVersion: 1.2
- CoreVersion: 2.0
+ ProductVersion: 1.3
+ CoreVersion: 3.0
  Dependencies:
   2:
    Uri: 'urn:FTOptix:CoreBase'
    Module: FTOptix.CoreBase
-   Version: 2.1
+   Version: 3.1
   3:
    Uri: 'urn:FTOptix:UI'
    Module: FTOptix.UI
-   Version: 2.0
+   Version: 11.0
   4:
    Uri: 'urn:FTOptix:HMIProject'
    Module: FTOptix.HMIProject
-   Version: 4.2
+   Version: 5.3
   5:
    Uri: 'urn:FTOptix:NativeUI'
    Module: FTOptix.NativeUI
@@ -36,19 +36,19 @@ Project:
   9:
    Uri: 'urn:FTOptix:Core:Net'
    Module: FTOptix.Core.Net
-   Version: 1.1
+   Version: 1.2
   10:
    Uri: 'urn:FTOptix:CoreBase:Net'
    Module: FTOptix.CoreBase.Net
-   Version: 1.0
+   Version: 1.1
   11:
    Uri: 'urn:FTOptix:UI:Net'
    Module: FTOptix.UI.Net
-   Version: 2.0
+   Version: 11.0
   12:
    Uri: 'urn:FTOptix:HMIProject:Net'
    Module: FTOptix.HMIProject.Net
-   Version: 4.2
+   Version: 4.4
   13:
    Uri: 'urn:FTOptix:NativeUI:Net'
    Module: FTOptix.NativeUI.Net
@@ -76,7 +76,7 @@ Project:
   19:
    Uri: 'urn:FTOptix:Alarm'
    Module: FTOptix.Alarm
-   Version: 1.1
+   Version: 2.0
   20:
    Uri: 'urn:FTOptix:Alarm:Net'
    Module: FTOptix.Alarm.Net
@@ -84,11 +84,11 @@ Project:
   21:
    Uri: 'urn:FTOptix:Report'
    Module: FTOptix.Report
-   Version: 1.2
+   Version: 3.0
   22:
    Uri: 'urn:FTOptix:Report:Net'
    Module: FTOptix.Report.Net
-   Version: 1.1
+   Version: 2.0
   23:
    Uri: 'urn:FTOptix:DataLogger'
    Module: FTOptix.DataLogger
@@ -124,10 +124,21 @@ Project:
   31:
    Uri: 'urn:FTOptix:EventLogger'
    Module: FTOptix.EventLogger
-   Version: 1.0
+   Version: 2.0
   32:
    Uri: 'urn:FTOptix:EventLogger:Net'
    Module: FTOptix.EventLogger.Net
    Version: 1.0
+ Statistics:
+  TotalNodeCount: 28233
+  Objects: 6238
+  ObjectTypes: 98
+  Variables: 21846
+  VariableTypes: 0
+  DataTypes: 6
+  Methods: 45
+  References: 238
+  ReferenceTypes: 0
+  Files: 65
  Nodes:
  - File: Nodes/FeaturesDemo2.yaml

@@ -45,17 +45,7 @@ Children:
   - Name: ns=0;EURange
     Id: g=9d98fb7ae048e51405e299249f822a20
     Type: RangeType
-    DataType: EURange
-    Value: 
-     {
-      "TypeId": {
-       "Id": 884
-      },
-      "Body": {
-       "low": 0.0,
-       "high": 0.0
-      }
-     }
+    DataType: Range
     Children:
     - Name: Low
       Id: g=c4fbee6f897351ce56b4aeeca11259cc

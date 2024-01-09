@@ -405,7 +405,7 @@ Children:
     AccessLevel: Read
     ValueRank: OneOrMoreDimensions
     ArrayDimensions: [0,0]
-    Value: {"Type":17,"Dimensions":[0,0],"Body":[]}
+    Value: {"Type":12,"Dimensions":[0,0],"Body":[]}
   - Name: Status
     Id: g=ca99c294933f6e6074fb041b9d98c20b
     Type: PropertyType

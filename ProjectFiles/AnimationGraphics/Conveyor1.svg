@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="135.46666mm"
+   height="135.46666mm"
+   viewBox="0 0 135.46666 135.46666"
+   version="1.1"
+   id="svg1091"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="Conveyor1.svg">
+  <defs
+     id="defs1085" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="268.68942"
+     inkscape:cy="302.05842"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g1147"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1455"
+     inkscape:window-height="1198"
+     inkscape:window-x="318"
+     inkscape:window-y="115"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata1088">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-14.665477,-73.629763)">
+    <g
+       id="g1229"
+       transform="matrix(0.26458333,0,0,0.26458333,14.665477,73.629763)">
+      <g
+         id="g1147">
+	<polygon
+   style="fill:#556080"
+   points="512,512 512,0 335.448,0 335.448,512 "
+   id="polygon1093"
+   transform="matrix(-1,0,0,1,512,0)" />
+
+	<g
+   id="g1121"
+   transform="matrix(-1,0,0,1,512,0)">
+		<path
+   style="fill:#8697cb"
+   d="M 335.449,282.483 H 52.966 C 23.711,282.483 0,306.194 0,335.448 c 0,29.254 23.711,52.966 52.966,52.966 h 282.483 z"
+   id="path1095" />
+
+		<polygon
+   style="fill:#8697cb"
+   points="476.689,105.931 476.689,35.31 370.758,35.31 370.758,105.931 "
+   id="polygon1097" />
+
+		<path
+   style="fill:#8697cb"
+   d="m 370.759,176.552 c -4.873,0 -8.828,-3.955 -8.828,-8.828 v -26.483 c 0,-4.873 3.955,-8.828 8.828,-8.828 4.873,0 8.828,3.955 8.828,8.828 v 26.483 c 0,4.873 -3.955,8.828 -8.828,8.828"
+   id="path1099" />
+
+		<path
+   style="fill:#8697cb"
+   d="m 476.69,176.552 c -4.882,0 -8.828,-3.955 -8.828,-8.828 v -26.483 c 0,-4.873 3.946,-8.828 8.828,-8.828 4.882,0 8.828,3.955 8.828,8.828 v 26.483 c 0,4.873 -3.946,8.828 -8.828,8.828"
+   id="path1101" />
+
+		<path
+   style="fill:#8697cb"
+   d="m 441.38,176.552 c -4.882,0 -8.828,-3.955 -8.828,-8.828 v -26.483 c 0,-4.873 3.946,-8.828 8.828,-8.828 4.882,0 8.828,3.955 8.828,8.828 v 26.483 c -0.001,4.873 -3.947,8.828 -8.828,8.828"
+   id="path1103" />
+
+		<path
+   style="fill:#8697cb"
+   d="m 406.069,176.552 c -4.873,0 -8.828,-3.955 -8.828,-8.828 v -26.483 c 0,-4.873 3.955,-8.828 8.828,-8.828 4.882,0 8.828,3.955 8.828,8.828 v 26.483 c 0,4.873 -3.946,8.828 -8.828,8.828"
+   id="path1105" />
+
+		<path
+   style="fill:#8697cb"
+   d="m 370.759,485.517 c -4.873,0 -8.828,-3.955 -8.828,-8.828 V 344.276 c 0,-4.873 3.955,-8.828 8.828,-8.828 4.873,0 8.828,3.955 8.828,8.828 V 476.69 c 0,4.872 -3.955,8.827 -8.828,8.827"
+   id="path1107" />
+
+		<path
+   style="fill:#8697cb"
+   d="m 476.69,485.517 c -4.882,0 -8.828,-3.955 -8.828,-8.828 V 344.276 c 0,-4.873 3.946,-8.828 8.828,-8.828 4.882,0 8.828,3.955 8.828,8.828 V 476.69 c 0,4.872 -3.946,8.827 -8.828,8.827"
+   id="path1109" />
+
+		<path
+   style="fill:#8697cb"
+   d="m 441.38,485.517 c -4.882,0 -8.828,-3.955 -8.828,-8.828 V 344.276 c 0,-4.873 3.946,-8.828 8.828,-8.828 4.882,0 8.828,3.955 8.828,8.828 V 476.69 c -0.001,4.872 -3.947,8.827 -8.828,8.827"
+   id="path1111" />
+
+		<path
+   style="fill:#8697cb"
+   d="m 406.069,485.517 c -4.873,0 -8.828,-3.955 -8.828,-8.828 V 344.276 c 0,-4.873 3.955,-8.828 8.828,-8.828 4.882,0 8.828,3.955 8.828,8.828 V 476.69 c 0,4.872 -3.946,8.827 -8.828,8.827"
+   id="path1113" />
+
+		<polygon
+   style="fill:#8697cb"
+   points="406.069,238.345 406.069,203.034 370.758,203.034 370.758,238.345 "
+   id="polygon1115" />
+
+		<polygon
+   style="fill:#8697cb"
+   points="476.689,308.966 476.689,273.655 370.758,273.655 370.758,308.966 "
+   id="polygon1117" />
+
+		<polygon
+   style="fill:#8697cb"
+   points="476.689,238.345 476.689,203.034 441.379,203.034 441.379,238.345 "
+   id="polygon1119" />
+
+	</g>
+
+	<g
+   id="g1133"
+   transform="matrix(-1,0,0,1,512,0)">
+		<polygon
+   style="fill:#556080"
+   points="114.758,512 114.758,388.414 61.793,388.414 61.793,512 "
+   id="polygon1123" />
+
+		<path
+   style="fill:#556080"
+   d="m 79.449,335.448 c 0,9.754 -7.901,17.655 -17.655,17.655 -9.754,0 -17.655,-7.901 -17.655,-17.655 0,-9.754 7.901,-17.655 17.655,-17.655 9.754,0 17.655,7.901 17.655,17.655"
+   id="path1125" />
+
+		<path
+   style="fill:#556080"
+   d="m 150.069,335.448 c 0,9.754 -7.901,17.655 -17.655,17.655 -9.754,0 -17.655,-7.901 -17.655,-17.655 0,-9.754 7.901,-17.655 17.655,-17.655 9.754,0 17.655,7.901 17.655,17.655"
+   id="path1127" />
+
+		<path
+   style="fill:#556080"
+   d="m 220.69,335.448 c 0,9.754 -7.901,17.655 -17.655,17.655 -9.754,0 -17.655,-7.901 -17.655,-17.655 0,-9.754 7.901,-17.655 17.655,-17.655 9.754,0 17.655,7.901 17.655,17.655"
+   id="path1129" />
+
+		<path
+   style="fill:#556080"
+   d="m 291.311,335.448 c 0,9.754 -7.901,17.655 -17.655,17.655 -9.754,0 -17.656,-7.9 -17.656,-17.655 0,-9.755 7.901,-17.655 17.655,-17.655 9.754,0 17.656,7.901 17.656,17.655"
+   id="path1131" />
+
+	</g>
+
+	
+	
+</g>
+      <g
+         id="g1149">
+</g>
+      <g
+         id="g1151">
+</g>
+      <g
+         id="g1153">
+</g>
+      <g
+         id="g1155">
+</g>
+      <g
+         id="g1157">
+</g>
+      <g
+         id="g1159">
+</g>
+      <g
+         id="g1161">
+</g>
+      <g
+         id="g1163">
+</g>
+      <g
+         id="g1165">
+</g>
+      <g
+         id="g1167">
+</g>
+      <g
+         id="g1169">
+</g>
+      <g
+         id="g1171">
+</g>
+      <g
+         id="g1173">
+</g>
+      <g
+         id="g1175">
+</g>
+      <g
+         id="g1177">
+</g>
+    </g>
+  </g>
+</svg>

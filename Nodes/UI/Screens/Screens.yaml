@@ -52,13 +52,13 @@ Children:
           Id: g=bab8926d8bf39262340bbeac1b0b9817
           Type: NodePointer
           DataType: NodeId
-          Value: {"IdType":2,"Id":"88833e4e41b3ca7762c1ad74a5187cba","Namespace":8}
+          Value: "/Objects/FeaturesDemo2/UI/NavigationSystem/Favorites"
           Children:
           - Name: Kind
             Id: g=1f09e4575517dc1748917392d87361d3
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":71,"Namespace":3}
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
       - Name: Panel2
         Id: g=04d7144d18f8bab45d6b22b481dba336
         Type: NavigationPanelItem
@@ -72,13 +72,13 @@ Children:
           Id: g=77a11f304d1882e22b06ac23581e9a06
           Type: NodePointer
           DataType: NodeId
-          Value: {"IdType":2,"Id":"5cbec2d0101b7af5910e2cea99566109","Namespace":8}
+          Value: "/Objects/FeaturesDemo2/UI/NavigationSystem/UIDesign"
           Children:
           - Name: Kind
             Id: g=97507334b2d28a3e337d576b29c08fc5
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":71,"Namespace":3}
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
       - Name: Panel3
         Id: g=a39ce119893fc68e9d7bb5e3d84855da
         Type: NavigationPanelItem
@@ -92,13 +92,13 @@ Children:
           Id: g=4b9fac09ce2eb27b4b9b0ad5bf2c1402
           Type: NodePointer
           DataType: NodeId
-          Value: {"IdType":2,"Id":"f0cf8b946fd42eb4dab6b5a169dc179b","Namespace":8}
+          Value: "/Objects/FeaturesDemo2/UI/NavigationSystem/Converters"
           Children:
           - Name: Kind
             Id: g=6d38565fe965e363145b4a646d086b0e
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":71,"Namespace":3}
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
       - Name: Panel4
         Id: g=09ce4e02b50a59fc43ce8452838fb435
         Type: NavigationPanelItem
@@ -112,13 +112,13 @@ Children:
           Id: g=1e8ab9d28acda2e131a41b55150d738f
           Type: NodePointer
           DataType: NodeId
-          Value: {"IdType":2,"Id":"14ce878356a6a6618157f3d9f6325239","Namespace":8}
+          Value: "/Objects/FeaturesDemo2/UI/NavigationSystem/UserManagement"
           Children:
           - Name: Kind
             Id: g=b633f274686b7d3f4c575f9f9d1302cc
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":71,"Namespace":3}
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
       - Name: Panel5
         Id: g=f1b335b9cd14ac98d4fd55bbc7ea061b
         Type: NavigationPanelItem
@@ -132,13 +132,13 @@ Children:
           Id: g=306a49813e7901e810d057825a1ad901
           Type: NodePointer
           DataType: NodeId
-          Value: {"IdType":2,"Id":"bd3ed0b354c9e54840b7195b4e7ff8a6","Namespace":8}
+          Value: "/Objects/FeaturesDemo2/UI/NavigationSystem/Alarms"
           Children:
           - Name: Kind
             Id: g=033d92cce00094bfb3d813e4cea307ab
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":71,"Namespace":3}
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
       - Name: Panel6
         Id: g=24aeb369a0f6fc271adc762c2b794695
         Type: NavigationPanelItem
@@ -152,13 +152,13 @@ Children:
           Id: g=0be45a02a474d8ae4663ff4c62934531
           Type: NodePointer
           DataType: NodeId
-          Value: {"IdType":2,"Id":"535489223e3e9dbc8d1961307660c297","Namespace":8}
+          Value: "/Objects/FeaturesDemo2/UI/NavigationSystem/Data"
           Children:
           - Name: Kind
             Id: g=34926fdfdd0e9badd73689e16b566e06
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":71,"Namespace":3}
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
       - Name: Panel7
         Id: g=92a33b688fc91dd32131f2cfc791e801
         Type: NavigationPanelItem
@@ -172,13 +172,13 @@ Children:
           Id: g=95fafb4a55488fd35c240c0682a4898f
           Type: NodePointer
           DataType: NodeId
-          Value: {"IdType":2,"Id":"91f9ba581412f1454f73871f755a9e6a","Namespace":8}
+          Value: "/Objects/FeaturesDemo2/UI/NavigationSystem/ObjectOrientedProgramming"
           Children:
           - Name: Kind
             Id: g=81642c5a9103c2fdf5fb87ced74fa436
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":71,"Namespace":3}
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
       - Name: Panel8
         Id: g=c11e22c416e06067c8412f4dae4bf6e6
         Type: NavigationPanelItem
@@ -192,13 +192,13 @@ Children:
           Id: g=1bb6418846a8c026207ddba65bd455eb
           Type: NodePointer
           DataType: NodeId
-          Value: {"IdType":2,"Id":"ce198cc9ba8689d3edd10bae90c763b0","Namespace":8}
+          Value: "/Objects/FeaturesDemo2/UI/NavigationSystem/Auditing"
           Children:
           - Name: Kind
             Id: g=9be690f7e4589ff6db952a343384e4df
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":71,"Namespace":3}
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
       - Name: Panel9
         Id: g=8f31b18f2d3249da4cf53faab94577f7
         Type: NavigationPanelItem
@@ -212,13 +212,13 @@ Children:
           Id: g=5015877ba31e56468ba425d5035b13ee
           Type: NodePointer
           DataType: NodeId
-          Value: {"IdType":2,"Id":"b368c40cc6d4e1a3dd641322ccf637fe","Namespace":8}
+          Value: "/Objects/FeaturesDemo2/UI/NavigationSystem/OPCUA"
           Children:
           - Name: Kind
             Id: g=03d145531b0762c07a75f30f24dbd045
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":71,"Namespace":3}
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
       - Name: Panel10
         Id: g=54c37cb6120da632f7f7c660aaef144c
         Type: NavigationPanelItem
@@ -232,13 +232,13 @@ Children:
           Id: g=e7f969b1310c257fbc3168217becf068
           Type: NodePointer
           DataType: NodeId
-          Value: {"IdType":2,"Id":"a98c3f927193616ab8ad44f409fe6fc7","Namespace":8}
+          Value: "/Objects/FeaturesDemo2/UI/NavigationSystem/Retentivity"
           Children:
           - Name: Kind
             Id: g=72beb3f7759219da6ff3fa285010d04d
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":71,"Namespace":3}
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
     - Name: CurrentPanel
       Id: g=21efa1088e485b9a9c94593ea5221007
       Type: NodePointer
@@ -250,7 +250,7 @@ Children:
         Id: g=f5c32b212ed33814503ef288306befa1
         Type: PropertyType
         DataType: NodeId
-        Value: {"Id":6,"Namespace":3}
+        Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
     - Name: CurrentTabIndex
       Id: g=cfe1fa651404269851b7e501178489ab
       Type: BaseDataVariableType

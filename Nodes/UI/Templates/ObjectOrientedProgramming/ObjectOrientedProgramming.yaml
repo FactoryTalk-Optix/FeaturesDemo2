@@ -73,7 +73,7 @@ Children:
       Id: g=51ba9ba3a044264fd46c0ed2c7c07e20
       Type: PropertyType
       DataType: NodeId
-      Value: {"IdType":2,"Id":"3e8c8082a2418fafb151a5266d3eb6ea","Namespace":8}
+      Value: "/Objects/FeaturesDemo2/Model/ObjectOrientedProgramming/CustomMotor"
   - Name: HorizontalAlignment
     Id: g=067118efb173f8f8eb7af5ae8f7ce81f
     Type: BaseVariableType
@@ -291,7 +291,7 @@ Children:
           Children:
           - Name: ExpressionEvaluator1
             Id: g=fd78cdb7803fdd802a196f373682fb89
-            Type: ns=2;ExpressionEvaluator
+            Type: ExpressionEvaluator
             Children:
             - Name: Expression
               Id: g=441f84f8e53aeb7ffcdf71921a299b83

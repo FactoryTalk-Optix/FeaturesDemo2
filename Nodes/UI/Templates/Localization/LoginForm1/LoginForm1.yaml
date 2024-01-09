@@ -17,10 +17,10 @@ Children:
       Id: g=9c5905bd23728df07e4adcbc3b33fc3c
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":71,"Namespace":3}
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
     - Name: ConditionalConverter1
       Id: g=2948196ea276e5e8e9b636ead4e67e4d
-      Type: ns=2;ConditionalConverter
+      Type: ConditionalConverter
       Children:
       - Name: Condition
         Id: g=714dc72e1f06cefb749c6eae3ce7e01d
@@ -40,14 +40,14 @@ Children:
         DataType: NodeId
         ReferenceType: HasParameter
         ModellingRule: Optional
-        Value: {"IdType":2,"Id":"2eebfd3def044e747aa57952fc13c70d","Namespace":8}
+        Value: "/Objects/FeaturesDemo2/UI/Templates/Localization/LoginForm1/LoginFormComponents/Logout"
       - Name: FalseValue
         Id: g=a149c621686d7f29ee53dbbaf0875dc8
         Type: BaseDataVariableType
         DataType: NodeId
         ReferenceType: HasParameter
         ModellingRule: Optional
-        Value: {"IdType":2,"Id":"ce814fddddd607c776a3b9a6e0b90c27","Namespace":8}
+        Value: "/Objects/FeaturesDemo2/UI/Templates/Localization/LoginForm1/LoginFormComponents/Login"
   - Name: CurrentPanel
     Id: g=f1d953d077506378eaec60e36cdc33cf
     Type: NodePointer
@@ -59,7 +59,7 @@ Children:
       Id: g=e4bf0674039363206a90c2e09f852aa3
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":6,"Namespace":3}
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
   - Class: Reference
     Target: ns=3;i=478
     Direction: Forward
@@ -85,11 +85,12 @@ Children:
       Id: g=4058fadd477ae978e2a60fffa85de963
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":61}
+      Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
   - Name: PanelAliasNode
     Id: g=581b5eee4c29bf55c3f280582d46a7ab
     Type: BaseDataVariableType
     DataType: NodeId
+    ValueRank: ScalarOrOneDimension
     Value: {"IdType":0,"Id":0,"Namespace":-1}
     Children:
     - Name: DynamicLink

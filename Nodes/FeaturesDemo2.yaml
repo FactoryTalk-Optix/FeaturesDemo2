@@ -8,43 +8,55 @@ Children:
   Children:
   - Name: Locales
     Id: g=60ca3dd8528bdb475d70b043d706b210
-    Type: PropertyType
-    DataType: String
+    Type: BaseDataVariableType
+    DataType: LocaleId
     ValueRank: OneDimension
     ArrayDimensions: [0]
     Value: ["en-US","it-IT","zh-CN"]
   - Name: LocaleFallbackList
     Id: g=23351da6726740af235626427094487e
-    Type: PropertyType
-    DataType: String
+    Type: BaseDataVariableType
+    DataType: LocaleId
     ValueRank: OneDimension
     ArrayDimensions: [0]
     Value: ["en-US"]
 - Name: Authentication
   Id: g=d29a62729badf14a10ab8750ff0f9d24
   Type: PropertyGroup
+  Children:
+  - Name: DefaultUserFolder
+    Id: g=1041ad564abef9732e3209cafd28f0dd
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/FeaturesDemo2/Security/Users"
+    Children:
+    - Name: Kind
+      Id: g=16f632925860896b935351db89958f51
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
 - Name: PasswordPolicy
   Id: g=7a095ca32c6f67f6d79d86c3eea85d1c
   Type: PasswordPolicy
   Children:
   - Name: MaximumPasswordAge
     Id: g=97d2f7f5dd6ba7e327418abe3a608a61
-    Type: PropertyType
+    Type: BaseDataVariableType
     DataType: UInt16
     Value: 0
   - Name: EnforcePasswordHistory
     Id: g=7f1010c90a73da52f4c95d9137f396d2
-    Type: PropertyType
+    Type: BaseDataVariableType
     DataType: Byte
     Value: 1
   - Name: MinimumPasswordAge
     Id: g=42e27a7dd28a141796bf5282b52f4986
-    Type: PropertyType
+    Type: BaseDataVariableType
     DataType: UInt16
     Value: 0
   - Name: MinimumPasswordLength
     Id: g=2284193791d3a99b2ebe82abcdfe1109
-    Type: PropertyType
+    Type: BaseDataVariableType
     DataType: Byte
     Value: 8
 - Name: AlarmConfiguration
@@ -53,9 +65,8 @@ Children:
   Children:
   - Name: DynamicVariablesPollingTime
     Id: g=0f1f24e064625f6bfcfcea16b0c3333a
-    Type: PropertyType
+    Type: BaseDataVariableType
     DataType: Duration
-    ReferenceType: HasComponent
     Value: "0:00:00:0.1000000"
 - File: UI/UI.yaml
 - File: Model/Model.yaml
@@ -77,10 +88,10 @@ Children:
   Id: g=883d91146989da19cb2986ba968be49f
   Type: Alias
   DataType: NodeId
-  Value: {"IdType":2,"Id":"3d31fa247e31bc0be083c851b89ce8ae","Namespace":8}
+  Value: "/Objects/FeaturesDemo2/Recipes/RecipeSchema/EditModel"
   Children:
   - Name: Kind
     Id: g=33d9789a11067bb82f0697b6e07218e4
     Type: PropertyType
     DataType: NodeId
-    Value: {"IdType":2,"Id":"3d31fa247e31bc0be083c851b89ce8ae","Namespace":8}
+    Value: "/Objects/FeaturesDemo2/Recipes/RecipeSchema/EditModel"
