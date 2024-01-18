@@ -10675,7 +10675,7 @@ Children:
                         DataType: String
                         ReferenceType: HasParameter
                         ModellingRule: Optional
-                        Value: "(Int32)trunc(255) << 24 + (Int32)trunc({0}) << 16 + (Int32)trunc({1}) << 8 + (Int32)trunc({2})"
+                        Value: "((Int32)trunc(255) << 24) + ((Int32)trunc({0}) << 16) + ((Int32)trunc({1}) << 8) + (Int32)trunc({2})"
                       - Name: ns=2;Source0
                         Id: g=82ac5dd8ac5539903f8ffab5f48d4df5
                         Type: BaseDataVariableType
@@ -10895,7 +10895,7 @@ Children:
                             DataType: String
                             ReferenceType: HasParameter
                             ModellingRule: Optional
-                            Value: "(Int32)trunc(255) << 24 + (Int32)trunc({0}) << 16 + (Int32)trunc({1}) << 8 + (Int32)trunc({2})"
+                            Value: "((Int32)trunc(255) << 24) + ((Int32)trunc({0}) << 16) + ((Int32)trunc({1}) << 8) + (Int32)trunc({2})"
                           - Name: ns=2;Source0
                             Id: g=b5ee2f84403d424e5425285f76b6477e
                             Type: BaseDataVariableType
@@ -12275,7 +12275,7 @@ Children:
             Id: g=d7e5db7483d9f7b493a86e4a255af62c
             Type: BaseDataVariableType
             DataType: String
-            Value: "None"
+            Value: "Background"
         - Name: HorizontalAlignment
           Id: g=71a0f23d2ef0bc90d937be5109a4ecef
           Type: BaseVariableType
