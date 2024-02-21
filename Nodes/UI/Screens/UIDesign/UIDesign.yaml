@@ -122,7 +122,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: VariablePointer
                   Description: {"NamespaceIndex":2,"TextId":"SetVariableToModifyDescription"}
-                  Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet@Pointer"
+                  Value: {"IdType":2,"Id":"fe054845655b95438acb97381fbb6c90","Namespace":8}
                 - Name: Value
                   Id: g=f369a6ce9e562eea45c541995ceba3ac
                   Type: BaseDataVariableType
@@ -559,7 +559,7 @@ Children:
                             Type: BaseDataVariableType
                             DataType: VariablePointer
                             Description: {"NamespaceIndex":2,"TextId":"SetVariableToModifyDescription"}
-                            Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet@Pointer"
+                            Value: {"IdType":2,"Id":"fe054845655b95438acb97381fbb6c90","Namespace":8}
                           - Name: Value
                             Id: g=bc6b5e1b5df5c5cddbc11bf00eb6f62c
                             Type: BaseDataVariableType
@@ -883,7 +883,7 @@ Children:
                             Type: BaseDataVariableType
                             DataType: VariablePointer
                             Description: {"NamespaceIndex":2,"TextId":"SetVariableToModifyDescription"}
-                            Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet@Pointer"
+                            Value: {"IdType":2,"Id":"fe054845655b95438acb97381fbb6c90","Namespace":8}
                           - Name: Value
                             Id: g=999e16af2404b7f2377c1693bd469592
                             Type: BaseDataVariableType
@@ -1212,7 +1212,7 @@ Children:
                             Type: BaseDataVariableType
                             DataType: VariablePointer
                             Description: {"NamespaceIndex":2,"TextId":"SetVariableToModifyDescription"}
-                            Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet@Pointer"
+                            Value: {"IdType":2,"Id":"fe054845655b95438acb97381fbb6c90","Namespace":8}
                           - Name: Value
                             Id: g=90bf509fbab042b4b8d7e7fc64fd4f3e
                             Type: BaseDataVariableType
@@ -1557,7 +1557,7 @@ Children:
                             Type: BaseDataVariableType
                             DataType: VariablePointer
                             Description: {"NamespaceIndex":2,"TextId":"SetVariableToModifyDescription"}
-                            Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet@Pointer"
+                            Value: {"IdType":2,"Id":"fe054845655b95438acb97381fbb6c90","Namespace":8}
                           - Name: Value
                             Id: g=44a3e9a0384dc5ccba6ca1040dcd85b6
                             Type: BaseDataVariableType
@@ -1874,7 +1874,7 @@ Children:
                             Type: BaseDataVariableType
                             DataType: VariablePointer
                             Description: {"NamespaceIndex":2,"TextId":"SetVariableToModifyDescription"}
-                            Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet@Pointer"
+                            Value: {"IdType":2,"Id":"fe054845655b95438acb97381fbb6c90","Namespace":8}
                           - Name: Value
                             Id: g=966029bf1c3a2116094f3ad69773541b
                             Type: BaseDataVariableType
@@ -2197,7 +2197,7 @@ Children:
                             Type: BaseDataVariableType
                             DataType: VariablePointer
                             Description: {"NamespaceIndex":2,"TextId":"SetVariableToModifyDescription"}
-                            Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet@Pointer"
+                            Value: {"IdType":2,"Id":"fe054845655b95438acb97381fbb6c90","Namespace":8}
                           - Name: Value
                             Id: g=699eaba9f9232c39e9ef3f6031175383
                             Type: BaseDataVariableType

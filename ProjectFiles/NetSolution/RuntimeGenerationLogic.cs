@@ -6,6 +6,7 @@ using FTOptix.UI;
 using System;
 using System.Linq;
 using UAManagedCore;
+using FTOptix.NativeUI;
 #endregion
 
 public class RuntimeGenerationLogic : BaseNetLogic {

@@ -3,6 +3,7 @@ using FTOptix.NetLogic;
 using System;
 using System.Collections.Generic;
 using UAManagedCore;
+using FTOptix.NativeUI;
 #endregion
 
 public class AlarmBannerLogic : BaseNetLogic {

@@ -5,6 +5,7 @@ using FTOptix.NetLogic;
 using FTOptix.UI;
 using System;
 using UAManagedCore;
+using FTOptix.NativeUI;
 #endregion
 
 public class MultiStateSelectorStatusUpdater : BaseNetLogic {

@@ -11,6 +11,7 @@ using System.Linq;
 #endregion
 
 using FilesystemBrowser;
+using FTOptix.NativeUI;
 
 public class FolderBarLogic : BaseNetLogic {
     public override void Start() {

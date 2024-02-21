@@ -2,63 +2,6 @@ Name: UI
 Id: g=048e882462a8024f8ccaccc7c8ca58b0
 Type: UICategoryFolder
 Children:
-- Name: NativePresentationEngine
-  Id: g=308781d79181c2809bd2bd8a51263bca
-  Type: NativePresentationEngine
-  ReferenceType: HasOrderedComponent
-  Children:
-  - Name: EnableVirtualKeyboard
-    Id: g=5810cf2f98061950d530645947e8ecc9
-    Type: BaseDataVariableType
-    DataType: Boolean
-    Value: true
-  - Name: StartWindow
-    Id: g=b823c724757b7d64f6bc4da26ac758da
-    Type: NodePointer
-    DataType: NodeId
-    Value: "/Objects/FeaturesDemo2/UI/MainWindow"
-    Children:
-    - Name: Kind
-      Id: g=a26243d4b4cff082df0b35edec9fd1b4
-      Type: PropertyType
-      DataType: NodeId
-      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Window"
-  - Name: StyleSheet
-    Id: g=fe054845655b95438acb97381fbb6c90
-    Type: NodePointer
-    DataType: NodeId
-    Value: "/Objects/FeaturesDemo2/UI/StyleSheets/FeatureDemo2"
-    Children:
-    - Name: Kind
-      Id: g=d13f785e52915d9821d9f982070d77e1
-      Type: PropertyType
-      DataType: NodeId
-      Value: "/Types/ObjectTypes/BaseObjectType/StyleSheet"
-  - Name: StartingUser
-    Id: g=f7c0094510eed35e808045c29bbc9245
-    Type: NodePointer
-    DataType: NodeId
-    Value: "/Objects/FeaturesDemo2/Security/Users/User1"
-    Children:
-    - Name: Kind
-      Id: g=359f383ef0b3f464c62ccdf738f67f43
-      Type: PropertyType
-      DataType: NodeId
-      Value: "/Types/ObjectTypes/BaseObjectType/UserType"
-  - Name: Sessions
-    Id: g=abe82b055dad45709632fecaa493ffab
-    Type: BaseObjectType
-  - Name: Session
-    Id: g=4437a95bced358d87ef303c01a031a40
-    Type: NodePointer
-    DataType: NodeId
-    Value: "/Objects/FeaturesDemo2/UI/CustomUISession"
-    Children:
-    - Name: Kind
-      Id: g=72163ea10ad9146a27a49d9edef509c7
-      Type: PropertyType
-      DataType: NodeId
-      Value: "/Types/ObjectTypes/BaseObjectType/SessionType/UISession"
 - Name: WebPresentationEngine
   Id: g=da39b761d5d51c74f8486cfd79661e59
   Type: ns=7;PresentationEngine
@@ -77,7 +20,7 @@ Children:
     Id: g=721f85ec1fb0b4b405236f78ef655523
     Type: BaseDataVariableType
     DataType: UInt16
-    Value: 8443
+    Value: 80
   - Name: StartWindow
     Id: g=bed2173ff10987ec3a422a4fec2fb268
     Type: NodePointer
@@ -219,6 +162,154 @@ Children:
     Children:
     - Name: Kind
       Id: g=6873d0c4e05c2a120a0cff4b6b635dc1
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/SessionType/UISession"
+- Name: NativePresentationEngine
+  Id: g=f97bf56f837beb7fa47c15159e5db05a
+  Type: NativePresentationEngine
+  Children:
+  - Name: EnableVirtualKeyboard
+    Id: g=642a930dcad055fe085ec43a8e7b6834
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: StartWindow
+    Id: g=987ebe6fecc4d6745c649eb3c7aa0cc1
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/FeaturesDemo2/UI/MainWindow"
+    Children:
+    - Name: Kind
+      Id: g=a42f9e681d1eddb87e0ec01f8000a320
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Window"
+  - Name: StyleSheet
+    Id: g=f9ed910b488b74521edefd0e72276db0
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/FeaturesDemo2/UI/StyleSheets/FeatureDemo2"
+    Children:
+    - Name: Kind
+      Id: g=f382f5d4e9408a6bff23b7d8a5e90b4a
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/StyleSheet"
+  - Name: StartingUser
+    Id: g=c3dc35dbfe74a78e2ac0a1bc40d4b312
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/FeaturesDemo2/Security/Users/User1"
+    Children:
+    - Name: Kind
+      Id: g=42e682de4a8ec46d7df43154d3715f80
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/UserType"
+  - Name: Sessions
+    Id: g=603cd3f48d53fd017f933b5a70244a10
+    Type: BaseObjectType
+    Children:
+    - Name: Session1
+      Id: g=30776238c32db78513a98e8375d16321
+      Type: UISession
+      Children:
+      - Name: IsInteractive
+        Id: g=c86f4d5c539d4ba0409b05666b8ac3ed
+        Type: BaseDataVariableType
+        DataType: Boolean
+        AccessLevel: Read
+        Value: true
+      - Name: IsNative
+        Id: g=fb4d12241da10c869fdbd135b778776b
+        Type: BaseDataVariableType
+        DataType: Boolean
+        AccessLevel: Read
+        Value: false
+      - Name: IsWeb
+        Id: g=dd1c51f3f18ef04285777791bad3c74a
+        Type: BaseDataVariableType
+        DataType: Boolean
+        AccessLevel: Read
+        Value: false
+      - Name: IpAddress
+        Id: g=0169c500e950e8003a2f0369cea94b6d
+        Type: BaseDataVariableType
+        DataType: String
+        AccessLevel: Read
+        Value: ""
+      - Name: User
+        Id: g=8465b1744f5a90554c0834c4228b8142
+        Type: NodePointer
+        DataType: NodeId
+        AccessLevel: Read
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: Kind
+          Id: g=e29ae1b865989df74d644e30225237d1
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType/UserType"
+      - Name: ActualLocaleId
+        Id: g=3c21ad03079083db83948e0a42c34734
+        Type: BaseVariableType
+        DataType: LocaleId
+        ReferenceType: HasProperty
+        Value: ""
+      - Name: ActualLanguage
+        Id: g=97cd51473dbfbeed11271ccc043543c2
+        Type: BaseVariableType
+        DataType: LocaleId
+        ReferenceType: HasProperty
+        Value: ""
+      - Name: ActualMeasurementSystem
+        Id: g=0a3090807359d0dd56dfc99f97fa82f4
+        Type: BaseVariableType
+        DataType: MeasurementSystem
+        ReferenceType: HasProperty
+        Value: 0
+      - Name: TimeZoneOffset
+        Id: g=3898f36078863f97be60e021fb4f4c67
+        Type: BaseVariableType
+        DataType: TimeZoneDataType
+        ReferenceType: HasProperty
+        AccessLevel: Read
+      - Name: Groups
+        Id: g=4c5914f3704acb5210bb2588079ee01d
+        Type: BaseObjectType
+      - Name: Roles
+        Id: g=c8fed3838e7832cbfa38bb4f00071871
+        Type: BaseObjectType
+      - Name: Rights
+        Id: g=c97545626d75f8083784ca9d5e08b959
+        Type: BaseObjectType
+      - Class: Reference
+        Target: ns=1;i=146
+        Direction: Forward
+      - Class: Reference
+        Target: ns=1;i=266
+        Direction: Forward
+      - Class: Reference
+        Target: ns=1;i=269
+        Direction: Forward
+      - Class: Reference
+        Target: ns=1;i=272
+        Direction: Forward
+      - Name: LoggedIn
+        Id: g=9f1e86a80902227b83b2009ae3bd7e97
+        Type: BaseVariableType
+        DataType: Boolean
+        AccessLevel: Read
+        Value: false
+  - Name: Session
+    Id: g=bb871c92ea4c51ff48f1290354e5f409
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/FeaturesDemo2/UI/CustomUISession"
+    Children:
+    - Name: Kind
+      Id: g=e33acc06d6de95e978be928f224b1a35
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/ObjectTypes/BaseObjectType/SessionType/UISession"

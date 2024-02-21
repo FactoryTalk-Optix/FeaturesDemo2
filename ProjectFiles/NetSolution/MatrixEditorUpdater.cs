@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using UAManagedCore;
 using FTOptix.UI;
+using FTOptix.NativeUI;
 #endregion
 
 public class MatrixEditorUpdater : BaseNetLogic {

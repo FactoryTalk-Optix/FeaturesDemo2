@@ -21,10 +21,6 @@ Project:
    Uri: 'urn:FTOptix:HMIProject'
    Module: FTOptix.HMIProject
    Version: 5.3
-  5:
-   Uri: 'urn:FTOptix:NativeUI'
-   Module: FTOptix.NativeUI
-   Version: 2.0
   6:
    Uri: 'urn:FTOptix:Retentivity'
    Module: FTOptix.Retentivity
@@ -49,10 +45,6 @@ Project:
    Uri: 'urn:FTOptix:HMIProject:Net'
    Module: FTOptix.HMIProject.Net
    Version: 4.4
-  13:
-   Uri: 'urn:FTOptix:NativeUI:Net'
-   Module: FTOptix.NativeUI.Net
-   Version: 1.0
   14:
    Uri: 'urn:FTOptix:NetLogic'
    Module: FTOptix.NetLogic
@@ -129,15 +121,23 @@ Project:
    Uri: 'urn:FTOptix:EventLogger:Net'
    Module: FTOptix.EventLogger.Net
    Version: 1.0
+  33:
+   Uri: 'urn:FTOptix:NativeUI'
+   Module: FTOptix.NativeUI
+   Version: 2.0
+  34:
+   Uri: 'urn:FTOptix:NativeUI:Net'
+   Module: FTOptix.NativeUI.Net
+   Version: 1.0
  Statistics:
-  TotalNodeCount: 28233
-  Objects: 6238
+  TotalNodeCount: 28248
+  Objects: 6242
   ObjectTypes: 98
-  Variables: 21846
+  Variables: 21857
   VariableTypes: 0
   DataTypes: 6
   Methods: 45
-  References: 238
+  References: 242
   ReferenceTypes: 0
   Files: 65
  Nodes:

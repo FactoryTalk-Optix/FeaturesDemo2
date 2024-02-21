@@ -5,6 +5,7 @@ using CoreBase = FTOptix.CoreBase;
 using FTOptix.HMIProject;
 using UAManagedCore;
 using FTOptix.NetLogic;
+using FTOptix.NativeUI;
 #endregion
 
 public class ChildrenCounter : BaseNetLogic

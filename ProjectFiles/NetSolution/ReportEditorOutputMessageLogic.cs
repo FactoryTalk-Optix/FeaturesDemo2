@@ -4,6 +4,7 @@ using FTOptix.NetLogic;
 using System;
 using UAManagedCore;
 using FTOptix.UI;
+using FTOptix.NativeUI;
 #endregion
 
 public class ReportEditorOutputMessageLogic : BaseNetLogic {

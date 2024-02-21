@@ -7,6 +7,7 @@ using System;
 #endregion
 
 using FilesystemBrowser;
+using FTOptix.NativeUI;
 
 public class FilesystemBrowserDatagridLogic : BaseNetLogic {
     public override void Start() {

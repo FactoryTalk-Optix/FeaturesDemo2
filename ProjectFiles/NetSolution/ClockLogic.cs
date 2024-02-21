@@ -2,6 +2,7 @@
 using FTOptix.NetLogic;
 using System;
 using UAManagedCore;
+using FTOptix.NativeUI;
 #endregion
 
 public class ClockLogic : BaseNetLogic {

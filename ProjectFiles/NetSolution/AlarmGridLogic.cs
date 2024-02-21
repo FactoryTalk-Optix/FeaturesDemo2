@@ -2,6 +2,7 @@
 using FTOptix.NetLogic;
 using FTOptix.UI;
 using UAManagedCore;
+using FTOptix.NativeUI;
 #endregion
 
 public class AlarmGridLogic : BaseNetLogic {

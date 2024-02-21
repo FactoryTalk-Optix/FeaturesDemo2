@@ -11,6 +11,7 @@ using System.Diagnostics;
 #endregion
 
 using FilesystemBrowser;
+using FTOptix.NativeUI;
 
 public class FilesystemBrowserLogic : BaseNetLogic {
     public override void Start() {
