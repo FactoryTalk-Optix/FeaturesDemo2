@@ -129,16 +129,24 @@ Project:
    Uri: 'urn:FTOptix:NativeUI:Net'
    Module: FTOptix.NativeUI.Net
    Version: 1.0
+  35:
+   Uri: 'urn:FTOptix:System'
+   Module: FTOptix.System
+   Version: 3.0
+  36:
+   Uri: 'urn:FTOptix:System:Net'
+   Module: FTOptix.System.Net
+   Version: 2.0
  Statistics:
-  TotalNodeCount: 28248
-  Objects: 6242
-  ObjectTypes: 98
-  Variables: 21857
+  TotalNodeCount: 30118
+  Objects: 6606
+  ObjectTypes: 117
+  Variables: 23337
   VariableTypes: 0
   DataTypes: 6
-  Methods: 45
-  References: 242
+  Methods: 52
+  References: 269
   ReferenceTypes: 0
-  Files: 65
+  Files: 72
  Nodes:
  - File: Nodes/FeaturesDemo2.yaml

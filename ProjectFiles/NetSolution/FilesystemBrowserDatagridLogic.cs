@@ -8,6 +8,8 @@ using System;
 
 using FilesystemBrowser;
 using FTOptix.NativeUI;
+using FTOptix.System;
+using FTOptix.UI;
 
 public class FilesystemBrowserDatagridLogic : BaseNetLogic {
     public override void Start() {

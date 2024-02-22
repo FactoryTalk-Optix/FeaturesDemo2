@@ -9,6 +9,8 @@ using System.Linq;
 using System.Text;
 using UAManagedCore;
 using FTOptix.NativeUI;
+using FTOptix.System;
+using FTOptix.UI;
 using OpcUa = UAManagedCore.OpcUa;
 #endregion
 

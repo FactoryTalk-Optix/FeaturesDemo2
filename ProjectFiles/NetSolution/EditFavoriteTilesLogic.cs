@@ -5,6 +5,8 @@ using FTOptix.NetLogic;
 using System.Linq;
 using UAManagedCore;
 using FTOptix.NativeUI;
+using FTOptix.System;
+using FTOptix.UI;
 #endregion
 
 public class EditFavoriteTilesLogic : BaseNetLogic {

@@ -12,6 +12,8 @@ using System.Diagnostics;
 
 using FilesystemBrowser;
 using FTOptix.NativeUI;
+using FTOptix.System;
+using FTOptix.UI;
 
 public class FilesystemBrowserLogic : BaseNetLogic {
     public override void Start() {

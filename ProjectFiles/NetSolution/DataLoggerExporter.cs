@@ -8,6 +8,8 @@ using System.IO;
 using System.Text;
 using UAManagedCore;
 using FTOptix.NativeUI;
+using FTOptix.System;
+using FTOptix.UI;
 #endregion
 
 public class DataLoggerExporter : BaseNetLogic {

@@ -12,6 +12,7 @@ using System.Linq;
 
 using FilesystemBrowser;
 using FTOptix.NativeUI;
+using FTOptix.System;
 
 public class FolderBarLogic : BaseNetLogic {
     public override void Start() {

@@ -992,7 +992,7 @@ Children:
                 Id: g=a367bbafb1e2c9a64b456bb8baf54ebc
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "../../../../../../Tile_Open_Panel@Pointer"
+                Value: "../../../../../../Tile_Open_Panel"
                 Children:
                 - Name: Mode
                   Id: g=d67d0ddb8eae4bb85e823430604c3000

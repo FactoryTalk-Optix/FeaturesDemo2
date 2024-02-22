@@ -2,7 +2,7 @@ Name: NetLogic
 Id: g=4e1486bdfc59b3e0935535daec823327
 Type: NetLogicCategoryFolder
 Children:
-- Name: VariablesSimulator
+- Name: DataloggerVariablesSimulator
   Id: g=dbf00ac38a27d6f14fa2ebea54051299
   Type: NetLogic
   Children:
@@ -26,6 +26,30 @@ Children:
     Type: BaseDataVariableType
     DataType: Boolean
     Value: false
+- Name: TrendVariablesSimulator
+  Id: g=444e757d399932fd702903379758c95a
+  Type: NetLogic
+  Children:
+  - Name: iSin
+    Id: g=96523e1c1e2836eac64fef57ae095203
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: iCos
+    Id: g=4df53bf62756f35c8d5da5ee7bc67c2e
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: iRamp
+    Id: g=f9be89548f89db176a342bcab5c5aab0
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: bRunSimulation
+    Id: g=7a6cd1726193ba177b2e2916cb6a12bc
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
 - Name: DataLoggerExporter
   Id: g=6cf0aea2f73ea0a44b44d889e55ddeba
   Type: NetLogic

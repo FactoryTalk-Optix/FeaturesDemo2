@@ -7,3 +7,6 @@ Children:
 - File: Localization/Localization.yaml
 - File: MachineToMachine/MachineToMachine.yaml
 - File: CallMethodsFromOPC/CallMethodsFromOPC.yaml
+- File: FactoryTalkRemoteAccessWidget/FactoryTalkRemoteAccessWidget.yaml
+- File: DeviceSettingsWidget/DeviceSettingsWidget.yaml
+- File: NetworkSettingsWidget/NetworkSettingsWidget.yaml

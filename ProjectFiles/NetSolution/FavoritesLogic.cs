@@ -6,6 +6,7 @@ using FTOptix.UI;
 using System.Linq;
 using UAManagedCore;
 using FTOptix.NativeUI;
+using FTOptix.System;
 #endregion
 
 public class FavoritesLogic : BaseNetLogic {

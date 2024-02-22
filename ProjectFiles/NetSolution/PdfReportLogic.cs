@@ -20,6 +20,7 @@ using FTOptix.Retentivity;
 using FTOptix.AuditSigning;
 using FTOptix.Core;
 using System.IO;
+using FTOptix.System;
 #endregion
 
 public class PdfReportLogic : BaseNetLogic

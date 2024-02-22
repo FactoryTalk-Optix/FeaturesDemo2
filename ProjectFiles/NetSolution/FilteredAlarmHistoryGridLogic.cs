@@ -3,6 +3,8 @@ using FTOptix.NetLogic;
 using System;
 using UAManagedCore;
 using FTOptix.NativeUI;
+using FTOptix.System;
+using FTOptix.UI;
 #endregion
 
 public class FilteredAlarmHistoryGridLogic : BaseNetLogic {

@@ -12,7 +12,7 @@ Children:
     Id: g=590fa46789a557a1de85183143c95a48
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../NetLogic/VariablesSimulator/iSin"
+    Value: "../../../../NetLogic/DataloggerVariablesSimulator/iSin"
     Children:
     - Name: Mode
       Id: g=08681cf17548ccd0d55d627a52b81038
@@ -29,7 +29,7 @@ Children:
     Id: g=80e6f168403a65385a2c0cf7c7064f34
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../NetLogic/VariablesSimulator/iCos"
+    Value: "../../../../NetLogic/DataloggerVariablesSimulator/iCos"
     Children:
     - Name: Mode
       Id: g=041709bffdda9ea7dd19b90f4f6bc02a
@@ -69,7 +69,7 @@ Children:
     Id: g=9fcb380b38cf961859ecf5c93c452c00
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../NetLogic/VariablesSimulator/iRamp"
+    Value: "../../../../NetLogic/DataloggerVariablesSimulator/iRamp"
     Children:
     - Name: Mode
       Id: g=0fc30e705cf847389402dd6ecdfdbc27

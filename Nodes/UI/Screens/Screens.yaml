@@ -239,6 +239,26 @@ Children:
             Type: PropertyType
             DataType: NodeId
             Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+      - Name: Panel11
+        Id: g=dfe04ca45a6d9cf327cf53cd6a7b1ff4
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Id: g=2b84a20828a2b92f7c815a0a39132870
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":8,"TextId":"OptixPanel"}
+        - Name: Panel
+          Id: g=a7493fffa90d5f885117ad113f273e10
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/FeaturesDemo2/UI/NavigationSystem/OptixPanels"
+          Children:
+          - Name: Kind
+            Id: g=e15a4165da5555a9b28d668dcddb04b6
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
     - Name: CurrentPanel
       Id: g=21efa1088e485b9a9c94593ea5221007
       Type: NodePointer
@@ -309,7 +329,7 @@ Children:
       Type: BaseDataVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 192.0
+      Value: 132.0
     - Class: Reference
       Target: ns=3;i=1181
       Direction: Forward
@@ -334,3 +354,4 @@ Children:
 - File: Auditing/Auditing.yaml
 - File: OPCUA/OPCUA.yaml
 - File: Retentivity/Retentivity.yaml
+- File: OptixPanels/OptixPanels.yaml

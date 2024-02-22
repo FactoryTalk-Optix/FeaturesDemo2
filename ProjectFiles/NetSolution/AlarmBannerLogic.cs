@@ -4,6 +4,8 @@ using System;
 using System.Collections.Generic;
 using UAManagedCore;
 using FTOptix.NativeUI;
+using FTOptix.System;
+using FTOptix.UI;
 #endregion
 
 public class AlarmBannerLogic : BaseNetLogic {

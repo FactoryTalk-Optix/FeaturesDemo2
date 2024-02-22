@@ -1,0 +1,209 @@
+Name: DeviceSettingsWidget
+Id: g=f988dfa3df36183040cb2a053096418e
+Type: FolderType
+Children:
+- Name: DeviceSettingsWidget
+  Id: g=343e9a553a1648e3de95b91f6d877b43
+  Supertype: Screen
+  ReferenceType: HasComponent
+  Children:
+  - Name: HorizontalAlignment
+    Id: g=592ce56e237a0c1254752a0fcbc8f888
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 0
+  - Name: VerticalAlignment
+    Id: g=f38cadc7cdaae22f62c084e28caa4ae2
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 0
+  - Name: Width
+    Id: g=9413ae841bbedaff82fe4610f029c387
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 400.0
+  - Name: Height
+    Id: g=c29ea19fe0c8b730f3853bb78a1ece4c
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 240.0
+  - Name: NavigationPanel1
+    Id: g=ba3a86649da788d1516cf8d9e26a900e
+    Type: NavigationPanel
+    Children:
+    - Name: Panels
+      Id: g=965e378e18fb3f39905a3495ee673b8c
+      Type: BaseObjectType
+      Children:
+      - Name: Panel1
+        Id: g=1973e54731a3ce47d1f8b59cb254edc9
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Id: g=332dcf94cfa2b644d1371fcbdb59d355
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":8,"TextId":"Configuration"}
+        - Name: Panel
+          Id: g=a97fdf61f30ed04091f9a4073a85a8f7
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/FeaturesDemo2/UI/Templates/DeviceSettingsWidget/DeviceSettingsWidgetComponents/Configuration"
+          Children:
+          - Name: Kind
+            Id: g=45fd460a01b4e3a4486c0f8e83b6cd29
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":71,"Namespace":11}
+        - Name: AliasNode
+          Id: g=e459aacf3d1c5999014af732ff344ca0
+          Type: BaseDataVariableType
+          DataType: NodeId
+          ValueRank: ScalarOrOneDimension
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+          Children:
+          - Name: DynamicLink
+            Id: g=38f168f164b88103aa386b24b70d81bc
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../SystemNode@NodeId"
+      - Name: Panel2
+        Id: g=d6e17896d42364c1a2b52cb1021c97c4
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Id: g=961d458fe36f844fc0cf0157e53a35af
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":8,"TextId":"ProductInformation"}
+        - Name: Panel
+          Id: g=56c471740d4535ac884d5bb3c56d517c
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/FeaturesDemo2/UI/Templates/DeviceSettingsWidget/DeviceSettingsWidgetComponents/Product_Information"
+          Children:
+          - Name: Kind
+            Id: g=d86feae7650b54edc2029ac78f1a6ef3
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":71,"Namespace":11}
+        - Name: AliasNode
+          Id: g=2538648ccbd7b2528674d06de58866cb
+          Type: BaseDataVariableType
+          DataType: NodeId
+          ValueRank: ScalarOrOneDimension
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+          Children:
+          - Name: DynamicLink
+            Id: g=323ec5cdbab7a38815c67d77b222fad5
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../SystemNode@NodeId"
+      - Name: Panel3
+        Id: g=24bde052c9a2951429dcd296f081a8ae
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Id: g=0d5d752da177b4b1e2332936a1cc91f6
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":8,"TextId":"Diagnostics"}
+        - Name: Panel
+          Id: g=5fde46043b288018567be95f101d2eb6
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/FeaturesDemo2/UI/Templates/DeviceSettingsWidget/DeviceSettingsWidgetComponents/Diagnostics"
+          Children:
+          - Name: Kind
+            Id: g=fe7f0febbcc2c801736a59715f20d3e2
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":71,"Namespace":11}
+        - Name: AliasNode
+          Id: g=1883c2025a64d0c9361432afe68db1a7
+          Type: BaseDataVariableType
+          DataType: NodeId
+          ValueRank: ScalarOrOneDimension
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+          Children:
+          - Name: DynamicLink
+            Id: g=ea0ce7222a249458175919be5de3a3ef
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../SystemNode@NodeId"
+    - Name: CurrentPanel
+      Id: g=663567aab61fd0e16025540d822160cd
+      Type: NodePointer
+      DataType: NodeId
+      AccessLevel: Read
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Id: g=a93161df0d28f7547e535ef55c1ed192
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":6,"Namespace":11}
+    - Name: Width
+      Id: g=d5d642a5724c95afb59bbacbceb2a2f5
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 304.0
+    - Name: Height
+      Id: g=0988c79b39f2963fd4ff1f39087eee5a
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 240.0
+    - Name: HorizontalAlignment
+      Id: g=59102ae1ca8bc4e5a0dcd56354922ff8
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Id: g=e7779e0e87e2bed99e085f98bcfad374
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: TopMargin
+      Id: g=12047a8dfcd1955c2aa26241a1a0efb0
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: BottomMargin
+      Id: g=d4490bad051fbabea81731db66d11efb
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: CurrentTabIndex
+      Id: g=81736e881a34cf430a35309a2a1f902a
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Class: Reference
+      Target: ns=3;i=1181
+    - Class: Reference
+      Target: ns=3;i=1183
+  - Name: SystemNode
+    Id: g=6772b5c8c8e156d7f144f81a42b18f18
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/FeaturesDemo2/System/System"
+    Children:
+    - Name: Kind
+      Id: g=64731e8921171269bfdad37cffbfe902
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/System"
+  - Name: DeviceSettingsWidgetLogic
+    Id: g=1ed5d2b7b80eaba1945df7d8bc3ffd73
+    Type: NetLogic
+- File: DeviceSettingsWidgetComponents/DeviceSettingsWidgetComponents.yaml

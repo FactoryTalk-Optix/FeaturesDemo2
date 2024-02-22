@@ -4,6 +4,7 @@ using FTOptix.NetLogic;
 using FTOptix.UI;
 using FTOptix.WebUI;
 using FTOptix.NativeUI;
+using FTOptix.System;
 #endregion
 
 public class UserEditorPanelLoaderLogic : BaseNetLogic

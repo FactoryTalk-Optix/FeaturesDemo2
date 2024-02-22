@@ -7,6 +7,7 @@ using OpcUa = UAManagedCore.OpcUa;
 using FTOptix.NetLogic;
 using FTOptix.UI;
 using FTOptix.NativeUI;
+using FTOptix.System;
 #endregion
 
 public class CreateUserPanelLogic : BaseNetLogic
