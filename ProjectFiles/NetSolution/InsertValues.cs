@@ -19,7 +19,7 @@ public class InsertValues : BaseNetLogic {
     }
 
     [ExportMethod]
-    public void InsertRandomValues() {
+    public void InsertCustomQuery() {
         // Get the current project folder.
         var project = Project.Current;
 

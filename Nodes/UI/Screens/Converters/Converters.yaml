@@ -2759,7 +2759,7 @@ Children:
                     DataType: String
                     ReferenceType: HasParameter
                     ModellingRule: Optional
-                    Value: "floor({0})"
+                    Value: "trunc({0})"
                   - Name: ns=2;Source0
                     Id: g=90d2241f6ec742210bdec01eff657e72
                     Type: BaseDataVariableType
@@ -7474,19 +7474,13 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: -544.0
+          Value: 128.0
         - Name: TopMargin
           Id: g=f11f54523ea1e37515a59b4baabe0ae5
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 104.0
-        - Name: RightMargin
-          Id: g=ee56eebcf1b96d0273ed2d7760ee402d
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 0.0
         - Name: Width
           Id: g=f898dbbd4b6880d0d08b9beac9cdc04b
           Type: BaseVariableType
@@ -7498,7 +7492,7 @@ Children:
           Type: BaseVariableType
           DataType: HorizontalAlignment
           ModellingRule: Optional
-          Value: 2
+          Value: 0
         - Name: Height
           Id: g=412d7f047e4c7ee531f0123ec148a312
           Type: BaseVariableType
@@ -7584,19 +7578,13 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: -544.0
+          Value: 128.0
         - Name: TopMargin
           Id: g=56c79d9f058d80788fa2490cd16504d9
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 152.0
-        - Name: RightMargin
-          Id: g=d94e4891894cab27f09f57f0e790e8f2
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 0.0
         - Name: Width
           Id: g=5621dc0d028e192e47904ff07709c0fe
           Type: BaseVariableType
@@ -7608,7 +7596,7 @@ Children:
           Type: BaseVariableType
           DataType: HorizontalAlignment
           ModellingRule: Optional
-          Value: 2
+          Value: 0
       - Name: ScaledMin
         Id: g=9a048738ce7edf1debbea3da7a8fc9f2
         Type: Label
@@ -7688,7 +7676,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 64.0
+          Value: 432.0
         - Name: TopMargin
           Id: g=b2c558418a63f45628b8b4de9e9b32d0
           Type: BaseVariableType
@@ -7706,13 +7694,7 @@ Children:
           Type: BaseVariableType
           DataType: HorizontalAlignment
           ModellingRule: Optional
-          Value: 2
-        - Name: RightMargin
-          Id: g=2af1930daaa945fef1ab8f4cb8a590e7
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 0.0
+          Value: 0
       - Name: ScaledMax
         Id: g=c86d536227deb8cbb10c9d2935c73f60
         Type: Label
@@ -7792,7 +7774,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 64.0
+          Value: 432.0
         - Name: TopMargin
           Id: g=d4ef8aaf9a724d2451743ac423e4f52b
           Type: BaseVariableType
@@ -7810,13 +7792,7 @@ Children:
           Type: BaseVariableType
           DataType: HorizontalAlignment
           ModellingRule: Optional
-          Value: 2
-        - Name: RightMargin
-          Id: g=a2e42bc3e79bf61d11c5285329f6afbc
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 0.0
+          Value: 0
       - Name: XyChartArray
         Id: g=d9f964fb7619c7aa7ed732843d0a1f22
         Type: XYChart
@@ -7889,7 +7865,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 88.0
+          Value: 230.0
         - Name: HorizontalAlignment
           Id: g=a8f4618ec81168261036051c97a5f7c0
           Type: BaseVariableType
@@ -7901,7 +7877,7 @@ Children:
           Type: BaseVariableType
           DataType: VerticalAlignment
           ModellingRule: Optional
-          Value: 1
+          Value: 3
         - Name: RightMargin
           Id: g=ea9422560d673b402d4d61f09b8a56b4
           Type: BaseVariableType

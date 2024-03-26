@@ -12732,25 +12732,20 @@ Children:
             Value: 1
         - Name: MatrixVisualization
           Id: g=3e8f5fffa91e2d70d538a2596a848a11
-          Type: DropDownButton
+          Type: Button
           Children:
-          - Name: Panel
-            Id: g=558d6be594d53353a3fc06a8cb3c4b66
-            Type: NodePointer
-            DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
-            Children:
-            - Name: Kind
-              Id: g=d140600df57b3f4396eed8fb1943300b
-              Type: PropertyType
-              DataType: NodeId
-              Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
           - Name: Text
             Id: g=86fa06570446bc8d592c626b1e1bda54
             Type: BaseDataVariableType
             DataType: LocalizedText
             ModellingRule: Optional
             Value: {"NamespaceIndex":8,"TextId":"MatrixViewer"}
+          - Name: Elide
+            Id: g=3a7dce7bf2a477e427120c17b742c27c
+            Type: BaseDataVariableType
+            DataType: ElideEnum
+            ModellingRule: Optional
+            Value: 3
           - Name: LeftMargin
             Id: g=52748e07901afff03a3add62c1a50105
             Type: BaseVariableType
@@ -12769,24 +12764,6 @@ Children:
             DataType: Size
             ModellingRule: Optional
             Value: 128.0
-          - Name: Direction
-            Id: g=04c935413060b9858c74140076bd009e
-            Type: BaseDataVariableType
-            DataType: OrientationEnum
-            ModellingRule: Optional
-            Value: 1
-          - Name: CloseOnClickInside
-            Id: g=dd6b690f9ddeb9e6f85b6f86f19a38b0
-            Type: BaseDataVariableType
-            DataType: Boolean
-            ModellingRule: Optional
-            Value: false
-          - Name: Elide
-            Id: g=3a7dce7bf2a477e427120c17b742c27c
-            Type: BaseDataVariableType
-            DataType: ElideEnum
-            ModellingRule: Optional
-            Value: 3
           - Name: MouseClickEventHandler1
             Id: g=707ff040d685f1a17648cda44f753bd8
             Type: EventHandler
@@ -14477,38 +14454,6 @@ Children:
                         Description: {"NamespaceIndex":25,"TextId":"QueryResultSetDescription"}
                         ValueRank: OneOrMoreDimensions
                         ArrayDimensions: [0,0]
-                  - Name: MethodContainer2
-                    Id: g=89438f9e85ab0620d11da76229d566fa
-                    Type: BaseObjectType
-                    Children:
-                    - Name: ns=2;ObjectPointer
-                      Id: g=5978cd03072e3d3681bac2baa4ebe802
-                      Type: NodePointer
-                      DataType: NodeId
-                      Value: {"IdType":0,"Id":0,"Namespace":-1}
-                      Children:
-                      - Name: Kind
-                        Id: g=03ccac678216616b265eaf0efd74846d
-                        Type: PropertyType
-                        DataType: NodeId
-                        Value: "/Types/ObjectTypes/BaseObjectType"
-                      - Name: DynamicLink
-                        Id: g=b73e36fc5d34654011bee5adb19f74ad
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "../../../../../../DataGridQuery@NodeId"
-                        Children:
-                        - Name: Mode
-                          Id: g=0d6914a5baa0e3860903baafe0749592
-                          Type: BaseVariableType
-                          DataType: DynamicLinkMode
-                          ModellingRule: Optional
-                          Value: 2
-                    - Name: ns=2;Method
-                      Id: g=45d702aef095c78420c5715bb3d6e0f5
-                      Type: BaseDataVariableType
-                      DataType: String
-                      Value: "Refresh"
                 - Name: EventArguments
                   Id: g=3a0ca68d0ddd5ae3d3504f2454bc2f17
                   Type: MouseClickEvent
@@ -14655,38 +14600,6 @@ Children:
                         Description: {"NamespaceIndex":25,"TextId":"QueryResultSetDescription"}
                         ValueRank: OneOrMoreDimensions
                         ArrayDimensions: [0,0]
-                  - Name: MethodContainer2
-                    Id: g=9e3bdf621a67488df22a4cbeb82e5a7a
-                    Type: BaseObjectType
-                    Children:
-                    - Name: ns=2;ObjectPointer
-                      Id: g=e20b2a4c0a649ae1481efa5fdd4ccbec
-                      Type: NodePointer
-                      DataType: NodeId
-                      Value: {"IdType":0,"Id":0,"Namespace":-1}
-                      Children:
-                      - Name: Kind
-                        Id: g=126aed20df77da4d368d15b23c3d6203
-                        Type: PropertyType
-                        DataType: NodeId
-                        Value: "/Types/ObjectTypes/BaseObjectType"
-                      - Name: DynamicLink
-                        Id: g=5fb50197a8b0c4271c698b7333d13ee8
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "../../../../../../DataGridQuery@NodeId"
-                        Children:
-                        - Name: Mode
-                          Id: g=7818068764a37d95a1ee7407ffc5cbc3
-                          Type: BaseVariableType
-                          DataType: DynamicLinkMode
-                          ModellingRule: Optional
-                          Value: 2
-                    - Name: ns=2;Method
-                      Id: g=cab66c628e0c7e6d5089325acc6d328d
-                      Type: BaseDataVariableType
-                      DataType: String
-                      Value: "Refresh"
                 - Name: EventArguments
                   Id: g=ed779e7ec56c54e7806e43e249c0b336
                   Type: MouseClickEvent
@@ -15243,38 +15156,6 @@ Children:
                         Description: {"NamespaceIndex":25,"TextId":"QueryResultSetDescription"}
                         ValueRank: OneOrMoreDimensions
                         ArrayDimensions: [0,0]
-                  - Name: MethodContainer2
-                    Id: g=bc96a9aa44bc245b139c818fbb6b06c6
-                    Type: BaseObjectType
-                    Children:
-                    - Name: ns=2;ObjectPointer
-                      Id: g=734438add0f3efdeb299b36cf33ddd76
-                      Type: NodePointer
-                      DataType: NodeId
-                      Value: {"IdType":0,"Id":0,"Namespace":-1}
-                      Children:
-                      - Name: Kind
-                        Id: g=a762630adb4db4d0c7147e9337f3d602
-                        Type: PropertyType
-                        DataType: NodeId
-                        Value: "/Types/ObjectTypes/BaseObjectType"
-                      - Name: DynamicLink
-                        Id: g=7194e4ade856b40ac61ca89675b47c4c
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "../../../../../../DataGridQuery@NodeId"
-                        Children:
-                        - Name: Mode
-                          Id: g=6cf7f3f68ff65a3078bdd7fd3a57e34c
-                          Type: BaseVariableType
-                          DataType: DynamicLinkMode
-                          ModellingRule: Optional
-                          Value: 2
-                    - Name: ns=2;Method
-                      Id: g=fa21343d97230b91ee468ffe8a5735db
-                      Type: BaseDataVariableType
-                      DataType: String
-                      Value: "Refresh"
                 - Name: EventArguments
                   Id: g=4914702fd8fbaa30fad3b6bd6b37fa72
                   Type: MouseClickEvent
@@ -15958,6 +15839,19 @@ Children:
                 Type: BaseDataVariableType
                 DataType: Double
                 Value: 0.0
+                Children:
+                - Name: DynamicLink
+                  Id: g=0be3b950df9b90a5e1efb563669a7240
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "/Objects/FeaturesDemo2/Model/Data/Query/InsertVariable1"
+                  Children:
+                  - Name: Mode
+                    Id: g=37264e70bf825020c9f91f60cbd50d09
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
               - Name: LeftMargin
                 Id: g=da73b310d988ad81ae6da07f7aacabf8
                 Type: BaseVariableType
@@ -16013,6 +15907,19 @@ Children:
                 Type: BaseDataVariableType
                 DataType: Double
                 Value: 0.0
+                Children:
+                - Name: DynamicLink
+                  Id: g=4da32a64971b70912eab3f5ecae13e2b
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "/Objects/FeaturesDemo2/Model/Data/Query/InsertVariable2"
+                  Children:
+                  - Name: Mode
+                    Id: g=cda85809c272db6dd1112b8da5256a32
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
               - Name: LeftMargin
                 Id: g=0fbc5e9581f52abf29d0ac680841e438
                 Type: BaseVariableType
@@ -16068,6 +15975,19 @@ Children:
                 Type: BaseDataVariableType
                 DataType: Double
                 Value: 0.0
+                Children:
+                - Name: DynamicLink
+                  Id: g=ca18f988242c4d214e763866f2cffd66
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "/Objects/FeaturesDemo2/Model/Data/Query/InsertVariable3"
+                  Children:
+                  - Name: Mode
+                    Id: g=4a81a889ad97b226f74f174b1c76d047
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
               - Name: LeftMargin
                 Id: g=9bbf7e597b159b6e52b42153fd004ded
                 Type: BaseVariableType
@@ -16108,160 +16028,6 @@ Children:
                 DataType: Size
                 ModellingRule: Optional
                 Value: 256.0
-              - Name: EventHandler1
-                Id: g=56b85186e9c87281be140ad00e010f55
-                Type: EventHandler
-                Children:
-                - Name: ListenEventType
-                  Id: g=89eddb6d2f590ee6d71633d5ded2ad11
-                  Type: PropertyType
-                  DataType: NodeId
-                  Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
-                - Name: MethodsToCall
-                  Id: g=f3982bdb81db17be11716a8085b4ff3c
-                  Type: BaseObjectType
-                  Children:
-                  - Name: MethodContainer1
-                    Id: g=a07bb2e8c4e3b6a5490358d7c5ebb81f
-                    Type: BaseObjectType
-                    Children:
-                    - Name: ns=2;ObjectPointer
-                      Id: g=9e4512731c9337f829b978ccbf7c8f94
-                      Type: NodePointer
-                      DataType: NodeId
-                      Value: "/Objects/FeaturesDemo2/DataStores/EmbeddedDatabase/InsertValues"
-                      Children:
-                      - Name: Kind
-                        Id: g=36ea0bc593201d5bf978074cfd1eee0e
-                        Type: PropertyType
-                        DataType: NodeId
-                        Value: "/Types/ObjectTypes/BaseObjectType"
-                    - Name: ns=2;Method
-                      Id: g=1ea4e3330c70a6bb4bd068b7387f31db
-                      Type: BaseDataVariableType
-                      DataType: String
-                      Value: "InsertRandomValues"
-                  - Name: MethodContainer2
-                    Id: g=4fdcdf9437ea0b28abb452388f34cdb7
-                    Type: BaseObjectType
-                    Children:
-                    - Name: ns=2;ObjectPointer
-                      Id: g=7bf9ea61f1ad97d6073db0e098a42b9a
-                      Type: NodePointer
-                      DataType: NodeId
-                      Value: {"IdType":0,"Id":0,"Namespace":-1}
-                      Children:
-                      - Name: Kind
-                        Id: g=59105014f1976ad74fb5490e53023869
-                        Type: PropertyType
-                        DataType: NodeId
-                        Value: "/Types/ObjectTypes/BaseObjectType"
-                      - Name: DynamicLink
-                        Id: g=be0006de7dc550095288ea2252e5b352
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "../../../../../../DataGridQuery@NodeId"
-                        Children:
-                        - Name: Mode
-                          Id: g=4f81bb4db33ed298e968946e18c4d10d
-                          Type: BaseVariableType
-                          DataType: DynamicLinkMode
-                          ModellingRule: Optional
-                          Value: 2
-                    - Name: ns=2;Method
-                      Id: g=eab3ac3af1b6d442d2d09b6d1ef93011
-                      Type: BaseDataVariableType
-                      DataType: String
-                      Value: "Refresh"
-                  - Name: MethodContainer3
-                    Id: g=84e2a719de81b981f4443d378095115e
-                    Type: BaseObjectType
-                    Children:
-                    - Name: ns=2;ObjectPointer
-                      Id: g=7f362c0b83291be0d6201bd25807d80d
-                      Type: NodePointer
-                      DataType: NodeId
-                      Value: "/Objects/FeaturesDemo2/DataStores/EmbeddedDatabase"
-                      Children:
-                      - Name: Kind
-                        Id: g=0bc48b4f2e945713d886507281589cca
-                        Type: PropertyType
-                        DataType: NodeId
-                        Value: "/Types/ObjectTypes/BaseObjectType"
-                    - Name: ns=2;Method
-                      Id: g=90b75e5470c48d792ab3173766100398
-                      Type: BaseDataVariableType
-                      DataType: String
-                      Value: "Insert"
-                    - Name: InputArguments
-                      Id: g=aa5943a27fe4fa8d5ea3a94489460deb
-                      Type: BaseObjectType
-                      Children:
-                      - Name: TableName
-                        Id: g=859d53bb633747ec2f13ce82c5bbba96
-                        Type: BaseDataVariableType
-                        DataType: String
-                        Description: {"NamespaceIndex":25,"TextId":"TableNameDescription"}
-                        Value: ""
-                      - Name: ColumnNames
-                        Id: g=e8f8bee15716b6ada78138f26da84ea1
-                        Type: BaseDataVariableType
-                        DataType: String
-                        Description: {"NamespaceIndex":25,"TextId":"InsertColumnNamesDescription"}
-                        ValueRank: OneDimension
-                        ArrayDimensions: [0]
-                        Value: []
-                      - Name: Values
-                        Id: g=49a458c9655a051e31cadfc48c11e648
-                        Type: BaseDataVariableType
-                        DataType: BaseDataType
-                        Description: {"NamespaceIndex":25,"TextId":"InsertValuesDescription"}
-                        ValueRank: OneOrMoreDimensions
-                        ArrayDimensions: [0,0]
-                - Name: EventArguments
-                  Id: g=24d3b5026dfeac28acce51c53d50c8b8
-                  Type: MouseClickEvent
-                  Children:
-                  - Name: EventId
-                    Id: g=9313f433bee1660b19db4c5398d8a7ed
-                    Type: PropertyType
-                    DataType: ByteString
-                    Value: ""
-                  - Name: EventType
-                    Id: g=768d9b5bf96dcc0f4c81101c8ef52368
-                    Type: PropertyType
-                    DataType: NodeId
-                    Value: {"IdType":0,"Id":0,"Namespace":-1}
-                  - Name: SourceNode
-                    Id: g=d71579b1669f95c06b92ae947b927247
-                    Type: PropertyType
-                    DataType: NodeId
-                    Value: {"IdType":0,"Id":0,"Namespace":-1}
-                  - Name: SourceName
-                    Id: g=a52ac5e617d73c1c62c9494fc7af857d
-                    Type: PropertyType
-                    DataType: String
-                    Value: ""
-                  - Name: Time
-                    Id: g=c8b3bc13591e2837ff7f9d1cf159bdec
-                    Type: PropertyType
-                    DataType: UtcTime
-                    Value: "1601-01-01T00:00:00.0000000"
-                  - Name: ReceiveTime
-                    Id: g=920dc2de325603c0ca6d8e8147a057b0
-                    Type: PropertyType
-                    DataType: UtcTime
-                    Value: "1601-01-01T00:00:00.0000000"
-                  - Name: Message
-                    Id: g=ce8688a2aa3110823fed24fbec4128ca
-                    Type: PropertyType
-                    DataType: LocalizedText
-                    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-                  - Name: Severity
-                    Id: g=41a183e4e82efab5b352febb81d379da
-                    Type: PropertyType
-                    DataType: UInt16
-                    Value: 0
               - Name: VerticalAlignment
                 Id: g=622ad7ed6f96f3947360a5c7d0ac04ea
                 Type: BaseVariableType
@@ -16274,6 +16040,83 @@ Children:
                 DataType: Size
                 ModellingRule: Optional
                 Value: 88.0
+              - Name: MouseClickEventHandler1
+                Id: g=5f22c1d4439b0a438246f7ad1d904f33
+                Type: EventHandler
+                Children:
+                - Name: ListenEventType
+                  Id: g=dab9d0f23a4548a2275311cccfb12713
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+                - Name: MethodsToCall
+                  Id: g=aae62d02d9101c60386f9411236d2777
+                  Type: BaseObjectType
+                  Children:
+                  - Name: MethodContainer1
+                    Id: g=cd6ba4ef195dd4ee4e610195aae8cdd1
+                    Type: BaseObjectType
+                    Children:
+                    - Name: ns=2;ObjectPointer
+                      Id: g=0b57d106df2adbf17d9db893e679640b
+                      Type: NodePointer
+                      DataType: NodeId
+                      Value: "/Objects/FeaturesDemo2/DataStores/EmbeddedDatabase/InsertValues"
+                      Children:
+                      - Name: Kind
+                        Id: g=420536b83a3ad1d4ce1ddf2df0583148
+                        Type: PropertyType
+                        DataType: NodeId
+                        Value: "/Types/ObjectTypes/BaseObjectType"
+                    - Name: ns=2;Method
+                      Id: g=695e61520549c892c2fa502737a25528
+                      Type: BaseDataVariableType
+                      DataType: String
+                      Value: "InsertCustomQuery"
+                - Name: EventArguments
+                  Id: g=579db318b3838052e1d563484d3a7755
+                  Type: MouseClickEvent
+                  Children:
+                  - Name: EventId
+                    Id: g=c753ce179e84e030d3ab2eca140df79e
+                    Type: PropertyType
+                    DataType: ByteString
+                    Value: ""
+                  - Name: EventType
+                    Id: g=17d1d60cc137691ba066fdcf22fe6796
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  - Name: SourceNode
+                    Id: g=07c57e36e86e7dcb7f695870d673b11f
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  - Name: SourceName
+                    Id: g=efef2f041d91d517dec5867fb109ecb2
+                    Type: PropertyType
+                    DataType: String
+                    Value: ""
+                  - Name: Time
+                    Id: g=f16063de05b1b04fec864a048b104e08
+                    Type: PropertyType
+                    DataType: UtcTime
+                    Value: "1601-01-01T00:00:00.0000000"
+                  - Name: ReceiveTime
+                    Id: g=35fdf14ebf280c50bca795b03920956e
+                    Type: PropertyType
+                    DataType: UtcTime
+                    Value: "1601-01-01T00:00:00.0000000"
+                  - Name: Message
+                    Id: g=db496b0657c0a8cdc5a00669c1574b14
+                    Type: PropertyType
+                    DataType: LocalizedText
+                    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                  - Name: Severity
+                    Id: g=23f1713ede4cbf147e38b06c4b984a70
+                    Type: PropertyType
+                    DataType: UInt16
+                    Value: 0
             - Name: HorizontalAlignment
               Id: g=1409cfe5ea1b080cf4adc1455d27a335
               Type: BaseVariableType

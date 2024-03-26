@@ -4526,7 +4526,6 @@ Children:
                     Id: g=7d53d81df35452a9f4e337aa6a9454fb
                     Type: EUInformationType
                     DataType: EUInformation
-                    ModellingRule: Optional
                     Children:
                     - Name: UnitId
                       Id: g=16b81716f0352c15d5553195e0f8e2d5
