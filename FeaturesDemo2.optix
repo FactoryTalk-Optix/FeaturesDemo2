@@ -138,10 +138,10 @@ Project:
    Module: FTOptix.System.Net
    Version: 2.0
  Statistics:
-  TotalNodeCount: 30136
-  Objects: 6612
+  TotalNodeCount: 30109
+  Objects: 6609
   ObjectTypes: 117
-  Variables: 23348
+  Variables: 23324
   VariableTypes: 0
   DataTypes: 6
   Methods: 53
