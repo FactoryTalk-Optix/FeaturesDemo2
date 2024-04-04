@@ -36,7 +36,7 @@ public class PdfReportLogic : BaseNetLogic
         // Try to assign a value to the button
         try
         {
-            myButton = Owner.Get<Button>("Generate");
+            myButton = Owner.Get<Button>("TrackedValues/Generate");
         }
         catch
         {
@@ -129,7 +129,7 @@ public class PdfReportLogic : BaseNetLogic
 
     public void CheckForPdf()
     {
-        var myButton = (Button)Owner.Get("View");
+        var myButton = (Button)Owner.Get("TrackedValues/View");
         if (File.Exists(pdfPathStr))
         {
             myButton.Enabled = true;
