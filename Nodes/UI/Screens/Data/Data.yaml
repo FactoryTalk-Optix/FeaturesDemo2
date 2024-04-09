@@ -9343,7 +9343,7 @@ Children:
           Type: BaseVariableType
           DataType: HorizontalAlignment
           ModellingRule: Optional
-          Value: 0
+          Value: 3
         - Name: VerticalAlignment
           Id: g=36b5ca5551f31454beb9e5ddae334efa
           Type: BaseVariableType
@@ -9383,7 +9383,7 @@ Children:
             Type: BaseVariableType
             DataType: HorizontalAlignment
             ModellingRule: Optional
-            Value: 0
+            Value: 3
           - Name: ComponentHeader
             Id: g=f2f0c848fc6da87c5ecd0b3fd48c7a18
             Type: Panel
@@ -9399,7 +9399,7 @@ Children:
               Type: BaseVariableType
               DataType: HorizontalAlignment
               ModellingRule: Optional
-              Value: 0
+              Value: 3
             - Name: Path
               Id: g=35ffaf9eefb03024f275ff20f869a445
               Type: Label
@@ -9454,13 +9454,19 @@ Children:
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
                 ModellingRule: Optional
-                Value: 0
+                Value: 1
               - Name: LeftMargin
                 Id: g=8fe9b1789ebc864a21a633681c829b50
                 Type: BaseVariableType
                 DataType: Size
                 ModellingRule: Optional
                 Value: 208.0
+              - Name: RightMargin
+                Id: g=9c161aa5812d3d8f656add03d2b5e54d
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 256.0
             - Name: CurrentValue
               Id: g=f8e967b47308f96f92414e578545c5ae
               Type: Label
@@ -9481,7 +9487,7 @@ Children:
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
                 ModellingRule: Optional
-                Value: 2
+                Value: 1
               - Name: LeftMargin
                 Id: g=2933dee5b1724b3fafb4001b4db99f6a
                 Type: BaseVariableType
@@ -9493,7 +9499,7 @@ Children:
                 Type: BaseVariableType
                 DataType: Size
                 ModellingRule: Optional
-                Value: 16.0
+                Value: 32.0
             - Name: BottomMargin
               Id: g=2aeb14db7b301fa46cdeb4095870b205
               Type: BaseVariableType
@@ -9576,7 +9582,7 @@ Children:
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
                 ModellingRule: Optional
-                Value: 0
+                Value: 1
               - Name: LeftMargin
                 Id: g=343a2b729ff35c4ff082416071ea2b1f
                 Type: BaseVariableType
@@ -9595,6 +9601,18 @@ Children:
                 DataType: TextVerticalAlignment
                 ModellingRule: Optional
                 Value: 1
+              - Name: RightMargin
+                Id: g=0f9684a5c7a1b8572a315bfb5bd1e7b4
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 72.0
+              - Name: BottomMargin
+                Id: g=8e021c55777b93af60f5623fda9701ed
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 0.0
             - Name: SpinBox
               Id: g=c78da285332c4e2390dd316ddba41579
               Type: SpinBox
@@ -9627,13 +9645,13 @@ Children:
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
                 ModellingRule: Optional
-                Value: 0
+                Value: 1
               - Name: RightMargin
                 Id: g=f5518e84a47256e6441da5681524eaa0
                 Type: BaseVariableType
                 DataType: Size
                 ModellingRule: Optional
-                Value: 100.0
+                Value: 256.0
               - Name: Width
                 Id: g=26113f83bb87af92936f7d3fec5ba3a2
                 Type: BaseVariableType
@@ -9646,6 +9664,12 @@ Children:
                 DataType: Size
                 ModellingRule: Optional
                 Value: 224.0
+              - Name: BottomMargin
+                Id: g=bb7cb8bd4e7b088926520db64c17d1a1
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 0.0
             - Name: BottomMargin
               Id: g=d2e0e1f45ea4f46f79a3a19045605391
               Type: BaseVariableType
@@ -9728,7 +9752,7 @@ Children:
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
                 ModellingRule: Optional
-                Value: 0
+                Value: 1
               - Name: LeftMargin
                 Id: g=015f779a390bcc4bd1db733db0261611
                 Type: BaseVariableType
@@ -9747,6 +9771,18 @@ Children:
                 DataType: TextVerticalAlignment
                 ModellingRule: Optional
                 Value: 1
+              - Name: RightMargin
+                Id: g=8abc6aed282760a6dca4fb8204a1267a
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 72.0
+              - Name: BottomMargin
+                Id: g=df2debfd0171c5e9ee6af5993eb4021a
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 0.0
             - Name: Switch
               Id: g=cbadcc4535a140e480198da40c5a3a51
               Type: Switch
@@ -9779,13 +9815,13 @@ Children:
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
                 ModellingRule: Optional
-                Value: 0
+                Value: 1
               - Name: RightMargin
                 Id: g=cdfb689a980669d768b90c1a753c6fe0
                 Type: BaseVariableType
                 DataType: Size
                 ModellingRule: Optional
-                Value: 100.0
+                Value: 256.0
               - Name: Width
                 Id: g=4f89768bb8e1c4887c1a1f58b5ccafe7
                 Type: BaseVariableType
@@ -9804,6 +9840,12 @@ Children:
                 DataType: Size
                 ModellingRule: Optional
                 Value: 32.0
+              - Name: BottomMargin
+                Id: g=48c001621eea53740772dfb505fc913c
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 0.0
             - Name: BottomMargin
               Id: g=4bda9dae3250360a1267c16603b93b24
               Type: BaseVariableType
@@ -9886,7 +9928,7 @@ Children:
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
                 ModellingRule: Optional
-                Value: 0
+                Value: 1
               - Name: LeftMargin
                 Id: g=78dbe76027247d54630d6a08c4042397
                 Type: BaseVariableType
@@ -9905,6 +9947,18 @@ Children:
                 DataType: TextVerticalAlignment
                 ModellingRule: Optional
                 Value: 1
+              - Name: RightMargin
+                Id: g=373b53014198b365a0a57d70ece84e8d
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 72.0
+              - Name: BottomMargin
+                Id: g=d0b9fe75d7a86fe66322048424f4b1aa
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 0.0
             - Name: SpinBox
               Id: g=8b948b22a67a4251ac018142437daed6
               Type: SpinBox
@@ -9937,13 +9991,13 @@ Children:
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
                 ModellingRule: Optional
-                Value: 0
+                Value: 1
               - Name: RightMargin
                 Id: g=a35e0488a456d2a9a6eca54153d563a0
                 Type: BaseVariableType
                 DataType: Size
                 ModellingRule: Optional
-                Value: 100.0
+                Value: 256.0
               - Name: Width
                 Id: g=1d0a153d221dc92cc239739581e22945
                 Type: BaseVariableType
@@ -9956,6 +10010,12 @@ Children:
                 DataType: Size
                 ModellingRule: Optional
                 Value: 224.0
+              - Name: BottomMargin
+                Id: g=8d5930471d159c859cb5ff646ab4d246
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 0.0
             - Name: BottomMargin
               Id: g=b55e928af9bd24b6cceb12219f9920f5
               Type: BaseVariableType
@@ -10038,7 +10098,7 @@ Children:
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
                 ModellingRule: Optional
-                Value: 0
+                Value: 1
               - Name: LeftMargin
                 Id: g=c73629024888f9ffc49fa03b3cc6d6fd
                 Type: BaseVariableType
@@ -10057,6 +10117,18 @@ Children:
                 DataType: TextVerticalAlignment
                 ModellingRule: Optional
                 Value: 1
+              - Name: RightMargin
+                Id: g=d25655fd636007234e105c417d0eedbf
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 72.0
+              - Name: BottomMargin
+                Id: g=7bba5c356f662fd76e82ca3ce89b2d37
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 0.0
             - Name: SpinBox
               Id: g=30db1131785e4c43bfa2cf33416b177b
               Type: SpinBox
@@ -10089,13 +10161,13 @@ Children:
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
                 ModellingRule: Optional
-                Value: 0
+                Value: 1
               - Name: RightMargin
                 Id: g=b524cb920d574563446111d795a8b70c
                 Type: BaseVariableType
                 DataType: Size
                 ModellingRule: Optional
-                Value: 100.0
+                Value: 256.0
               - Name: Width
                 Id: g=d54efade660f442be54ad57d28ecb28a
                 Type: BaseVariableType
@@ -10108,6 +10180,12 @@ Children:
                 DataType: Size
                 ModellingRule: Optional
                 Value: 224.0
+              - Name: BottomMargin
+                Id: g=8ce5d41e0892efb4193ca7b456ac18fa
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 0.0
             - Name: BottomMargin
               Id: g=c0813fb1ea2edf8c98644b0655c035d8
               Type: BaseVariableType
@@ -10190,7 +10268,7 @@ Children:
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
                 ModellingRule: Optional
-                Value: 0
+                Value: 1
               - Name: LeftMargin
                 Id: g=f7a0462bcf1f7369dd19349ac28475cf
                 Type: BaseVariableType
@@ -10209,6 +10287,18 @@ Children:
                 DataType: TextVerticalAlignment
                 ModellingRule: Optional
                 Value: 1
+              - Name: RightMargin
+                Id: g=4a7aa568247687ac5d6d90291bf45173
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 72.0
+              - Name: BottomMargin
+                Id: g=265ebe46b62788a0ebe7172cc8cb6c2c
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 0.0
             - Name: SpinBox
               Id: g=240b93a8ab704772967d5a5c557249bf
               Type: SpinBox
@@ -10241,13 +10331,13 @@ Children:
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
                 ModellingRule: Optional
-                Value: 0
+                Value: 1
               - Name: RightMargin
                 Id: g=820bb62761ff0cc649d5873d86f87756
                 Type: BaseVariableType
                 DataType: Size
                 ModellingRule: Optional
-                Value: 100.0
+                Value: 256.0
               - Name: Width
                 Id: g=925b474d3efb3aa0f632faec98f5fb81
                 Type: BaseVariableType
@@ -10260,6 +10350,12 @@ Children:
                 DataType: Size
                 ModellingRule: Optional
                 Value: 224.0
+              - Name: BottomMargin
+                Id: g=065e1cffe369e4c4d63643438617ae18
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 0.0
             - Name: BottomMargin
               Id: g=93cec7f4946e16867529b9b8bc287b84
               Type: BaseVariableType
@@ -10272,6 +10368,12 @@ Children:
           DataType: ScrollAxesEnabledEnum
           ModellingRule: Optional
           Value: 2
+        - Name: Width
+          Id: g=87c4de93f0571a03a1db70a7b813caa3
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 928.0
       - Name: RecipeSchema
         Id: g=b765161eb422437106cd1a030c04fd8a
         Type: NodePointer

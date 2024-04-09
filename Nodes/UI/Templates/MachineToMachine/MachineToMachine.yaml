@@ -487,7 +487,19 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 20.0
+      Value: 161.0
+    - Name: LeftMargin
+      Id: g=d9f4155cc4af8ea8a7fb77a52f0d7bf8
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 260.0
+    - Name: RightMargin
+      Id: g=98cdc1390f6968604294e57d6157f7a4
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
   - Name: Variable1
     Id: g=56901c343c1042b6e550cc7427adf9c4
     Type: Label
