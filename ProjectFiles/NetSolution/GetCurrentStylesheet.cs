@@ -22,38 +22,25 @@ using FTOptix.UI;
 using FTOptix.Core;
 #endregion
 
-public class SetStyleSheetToPresentationEngine : BaseNetLogic
+public class GetCurrentStylesheet : BaseNetLogic
 {
     public override void Start()
     {
         // Insert code to be executed when the user-defined logic is started
+        var presentationEngine = GetPresentationEngine((IUANode)Owner);
+        if (presentationEngine == null)
+        {
+            Log.Error("GetCurrentStylesheetLogic.GetCurrentStylesheet", "Cannot find any PresentationEngine!");
+            return;
+        }
+        var currentStyleSheet = ((PresentationEngine)presentationEngine).GetVariable("StyleSheet");
+        Log.Debug("GetCurrentStylesheetLogic.GetCurrentStylesheet", $"Current StyleSheet: {currentStyleSheet}");
+        Owner.GetVariable("CurrentStylesheet").SetDynamicLink(currentStyleSheet);
     }
 
     public override void Stop()
     {
         // Insert code to be executed when the user-defined logic is stopped
-        var defaultStyleSheet = Project.Current.Get<StyleSheet>("UI/StyleSheets/FeatureDemo2");
-        SetStyleSheet(defaultStyleSheet.NodeId);
-    }
-
-    [ExportMethod]
-    public void SetStyleSheet(NodeId newStyleSheet)
-    {
-        // Get the new StyleSheet
-        var styleSheetNode = InformationModel.Get<StyleSheet>(newStyleSheet);
-        if (styleSheetNode == null)
-        {
-            Log.Error("SetStyleSheetLogic.SetStyleSheet", "Cannot find new StyleSheet!");
-            return;
-        }
-        // Get the current presentation engine
-        var currentPresentationEngine = GetPresentationEngine((IUANode)Owner);
-        if (currentPresentationEngine == null) 
-        {
-            Log.Error("SetStyleSheetLogic.SetStyleSheet", "Cannot find any PresentationEngine!");
-            return;
-        }
-        ((PresentationEngine)currentPresentationEngine).StyleSheet = newStyleSheet;
     }
 
     private IUANode GetPresentationEngine(IUANode startingPoint)

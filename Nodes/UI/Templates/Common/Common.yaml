@@ -407,7 +407,7 @@ Children:
         Id: g=a212832c368f3475e5072c6084d6f410
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: VerticalAlignment
       Id: g=4a6500471dd47ad826d7f42fd1ca6357
       Type: BaseVariableType
@@ -1532,7 +1532,7 @@ Children:
     Id: g=5f148c0494ae62b72881968b5314da7d
     Type: BaseDataVariableType
     DataType: LocalizedText
-    Value: {"LocaleId":"en-US","Text":""}
+    Value: {"LocaleId":"en-US","Text":"Default text"}
   - Name: Enabled
     Id: g=a635440e63aa457cf161260b99cbee05
     Type: BaseDataVariableType

@@ -179,7 +179,7 @@ Children:
         Id: g=cca71d6600d89cb743b24589326963b2
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: AlarmsEnabling
       Id: g=9e531243347abbdce842304ec3b3f0de
       Type: Rectangle
@@ -2381,7 +2381,7 @@ Children:
             Id: g=d0d49d778921a0e2ad03145960f421a5
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+            Value: "{CurrentStylesheet}/WindowColor"
         - Name: CornerRadius
           Id: g=977d28b91039f3cf1bd9f46f56188496
           Type: BaseDataVariableType
@@ -3359,7 +3359,7 @@ Children:
         Id: g=c40147d65717dafc583b05af99c9e338
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: AlarmsZones
       Id: g=dc972a9ef6c8865fa54695dc074e641c
       Type: Rectangle
@@ -5900,7 +5900,7 @@ Children:
         Id: g=12a775484afbd68040b7241329d867f0
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: FilteredAlarmHistoryGridwithColours
       Id: g=14e6bf04375dea94b4752767d3814fe1
       Type: Panel
@@ -7873,7 +7873,7 @@ Children:
         Id: g=251a2cfc7d71aaa7fb0621fd1fbefe12
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
   - Name: CategoryName
     Id: g=9e93d6fda41be857947a70d46111fc99
     Type: BaseDataVariableType

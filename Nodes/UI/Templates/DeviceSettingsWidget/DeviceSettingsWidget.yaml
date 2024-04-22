@@ -190,8 +190,10 @@ Children:
       Value: 0
     - Class: Reference
       Target: ns=3;i=1181
+      Direction: Forward
     - Class: Reference
       Target: ns=3;i=1183
+      Direction: Forward
   - Name: SystemNode
     Id: g=6772b5c8c8e156d7f144f81a42b18f18
     Type: NodePointer

@@ -179,7 +179,7 @@ Children:
         Id: g=2e9b42a7b413cd8bf733066a106252a7
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: HorizontalLayout
       Id: g=2dac60b39b8af59bf355a635027036fc
       Type: RowLayout
@@ -3211,7 +3211,7 @@ Children:
         Id: g=7587b445a6588147133101b290e95796
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: Columns
       Id: g=1f9c144686c7c4ce0ed88a6aef0cdce0
       Type: RowLayout
@@ -4884,7 +4884,7 @@ Children:
         Id: g=8d5eeef506dc1acb33dbd7b13f5244cb
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: HorizontalLayout1
       Id: g=22c16e8c9210e14277b1ddc8ef4272f4
       Type: RowLayout
@@ -6674,7 +6674,7 @@ Children:
         Id: g=9ae311206f7a4f0458cf41b22d7bfa09
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: Control
       Id: g=37059b90af055d598a1d73de526805ee
       Type: Rectangle
@@ -8154,7 +8154,7 @@ Children:
         Id: g=43a923b486fab794c4c50078f4d83e68
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: Cloumns
       Id: g=9e3dc9c5871c0ff70d6358ef2007ba88
       Type: RowLayout
@@ -8439,7 +8439,7 @@ Children:
         - Name: Condition3
           Id: g=759669441e45a9e0bafd84720974cd85
           Type: BaseCard
-          Description: {"LocaleId":"en-US","Text":"Select Option 3"}
+          Description: {"NamespaceIndex":8,"TextId":"Select Option 3"}
           Children:
           - Name: Title
             Id: g=a0e10436aeee3bb5907d8b89618a657a
@@ -9403,7 +9403,7 @@ Children:
         Id: g=20668ec60d80361d0cea13bceb74b38c
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: FeatureArea
       Id: g=a110c131c473edfeac6782ad11985ac1
       Type: Rectangle

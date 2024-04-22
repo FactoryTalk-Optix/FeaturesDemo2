@@ -179,7 +179,7 @@ Children:
         Id: g=773ae6b62a9cf8086f363eb829d9b7fa
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: Columns
       Id: g=2178ef7601a9b8a30231191a6e1d70e9
       Type: RowLayout
@@ -2130,7 +2130,7 @@ Children:
         Id: g=c6e310bb733af288ee4d1a4219351ca1
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: Content
       Id: g=95a547e073e0258f4d78ebdb0d62b033
       Type: RowLayout
@@ -4843,7 +4843,7 @@ Children:
         Id: g=cf4d4b58b4e6ddc97122bc60aceee428
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: UserEditorOverview
       Id: g=a48c4078d2e189ccb897ca79843b2fea
       Type: UserEditorOverview

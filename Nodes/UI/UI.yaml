@@ -165,6 +165,13 @@ Children:
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/ObjectTypes/BaseObjectType/SessionType/UISession"
+  - Name: AllowedRemoteSources
+    Id: g=66304ef59cb9b6865d582689b0567295
+    Type: BaseDataVariableType
+    DataType: String
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["https://www.rockwellautomation.com/","https://www.asemautomation.com/"]
 - Name: NativePresentationEngine
   Id: g=f97bf56f837beb7fa47c15159e5db05a
   Type: NativePresentationEngine
@@ -967,7 +974,7 @@ Children:
         Id: g=5abf377c74739e0b04d43c7516809ead
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../click_menu"
+        Value: "../../ToggleMenu"
         Children:
         - Name: Mode
           Id: g=1ec1fbb78563ec972cc65e3f2eb57353
@@ -1036,7 +1043,7 @@ Children:
                   Id: g=0e9bb0fe9243ebfb178c324c30999534
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "../../../../../../../click_menu@NodeId"
+                  Value: "../../../../../../../ToggleMenu@NodeId"
               - Name: Value
                 Id: g=22410ae60a93e5cad0fd7876d500737f
                 Type: BaseDataVariableType
@@ -1132,7 +1139,7 @@ Children:
         Id: g=addff87649c0536b26856c1d84ab6d6c
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../click_menu"
+        Value: "../../ToggleMenu"
         Children:
         - Name: Mode
           Id: g=4842522f55fe7eea92ce7ad0bfc3be6c
@@ -1787,6 +1794,195 @@ Children:
       - Name: Separator
         Id: g=4b8ae358275f5b5b40a1e6e29cd80f0b
         Type: SideMenuSectionSeparator
+      - Name: FullScreenMode
+        Id: g=03749fac34f6ff035949a4efb715b32c
+        Type: Rectangle
+        Children:
+        - Name: HomeContent
+          Id: g=4a5719f3f203381ebbc9424e9c2c07f6
+          Type: RowLayout
+          Children:
+          - Name: Icon
+            Id: g=475e36c50d45020fb4ba5178d49520a1
+            Type: AdvancedSVGImage
+            Children:
+            - Name: SVGElementProperties
+              Id: g=e43c418d70976d70f263de9168991f7d
+              Type: BaseObjectType
+              Children:
+              - Name: Property1
+                Id: g=a323e289c7f3c5e20dc49a7c68ddf05e
+                Type: AdvancedSVGImageElementProperty
+                Children:
+                - Name: ID
+                  Id: g=14220fa936bc5a645cf94cb81616fa68
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: ""
+                - Name: Property
+                  Id: g=b7dc80e8e1e61c1067d07e0ae8abb3a3
+                  Type: BaseDataVariableType
+                  DataType: AdvancedSVGImagePropertyClass
+                  Value: 0
+                - Name: Value
+                  Id: g=b7dbfa2aea40f9e6a73cb8b97fdcae39
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#000000"
+            - Name: Path
+              Id: g=ceea6bad1e01f868636ddc23730fc537
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              Value: ""
+            - Name: Width
+              Id: g=d4548931772ff7e6df832dd3938529ea
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 16.0
+            - Name: Height
+              Id: g=2695766ac746a6a99024bf9144a52da8
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 16.0
+            - Name: LeftMargin
+              Id: g=42025a18eeab90308baa73b169a3a0f5
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 16.0
+            - Name: VerticalAlignment
+              Id: g=8dab54356bce9d49aa1c6edd5ad55443
+              Type: BaseVariableType
+              DataType: VerticalAlignment
+              ModellingRule: Optional
+              Value: 2
+          - Name: FeaturesDemoHome
+            Id: g=be6f81476cdad1e7c70f74ecd0967b67
+            Type: Label
+            Children:
+            - Name: Text
+              Id: g=cf2a051b7cbe6d68c5044db211f335fb
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"NamespaceIndex":8,"TextId":"FullScreenMode"}
+            - Name: FontSize
+              Id: g=321701e7d8b05ff6cccf14c7faac033e
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 12.0
+            - Name: VerticalAlignment
+              Id: g=f08520fb2a4d625e067284d4467444f4
+              Type: BaseVariableType
+              DataType: VerticalAlignment
+              ModellingRule: Optional
+              Value: 3
+            - Name: LeftMargin
+              Id: g=2df3535da22002e71aed5a837b5ac75f
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 8.0
+            - Name: FontFamily
+              Id: g=edc1283bbba90ddef3891ef42cc05187
+              Type: BaseDataVariableType
+              DataType: Font
+              ModellingRule: Optional
+              Value: ""
+            - Name: FontWeight
+              Id: g=137b850c8daffbfc486fe4eccaf15b6c
+              Type: BaseDataVariableType
+              DataType: FontWeightEnum
+              ModellingRule: Optional
+              Value: 700
+            - Name: TextVerticalAlignment
+              Id: g=bc590e13ead909f3f90d4d0731d0d0dd
+              Type: BaseVariableType
+              DataType: TextVerticalAlignment
+              ModellingRule: Optional
+              Value: 1
+          - Name: HorizontalAlignment
+            Id: g=c773ca151f5e0c6e7c8ade46c190936c
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: VerticalAlignment
+            Id: g=cd6d557f16bfda9e929f56463558ca68
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 3
+        - Name: Width
+          Id: g=e120e191e2775e5f54fd07106d043ac8
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 320.0
+        - Name: Height
+          Id: g=d5530de0d6c4550a588c162984bc2f3b
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 40.0
+        - Name: FillColor
+          Id: g=8345326caa1ee6d33cfc76df2c9fe1b4
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff00"
+        - Name: Switch1
+          Id: g=a1a2edbeb3d6f4c4ede2cf2ff1714526
+          Type: Switch
+          Children:
+          - Name: Checked
+            Id: g=85d8572f1f048b22ba84d29901d42bda
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+            Children:
+            - Name: DynamicLink
+              Id: g=b0cecfd162ba52c55ef7d408d04c391c
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../FullScreen"
+              Children:
+              - Name: Mode
+                Id: g=8e4806e26e7f098859919e17e0ee4e34
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Width
+            Id: g=4b3804cf13c73b986b5336ca3479f873
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 60.0
+          - Name: VerticalAlignment
+            Id: g=ff74c4f63d4ed9aa01d4dc5d1748d676
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: HorizontalAlignment
+            Id: g=61d04377d0ddbe62418fea4d7e64958f
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 1
+          - Name: RightMargin
+            Id: g=6956e3824bf53c7172fb7c2bc3271347
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 4.0
+      - Name: Separator1
+        Id: g=b1a45f0ec6472c0f95732b0f4c92a499
+        Type: SideMenuSectionSeparator
     - Name: click_menu
       Id: g=cd3a6065754cf7f744e814f1933c8b6c
       Type: BaseDataVariableType
@@ -1797,7 +1993,7 @@ Children:
         Id: g=99b7cd22ccf588d8f39aa2a65d721261
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../click_menu"
+        Value: "../../ToggleMenu"
         Children:
         - Name: Mode
           Id: g=0cdc7fde3a6d7ddd9c66b3252116e9c1
@@ -1820,7 +2016,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 110.0
+        Value: 170.0
       - Name: Width
         Id: g=a3b7043c38f489d82b761ef883cc1aa8
         Type: BaseVariableType
@@ -10397,8 +10593,27 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 752.0
-  - Name: click_menu
+  - Name: ToggleMenu
     Id: g=8dfab6478986a7225c5657d766e70d48
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: CurrentStylesheet
+    Id: g=b7a9b1132796e1390ef0364e6ff9387c
+    Type: Alias
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Id: g=defec121b236ad18143e664012eb4f59
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/StyleSheet"
+  - Name: GetCurrentStylesheet
+    Id: g=2ca89f09a394ffd905cd2a5052b6d3f0
+    Type: NetLogic
+  - Name: FullScreen
+    Id: g=01b4b08c75bcce353f6ef7cc5e8aea4d
     Type: BaseDataVariableType
     DataType: Boolean
     Value: false

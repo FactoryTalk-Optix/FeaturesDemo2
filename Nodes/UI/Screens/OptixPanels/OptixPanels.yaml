@@ -179,7 +179,7 @@ Children:
         Id: g=2026eb3dc8f7eba6b2c93896100b3eae
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: ScrollView
       Id: g=331101d61e955b8d08220c4e65bfc597
       Type: ScrollView
@@ -406,7 +406,7 @@ Children:
             Type: BaseDataVariableType
             DataType: LocalizedText
             ModellingRule: Optional
-            Value: {"LocaleId":"en-US","Text":"Network Settings"}
+            Value: {"NamespaceIndex":8,"TextId":"Network Settings"}
           - Name: HorizontalAlignment
             Id: g=f6a5223a1a6ef7afeb03820891de5884
             Type: BaseVariableType
@@ -957,7 +957,7 @@ Children:
         Id: g=1dddaa031465ca48046d6b432155d6d2
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: FTRemoteAccessWidget1
       Id: g=cbdf2c5b27ae2ab3d20f62c374ef2f62
       Type: FTRemoteAccessWidget

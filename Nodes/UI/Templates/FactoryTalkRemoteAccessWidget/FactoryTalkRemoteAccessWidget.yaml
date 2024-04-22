@@ -204,8 +204,10 @@ Children:
       Value: 0
     - Class: Reference
       Target: ns=3;i=1181
+      Direction: Forward
     - Class: Reference
       Target: ns=3;i=1183
+      Direction: Forward
   - Name: FTRemoteAccessWidgetDataObject
     Id: g=430fed4264c2461369b4c48f6c675abe
     Type: FTRemoteAccessWidgetDataObject

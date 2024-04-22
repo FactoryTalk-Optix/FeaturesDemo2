@@ -176,10 +176,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=ea270f49dc5aa060dd6eefaf36602533
+                      Id: g=079a8c3058e154ad4e16ea9c6a857782
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/UIDesign/Style"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=c0820311008ed8b235e447474b29d2c9
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=49e91d8b4a8b9ee41d5bcde5cefd2b6c
                     Type: BaseDataVariableType
@@ -736,10 +743,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=5cbbca4b142c4b49ff872177aac7c98f
+                      Id: g=6e2eab2f44e15d7ed506f4f39ff9ddb7
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/UIDesign/RelativePosition"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=dab64c62c60db0c645a1574ac58bc6a2
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=38053272884fda1c7be655adf876aa34
                     Type: BaseDataVariableType
@@ -1290,10 +1304,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=55562c9495a0acd08f11b95d921f9e59
+                      Id: g=5331044514ea4242656b353d1fb9b431
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/UIDesign/AdvancedSVG"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=7fc4258683d722af07358a09f7590d6e
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=f93f535de5d278c8e0ead30baa848339
                     Type: BaseDataVariableType
@@ -1850,10 +1871,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=883f4875f102691427acecb103c16c4e
+                      Id: g=3930b3d6c1307a0512bb073cbcb80f3e
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/UIDesign/VideoPlayer"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=3bce77835627bef1c771683c204083fd
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=2cbf4207bba3bb003183ebfe9cca85e4
                     Type: BaseDataVariableType
@@ -2404,10 +2432,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=3150416919f90fc4df916d712da549f6
+                      Id: g=01f3d6a6be612a4299883fe355dca4a9
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/UIDesign/PDF_Viewer"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=7ae972a605eb06dc7888fd8a82bbbfa2
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=0d77bbba631696f2448a68e55927eb5d
                     Type: BaseDataVariableType
@@ -2958,10 +2993,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=949bd1f9fac1dd52074c93a977b3738b
+                      Id: g=42422277de9b0923301a43822b6dbf8f
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/UIDesign/HTML_Viewer"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=3428dcb486988027fb1b97dcd73e52d1
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=bfe89cda667935f078fa1a72e4500956
                     Type: BaseDataVariableType
@@ -3512,10 +3554,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=2f2fc1653ab7ab79cf48d74b9c612268
+                      Id: g=aa20dcd4fbb01eb4f5d50bc852faf248
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/UIDesign/Scaling"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=2ea3c98bd92a3ad04875ce0d9ab8ea7e
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=e140656d19eeeda17011b24327d8bd8e
                     Type: BaseDataVariableType
@@ -4072,10 +4121,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=ee4d1b54a8c21f194db0ef0386082409
+                      Id: g=3d4501b4d6384c56752e0fddb05455d6
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/UIDesign/ObjectsDragging"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=9da922fae7d49c110824954fa9652f93
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=60a8b13ac7eedcc191985c0ac3fda5bb
                     Type: BaseDataVariableType
@@ -4626,10 +4682,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=708e4cfd865bd324763bf19fdcb17081
+                      Id: g=45f8fe238becfe334bfb45970719382a
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/UIDesign/Accordions"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=5a48a052ec12e05bd43cef534b3d999c
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=6564f413a1a0439090569468459db26b
                     Type: BaseDataVariableType
@@ -5180,10 +5243,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=132bcd5c38c6cb0bfb06779a6297e4b5
+                      Id: g=39734bdebe4776244d51c4bed8073971
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/UIDesign/Animations"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=a3d9dc2871f085a34829bf4550482e7a
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=1f7acc9e6e6e257a30c7b188b8c8b58d
                     Type: BaseDataVariableType
@@ -5740,10 +5810,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=ecb1c6f28b8706e38e50519c23aa0ba0
+                      Id: g=ede52975e9fb1717151c9dfef013b938
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/UIDesign/TemplateLibraries"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=3493613d55c296800557b582923abca0
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=54ca15958ecfddf38ff23001700bedaa
                     Type: BaseDataVariableType
@@ -6127,7 +6204,7 @@ Children:
           Id: g=88d4546de48670e269b5d0b47743cdd8
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":""}
+          Value: {"LocaleId":"en-US","Text":"Default text"}
         - Name: Visible
           Id: g=21e41a695d771855a6c858528c07f46d
           Type: BaseDataVariableType
@@ -6300,10 +6377,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=84a87b17185c21680d3cc8d115d625e1
+                      Id: g=8a37b5a617ec049e49b79f84bbf643ba
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/UIDesign/AnimationsOnBehavior"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=31d7e877a9494addf1de160824895f3d
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=4cf0d749e6f6df2e1c99671008e129e3
                     Type: BaseDataVariableType
@@ -6687,7 +6771,7 @@ Children:
           Id: g=7e3bb398343f46d4cbbdd3936e44996b
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":""}
+          Value: {"LocaleId":"en-US","Text":"Default text"}
         - Name: Visible
           Id: g=5d28a26985d5e44c465cd13e4abeaec2
           Type: BaseDataVariableType
@@ -6732,6 +6816,573 @@ Children:
           Value: 0
         - Name: VerticalAlignment
           Id: g=f5382ed1e9101dc3bc36a773397df89f
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 0
+      - Name: TileScrollView
+        Id: g=ac7439dd47a206e7a55e216d910cae59
+        Type: FeatureTileObject
+        Children:
+        - Name: SVGTileBackground
+          Id: g=56e0f812d9a702db2bb92ead808418b1
+          Type: Image
+          Children:
+          - Name: Path
+            Id: g=ace68d21a38309efeddced201419351d
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=8;%PROJECTDIR%/imgs/white_tile_2.svg"
+        - Name: VLayoutContent
+          Id: g=0768542510be7a4d34a82381f30e296e
+          Type: ColumnLayout
+          Children:
+          - Name: 'svg-tile-icon'
+            Id: g=550d580007adecd97823441b0bc61d29
+            Type: Image
+            Children:
+            - Name: Path
+              Id: g=5afa224dfc8158614434a66fd97aa30c
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              Value: ""
+              Children:
+              - Name: DynamicLink
+                Id: g=185484a369e9842c22ccd94f15b9645f
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../Tile_Icon"
+          - Name: 'vlayout-labels'
+            Id: g=2f21b13497082ee5a6f32a1e631b29cb
+            Type: ColumnLayout
+            Children:
+            - Name: 'label-title'
+              Id: g=a010f091a1e566f1ddc4b0840510e92e
+              Type: Label
+              Children:
+              - Name: Text
+                Id: g=e990a47c3cfb535eee0ec3cfe73e3096
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Id: g=9f9c0c380b25c11aba18a425bb23517b
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../Tile_Title"
+            - Name: 'label-subtitle'
+              Id: g=e8a7f2ae4893daba5af7cfb5f5dbc4e9
+              Type: Label
+              Children:
+              - Name: Text
+                Id: g=4417b7c28b416045236cd5ab855579ac
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Id: g=0ee116f006a2105ede77d31d80f01a3f
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../Tile_Subtitle"
+        - Name: Tile_Favorite
+          Id: g=47ed91b7796a63e98b63bfcc16c5cb8b
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: false
+        - Name: ButtonScreenOpen
+          Id: g=3145953cf6d7fef58319dbda7a929078
+          Type: Button
+          Children:
+          - Name: MouseClickEventHandler1
+            Id: g=2f1c8229fb6f7c3432888d889bafe656
+            Type: EventHandler
+            Children:
+            - Name: ListenEventType
+              Id: g=3db2e6fe5a7e80f18aea14127653b9f1
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+            - Name: MethodsToCall
+              Id: g=74f6b30d8aeb0f4924bc277c9a6619ae
+              Type: BaseObjectType
+              Children:
+              - Name: MethodContainer1
+                Id: g=4944367a2156a0dca899a283b6c14730
+                Type: BaseObjectType
+                Children:
+                - Name: ObjectPointer
+                  Id: g=10ff2f7e03dda4bb4583f403c9e1c8fe
+                  Type: NodePointer
+                  DataType: NodeId
+                  Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  Children:
+                  - Name: Kind
+                    Id: g=abedb5cb68055b9f25f166ab16fe9d9b
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/ObjectTypes/BaseObjectType"
+                  - Name: DynamicLink
+                    Id: g=cb326a334c14334d619bbc0aa37654dd
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{PanelLoader}@NodeId"
+                - Name: Method
+                  Id: g=fa4deecf7ea0e740776b9442c538813d
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "ChangePanel"
+                - Name: InputArguments
+                  Id: g=0b0dae507ffc6f1278f9a88496af89c4
+                  Type: BaseObjectType
+                  Children:
+                  - Name: NewPanel
+                    Id: g=dea94f2bd6a1040468f44d52c5ed3e0e
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    Children:
+                    - Name: DynamicLink
+                      Id: g=b74f82876a1df3d762dd98a2df5d30aa
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=7e7360a74059cbad1f3b14db61ae1c2f
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
+                  - Name: AliasNode
+                    Id: g=a8678fcf0ab6b46fc7aaaeef9d07be02
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    ValueRank: ScalarOrOneDimension
+                    Value: {"IdType":0,"Id":0,"Namespace":-1}
+            - Name: EventArguments
+              Id: g=30ed2320268b3be1471e6e75d1607b2e
+              Type: MouseClickEvent
+              Children:
+              - Name: EventId
+                Id: g=32926002f6704b1910a10b2525205451
+                Type: PropertyType
+                DataType: ByteString
+                Value: ""
+              - Name: EventType
+                Id: g=3ae19c4c35df617d45abed3427e8b780
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+              - Name: SourceNode
+                Id: g=3ea286cc0657ce02783a1f5c130638b3
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+              - Name: SourceName
+                Id: g=08d306033770eb386230d296e272cc84
+                Type: PropertyType
+                DataType: String
+                Value: ""
+              - Name: Time
+                Id: g=297dc6039a6a6ac4b5f13b497351a57a
+                Type: PropertyType
+                DataType: UtcTime
+                Value: "1601-01-01T00:00:00.0000000"
+              - Name: ReceiveTime
+                Id: g=6b07bc51ef3d7ba7dfccdbc2cdd6bf1f
+                Type: PropertyType
+                DataType: UtcTime
+                Value: "1601-01-01T00:00:00.0000000"
+              - Name: Message
+                Id: g=b5e2ab7fe258cf9685f3501b4cb46fd2
+                Type: PropertyType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              - Name: Severity
+                Id: g=ce5175e880a39de825c053408d5f2d05
+                Type: PropertyType
+                DataType: UInt16
+                Value: 0
+        - Name: ButtonFavorite
+          Id: g=294379d3a94e03c557c630ce80d83331
+          Type: Button
+          Children:
+          - Name: ImagePath
+            Id: g=75acd162d08855a984bb5c64ed863c0a
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: ""
+            Children:
+            - Name: KeyValueConverter1
+              Id: g=34ecea38bd25d0b2abbe37b42df4a180
+              Type: ValueMapConverter
+              Children:
+              - Name: Source
+                Id: g=62da43b3097854ee715628fc67f76e3c
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Id: g=c6dbb791dd436969be685af2e0aae65e
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../Tile_Favorite"
+              - Name: Pairs
+                Id: g=62a11f3d085cb274ebf8d8be32c56584
+                Type: BaseObjectType
+                Children:
+                - Name: Pair
+                  Id: g=d487ef4c70a55705e007d11853c995ea
+                  Type: ValueMapPair
+                  Children:
+                  - Name: Key
+                    Id: g=4dfe7d590fde82de4da5cf6c8d83f392
+                    Type: BaseDataVariableType
+                    DataType: Boolean
+                    Value: false
+                  - Name: Value
+                    Id: g=65b10b95035a5dfa4637d4898b808572
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=8;%PROJECTDIR%/imgs/icons/Favorites-md.svg"
+                - Name: Pair1
+                  Id: g=c8421a1ea1c4526eb36fa36bdf04d5fe
+                  Type: ValueMapPair
+                  Children:
+                  - Name: Key
+                    Id: g=704c048e9ec6994bc2ca5bc9cf424722
+                    Type: BaseDataVariableType
+                    DataType: Boolean
+                    Value: true
+                  - Name: Value
+                    Id: g=ef01d0187e31ba4a8de584e72a995922
+                    Type: BaseDataVariableType
+                    DataType: ResourceUri
+                    Value: "ns=8;%PROJECTDIR%/imgs/icons/Favorite-sm.svg"
+          - Name: MouseClickEventHandler1
+            Id: g=bb02243a11f29cb0a1a9b1a86c8ea052
+            Type: EventHandler
+            Children:
+            - Name: ListenEventType
+              Id: g=d2c00b4262ffe6a865c3f57ddeca8889
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+            - Name: MethodsToCall
+              Id: g=eff17dc190429fa9e9614297d7f50458
+              Type: BaseObjectType
+              Children:
+              - Name: MethodContainer1
+                Id: g=b7c12bb30190e8aa28dd6b8c1e3cf80f
+                Type: BaseObjectType
+                Children:
+                - Name: ObjectPointer
+                  Id: g=66510d2d934a3cacf31cd477b2f562e9
+                  Type: NodePointer
+                  DataType: NodeId
+                  Value: "/Objects/Commands/VariableCommands"
+                  Children:
+                  - Name: Kind
+                    Id: g=4f7ba73064d0b9357a150474bdc1de1b
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: Method
+                  Id: g=94d6ee05ed88fb751f89f49ae8e81f98
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "Toggle"
+                - Name: InputArguments
+                  Id: g=bb84c141520169d237ffeaf030355a35
+                  Type: BaseObjectType
+                  Children:
+                  - Name: VariableToModify
+                    Id: g=83111e0fd3ab23a5f6e1a41976b04d80
+                    Type: BaseDataVariableType
+                    DataType: VariablePointer
+                    Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    Children:
+                    - Name: DynamicLink
+                      Id: g=946f253654581e50e51945245edfecbb
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../../Tile_Favorite@NodeId"
+                  - Name: ArrayIndex
+                    Id: g=696a330e5272a42d8cecae36da806d49
+                    Type: BaseDataVariableType
+                    DataType: UInt32
+                    ValueRank: ScalarOrOneDimension
+                    Value: 0
+              - Name: MethodContainer2
+                Id: g=46b41dcdbf8463777d2f4391a947b31e
+                Type: BaseObjectType
+                Children:
+                - Name: ObjectPointer
+                  Id: g=1ded1fc88f632931d32849a6b6068613
+                  Type: NodePointer
+                  DataType: NodeId
+                  Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  Children:
+                  - Name: Kind
+                    Id: g=b07facc0cf0fab99b4c8c01cf50613f4
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/ObjectTypes/BaseObjectType"
+                  - Name: DynamicLink
+                    Id: g=7663fc8b2ec3998b361b12ee68f77861
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../../EditFavoriteTilesLogic@NodeId"
+                - Name: Method
+                  Id: g=a9c25ac886f37f1082caf294cf10d882
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "ToggleFavorite"
+            - Name: EventArguments
+              Id: g=8bf11bbadfae305553638e1916679511
+              Type: MouseClickEvent
+              Children:
+              - Name: EventId
+                Id: g=f1ab39855d77025a42e5e2bee793dfd5
+                Type: PropertyType
+                DataType: ByteString
+                Value: ""
+              - Name: EventType
+                Id: g=c5e60ec03af4988cbddb88a1216b7245
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+              - Name: SourceNode
+                Id: g=066ae8e5237d51c0b9edb5332f24c55b
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+              - Name: SourceName
+                Id: g=db3090cc52ea07b04dcf64963d69b6bf
+                Type: PropertyType
+                DataType: String
+                Value: ""
+              - Name: Time
+                Id: g=2cc6e959c7d5ae75ef0501c5b46310ab
+                Type: PropertyType
+                DataType: UtcTime
+                Value: "1601-01-01T00:00:00.0000000"
+              - Name: ReceiveTime
+                Id: g=ea8c635c5f4dc606ec797b8b5479e9ef
+                Type: PropertyType
+                DataType: UtcTime
+                Value: "1601-01-01T00:00:00.0000000"
+              - Name: Message
+                Id: g=c8a1aa0b0eebd701ca345b1a6dcf9028
+                Type: PropertyType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              - Name: Severity
+                Id: g=14403d469c561c928293f8fc4ab314c5
+                Type: PropertyType
+                DataType: UInt16
+                Value: 0
+        - Name: Tile_Title
+          Id: g=93fcfd7a94ea57aad79aa3e8a5dd67c8
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":8,"TextId":"ScrollView"}
+        - Name: Tile_Subtitle
+          Id: g=c63e85a53a9c6db001cfde050994eee8
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":8,"TextId":"UIDesign"}
+        - Name: Tile_Icon
+          Id: g=be2d2c90a5af5063cd6ee7fab59948ad
+          Type: BaseDataVariableType
+          DataType: ResourceUri
+          Value: "ns=8;%PROJECTDIR%/imgs/icons/Features/ScrollView.svg"
+        - Name: Tile_Open_Panel
+          Id: g=5c60f68f69b45d7f2354a24032df66ff
+          Type: BaseDataVariableType
+          DataType: NodeId
+          Value: "/Objects/FeaturesDemo2/UI/Screens/UIDesign/ScrollViewImage"
+        - Name: ButtonInfo
+          Id: g=f528771d2b1531bc3560abf648daa30e
+          Type: Button
+          Children:
+          - Name: MouseClickEventHandler1
+            Id: g=d683f0e22dd381baf37a29331946f2c4
+            Type: EventHandler
+            Children:
+            - Name: ListenEventType
+              Id: g=c4dd244f6cce14b1a31c48afa653f4c7
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+            - Name: MethodsToCall
+              Id: g=cbf511b7ca31c56cec5f7ab127fbc7e9
+              Type: BaseObjectType
+              Children:
+              - Name: MethodContainer1
+                Id: g=7e6a965bb304900a15b5f2c50821f982
+                Type: BaseObjectType
+                Children:
+                - Name: ObjectPointer
+                  Id: g=1f4e9b21ff3f74c63ff729d70f55b48c
+                  Type: NodePointer
+                  DataType: NodeId
+                  Value: "/Objects/Commands/UICommands"
+                  Children:
+                  - Name: Kind
+                    Id: g=2df84b621db48df5712cdadfbb144ea3
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: Method
+                  Id: g=fb97db67701b0136f886294b19ed9fcd
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "OpenDialog"
+                - Name: InputArguments
+                  Id: g=2b5c12851a6af64582d9be23086edc56
+                  Type: BaseObjectType
+                  Children:
+                  - Name: Dialog
+                    Id: g=902887cd4db96c9a7b62fb268f8a5047
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    Value: "/Objects/FeaturesDemo2/UI/Templates/Common/FeatureInformation"
+                  - Name: AliasNode
+                    Id: g=ff34ccfb5394f5b5f73a9607487d9ecc
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    ValueRank: ScalarOrOneDimension
+                    Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    Children:
+                    - Name: DynamicLink
+                      Id: g=5ab34f18b8fbb74df79b625926d30762
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../..@NodeId"
+                  - Name: ParentItem
+                    Id: g=2a0b7746906286311d8712517c0addd9
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    Value: {"IdType":0,"Id":0,"Namespace":-1}
+                    Children:
+                    - Name: DynamicLink
+                      Id: g=eca5ab576665cd787b2f25a1b44e51ba
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../..@NodeId"
+                - Name: OutputArguments
+                  Id: g=6d545daa17eec23e3ad25cc2833071dd
+                  Type: BaseObjectType
+                  Children:
+                  - Name: DialogNodeId
+                    Id: g=b205b05fcac020d9c9bbfcac48081838
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    Value: {"IdType":0,"Id":0,"Namespace":-1}
+            - Name: EventArguments
+              Id: g=c04305c934acc6e92437bef44456bbd3
+              Type: MouseClickEvent
+              Children:
+              - Name: EventId
+                Id: g=0110bbc214a45de58daa13490a88c072
+                Type: PropertyType
+                DataType: ByteString
+                Value: ""
+              - Name: EventType
+                Id: g=67bbddc36f02537895c31a9deb80c879
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+              - Name: SourceNode
+                Id: g=4de955640b3f5e1ff7c683bbf64e5add
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+              - Name: SourceName
+                Id: g=a7af0b55eb713bf6fbbba3af1a23d647
+                Type: PropertyType
+                DataType: String
+                Value: ""
+              - Name: Time
+                Id: g=13025afabc0c11c4cf4c4a201c7c2a9c
+                Type: PropertyType
+                DataType: UtcTime
+                Value: "1601-01-01T00:00:00.0000000"
+              - Name: ReceiveTime
+                Id: g=13641163339beab38c166759b7e83703
+                Type: PropertyType
+                DataType: UtcTime
+                Value: "1601-01-01T00:00:00.0000000"
+              - Name: Message
+                Id: g=4cd55d707efd9b8d3480f114e400fdb4
+                Type: PropertyType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              - Name: Severity
+                Id: g=edb0001e8144357d07216ca6ef25049d
+                Type: PropertyType
+                DataType: UInt16
+                Value: 0
+        - Name: EditFavoriteTilesLogic
+          Id: g=3976d2b5420577b45e05a158d8a7a76b
+          Type: NetLogic
+          Children:
+          - Class: Reference
+            Target: g=404541099e0cfae1fe50a8128cdedf9e
+            Direction: Forward
+        - Name: Tile_Description
+          Id: g=2134198d69d5cd9bb018f51470279e2e
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":8,"TextId":"ScrollViewDescription"}
+        - Name: Visible
+          Id: g=edd991f79c79c3f6b785a1b52f55d051
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Enabled
+          Id: g=b891cca744ee0b6967d7bbd136af1954
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: ComingSoonText
+          Id: g=9de7a499d29dd9eb9c6fba87c3db200c
+          Type: Label
+          Children:
+          - Name: Visible
+            Id: g=1e2584d96ef82d04823905dd34776b95
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+            Children:
+            - Name: ExpressionEvaluator1
+              Id: g=50458bac8db02cd8675d2cb82508f7f7
+              Type: ExpressionEvaluator
+              Children:
+              - Name: Source0
+                Id: g=cdb94dc261748d04986fef2dd076fb5b
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Id: g=a6f7d95eea15258ac1a8919f26115247
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../Enabled"
+        - Name: HorizontalAlignment
+          Id: g=a812f769457a288c88e5110326ec71a4
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 0
+        - Name: VerticalAlignment
+          Id: g=0265d045f9cde722e6bd2dfba2747834
           Type: BaseVariableType
           DataType: VerticalAlignment
           ModellingRule: Optional
@@ -6884,10 +7535,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=3585f5e88bbc70eeba947cf98f3ad010
+                      Id: g=b817d3233f4eca2caaf7791a7074fd68
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/Converters/ExpressionEvaluators"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=0088bf80f1fa2948bb5e7e2f9cef3330
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=f1e3f3d8ec916579bd9dc07d4b13f8f8
                     Type: BaseDataVariableType
@@ -7426,10 +8084,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=7cfc7ce5c24eff688b737f9bdfb9ba53
+                      Id: g=4282ab64c020ab56c33fd032f3f24fb6
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/Converters/StringFormatters"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=421ef98ab57d4820a43b6b96be8accb2
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=095e1ffc187f17fd2786cfd31f58b506
                     Type: BaseDataVariableType
@@ -7974,10 +8639,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=3f3bd577fde0b82f1f67afa021931afe
+                      Id: g=baae371d0ff23edd0522c659afb7684b
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/Converters/KeyValueConverters"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=ef8244ca6675515749156d49ef9a3f15
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=cc3121fd745d51b79bfd49cc69bed5b2
                     Type: BaseDataVariableType
@@ -8516,10 +9188,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=b3a986c9d161c385e5f400eb6a1171b6
+                      Id: g=3d0c88f923d65cb230cd9253ac4b56eb
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/Converters/EngineeringUnitConverters"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=655beca6c53a52fecee1f761f4d7463c
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=b871aaa4733f20f613aed786b9241974
                     Type: BaseDataVariableType
@@ -9650,10 +10329,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=6bbbd575b5187ced5e534280f149cbc2
+                      Id: g=66d0aed0e29404fda2a93c9fba53ebbf
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/UsersManagement/UsersLogin"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=6a6e88d11158118ba471938b165f77fe
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=71e8c04d64cb1cea415df5718a992aef
                     Type: BaseDataVariableType
@@ -10192,10 +10878,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=036bb27d4f8b000e54073a3ca431dbec
+                      Id: g=34ce119cd8cc794a564a4af4e013ebcb
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/UsersManagement/Localization"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=1cdae8d83b441ce352ebe9976a2bbc6e
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=ad1b7c926cc554610d1b01f5475dea49
                     Type: BaseDataVariableType
@@ -10734,10 +11427,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=1d17b40d04cee5cf9c29fb7a76d68948
+                      Id: g=34f12ecf5c04bc57448fd731cc66e21b
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/UsersManagement/UsersEditor"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=3f5028c7aef5c0089d2f75e0c2b5752f
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=dbf84cc51701e28d4791666bebade5c6
                     Type: BaseDataVariableType
@@ -11306,10 +12006,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=484ddde34d437c8dbe7903a14b229e0a
+                      Id: g=67cb480360d7dfef9636dc03cf0efdf0
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/Alarms/AlarmsGrid"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=1fa734fd47030e2988e0a39ceba9d95f
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=545b61850ee25780d96f83bbe584ea63
                     Type: BaseDataVariableType
@@ -11848,10 +12555,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=fca019b5f2dc291ba1b4ff95b2d55b83
+                      Id: g=0221cf04003f687a3b0a006483860072
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/Alarms/AlarmsPerArea"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=765731c241db8a932d737598148eb692
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=f3201c94e2e90e3d9ede0fb8806d2e49
                     Type: BaseDataVariableType
@@ -12390,10 +13104,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=4ff4a2eda0b56409feab5e3128ab7668
+                      Id: g=590f923e570c644affa5d25a056ec158
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/Alarms/AlarmsHistory"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=913d175b9dbf2874e9dfffb70787e0d7
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=c78012d1582338eb13a13abc4a537485
                     Type: BaseDataVariableType
@@ -12962,10 +13683,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=510f441d4a848766be6cb790284ccdd3
+                      Id: g=99a5ff2bfbf101bc80ac2e1213717017
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/Data/TransitionedEvents"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=7141abda036674b3b1c1acf2908e3c56
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=3f13c3510ece3e842312d8f285a1611d
                     Type: BaseDataVariableType
@@ -13504,10 +14232,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=2106589651f549e1197c6d23d909a912
+                      Id: g=d5624c18555c201104ca563b4ab8997c
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/Data/Dataloggers"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=b5b87a28ff2e1db6bbd590f7ab09fabd
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=ae62cb98bb443a22db6e4d24809bef79
                     Type: BaseDataVariableType
@@ -14046,10 +14781,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=9c2f2c7661767b714966d98acbc734b3
+                      Id: g=77d021b7297b363fe13f7c854adc07fb
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/Data/Trends"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=138a0b276094008dce7fc85544684702
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=24b5f5753484313e2ba00326c6831d09
                     Type: BaseDataVariableType
@@ -14588,10 +15330,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=6a965b7981d029320f1c7095e2adb2a1
+                      Id: g=02bac96a23c213905142554fa4b8c43e
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/Data/Recipes"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=4a0303ad11a694fc1ab80628fbc7a5b6
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=ea759df94b8ccb722f615ef206e489b8
                     Type: BaseDataVariableType
@@ -15130,10 +15879,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=bdfc97d56cd1722fb954e8a780b72b82
+                      Id: g=5c30259a0e2ff12d045b173f6fb0cd4c
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/Data/Reports"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=c88c48c7c5182d0b882708a7736ccd15
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=951b170fb271924142fa792718d86e42
                     Type: BaseDataVariableType
@@ -15672,10 +16428,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=5fed522946ccdf493e9d8c10d828b4bb
+                      Id: g=8326fc1dc81fbae3f4ec839359e8e6a8
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/Data/XYCharts"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=c595b59ff849b4924f2dfc654244739b
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=a61f85f04a42380c4ff156a6acefccbd
                     Type: BaseDataVariableType
@@ -16214,10 +16977,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=169061165aacbe4669f650f4786c4578
+                      Id: g=9d1ebd3fcccdbf23ff5e22e9d3bb6c45
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/Data/Queries"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=20a7c5c182803703382bfbffe3b3dbae
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=90a9857f6c323f34dc591b9379628e01
                     Type: BaseDataVariableType
@@ -16756,10 +17526,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=4e72f953df7f7299ad5e2ba123faf06e
+                      Id: g=d2ffbbd819d1c4a8952cd67dc3115ec1
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/Data/HistogramCharts"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=f54135e90fd06b1d3e8398b4139bf2e6
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=9bd3b0cacd01ed6779f6e59472bace6b
                     Type: BaseDataVariableType
@@ -17298,10 +18075,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=2cbc45badcbfaf347fb2862350fd59e1
+                      Id: g=3f8840b8f81337d2d3f221a50d631448
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/Data/PieCharts"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=969ddb4cfb30a7bf34dc4a4990b6f58b
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=0b3b1903ce4dc39b0ca4fe2f03636247
                     Type: BaseDataVariableType
@@ -17870,10 +18654,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=763211997a5f4c6399e1901f4b798b89
+                      Id: g=69617047e76cf700760ee55e69b89315
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/OOP/Aliases"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=ab6a69d379ded26af62eb67f8726c82b
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=a60d7778c4e85e24df37fc8cf26681a0
                     Type: BaseDataVariableType
@@ -18412,10 +19203,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=c870c2601f9c4a4150a404d2d1d2b480
+                      Id: g=a7fcb0fd745842272ac58e29ea14b39a
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/OOP/RuntimeUI"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=f5a8790da1ed9a19430dfda30b367aa0
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=1fff0a4f36a4128414ea7eed3ed82cfe
                     Type: BaseDataVariableType
@@ -18954,10 +19752,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=2c637d74292796b6f80c20fe6014f11e
+                      Id: g=9c3ada263a5c68d20c839d4f267f5494
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/OOP/RuntimeAlarms"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=b9893250511bda56927658d32b080012
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=53b88349ae941ae0e2df1de804e48aa5
                     Type: BaseDataVariableType
@@ -19520,10 +20325,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=352d0ac125af28ac91c7654abaa206db
+                      Id: g=a459c470d109f09f6f6bfc7555c17717
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/Auditing/Audit"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=f65504b423417179a1945057d377f90f
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=efbddc688d7a5f5ba6b3ba252364efd3
                     Type: BaseDataVariableType
@@ -20062,10 +20874,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=9f87fd9fdfff3751c9303279cb4f8874
+                      Id: g=b7feb1e934e657f93b16d4261ada18a9
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/Auditing/SingleAndDoubleSignature"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=d5d756ecc07a848d30489704122130bc
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=e4cddcae54718b005e6b3409a8ad9de5
                     Type: BaseDataVariableType
@@ -20449,7 +21268,7 @@ Children:
           Id: g=c2ae3c802cd0638f75573f06395aa606
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":""}
+          Value: {"LocaleId":"en-US","Text":"Default text"}
         - Name: Visible
           Id: g=4681d653508bb29c429d09cc392ab6c3
           Type: BaseDataVariableType
@@ -20610,10 +21429,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=34f70f1075334aa93b12240735df8761
+                      Id: g=c9d7df82906138a964d633139bfa55f9
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/Auditing/FileSigningWorkflow"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=e2418f3de4a71494f6dda698727654d5
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=fca6ea84fce31de121836397fa06c6c2
                     Type: BaseDataVariableType
@@ -20997,7 +21823,7 @@ Children:
           Id: g=314f3584c65b7052312f59222f3342d0
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":""}
+          Value: {"LocaleId":"en-US","Text":"Default text"}
         - Name: Visible
           Id: g=cff1df678d9ddc6530a36c9d22d7daac
           Type: BaseDataVariableType
@@ -21188,10 +22014,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=8c63a4fb364cc218d0bbfecaaf3d73cd
+                      Id: g=70325b59e1afdc7ed628c8387dbdf964
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/OPCUA/MachineToMachine"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=476abb7e4d41a6fc698afc3faaff73f3
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=8f9d1dfc7596b79ae1a1b70968e07cfe
                     Type: BaseDataVariableType
@@ -21730,10 +22563,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=6e7e4dc29ff79675b974a14b1589cdad
+                      Id: g=6e83a991253c8405302dcbe7586ea7ba
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/OPCUA/CallMethodsFrom"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=be348b5dc3d48407ece7bc06df4c81cd
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=9e3ed0df1f041233de44ff53358682af
                     Type: BaseDataVariableType
@@ -22272,10 +23112,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=0db60e2b9f0fe5225fec4b7d93fd2efa
+                      Id: g=5e80fbc49b29baf56df0697d97d181b0
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/OPCUA/CompanionSpecifications"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=318489b94b6d368464300886d159715d
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=6cde0a0c339c8b6fcc94bd9438d1c516
                     Type: BaseDataVariableType
@@ -22659,7 +23506,7 @@ Children:
           Id: g=4e59605b0fec8f860c7cd7d2b9a8c591
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":""}
+          Value: {"LocaleId":"en-US","Text":"Default text"}
         - Name: Visible
           Id: g=930cce98816ab884eaee1103c61253a7
           Type: BaseDataVariableType
@@ -22850,10 +23697,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=e6ae3ba23624a896731ff75392b1a63f
+                      Id: g=8daf22b7cb7e4521247af89726aa3b3f
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/Retentivity/Translations"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=fb39dfe82e2a85e0affdb60860eae2ea
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=db51b82ad00cb2c0d368682778a52780
                     Type: BaseDataVariableType
@@ -23404,10 +24258,17 @@ Children:
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                     Children:
                     - Name: DynamicLink
-                      Id: g=0924b41732bd2d486cfb82dbfd4471cd
+                      Id: g=d18910e8d0c508354d313aee9a11ed46
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/Retentivity/UI"
+                      Value: "../../../../../../Tile_Open_Panel"
+                      Children:
+                      - Name: Mode
+                        Id: g=f4ab5f83bfca67c8e14aacd16c7a62c0
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
                   - Name: AliasNode
                     Id: g=6411545475861863aa12f045ecf300b1
                     Type: BaseDataVariableType
@@ -23791,7 +24652,7 @@ Children:
           Id: g=1bd14b50d6a52dc165604b9b1934b1ee
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":""}
+          Value: {"LocaleId":"en-US","Text":"Default text"}
         - Name: Visible
           Id: g=a172796d4d1dd8497e5645df0c3da4b5
           Type: BaseDataVariableType

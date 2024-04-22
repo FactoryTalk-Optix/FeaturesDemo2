@@ -128,8 +128,10 @@ Children:
       Value: 0
     - Class: Reference
       Target: ns=3;i=1181
+      Direction: Forward
     - Class: Reference
       Target: ns=3;i=1183
+      Direction: Forward
   - Name: BottomBar
     Id: g=5fdae38fa2bc1e928b403f5395b8633c
     Type: Panel

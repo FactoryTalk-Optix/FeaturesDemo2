@@ -179,7 +179,7 @@ Children:
         Id: g=4fa0cc6e62e0dc6367821044c2dc1ac5
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: ScrollView
       Id: g=6e6437336da8e31a7015503a443e053c
       Type: ScrollView
@@ -1998,7 +1998,7 @@ Children:
         Id: g=84dd66fb49fa59341aef1f184b4500f3
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: Columns
       Id: g=fd0d355751ac370cfcfae84cda81e22a
       Type: RowLayout
@@ -5327,7 +5327,7 @@ Children:
         Id: g=86b04549554f371489fc7d31cb6e85e8
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: Columns
       Id: g=a58875ef227fe75dde6a2ffa392c47c9
       Type: RowLayout
@@ -8369,7 +8369,7 @@ Children:
         Id: g=d17e969e706d4de9e852ed9c1d64ceb1
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: RecipesEditor
       Id: g=95dba321ef3b4a074e2f83baa2f2288e
       Type: Panel
@@ -12144,7 +12144,7 @@ Children:
         Id: g=ffcb36bdde9e9addd027f6e23c0bf0d5
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: Columns
       Id: g=1684deaabf9db97bf8ecaec77d1176b6
       Type: RowLayout
@@ -14129,7 +14129,7 @@ Children:
         Id: g=986fe5ab7a9b0b531ca89de52084313f
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: Rows
       Id: g=e2bf39a74573be0ee29a4de766517460
       Type: ColumnLayout
@@ -16780,7 +16780,7 @@ Children:
         Id: g=df177eb378c0a4301fbd6d038b9e7064
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: Columns
       Id: g=f45a834372ab9bce26d3d41549b36ccc
       Type: RowLayout
@@ -18296,7 +18296,7 @@ Children:
         Id: g=56df6de9398d7d233863eb5394d38dd9
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: Columns
       Id: g=cc28a40d6fa6931bf053d574bca97b13
       Type: RowLayout
@@ -19505,7 +19505,7 @@ Children:
         Id: g=5462e262b95d6bd2a85ba6343c7578d9
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: TrackedValues
       Id: g=28ab92534a410edb1983fefa6e374d3c
       Type: Rectangle
@@ -21387,7 +21387,7 @@ Children:
         Id: g=f2c07b5079309b6d362a1c1c8c95ed01
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
   - Name: CategoryName
     Id: g=229d36c4e4daf1193cc7b4e54d9e68fb
     Type: BaseDataVariableType

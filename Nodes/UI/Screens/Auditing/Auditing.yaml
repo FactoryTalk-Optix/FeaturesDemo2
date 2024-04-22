@@ -179,7 +179,7 @@ Children:
         Id: g=58624d98111928b5566e943ac7aada7f
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: ScrollView
       Id: g=0be703c8039716bac7d9d32b2629469e
       Type: ScrollView
@@ -4039,7 +4039,7 @@ Children:
         Id: g=b5e32b6a3cd5b0b2689d2adef7ff845a
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
   - Name: CategoryName
     Id: g=5fd69018183dd0b23c5eea83e32a107e
     Type: BaseDataVariableType
@@ -4227,7 +4227,7 @@ Children:
         Id: g=e397d7b1322468130c88216a8066b688
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
   - Name: CategoryName
     Id: g=8a9aade8b85a5cf15fe440a689725edf
     Type: BaseDataVariableType

@@ -179,7 +179,7 @@ Children:
         Id: g=751ddf19722c321cf7f3423e1bc48d29
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: Border
       Id: g=70604ee68b8d9f2719f941defa250403
       Type: Rectangle
@@ -1871,7 +1871,7 @@ Children:
         Id: g=6473a6be02b9d00a59f54ef80bf7e474
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: Title
       Id: g=2453e9f0c1c1f7c72b59536b549cfd7a
       Type: Label
@@ -3879,7 +3879,7 @@ Children:
         Id: g=a60cbed9fb30bc1199966c61e5486f1e
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
   - Name: CategoryName
     Id: g=fd6920b6053e1bff3b9488fac4e05d63
     Type: BaseDataVariableType

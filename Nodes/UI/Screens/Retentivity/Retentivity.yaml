@@ -179,7 +179,7 @@ Children:
         Id: g=e14b40a6d40d268fdaf22a3229b67673
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: HorizontalLayout
       Id: g=abdbe0f36ef165897411e7e15a068c8e
       Type: RowLayout
@@ -1338,7 +1338,7 @@ Children:
         Id: g=9b50c588b6f52bbec4ecdec0f227d276
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: Card1
       Id: g=6daad8ed7950047c152008f895f91727
       Type: BaseCard

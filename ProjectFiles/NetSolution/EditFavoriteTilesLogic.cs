@@ -42,7 +42,7 @@ public class EditFavoriteTilesLogic : BaseNetLogic {
         newFav.GetVariable("Tile_Icon").Value = Owner.GetVariable("Tile_Icon").Value;
         newFav.GetVariable("Tile_Open_Panel").Value = Owner.GetVariable("Tile_Open_Panel").Value;
         newFav.GetVariable("Tile_Favorite").Value = Owner.GetVariable("Tile_Favorite").Value;
-        newFav.GetVariable("Tile_Description").Value = Owner.GetVariable("Tile_Description").Value;
+        newFav.GetVariable("Tile_Description").Value = ((LocalizedText)Owner.GetVariable("Tile_Description").Value).TextId;
         myUser.Add(newFav);
     }
 }

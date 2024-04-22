@@ -179,7 +179,7 @@ Children:
         Id: g=26f9552cf2aff760a2de36e74ddb5549
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: HorizontalLayout
       Id: g=71e12867c356e114115bf6b7053bee2b
       Type: RowLayout
@@ -1728,7 +1728,7 @@ Children:
         Id: g=28d9efb5964f0ce0a1898952fdd09137
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: RuntimeGenerationControls
       Id: g=82409e1f413cd111d6dc3a14691d6fe7
       Type: Rectangle
@@ -3266,7 +3266,7 @@ Children:
                 Id: g=933dd6ea10519eafcc60d847c3e45d14
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+                Value: "{CurrentStylesheet}/WindowColor"
             - Name: HorizontalAlignment
               Id: g=6e7f65507b002a588ac1381b31ffd2ce
               Type: BaseVariableType
@@ -3401,7 +3401,7 @@ Children:
                 Id: g=104411546bb7a1798c474c4ef168808b
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+                Value: "{CurrentStylesheet}/WindowColor"
             - Name: ScrollView
               Id: g=9021c9ca04df1daebbda0461fe34ec99
               Type: ScrollView
@@ -3787,7 +3787,7 @@ Children:
         Id: g=9e885df88554892d01d3a74a91c4fa12
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
     - Name: TrackedValues
       Id: g=63e5c6ba0397c0fe252c40efd4962782
       Type: Rectangle
@@ -6385,7 +6385,7 @@ Children:
         Id: g=ed73f04aff2011a0caab45ad60b4476e
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/FeaturesDemo2/UI/NativePresentationEngine/StyleSheet/WindowColor"
+        Value: "{CurrentStylesheet}/WindowColor"
   - Name: CategoryName
     Id: g=5910a715d6454227e918c4d93cf1f7ce
     Type: BaseDataVariableType
