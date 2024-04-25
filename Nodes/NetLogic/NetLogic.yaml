@@ -152,15 +152,6 @@ Children:
     Type: BaseDataVariableType
     DataType: DateTime
     Value: "1601-01-01T00:00:00.0000000"
-- Name: PrepareForWebDemo
-  Id: g=f0c1cf92974eb635e3fdf2a52c6082c3
+- Name: RecipesCreation
+  Id: g=725ff6d28be3f4b08ec8c13a275d5c52
   Type: NetLogic
-  Children:
-  - Name: BehaviourStartPriority
-    Id: g=2a506e258a5df1a0bf6d2e11f999b032
-    Type: BehaviourStartPriorityVariableType
-    DataType: Byte
-    Value: 180
-  - Class: Method
-    Name: RemoveNativePresentationEngineFeatures
-    Id: g=75d20f8adae927413b17c06557b91558

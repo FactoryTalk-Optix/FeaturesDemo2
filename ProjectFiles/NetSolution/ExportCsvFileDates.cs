@@ -1,24 +1,8 @@
 #region Using directives
 using System;
-using UAManagedCore;
-using OpcUa = UAManagedCore.OpcUa;
 using FTOptix.HMIProject;
 using FTOptix.NetLogic;
-using FTOptix.UI;
-using FTOptix.NativeUI;
-using FTOptix.WebUI;
-using FTOptix.Alarm;
-using FTOptix.Recipe;
-using FTOptix.DataLogger;
-using FTOptix.EventLogger;
-using FTOptix.SQLiteStore;
-using FTOptix.Store;
-using FTOptix.Report;
-using FTOptix.OPCUAServer;
-using FTOptix.Retentivity;
-using FTOptix.CoreBase;
-using FTOptix.Core;
-using FTOptix.System;
+using UAManagedCore;
 #endregion
 
 public class ExportCsvFileDates : BaseNetLogic

@@ -1,12 +1,11 @@
 #region Using directives
-using UAManagedCore;
-using OpcUa = UAManagedCore.OpcUa;
-using FTOptix.HMIProject;
-using FTOptix.System;
-using FTOptix.NetLogic;
 using FTOptix.Core;
 using FTOptix.CoreBase;
-using FTOptix.UI;
+using FTOptix.HMIProject;
+using FTOptix.NetLogic;
+using FTOptix.System;
+using UAManagedCore;
+using OpcUa = UAManagedCore.OpcUa;
 #endregion
 
 public class FTRemoteAccessWidgetSetupLogic : BaseNetLogic
@@ -54,14 +53,14 @@ public class FTRemoteAccessWidgetSetupLogic : BaseNetLogic
 
         Log.Info(LOG_CATEGORY, "Creating FTRemoteAccess widget variables and Remote Connection Request event commands.");
 
-        IUAVariable usernameVariable = ftRemoteAccessNode.GetVariable(usernameVariableName);
+        var usernameVariable = ftRemoteAccessNode.GetVariable(usernameVariableName);
         if (usernameVariable == null)
         {
             usernameVariable = InformationModel.MakeVariable(usernameVariableName, OpcUa.DataTypes.String);
             ftRemoteAccessNode.Add(usernameVariable);
         }
 
-        IUAVariable eventArgumentUsernameVariable = eventArguments.GetVariable("Username");
+        var eventArgumentUsernameVariable = eventArguments.GetVariable("Username");
         if (eventArgumentUsernameVariable == null)
         {
             Log.Error(LOG_CATEGORY, getErrorMessage + "Username");
@@ -70,14 +69,14 @@ public class FTRemoteAccessWidgetSetupLogic : BaseNetLogic
 
         SetupEventHandler(eventHandlerNode, usernameVariable, OpcUa.DataTypes.String, eventArgumentUsernameVariable);
 
-        IUAVariable ipAddressVariable = ftRemoteAccessNode.GetVariable(ipAddressVariableName);
+        var ipAddressVariable = ftRemoteAccessNode.GetVariable(ipAddressVariableName);
         if (ipAddressVariable == null)
         {
             ipAddressVariable = InformationModel.MakeVariable(ipAddressVariableName, OpcUa.DataTypes.String);
             ftRemoteAccessNode.Add(ipAddressVariable);
         }
 
-        IUAVariable eventArgumentIpAddressVariable = eventArguments.GetVariable("IpAddress");
+        var eventArgumentIpAddressVariable = eventArguments.GetVariable("IpAddress");
         if (eventArgumentIpAddressVariable == null)
         {
             Log.Error(LOG_CATEGORY, getErrorMessage + "IpAddress");
@@ -86,14 +85,14 @@ public class FTRemoteAccessWidgetSetupLogic : BaseNetLogic
 
         SetupEventHandler(eventHandlerNode, ipAddressVariable, OpcUa.DataTypes.String, eventArgumentIpAddressVariable);
 
-        IUAVariable supervisorIdVariable = ftRemoteAccessNode.GetVariable(supervisorIdVariableName);
+        var supervisorIdVariable = ftRemoteAccessNode.GetVariable(supervisorIdVariableName);
         if (supervisorIdVariable == null)
         {
             supervisorIdVariable = InformationModel.MakeVariable(supervisorIdVariableName, OpcUa.DataTypes.ByteString);
             ftRemoteAccessNode.Add(supervisorIdVariable);
         }
 
-        IUAVariable eventArgumentSupervisorIdVariable = eventArguments.GetVariable("SupervisorId");
+        var eventArgumentSupervisorIdVariable = eventArguments.GetVariable("SupervisorId");
         if (eventArgumentSupervisorIdVariable == null)
         {
             Log.Error(LOG_CATEGORY, getErrorMessage + "SupervisorId");
@@ -102,7 +101,7 @@ public class FTRemoteAccessWidgetSetupLogic : BaseNetLogic
 
         SetupEventHandler(eventHandlerNode, supervisorIdVariable, OpcUa.DataTypes.ByteString, eventArgumentSupervisorIdVariable);
 
-        IUAVariable connectionPendingVariable = ftRemoteAccessNode.GetVariable(connectionPendingVariableName);
+        var connectionPendingVariable = ftRemoteAccessNode.GetVariable(connectionPendingVariableName);
         if (connectionPendingVariable == null)
         {
             connectionPendingVariable = InformationModel.MakeVariable(connectionPendingVariableName, OpcUa.DataTypes.Boolean);
@@ -118,7 +117,7 @@ public class FTRemoteAccessWidgetSetupLogic : BaseNetLogic
                                           IUAVariable eventArgumentVariable)
     {
         string methodContainerName = "MethodContainer" + variableNode.BrowseName;
-        IUANode methodContainerNode = eventHandlerNode.Find(methodContainerName);
+        var methodContainerNode = eventHandlerNode.Find(methodContainerName);
         if (methodContainerNode != null)
             return;
 

@@ -1,16 +1,13 @@
 #region Using directives
-using UAManagedCore;
 using FTOptix.NetLogic;
+using UAManagedCore;
 #endregion
 
 public class NetworkInterfacesEditModelReaderLogic : BaseNetLogic
 {
-    public NetworkInterfacesEditModelReaderLogic(IUAObject editModelNetworkInterfacesObject)
-    {
-        this.editModelNetworkInterfacesObject = editModelNetworkInterfacesObject;
-    }
+    public NetworkInterfacesEditModelReaderLogic(IUAObject editModelNetworkInterfacesObject) => this.editModelNetworkInterfacesObject = editModelNetworkInterfacesObject;
 
-    public NetworkInterfacesEditModelReaderLogic() {}
+    public NetworkInterfacesEditModelReaderLogic() { }
 
     public IUAVariable GetDhcpVariable(string interfaceName)
     {
@@ -81,5 +78,5 @@ public class NetworkInterfacesEditModelReaderLogic : BaseNetLogic
         return additonalIPAddressesObject;
     }
 
-    readonly private IUAObject editModelNetworkInterfacesObject;
+    private readonly IUAObject editModelNetworkInterfacesObject;
 }

@@ -1,16 +1,16 @@
 #region Using directives
+using System;
 using FTOptix.Core;
 using FTOptix.HMIProject;
 using FTOptix.NetLogic;
 using FTOptix.UI;
-using System;
 using UAManagedCore;
-using FTOptix.NativeUI;
-using FTOptix.System;
 #endregion
 
-public class MultiStateSelectorStatusUpdater : BaseNetLogic {
-    public override void Start() {
+public class MultiStateSelectorStatusUpdater : BaseNetLogic
+{
+    public override void Start()
+    {
         styleSheet = GetStyleSheet();
 
         multiStateSelector = Owner as Rectangle;
@@ -43,7 +43,8 @@ public class MultiStateSelectorStatusUpdater : BaseNetLogic {
         OnValueVariableChanged(valueVariable.Value);
     }
 
-    public override void Stop() {
+    public override void Stop()
+    {
         valueVariableChangeRegistration?.Dispose();
         valueVariableChangeRegistration = null;
 
@@ -52,33 +53,45 @@ public class MultiStateSelectorStatusUpdater : BaseNetLogic {
     }
 
     [ExportMethod]
-    public void UpdateStatus() {
-        try {
-            lock (isWaitingLock) {
+    public void UpdateStatus()
+    {
+        try
+        {
+            lock (isWaitingLock)
+            {
                 valueVariable.Value = (uint)((valueVariable.Value + 1) % GetNumberOfStates());
             }
-        } catch (Exception ex) {
+        }
+        catch (Exception ex)
+        {
             Log.Error("MultiStateSelector", $"Unable to change value for multi-state selector {Log.Node(multiStateSelector)}: {ex}");
         }
     }
 
-    private void RegisterValueVariableChangedObserver() {
-        var valueVariableObserver = new CallbackVariableChangeObserver((_, incomingValue, __, ___, _____) => {
+    private void RegisterValueVariableChangedObserver()
+    {
+        var valueVariableObserver = new CallbackVariableChangeObserver((_, incomingValue, __, ___, _____) =>
+        {
             OnValueVariableChanged(incomingValue);
         });
         valueVariableChangeRegistration = valueVariable.RegisterEventObserver(valueVariableObserver, EventType.VariableValueChanged, affinityId);
     }
 
-    private void RegisterNumberOfStatesChangedObserver() {
-        var numberOfStatesVariableObserver = new CallbackVariableChangeObserver((_, incomingValue, __, ___, ____) => {
+    private void RegisterNumberOfStatesChangedObserver()
+    {
+        var numberOfStatesVariableObserver = new CallbackVariableChangeObserver((_, incomingValue, __, ___, ____) =>
+        {
             valueVariable.Value = 0;
         });
         numberOfStatesVariableChangeRegistration = numberOfStatesVariable.RegisterEventObserver(numberOfStatesVariableObserver, EventType.VariableValueChanged, affinityId);
     }
 
-    private void OnValueVariableChanged(int incomingValue) {
-        try {
-            lock (isWaitingLock) {
+    private void OnValueVariableChanged(int incomingValue)
+    {
+        try
+        {
+            lock (isWaitingLock)
+            {
                 int updatedValue = incomingValue;
 
                 // Normalize incoming value inside the [0, ..., numberOfStates) range
@@ -91,23 +104,27 @@ public class MultiStateSelectorStatusUpdater : BaseNetLogic {
                 else
                     UpdateMultiStateSelectorView((uint)incomingValue);
             }
-        } catch (Exception ex) {
+        }
+        catch (Exception ex)
+        {
             Log.Error("MultiStateSelector", $"Unable to change value for multi-state selector {Log.Node(multiStateSelector)}: {ex}");
         }
     }
 
-    private void UpdateMultiStateSelectorView(uint newStatus) {
+    private void UpdateMultiStateSelectorView(uint newStatus)
+    {
         SetMultiStateSelectorBackgroundColor(newStatus);
 
         // Compute the position of newStatus inside MultiStateSelector.
         // e.g. newStatus==3 it means that before there are 3 states, with possible intra-handle spaces (states are 0-indexed).
         // If the space between two handles is negative it means these handles must ideally overlap to fit into external rectangle width.
         // Thus it is necessary to subtract some space from the circular handle LeftMargin.
-        var circularHandleWithTrailingSpaceWidth = circularHandle.Width + GetSpaceBetweenHandles();
+        float circularHandleWithTrailingSpaceWidth = circularHandle.Width + GetSpaceBetweenHandles();
         circularHandle.LeftMargin = circularHandleWithTrailingSpaceWidth * newStatus;
     }
 
-    private void SetMultiStateSelectorBackgroundColor(uint newStatus) {
+    private void SetMultiStateSelectorBackgroundColor(uint newStatus)
+    {
         Color color;
         if (newStatus == 0)
             color = styleSheet.InteractiveColor;
@@ -117,15 +134,17 @@ public class MultiStateSelectorStatusUpdater : BaseNetLogic {
         multiStateSelector.FillColor = color;
     }
 
-    private float GetSpaceBetweenHandles() {
+    private float GetSpaceBetweenHandles()
+    {
         // Calculate the remaining space that is not occupied by circular handles. This space must then be uniformly distributed among all states.
-        var numberOfStates = GetNumberOfStates();
-        var spaceOccupiedByCircularHandles = circularHandle.Width * numberOfStates;
-        var spaceToDistributeBetweenCircularHandles = multiStateSelector.Width - spaceOccupiedByCircularHandles;
+        uint numberOfStates = GetNumberOfStates();
+        float spaceOccupiedByCircularHandles = circularHandle.Width * numberOfStates;
+        float spaceToDistributeBetweenCircularHandles = multiStateSelector.Width - spaceOccupiedByCircularHandles;
         return spaceToDistributeBetweenCircularHandles / (numberOfStates - 1);
     }
 
-    private uint GetNumberOfStates() {
+    private uint GetNumberOfStates()
+    {
         uint numberOfStates = numberOfStatesVariable.Value;
         if (numberOfStates <= 1)
             throw new CoreException($"Illegal NumberOfStates value for multi-state selector {Log.Node(multiStateSelector)}, must be greater than 1");
@@ -133,9 +152,10 @@ public class MultiStateSelectorStatusUpdater : BaseNetLogic {
         return numberOfStates;
     }
 
-    private StyleSheet GetStyleSheet() {
-        IUANode node = Owner;
-        while (!(node is PresentationEngine))
+    private StyleSheet GetStyleSheet()
+    {
+        var node = Owner;
+        while (node is not PresentationEngine)
             node = node.Owner;
 
         var stylesheetVariable = node.GetVariable("StyleSheet");

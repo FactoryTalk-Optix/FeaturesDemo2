@@ -1,30 +1,32 @@
 #region Using directives
+using System;
 using FTOptix.HMIProject;
 using FTOptix.NetLogic;
-using System;
 using UAManagedCore;
-using FTOptix.UI;
-using FTOptix.NativeUI;
-using FTOptix.System;
 #endregion
 
-public class ReportEditorOutputMessageLogic : BaseNetLogic {
-    public override void Start() {
+public class ReportEditorOutputMessageLogic : BaseNetLogic
+{
+    public override void Start()
+    {
         messageVariable = Owner.Children.Get<IUAVariable>("Message");
         if (messageVariable == null)
             throw new ArgumentNullException("Unable to find variable Message in OutputMessage label");
     }
 
-
-    public override void Stop() {
-        lock (lockObject) {
+    public override void Stop()
+    {
+        lock (lockObject)
+        {
             task?.Dispose();
         }
     }
 
     [ExportMethod]
-    public void SetOutputMessage(string message) {
-        lock (lockObject) {
+    public void SetOutputMessage(string message)
+    {
+        lock (lockObject)
+        {
             task?.Dispose();
 
             messageVariable.Value = message;
@@ -34,11 +36,9 @@ public class ReportEditorOutputMessageLogic : BaseNetLogic {
     }
 
     [ExportMethod]
-    public void SetOutputLocalizedMessage(LocalizedText message) {
-        SetOutputMessage(InformationModel.LookupTranslation(message).Text);
-    }
+    public void SetOutputLocalizedMessage(LocalizedText message) => SetOutputMessage(InformationModel.LookupTranslation(message).Text);
 
-    DelayedTask task;
-    IUAVariable messageVariable;
-    object lockObject = new object();
+    private DelayedTask task;
+    private IUAVariable messageVariable;
+    private readonly object lockObject = new object();
 }

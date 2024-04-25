@@ -1,8 +1,8 @@
 #region Using directives
-using UAManagedCore;
 using FTOptix.NetLogic;
-using FTOptix.UI;
 using FTOptix.System;
+using FTOptix.UI;
+using UAManagedCore;
 #endregion
 
 public class ConnectionSwitchLogic : BaseNetLogic
@@ -54,15 +54,15 @@ public class ConnectionSwitchLogic : BaseNetLogic
         }
 
         if (connectionSwitch.Checked)
-            ftRemoteAccessNode.ConnectToServer();
+            _ = ftRemoteAccessNode.ConnectToServer();
         else
-            ftRemoteAccessNode.DisconnectFromServer();
+            _ = ftRemoteAccessNode.DisconnectFromServer();
     }
 
     private void OnServerConnectionChanged(object sender, VariableChangeEventArgs args)
     {
         var serverConnectionValue = (ServerConnection)args.NewValue.Value;
-        bool switchShouldBeOn = (serverConnectionValue == ServerConnection.Connecting || serverConnectionValue == ServerConnection.Connected);
+        bool switchShouldBeOn = serverConnectionValue == ServerConnection.Connecting || serverConnectionValue == ServerConnection.Connected;
 
         // only update the switch value if it's in the wrong state, otherwise the switch handler would get triggered
         if (connectionSwitch.Checked != switchShouldBeOn)

@@ -1,17 +1,16 @@
 #region Using directives
-using FTOptix.HMIProject;
-using FTOptix.NetLogic;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
+using FTOptix.HMIProject;
+using FTOptix.NetLogic;
 using UAManagedCore;
-using FTOptix.UI;
-using FTOptix.NativeUI;
-using FTOptix.System;
 #endregion
 
-public class MatrixEditorUpdater : BaseNetLogic {
-    public override void Start() {
+public class MatrixEditorUpdater : BaseNetLogic
+{
+    public override void Start()
+    {
         var context = LogicObject.Context;
         logicObjectAffinityId = context.AssignAffinityId();
         logicObjectSenderId = context.AssignSenderId();
@@ -20,7 +19,7 @@ public class MatrixEditorUpdater : BaseNetLogic {
         matrixValueVariable = Owner.GetVariable("MatrixValue");
         if (matrixValueVariable == null)
             throw new CoreConfigurationException("Unable to find MatrixValue variable");
-        var matrixValueVariableValue = matrixValueVariable.Value.Value;
+        object matrixValueVariableValue = matrixValueVariable.Value.Value;
         if (!matrixValueVariableValue.GetType().IsArray)
             throw new CoreConfigurationException("MatrixValue is not an array");
         var matrixArray = (Array)matrixValueVariableValue;
@@ -30,54 +29,61 @@ public class MatrixEditorUpdater : BaseNetLogic {
         // GridModel represents a support variable that acts as a link between the VectorValue model variable and the widget data grid.
         gridModelVariable = LogicObject.GetVariable("GridModel");
 
-        using (var resumeDispatchOnExit = context.SuspendDispatch(logicObjectAffinityId)) {
-            // Register the observer on MatrixValue
-            matrixValueVariableChangeObserver = new CallbackVariableChangeObserver(MatrixValueVariableValueChanged);
-            matrixValueVariableRegistration = matrixValueVariable.RegisterEventObserver(
-                matrixValueVariableChangeObserver, EventType.VariableValueChanged, logicObjectAffinityId);
+        using var resumeDispatchOnExit = context.SuspendDispatch(logicObjectAffinityId);
+        // Register the observer on MatrixValue
+        matrixValueVariableChangeObserver = new CallbackVariableChangeObserver(MatrixValueVariableValueChanged);
+        matrixValueVariableRegistration = matrixValueVariable.RegisterEventObserver(
+            matrixValueVariableChangeObserver, EventType.VariableValueChanged, logicObjectAffinityId);
 
-            cellVariableChangeObserver = new CallbackVariableChangeObserver(CellVariableValueChanged);
-            CreateGrid(matrixArray);
-        }
+        cellVariableChangeObserver = new CallbackVariableChangeObserver(CellVariableValueChanged);
+        CreateGrid(matrixArray);
     }
 
-    public override void Stop() {
-        using (var destroyDispatchOnExit = LogicObject.Context.TerminateDispatchOnStop(logicObjectAffinityId)) {
-            if (cellVariableRegistrations != null) {
-                cellVariableRegistrations.ForEach(registration => registration.Dispose());
-                cellVariableRegistrations = null;
-            }
-
-            if (matrixValueVariableRegistration != null) {
-                matrixValueVariableRegistration.Dispose();
-                matrixValueVariableRegistration = null;
-            }
-
-            if (gridModelVariable != null)
-                gridModelVariable.Value = NodeId.Empty;
-
-            if (gridObject != null) {
-                gridObject.Delete();
-                gridObject = null;
-            }
-
-            currentRowCount = 0;
-            currentCellCount = 0;
-
-            gridModelVariable = null;
-            matrixValueVariable = null;
-            logicObjectSenderId = 0;
-            logicObjectAffinityId = 0;
+    public override void Stop()
+    {
+        using var destroyDispatchOnExit = LogicObject.Context.TerminateDispatchOnStop(logicObjectAffinityId);
+        if (cellVariableRegistrations != null)
+        {
+            cellVariableRegistrations.ForEach(registration => registration.Dispose());
+            cellVariableRegistrations = null;
         }
+
+        if (matrixValueVariableRegistration != null)
+        {
+            matrixValueVariableRegistration.Dispose();
+            matrixValueVariableRegistration = null;
+        }
+
+        if (gridModelVariable != null)
+            gridModelVariable.Value = NodeId.Empty;
+
+        if (gridObject != null)
+        {
+            gridObject.Delete();
+            gridObject = null;
+        }
+
+        currentRowCount = 0;
+        currentCellCount = 0;
+
+        gridModelVariable = null;
+        matrixValueVariable = null;
+        logicObjectSenderId = 0;
+        logicObjectAffinityId = 0;
     }
 
     #region Initialize GridModel from MatrixValue
-    private void CreateGrid(Array matrixArray) {
-        if (cellVariableRegistrations != null) {
+    private void CreateGrid(Array matrixArray)
+    {
+        if (cellVariableRegistrations != null)
+        {
             cellVariableRegistrations.ForEach(registration => registration.Dispose());
             cellVariableRegistrations.Clear();
-        } else
+        }
+        else
+        {
             cellVariableRegistrations = new List<IEventRegistration>();
+        }
 
         currentRowCount = (uint)matrixArray.GetLength(0);
         currentCellCount = (uint)matrixArray.GetLength(1);
@@ -91,7 +97,8 @@ public class MatrixEditorUpdater : BaseNetLogic {
         gridModelVariable.Value = gridObject.NodeId;
     }
 
-    private IUAObject CreateRow(Array matrixArray, uint rowIndex) {
+    private IUAObject CreateRow(Array matrixArray, uint rowIndex)
+    {
         var rowObject = InformationModel.MakeObject($"Row{rowIndex}");
 
         // Determine the OPC UA type from the given C# Array
@@ -100,8 +107,9 @@ public class MatrixEditorUpdater : BaseNetLogic {
         if (opcuaTypeNodeId == null)
             throw new CoreConfigurationException($"Unable to find an OPC UA data type corresponding to the {netType} .NET type");
 
-        var cellCount = (uint)matrixArray.GetLength(1);
-        for (uint cellIndex = 0; cellIndex < cellCount; ++cellIndex) {
+        uint cellCount = (uint)matrixArray.GetLength(1);
+        for (uint cellIndex = 0; cellIndex < cellCount; ++cellIndex)
+        {
             // Create the cell variable and register for changes
             var cellVariable = InformationModel.MakeVariable($"Cell{cellIndex}", opcuaTypeNodeId);
             cellVariable.Value = new UAValue(matrixArray.GetValue(rowIndex, cellIndex));
@@ -118,26 +126,27 @@ public class MatrixEditorUpdater : BaseNetLogic {
     #endregion
 
     #region Monitor each element inside MatrixValue
-    private void CellVariableValueChanged(IUAVariable variable, UAValue newValue, UAValue oldValue, uint[] indexes, ulong senderId) {
+    private void CellVariableValueChanged(IUAVariable variable, UAValue newValue, UAValue oldValue, uint[] indexes, ulong senderId)
+    {
         if (senderId == logicObjectSenderId)
             return;
 
-        var cellBrowseName = variable.BrowseName;
-        var cellIndex = uint.Parse(cellBrowseName.Remove(0, "Cell".Length));
+        string cellBrowseName = variable.BrowseName;
+        uint cellIndex = uint.Parse(cellBrowseName.Remove(0, "Cell".Length));
 
-        var rowBrowseName = variable.Owner.BrowseName;
-        var rowIndex = uint.Parse(rowBrowseName.Remove(0, "Row".Length));
+        string rowBrowseName = variable.Owner.BrowseName;
+        uint rowIndex = uint.Parse(rowBrowseName.Remove(0, "Row".Length));
 
-        using (var restorePreviousSenderIdOnExit = LogicObject.Context.SetCurrentThreadSenderId(logicObjectSenderId)) {
-            matrixValueVariable.SetValue(newValue.Value, new uint[] { rowIndex, cellIndex });
-        }
+        using var restorePreviousSenderIdOnExit = LogicObject.Context.SetCurrentThreadSenderId(logicObjectSenderId);
+        matrixValueVariable.SetValue(newValue.Value, new uint[] { rowIndex, cellIndex });
     }
 
     #endregion
 
     #region Monitor MatrixValue variable
 
-    private void MatrixValueVariableValueChanged(IUAVariable variable, UAValue newValue, UAValue oldValue, uint[] indexes, ulong senderId) {
+    private void MatrixValueVariableValueChanged(IUAVariable variable, UAValue newValue, UAValue oldValue, uint[] indexes, ulong senderId)
+    {
         if (senderId == logicObjectSenderId)
             return;
 
@@ -147,12 +156,14 @@ public class MatrixEditorUpdater : BaseNetLogic {
             UpdateAllCellValues((Array)newValue.Value);
     }
 
-    private void UpdateAllCellValues(Array matrixArray) {
-        var rowCount = (uint)matrixArray.GetLength(0);
-        var cellCount = (uint)matrixArray.GetLength(1);
+    private void UpdateAllCellValues(Array matrixArray)
+    {
+        uint rowCount = (uint)matrixArray.GetLength(0);
+        uint cellCount = (uint)matrixArray.GetLength(1);
 
         // Rebuild the entire grid model if the number of cells changes
-        if (cellCount != currentCellCount) {
+        if (cellCount != currentCellCount)
+        {
             CreateGrid(matrixArray);
             return;
         }
@@ -167,28 +178,33 @@ public class MatrixEditorUpdater : BaseNetLogic {
         currentCellCount = cellCount;
 
         for (uint rowIndex = 0; rowIndex < rowCount; ++rowIndex)
+        {
             for (uint cellIndex = 0; cellIndex < cellCount; ++cellIndex)
                 UpdateCellValue(new UAValue(matrixArray.GetValue(rowIndex, cellIndex)), new uint[] { rowIndex, cellIndex });
+        }
     }
 
-    private void AddRows(uint fromRow, uint toRow, Array values) {
+    private void AddRows(uint fromRow, uint toRow, Array values)
+    {
         for (uint rowIndex = fromRow; rowIndex <= toRow; ++rowIndex)
             gridObject.Add(CreateRow(values, rowIndex));
     }
 
-    private void RemoveLastRows(uint fromRow, uint toRow) {
-        for (uint rowIndex = fromRow; rowIndex <= toRow; ++rowIndex) {
+    private void RemoveLastRows(uint fromRow, uint toRow)
+    {
+        for (uint rowIndex = fromRow; rowIndex <= toRow; ++rowIndex)
+        {
             var rowObject = gridObject.Children[$"Row{rowIndex}"];
             rowObject.Delete();
         }
     }
 
-    private void UpdateCellValue(UAValue newValue, uint[] indexes) {
+    private void UpdateCellValue(UAValue newValue, uint[] indexes)
+    {
         var cellObject = gridObject.Children[$"Row{indexes[0]}"].GetVariable($"Cell{indexes[1]}");
 
-        using (var restorePreviousSenderIdOnExit = LogicObject.Context.SetCurrentThreadSenderId(logicObjectSenderId)) {
-            cellObject.Value = newValue;
-        }
+        using var restorePreviousSenderIdOnExit = LogicObject.Context.SetCurrentThreadSenderId(logicObjectSenderId);
+        cellObject.Value = newValue;
     }
 
     #endregion

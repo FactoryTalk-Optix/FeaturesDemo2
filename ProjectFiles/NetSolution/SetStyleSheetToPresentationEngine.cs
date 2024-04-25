@@ -1,25 +1,10 @@
 #region Using directives
-using System;
-using UAManagedCore;
-using OpcUa = UAManagedCore.OpcUa;
 using FTOptix.HMIProject;
-using FTOptix.NetLogic;
-using FTOptix.WebUI;
 using FTOptix.NativeUI;
-using FTOptix.Alarm;
+using FTOptix.NetLogic;
 using FTOptix.UI;
-using FTOptix.Recipe;
-using FTOptix.DataLogger;
-using FTOptix.EventLogger;
-using FTOptix.SQLiteStore;
-using FTOptix.Store;
-using FTOptix.Report;
-using FTOptix.OPCUAServer;
-using FTOptix.System;
-using FTOptix.Retentivity;
-using FTOptix.CoreBase;
-using FTOptix.UI;
-using FTOptix.Core;
+using FTOptix.WebUI;
+using UAManagedCore;
 #endregion
 
 public class SetStyleSheetToPresentationEngine : BaseNetLogic
@@ -47,8 +32,8 @@ public class SetStyleSheetToPresentationEngine : BaseNetLogic
             return;
         }
         // Get the current presentation engine
-        var currentPresentationEngine = GetPresentationEngine((IUANode)Owner);
-        if (currentPresentationEngine == null) 
+        var currentPresentationEngine = GetPresentationEngine(Owner);
+        if (currentPresentationEngine == null)
         {
             Log.Error("SetStyleSheetLogic.SetStyleSheet", "Cannot find any PresentationEngine!");
             return;

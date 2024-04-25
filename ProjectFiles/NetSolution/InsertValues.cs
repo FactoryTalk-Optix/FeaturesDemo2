@@ -1,33 +1,34 @@
 #region Using directives
+using System;
 using FTOptix.HMIProject;
 using FTOptix.NetLogic;
 using FTOptix.Store;
-using System;
 using UAManagedCore;
-using FTOptix.NativeUI;
-using FTOptix.System;
-using FTOptix.UI;
 #endregion
 
-public class InsertValues : BaseNetLogic {
-    public override void Start() {
+public class InsertValues : BaseNetLogic
+{
+    public override void Start()
+    {
         // Insert code to be executed when the user-defined logic is started
     }
 
-    public override void Stop() {
+    public override void Stop()
+    {
         // Insert code to be executed when the user-defined logic is stopped
     }
 
     [ExportMethod]
-    public void InsertCustomQuery() {
+    public void InsertCustomQuery()
+    {
         // Get the current project folder.
-        var project = Project.Current;
+        _ = Project.Current;
 
         // Save the names of the columns of the table to an array
         string[] columns = { "LocalTimestamp", "Timestamp", "dataloggerVariable1", "dataloggerVariable2", "dataloggerVariable3" };
 
         // Create and populate a matrix with values to insert into the odbc table
-        var rawValues = new object[1, 5];
+        object[,] rawValues = new object[1, 5];
 
         // Column TimeStamp
         rawValues[0, 0] = DateTime.Now;

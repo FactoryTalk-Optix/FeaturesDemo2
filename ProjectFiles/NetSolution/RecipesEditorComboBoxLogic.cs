@@ -4,23 +4,22 @@ using FTOptix.NetLogic;
 using FTOptix.Recipe;
 using FTOptix.UI;
 using UAManagedCore;
-using FTOptix.NativeUI;
-using FTOptix.System;
 #endregion
 
-public class RecipesEditorComboBoxLogic : BaseNetLogic {
-    public override void Start() {
+public class RecipesEditorComboBoxLogic : BaseNetLogic
+{
+    public override void Start()
+    {
         comboBox = (ComboBox)Owner;
         comboBox.SelectedValueVariable.VariableChange += SelectedValueVariable_VariableChange;
         LoadSelectedRecipeData();
     }
 
-    private void SelectedValueVariable_VariableChange(object sender, VariableChangeEventArgs e) {
-        LoadSelectedRecipeData();
-    }
+    private void SelectedValueVariable_VariableChange(object sender, VariableChangeEventArgs e) => LoadSelectedRecipeData();
 
-    private void LoadSelectedRecipeData() {
-        LocalizedText selectedText = (LocalizedText)comboBox.SelectedValue;
+    private void LoadSelectedRecipeData()
+    {
+        var selectedText = (LocalizedText)comboBox.SelectedValue;
         if (selectedText == null || string.IsNullOrEmpty(selectedText.Text))
             return;
 
@@ -42,9 +41,7 @@ public class RecipesEditorComboBoxLogic : BaseNetLogic {
         recipeSchemaObject.CopyFromStoreRecipe(comboBox.Text, editModelNode.NodeId, CopyErrorPolicy.BestEffortCopy);
     }
 
-    public override void Stop() {
-        comboBox.SelectedValueVariable.VariableChange -= SelectedValueVariable_VariableChange;
-    }
+    public override void Stop() => comboBox.SelectedValueVariable.VariableChange -= SelectedValueVariable_VariableChange;
 
     private ComboBox comboBox;
 }

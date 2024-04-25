@@ -1,24 +1,25 @@
 #region Using directives
-using FTOptix.NetLogic;
 using System;
+using FTOptix.NetLogic;
 using UAManagedCore;
-using FTOptix.NativeUI;
-using FTOptix.System;
-using FTOptix.UI;
 #endregion
 
-public class ClockLogic : BaseNetLogic {
-    public override void Start() {
+public class ClockLogic : BaseNetLogic
+{
+    public override void Start()
+    {
         periodicTask = new PeriodicTask(UpdateTime, 1000, LogicObject);
         periodicTask.Start();
     }
 
-    public override void Stop() {
+    public override void Stop()
+    {
         periodicTask.Dispose();
         periodicTask = null;
     }
 
-    private void UpdateTime() {
+    private void UpdateTime()
+    {
         LogicObject.GetVariable("Time").Value = DateTime.Now;
         LogicObject.GetVariable("UTCTime").Value = DateTime.UtcNow;
     }

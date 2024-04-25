@@ -1,8 +1,7 @@
 #region Using directives
-using UAManagedCore;
 using FTOptix.NetLogic;
 using FTOptix.System;
-using FTOptix.UI;
+using UAManagedCore;
 #endregion
 
 public class IncomingConnectionApprovalLogic : BaseNetLogic
@@ -73,7 +72,9 @@ public class IncomingConnectionApprovalLogic : BaseNetLogic
             connectionPendingVariable.Value = false;
         }
         else
+        {
             Log.Error(LOG_CATEGORY, "Failed to accept connection request. FTRemoteAccess runtime is not connected.");
+        }
     }
 
     [ExportMethod]
@@ -108,7 +109,9 @@ public class IncomingConnectionApprovalLogic : BaseNetLogic
             connectionPendingVariable.Value = false;
         }
         else
+        {
             Log.Error(LOG_CATEGORY, "Failed to deny connection request. FTRemoteAccess runtime is not connected.");
+        }
     }
 
     private FTRemoteAccessWidgetDataObject ftRemoteAccessWidgetDataObject;

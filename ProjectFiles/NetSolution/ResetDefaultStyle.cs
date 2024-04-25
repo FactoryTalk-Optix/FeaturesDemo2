@@ -4,26 +4,31 @@ using FTOptix.NativeUI;
 using FTOptix.NetLogic;
 using FTOptix.UI;
 using UAManagedCore;
-using FTOptix.System;
 #endregion
 
-public class ResetDefaultStyle : BaseNetLogic {
+public class ResetDefaultStyle : BaseNetLogic
+{
     public override void Start()
     {
+        // Method intentionally left empty.
     }
 
-    public override void Stop() {
+    public override void Stop()
+    {
         // Set Style to "Default"
 
         // Get Native Presentation Engine object to set StyleSheet property
-        NativeUIPresentationEngine nodeToUI = Project.Current.Get<NativeUIPresentationEngine>("UI/NativePresentationEngine");
+        var nodeToUI = Project.Current.Get<NativeUIPresentationEngine>("UI/NativePresentationEngine");
 
         // Get "Default" StyleSheet object to get its NodeID
-        StyleSheet nodeToDefaultStyleSheet = Project.Current.Get<StyleSheet>("UI/StyleSheets/FeatureDemo2");
-        try {
+        var nodeToDefaultStyleSheet = Project.Current.Get<StyleSheet>("UI/StyleSheets/FeatureDemo2");
+        try
+        {
             // Set StyleSheet property with "Default"
             nodeToUI.StyleSheet = nodeToDefaultStyleSheet.NodeId;
-        } catch {
+        }
+        catch
+        {
             return;
         }
     }

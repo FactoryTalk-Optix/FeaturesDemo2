@@ -1,15 +1,8 @@
 #region Using directives
-using System;
-using UAManagedCore;
-using OpcUa = UAManagedCore.OpcUa;
-using FTOptix.NetLogic;
-using FTOptix.NativeUI;
-using FTOptix.HMIProject;
-using FTOptix.UI;
-using FTOptix.CoreBase;
 using FTOptix.Core;
-using FTOptix.Retentivity;
-using FTOptix.System;
+using FTOptix.NetLogic;
+using FTOptix.UI;
+using UAManagedCore;
 #endregion
 
 public class LoginChangePasswordButtonLogic : BaseNetLogic
@@ -26,7 +19,7 @@ public class LoginChangePasswordButtonLogic : BaseNetLogic
         }
         else
         {
-            var username = Session.User.BrowseName;
+            string username = Session.User.BrowseName;
             try
             {
                 var userWithExpiredPassword = Owner.GetAlias("UserWithExpiredPassword");
@@ -40,8 +33,7 @@ public class LoginChangePasswordButtonLogic : BaseNetLogic
             var result = Session.ChangePassword(username, newPassword, oldPassword);
             if (result.ResultCode == ChangePasswordResultCode.Success)
             {
-                var parentDialog = Owner.Owner?.Owner?.Owner as Dialog;
-                if (parentDialog != null && result.Success)
+                if (Owner.Owner?.Owner?.Owner is Dialog parentDialog && result.Success)
                     parentDialog.Close();
             }
             else

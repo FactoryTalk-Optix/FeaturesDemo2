@@ -24,7 +24,7 @@ public class FTOptixStudioVersionLogic : BaseNetLogic
         while (numBytesToRead > 0)
         {
             // Read may return anything from 0 to numBytesToRead.
-            var n = fileStream.Read(bytes, numBytesRead, numBytesToRead);
+            int n = fileStream.Read(bytes, numBytesRead, numBytesToRead);
 
             // Break when the end of the file is reached.
             if (n == 0)
@@ -34,13 +34,14 @@ public class FTOptixStudioVersionLogic : BaseNetLogic
             numBytesToRead -= n;
         }
 
-        var versionString = System.Text.Encoding.UTF8.GetString(bytes, 0, bytes.Length);
+        string versionString = System.Text.Encoding.UTF8.GetString(bytes, 0, bytes.Length);
 
-        Label label = Owner as Label;
+        var label = Owner as Label;
         label.Text = versionString;
     }
 
     public override void Stop()
     {
+        // Method intentionally left empty.
     }
 }

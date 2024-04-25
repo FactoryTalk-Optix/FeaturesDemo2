@@ -1,8 +1,8 @@
 #region Using directives
-using UAManagedCore;
 using FTOptix.NetLogic;
-using FTOptix.UI;
 using FTOptix.System;
+using FTOptix.UI;
+using UAManagedCore;
 #endregion
 
 public class RequestAssistanceSwitchLogic : BaseNetLogic
@@ -53,7 +53,9 @@ public class RequestAssistanceSwitchLogic : BaseNetLogic
         if (assistanceSwitch.Checked)
         {
             if (ftRemoteAccessNode.AssistanceRequestMode == AssistanceRequestMode.Enabled)
-                ftRemoteAccessNode.OpenAssistanceRequest(name, contactInfo, description);
+            {
+                _ = ftRemoteAccessNode.OpenAssistanceRequest(name, contactInfo, description);
+            }
             else if (ftRemoteAccessNode.AssistanceRequestMode == AssistanceRequestMode.ContactDetailsRequired)
             {
                 if (!string.IsNullOrEmpty(name) &&
@@ -67,15 +69,19 @@ public class RequestAssistanceSwitchLogic : BaseNetLogic
                         Log.Error(LOG_CATEGORY, "Failed to open assistance request. FTRemoteAccess runtime is not connected.");
                 }
                 else
+                {
                     Log.Warning(LOG_CATEGORY, "Assistance requests cannot be submitted with empty information.");
+                }
             }
             else
+            {
                 Log.Warning(LOG_CATEGORY, "Assistance requests are disabled.");
+            }
         }
         else
         {
             // switch has been unchecked, request has been cancelled
-            ftRemoteAccessNode.CloseAssistanceRequest();
+            _ = ftRemoteAccessNode.CloseAssistanceRequest();
         }
     }
 

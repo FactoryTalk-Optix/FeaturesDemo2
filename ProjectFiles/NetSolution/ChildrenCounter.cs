@@ -1,13 +1,7 @@
 #region Using directives
-using System;
-using System.Linq;
-using CoreBase = FTOptix.CoreBase;
 using FTOptix.HMIProject;
-using UAManagedCore;
 using FTOptix.NetLogic;
-using FTOptix.NativeUI;
-using FTOptix.System;
-using FTOptix.UI;
+using UAManagedCore;
 #endregion
 
 public class ChildrenCounter : BaseNetLogic
@@ -21,8 +15,8 @@ public class ChildrenCounter : BaseNetLogic
             return;
         }
 
-        var nodePointerValue = (NodeId) nodePointerVariable.Value;
-        if (nodePointerValue == null || nodePointerValue  == NodeId.Empty)
+        var nodePointerValue = (NodeId)nodePointerVariable.Value;
+        if (nodePointerValue == null || nodePointerValue == NodeId.Empty)
         {
             Log.Warning("ChildrenCounter", "Node variable not set");
             return;
@@ -53,8 +47,7 @@ public class ChildrenCounter : BaseNetLogic
 
     public override void Stop()
     {
-        if (referencesEventRegistration != null)
-            referencesEventRegistration.Dispose();
+        referencesEventRegistration?.Dispose();
 
         referencesEventRegistration = null;
         referencesObserver = null;
@@ -68,10 +61,7 @@ public class ChildrenCounter : BaseNetLogic
             this.countVariable = countVariable;
         }
 
-        public void Initialize()
-        {
-            countVariable.Value = nodeToMonitor.Children.Count;
-        }
+        public void Initialize() => countVariable.Value = nodeToMonitor.Children.Count;
 
         public void OnReferenceAdded(IUANode sourceNode, IUANode targetNode, NodeId referenceTypeId, ulong senderId)
         {
@@ -95,8 +85,8 @@ public class ChildrenCounter : BaseNetLogic
                    referenceTypeId == UAManagedCore.OpcUa.ReferenceTypes.HasOrderedComponent;
         }
 
-        private IUANode nodeToMonitor;
-        private IUAVariable countVariable;
+        private readonly IUANode nodeToMonitor;
+        private readonly IUAVariable countVariable;
     }
 
     private ReferencesObserver referencesObserver;

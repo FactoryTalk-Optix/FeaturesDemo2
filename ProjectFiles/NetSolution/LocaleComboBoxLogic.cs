@@ -1,14 +1,9 @@
 #region Using directives
-using System;
-using FTOptix.CoreBase;
 using FTOptix.HMIProject;
-using UAManagedCore;
-using OpcUa = UAManagedCore.OpcUa;
 using FTOptix.NetLogic;
 using FTOptix.UI;
-using FTOptix.OPCUAServer;
-using FTOptix.NativeUI;
-using FTOptix.System;
+using UAManagedCore;
+using OpcUa = UAManagedCore.OpcUa;
 #endregion
 
 public class LocaleComboBoxLogic : BaseNetLogic
@@ -17,11 +12,11 @@ public class LocaleComboBoxLogic : BaseNetLogic
     {
         var localeCombo = (ComboBox)Owner;
 
-        var projectLocales = (string[])Project.Current.Localization.Locales;
+        string[] projectLocales = Project.Current.Localization.Locales;
         var modelLocales = InformationModel.MakeObject("Locales");
         modelLocales.Children.Clear();
 
-        foreach (var locale in projectLocales)
+        foreach (string locale in projectLocales)
         {
             var language = InformationModel.MakeVariable(locale, OpcUa.DataTypes.String);
             language.Value = locale;

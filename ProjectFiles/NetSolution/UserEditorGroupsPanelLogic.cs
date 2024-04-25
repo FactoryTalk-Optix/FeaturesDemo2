@@ -1,12 +1,9 @@
 #region Using directives
 using FTOptix.HMIProject;
-using UAManagedCore;
-using OpcUa = UAManagedCore.OpcUa;
 using FTOptix.NetLogic;
 using FTOptix.UI;
-using FTOptix.WebUI;
-using FTOptix.NativeUI;
-using FTOptix.System;
+using UAManagedCore;
+using OpcUa = UAManagedCore.OpcUa;
 #endregion
 
 public class UserEditorGroupsPanelLogic : BaseNetLogic
@@ -57,8 +54,7 @@ public class UserEditorGroupsPanelLogic : BaseNetLogic
         if (groups == null)
             return;
 
-        if (panel != null)
-            panel.Delete();
+        panel?.Delete();
 
         panel = InformationModel.MakeObject<ColumnLayout>("Container");
         panel.HorizontalAlignment = HorizontalAlignment.Stretch;
@@ -73,7 +69,6 @@ public class UserEditorGroupsPanelLogic : BaseNetLogic
                 groupCheckBox.GetVariable("User").SetDynamicLink(userVariable);
                 groupCheckBox.HorizontalAlignment = HorizontalAlignment.Stretch;
 
-
                 panel.Add(groupCheckBox);
                 panel.Height += groupCheckBox.Height;
             }
@@ -86,12 +81,10 @@ public class UserEditorGroupsPanelLogic : BaseNetLogic
                 panel.Add(groupLabel);
                 panel.Height += groupLabel.Height;
             }
-
         }
 
         var scrollView = Owner.Get("ScrollView");
-        if (scrollView != null)
-            scrollView.Add(panel);
+        scrollView?.Add(panel);
     }
 
     private void SetCheckedValues()

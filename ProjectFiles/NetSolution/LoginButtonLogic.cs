@@ -1,21 +1,17 @@
 #region Using directives
 using System;
-using FTOptix.CoreBase;
-using FTOptix.HMIProject;
-using UAManagedCore;
-using OpcUa = UAManagedCore.OpcUa;
-using FTOptix.NetLogic;
 using FTOptix.Core;
+using FTOptix.HMIProject;
+using FTOptix.NetLogic;
 using FTOptix.UI;
-using FTOptix.NativeUI;
-using FTOptix.System;
+using UAManagedCore;
 #endregion
 
 public class LoginButtonLogic : BaseNetLogic
 {
     public override void Start()
     {
-        ComboBox comboBox = Owner.Owner.Get<ComboBox>("Username");
+        var comboBox = Owner.Owner.Get<ComboBox>("Username");
         if (Project.Current.Authentication.AuthenticationMode == AuthenticationMode.ModelOnly)
         {
             comboBox.Mode = ComboBoxMode.Normal;
@@ -28,7 +24,7 @@ public class LoginButtonLogic : BaseNetLogic
 
     public override void Stop()
     {
-
+        // Method intentionally left empty.
     }
 
     [ExportMethod]
@@ -41,14 +37,13 @@ public class LoginButtonLogic : BaseNetLogic
             return;
         }
 
-        var passwordExpiredDialogType = LogicObject.GetAlias("PasswordExpiredDialogType") as DialogType;
-        if (passwordExpiredDialogType == null)
+        if (LogicObject.GetAlias("PasswordExpiredDialogType") is not DialogType passwordExpiredDialogType)
         {
             Log.Error("LoginButtonLogic", "Missing PasswordExpiredDialogType alias");
             return;
         }
 
-        Button loginButton = (Button)Owner;
+        var loginButton = (Button)Owner;
         loginButton.Enabled = false;
 
         try
@@ -59,7 +54,7 @@ public class LoginButtonLogic : BaseNetLogic
                 loginButton.Enabled = true;
                 var user = usersAlias.Get<User>(username);
                 var ownerButton = (Button)Owner;
-                ownerButton.OpenDialog(passwordExpiredDialogType, user.NodeId);
+                _ = ownerButton.OpenDialog(passwordExpiredDialogType, user.NodeId);
                 return;
             }
             else if (loginResult.ResultCode != ChangeUserResultCode.Success)

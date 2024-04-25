@@ -1,9 +1,9 @@
 #region Using directives
-using UAManagedCore;
-using FTOptix.HMIProject;
-using FTOptix.System;
-using FTOptix.NetLogic;
 using System.Collections.Generic;
+using FTOptix.HMIProject;
+using FTOptix.NetLogic;
+using FTOptix.System;
+using UAManagedCore;
 #endregion
 
 public class SystemToNetworkInterfacesEditModelWriterLogic : BaseNetLogic
@@ -14,7 +14,7 @@ public class SystemToNetworkInterfacesEditModelWriterLogic : BaseNetLogic
         editModelNetworkInterfacesElementsReader = new NetworkInterfacesEditModelReaderLogic(editModelNetworkInterfacesObject);
     }
 
-    public SystemToNetworkInterfacesEditModelWriterLogic() {}
+    public SystemToNetworkInterfacesEditModelWriterLogic() { }
 
     public void InitializeEditModel(List<NetworkInterface> networkInterfaces)
     {
@@ -70,6 +70,6 @@ public class SystemToNetworkInterfacesEditModelWriterLogic : BaseNetLogic
         defaultGatewayVariable.Value = networkInterface.DefaultGateway;
     }
 
-    readonly private IUAObject editModelNetworkInterfacesObject;
-    readonly private NetworkInterfacesEditModelReaderLogic editModelNetworkInterfacesElementsReader;
+    private readonly IUAObject editModelNetworkInterfacesObject;
+    private readonly NetworkInterfacesEditModelReaderLogic editModelNetworkInterfacesElementsReader;
 }

@@ -8,11 +8,12 @@ public class ApplicationNameLogic : BaseNetLogic
 {
     public override void Start()
     {
-        Label label = Owner as Label;
+        var label = Owner as Label;
         label.Text = Project.Current.BrowseName;
     }
 
     public override void Stop()
     {
+        // Method intentionally left empty.
     }
 }

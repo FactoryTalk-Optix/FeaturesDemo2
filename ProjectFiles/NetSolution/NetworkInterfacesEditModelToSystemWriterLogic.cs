@@ -1,23 +1,20 @@
 #region Using directives
-using UAManagedCore;
-using FTOptix.System;
-using FTOptix.NetLogic;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
+using FTOptix.NetLogic;
+using FTOptix.System;
+using UAManagedCore;
 #endregion
 
 public class NetworkInterfacesEditModelToSystemWriterLogic : BaseNetLogic
 {
-    public NetworkInterfacesEditModelToSystemWriterLogic(IUAObject editModelNetworkInterfacesObject)
-    {
-        editModelNetworkInterfacesReader = new NetworkInterfacesEditModelReaderLogic(editModelNetworkInterfacesObject);
-    }
+    public NetworkInterfacesEditModelToSystemWriterLogic(IUAObject editModelNetworkInterfacesObject) => editModelNetworkInterfacesReader = new NetworkInterfacesEditModelReaderLogic(editModelNetworkInterfacesObject);
 
-    public NetworkInterfacesEditModelToSystemWriterLogic() {}
+    public NetworkInterfacesEditModelToSystemWriterLogic() { }
 
     public void WriteEditModelToSystemModel(List<NetworkInterface> networkInterfaces)
     {
-        foreach (NetworkInterface networkInterface in networkInterfaces)
+        foreach (var networkInterface in networkInterfaces)
         {
             string interfaceName = networkInterface.BrowseName;
             if (string.IsNullOrEmpty(interfaceName))
@@ -55,7 +52,7 @@ public class NetworkInterfacesEditModelToSystemWriterLogic : BaseNetLogic
 
     private static bool WriteStandardPropertiesIntoSystemModel(EditModelNetworkInterface editModelNetworkInterface, NetworkInterface networkInterface)
     {
-        var isStandardConfigurationValid = IPAddressValidator.IsStandardConfigurationValid(editModelNetworkInterface);
+        bool isStandardConfigurationValid = IPAddressValidator.IsStandardConfigurationValid(editModelNetworkInterface);
         if (!isStandardConfigurationValid)
         {
             Log.Error(NetworkSettingsLogic.LOGGING_CATEGORY, $"Configuration for network interface {editModelNetworkInterface.interfaceName} is not valid. The last valid configuration will be used.");
@@ -83,43 +80,43 @@ public class NetworkInterfacesEditModelToSystemWriterLogic : BaseNetLogic
         public string defaultGateway;
     };
 
-    readonly private NetworkInterfacesEditModelReaderLogic editModelNetworkInterfacesReader;
+    private readonly NetworkInterfacesEditModelReaderLogic editModelNetworkInterfacesReader;
 
     private class IPAddressValidator
     {
         public static bool IsStandardConfigurationValid(EditModelNetworkInterface editModelNetworkInterface)
         {
             bool isValid = true;
-            var interfaceName = editModelNetworkInterface.interfaceName;
-            var ipAddressString = editModelNetworkInterface.ipAddress;
+            string interfaceName = editModelNetworkInterface.interfaceName;
+            string ipAddressString = editModelNetworkInterface.ipAddress;
             if (!IsValidIPAddress(ipAddressString))
             {
                 Log.Error(NetworkSettingsLogic.LOGGING_CATEGORY, $"IP address {ipAddressString} for network interface {interfaceName} is invalid.");
                 isValid = false;
             }
 
-            var maskString = editModelNetworkInterface.mask;
+            string maskString = editModelNetworkInterface.mask;
             if (!IsValidIPAddress(maskString))
             {
                 Log.Error(NetworkSettingsLogic.LOGGING_CATEGORY, $"Mask {maskString} for network interface {interfaceName} is invalid.");
                 isValid = false;
             }
 
-            var dns1String = editModelNetworkInterface.dns1;
+            string dns1String = editModelNetworkInterface.dns1;
             if (!string.IsNullOrEmpty(dns1String) && !IsValidIPAddress(dns1String))
             {
                 Log.Error(NetworkSettingsLogic.LOGGING_CATEGORY, $"DNS1 {dns1String} for network interface {interfaceName} is invalid.");
                 isValid = false;
             }
 
-            var dns2String = editModelNetworkInterface.dns2;
+            string dns2String = editModelNetworkInterface.dns2;
             if (!string.IsNullOrEmpty(dns2String) && !IsValidIPAddress(dns2String))
             {
                 Log.Error(NetworkSettingsLogic.LOGGING_CATEGORY, $"DNS2 {dns2String} for network interface {interfaceName} is invalid.");
                 isValid = false;
             }
 
-            var defaultGatewayString = editModelNetworkInterface.defaultGateway;
+            string defaultGatewayString = editModelNetworkInterface.defaultGateway;
             if (!string.IsNullOrEmpty(defaultGatewayString) && !IsValidIPAddress(defaultGatewayString))
             {
                 Log.Error(NetworkSettingsLogic.LOGGING_CATEGORY, $"DefaultGateway {defaultGatewayString} for network interface {interfaceName} is invalid.");
@@ -129,9 +126,6 @@ public class NetworkInterfacesEditModelToSystemWriterLogic : BaseNetLogic
             return isValid;
         }
 
-        private static bool IsValidIPAddress(string ipAddress)
-        {
-            return Regex.IsMatch(ipAddress, "^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$");
-        }
+        private static bool IsValidIPAddress(string ipAddress) => Regex.IsMatch(ipAddress, "^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$");
     }
 }

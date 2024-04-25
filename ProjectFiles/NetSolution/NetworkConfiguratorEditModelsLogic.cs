@@ -1,16 +1,13 @@
 #region Using directives
-using UAManagedCore;
+using System.Linq;
 using FTOptix.HMIProject;
 using FTOptix.NetLogic;
-using System.Linq;
+using UAManagedCore;
 #endregion
 
 public class NetworkConfiguratorEditModelsLogic : BaseNetLogic
 {
-    public static void CreateEditModels(FTOptix.System.System systemNode, IUAObject parentNode)
-    {
-        NetworkInterfacesEditModel.CreateEditModel(systemNode, parentNode);
-    }
+    public static void CreateEditModels(FTOptix.System.System systemNode, IUAObject parentNode) => NetworkInterfacesEditModel.CreateEditModel(systemNode, parentNode);
 
     public static IUAObject GetNetworkInterfacesEditModel(IUAObject parentNode)
     {
@@ -21,10 +18,7 @@ public class NetworkConfiguratorEditModelsLogic : BaseNetLogic
         return networkInterfacesEditModel;
     }
 
-    public static void DeleteEditModels(IUAObject parentNode)
-    {
-        NetworkInterfacesEditModel.DeleteEditModel(parentNode);
-    }
+    public static void DeleteEditModels(IUAObject parentNode) => NetworkInterfacesEditModel.DeleteEditModel(parentNode);
 
     private static class NetworkInterfacesEditModel
     {

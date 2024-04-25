@@ -1,35 +1,18 @@
 #region Using directives
-using System;
-using UAManagedCore;
-using OpcUa = UAManagedCore.OpcUa;
-using FTOptix.HMIProject;
+using System.IO;
+using FTOptix.Core;
 using FTOptix.NetLogic;
 using FTOptix.UI;
-using FTOptix.NativeUI;
-using FTOptix.WebUI;
-using FTOptix.CoreBase;
-using FTOptix.Alarm;
-using FTOptix.EventLogger;
-using FTOptix.DataLogger;
-using FTOptix.SQLiteStore;
-using FTOptix.Store;
-using FTOptix.Report;
-using FTOptix.OPCUAServer;
-using FTOptix.OPCUAClient;
-using FTOptix.Retentivity;
-using FTOptix.AuditSigning;
-using FTOptix.Core;
-using System.IO;
-using FTOptix.System;
+using UAManagedCore;
 #endregion
 
 public class PdfReportLogic : BaseNetLogic
 {
     private PeriodicTask myPeriodicTask;
     private LongRunningTask myLongRunningTask;
-    Button myButton = null;
-    IUANode myPathNode = null;
-    string pdfPathStr = null;
+    private Button myButton = null;
+    private IUANode myPathNode = null;
+    private string pdfPathStr = null;
 
     public override void Start()
     {
@@ -110,21 +93,14 @@ public class PdfReportLogic : BaseNetLogic
             {
                 return;
             }
-
         }
     }
 
     public override void Stop()
     {
         // Insert code to be executed when the user-defined logic is stopped
-        if (myPeriodicTask != null)
-        {
-            myPeriodicTask.Dispose();
-        }
-        if (myLongRunningTask != null)
-        {
-            myLongRunningTask.Dispose();
-        }
+        myPeriodicTask?.Dispose();
+        myLongRunningTask?.Dispose();
     }
 
     public void CheckForPdf()

@@ -1,8 +1,7 @@
 #region Using directives
-using UAManagedCore;
-using FTOptix.System;
 using FTOptix.NetLogic;
-using FTOptix.UI;
+using FTOptix.System;
+using UAManagedCore;
 #endregion
 
 public class IncomingConnectionReceiverLogic : BaseNetLogic
@@ -109,7 +108,9 @@ public class IncomingConnectionReceiverLogic : BaseNetLogic
         {
             string userNameValue = usernameVariable.Value;
             if (!string.IsNullOrEmpty(userNameValue))
+            {
                 ftRemoteAccessWidgetDataObject.Username = userNameValue;
+            }
             else
             {
                 Log.Error(LOG_CATEGORY, usernameVariableName + noValueMessage);
@@ -118,7 +119,9 @@ public class IncomingConnectionReceiverLogic : BaseNetLogic
 
             string ipAddressValue = ipAddressVariable.Value;
             if (!string.IsNullOrEmpty(ipAddressValue))
+            {
                 ftRemoteAccessWidgetDataObject.IpAddress = ipAddressVariable.Value;
+            }
             else
             {
                 Log.Error(LOG_CATEGORY, ipAddressVariableName + noValueMessage);
@@ -127,7 +130,9 @@ public class IncomingConnectionReceiverLogic : BaseNetLogic
 
             ByteString supervisorIdValue = supervisorIdVariable.Value;
             if (!supervisorIdValue.IsEmpty)
+            {
                 ftRemoteAccessWidgetDataObject.SupervisorId = supervisorIdValue;
+            }
             else
             {
                 Log.Error(LOG_CATEGORY, supervisorIdVariableName + noValueMessage);

@@ -1,8 +1,8 @@
 #region Using directives
 using FTOptix.CoreBase;
+using FTOptix.NetLogic;
 using FTOptix.UI;
 using UAManagedCore;
-using FTOptix.NetLogic;
 #endregion
 
 public class NetworkInterfaceLogic : BaseNetLogic
@@ -15,10 +15,10 @@ public class NetworkInterfaceLogic : BaseNetLogic
         editModelNetworkInterfacesReader = null;
         dhcpCheckbox = null;
         ipAddressTextBox = null;
-        maskTextBox= null;
-        defaultGatewayTextBox= null;
-        dns1TextBox= null;
-        dns2TextBox= null;
+        maskTextBox = null;
+        defaultGatewayTextBox = null;
+        dns1TextBox = null;
+        dns2TextBox = null;
     }
 
     public void SetMembers(FTOptix.System.System systemNode, string interfaceName, IUAObject networkConfiguratorEditModelsObject, IUANode panelObject)
@@ -70,10 +70,7 @@ public class NetworkInterfaceLogic : BaseNetLogic
         }
     }
 
-    private void DhcpChecked_VariableChange(object sender, VariableChangeEventArgs e)
-    {
-        SetControlsEnabled();
-    }
+    private void DhcpChecked_VariableChange(object sender, VariableChangeEventArgs e) => SetControlsEnabled();
 
     private void SetDynamicLinksToEditModel(string interfaceName)
     {

@@ -6,13 +6,12 @@ using System.IO;
 using System;
 #endregion
 
-using FilesystemBrowser;
-using FTOptix.NativeUI;
-using FTOptix.System;
-using FTOptix.UI;
+using FeaturesDemo2;
 
-public class FilesystemBrowserDatagridLogic : BaseNetLogic {
-    public override void Start() {
+public class FilesystemBrowserDatagridLogic : BaseNetLogic
+{
+    public override void Start()
+    {
         pathVariable = Owner.Owner.GetVariable("FolderPath");
         if (pathVariable == null)
             throw new CoreConfigurationException("FolderPath variable not found in FilesystemBrowser");
@@ -32,7 +31,8 @@ public class FilesystemBrowserDatagridLogic : BaseNetLogic {
         if (locationsObject == null)
             throw new CoreConfigurationException("Locations object not found");
 
-        resourceUriHelper = new ResourceUriHelper(LogicObject.NodeId.NamespaceIndex) {
+        resourceUriHelper = new ResourceUriHelper(LogicObject.NodeId.NamespaceIndex)
+        {
             LocationsObject = locationsObject
         };
 
@@ -40,11 +40,10 @@ public class FilesystemBrowserDatagridLogic : BaseNetLogic {
         selectedItemVariable.VariableChange += SelectedItemVariable_VariableChange;
     }
 
-    public override void Stop() {
-        selectedItemVariable.VariableChange -= SelectedItemVariable_VariableChange;
-    }
+    public override void Stop() => selectedItemVariable.VariableChange -= SelectedItemVariable_VariableChange;
 
-    private void SelectedItemVariable_VariableChange(object sender, VariableChangeEventArgs e) {
+    private void SelectedItemVariable_VariableChange(object sender, VariableChangeEventArgs e)
+    {
         var nodeId = (NodeId)e.NewValue;
         if (nodeId == null || nodeId.IsEmpty)
             return;
@@ -56,10 +55,11 @@ public class FilesystemBrowserDatagridLogic : BaseNetLogic {
         UpdateCurrentPath(entry.FileName);
     }
 
-    private void UpdateCurrentPath(string lastPathToken) {
+    private void UpdateCurrentPath(string lastPathToken)
+    {
         // Necessary when QStudio placeholder path is configured with only %APPLICATIONDIR%\, %PROJECTDIR%\
         // i.e. at the start of the project
-        var currentPath = resourceUriHelper.AddNamespacePrefixToQRuntimeFolder(pathVariable.Value);
+        string currentPath = resourceUriHelper.AddNamespacePrefixToQRuntimeFolder(pathVariable.Value);
         var currentPathResourceUri = new ResourceUri(currentPath);
 
         if (lastPathToken == "..")
@@ -68,11 +68,15 @@ public class FilesystemBrowserDatagridLogic : BaseNetLogic {
             SetPathsToSelectedFile(currentPathResourceUri, lastPathToken);
     }
 
-    private void SetPathsToParentFolder(ResourceUri startingDirectoryResourceUri) {
+    private void SetPathsToParentFolder(ResourceUri startingDirectoryResourceUri)
+    {
         DirectoryInfo parentDirectory;
-        try {
+        try
+        {
             parentDirectory = Directory.GetParent(startingDirectoryResourceUri.Uri);
-        } catch (Exception exception) {
+        }
+        catch (Exception exception)
+        {
             Log.Error($"Unable to get parent folder: {exception.Message}");
             return;
         }
@@ -80,7 +84,7 @@ public class FilesystemBrowserDatagridLogic : BaseNetLogic {
         if (parentDirectory == null)
             return;
 
-        var parentDirectoryPath = parentDirectory.FullName;
+        string parentDirectoryPath = parentDirectory.FullName;
 
         // E.g. %PROJECTDIR%/PKI
         pathVariable.Value = resourceUriHelper.GetQStudioFormattedPath(startingDirectoryResourceUri,
@@ -89,11 +93,15 @@ public class FilesystemBrowserDatagridLogic : BaseNetLogic {
         fullPathVariable.Value = ResourceUri.FromAbsoluteFilePath(parentDirectoryPath);
     }
 
-    private void SetPathsToSelectedFile(ResourceUri currentDirectoryResourceUri, string targetFile) {
+    private void SetPathsToSelectedFile(ResourceUri currentDirectoryResourceUri, string targetFile)
+    {
         string updatedPath;
-        try {
+        try
+        {
             updatedPath = Path.Combine(currentDirectoryResourceUri.Uri, targetFile);
-        } catch (Exception exception) {
+        }
+        catch (Exception exception)
+        {
             Log.Error("FilesystemBrowserDatagridLogic", $"Path not found {exception.Message}");
             return;
         }
@@ -108,9 +116,7 @@ public class FilesystemBrowserDatagridLogic : BaseNetLogic {
                                                                        updatedPath);
     }
 
-    private bool IsDirectory(string path) {
-        return Directory.Exists(path);
-    }
+    private bool IsDirectory(string path) => Directory.Exists(path);
 
     private IUAVariable pathVariable;
     private IUAVariable fullPathVariable;

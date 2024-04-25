@@ -55,81 +55,6 @@ Children:
           Type: StoreColumn
           DataType: Int32
           Value: 0
-    - Name: RecipeSchema1
-      Id: g=49309c517493012ecb032bad074f1822
-      Type: SQLiteStoreTable
-      Children:
-      - Class: Reference
-        Target: ns=25;i=12
-        Direction: Forward
-      - Class: Reference
-        Target: ns=25;i=15
-        Direction: Forward
-      - Class: Reference
-        Target: ns=25;i=21
-        Direction: Forward
-      - Class: Reference
-        Target: ns=25;i=20
-        Direction: Forward
-      - Name: Columns
-        Id: g=8812fd71fc43b41c2b1396ada06f0e11
-        Type: BaseObjectType
-        Children:
-        - Name: Name
-          Id: g=da6fb6579fd4b62ea528af20f40a8335
-          Type: StoreColumn
-          DataType: String
-          Value: ""
-    - Name: Recipes
-      Id: g=0752e09a63d03860e9656d4a2c21a8c7
-      Type: SQLiteStoreTable
-      Children:
-      - Class: Reference
-        Target: ns=25;i=12
-        Direction: Forward
-      - Class: Reference
-        Target: ns=25;i=15
-        Direction: Forward
-      - Class: Reference
-        Target: ns=25;i=21
-        Direction: Forward
-      - Class: Reference
-        Target: ns=25;i=20
-        Direction: Forward
-      - Name: Columns
-        Id: g=15f735946ee88e6cfda7850c94954caf
-        Type: BaseObjectType
-        Children:
-        - Name: Name
-          Id: g=8979116fc5053adec9fa6aa29ae3bb12
-          Type: StoreColumn
-          DataType: String
-          Value: ""
-        - Name: /Component1
-          Id: g=fae4b200fa21465a9dce1c5fd7f65474
-          Type: StoreColumn
-          DataType: Int32
-          Value: 0
-        - Name: /Component2
-          Id: g=e36fd5fa849cc8177dd91d10c8accf59
-          Type: StoreColumn
-          DataType: Boolean
-          Value: false
-        - Name: /Component3_0
-          Id: g=a2ba60e98bd588206595c27b9adf1ddf
-          Type: StoreColumn
-          DataType: Int32
-          Value: 0
-        - Name: /Component3_1
-          Id: g=49e1555c04de93afc016721f318a97e0
-          Type: StoreColumn
-          DataType: Int32
-          Value: 0
-        - Name: /Component3_2
-          Id: g=4d563c3c7de43b00a5f627c07ecd2ea8
-          Type: StoreColumn
-          DataType: Int32
-          Value: 0
     - Name: AlarmsEventLogger
       Id: g=43d16d7e9c88baaf592fcb29dc7c338e
       Type: SQLiteStoreTable
@@ -380,6 +305,56 @@ Children:
           Type: StoreColumn
           DataType: Boolean
           Value: false
+    - Name: Recipes
+      Id: g=5efb22ed76bf06ef4fca235e2e19bd2f
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=25;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=25;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=25;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=25;i=20
+        Direction: Forward
+      - Name: Columns
+        Id: g=aab2db6f2e9a8bdeb799ca355bb7bd8c
+        Type: BaseObjectType
+        Children:
+        - Name: Name
+          Id: g=924e0624a099c0e43592cb4f5728854d
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: /Component1
+          Id: g=5234b157247cbb36bb28217416489c04
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /Component2
+          Id: g=e55e8f203f621e434acdc6cafe14f00b
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: /Component3_0
+          Id: g=6efb46e02fbb5b0b8e967ba10cebf11e
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /Component3_1
+          Id: g=3db386cf57093416b63f43dfa28bbc5a
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /Component3_2
+          Id: g=3d08dbed75553cebae011e39ba3eacc7
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
   - Class: Reference
     Target: ns=27;i=30
     Direction: Forward

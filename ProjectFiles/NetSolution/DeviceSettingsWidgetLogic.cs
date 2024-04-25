@@ -1,7 +1,7 @@
 #region Using directives
-using UAManagedCore;
 using FTOptix.HMIProject;
 using FTOptix.NetLogic;
+using UAManagedCore;
 #endregion
 
 public class DeviceSettingsWidgetLogic : BaseNetLogic
@@ -10,14 +10,14 @@ public class DeviceSettingsWidgetLogic : BaseNetLogic
 
     public override void Start()
     {
-        IUAVariable systemNodePointer = Owner.GetVariable("SystemNode");
+        var systemNodePointer = Owner.GetVariable("SystemNode");
         if (systemNodePointer == null)
         {
             Log.Error(LOGGING_CATEGORY, "SystemNode NodePointer not found.");
             return;
         }
 
-        NodeId systemNodeId = (NodeId)systemNodePointer.Value;
+        var systemNodeId = (NodeId)systemNodePointer.Value;
         if (systemNodeId == null || systemNodeId == NodeId.Empty)
         {
             Log.Error(LOGGING_CATEGORY, "SystemNode is not defined.");
@@ -30,5 +30,6 @@ public class DeviceSettingsWidgetLogic : BaseNetLogic
 
     public override void Stop()
     {
+        // Method intentionally left empty.
     }
 }

@@ -1,18 +1,16 @@
 #region Using directives
+using System;
+using System.IO;
+using System.Text;
 using FTOptix.Core;
 using FTOptix.HMIProject;
 using FTOptix.NetLogic;
 using FTOptix.Store;
-using System;
-using System.IO;
-using System.Text;
 using UAManagedCore;
-using FTOptix.NativeUI;
-using FTOptix.System;
-using FTOptix.UI;
 #endregion
 
-public class DataLoggerExporter : BaseNetLogic {
+public class DataLoggerExporter : BaseNetLogic
+{
     private DelayedTask outMessage;
 
     private void ResetMessage()
@@ -22,11 +20,13 @@ public class DataLoggerExporter : BaseNetLogic {
     }
 
     [ExportMethod]
-    public void Export() {
-        try {
+    public void Export()
+    {
+        try
+        {
             ValidateTimeSlice();
 
-            var csvPath = GetCSVFilePath();
+            string csvPath = GetCSVFilePath();
             if (string.IsNullOrEmpty(csvPath))
                 throw new Exception("No CSV file chosen, please fill the CSVPath variable");
 
@@ -34,17 +34,18 @@ public class DataLoggerExporter : BaseNetLogic {
             bool wrapFields = GetWrapFields();
             var tableObject = GetTable();
             var storeObject = GetStoreObject(tableObject);
-            var selectQuery = CreateQuery(tableObject);
+            string selectQuery = CreateQuery(tableObject);
 
             storeObject.Query(selectQuery, out string[] header, out object[,] resultSet);
 
             if (header == null || resultSet == null)
                 throw new Exception("Unable to execute SQL query, malformed result");
 
-            var rowCount = resultSet.GetLength(0);
-            var columnCount = resultSet.GetLength(1);
+            int rowCount = resultSet.GetLength(0);
+            int columnCount = resultSet.GetLength(1);
 
-            using (var csvWriter = new CSVFileWriter(csvPath) { FieldDelimiter = fieldDelimiter.Value, WrapFields = wrapFields }) {
+            using (var csvWriter = new CSVFileWriter(csvPath) { FieldDelimiter = fieldDelimiter.Value, WrapFields = wrapFields })
+            {
                 csvWriter.WriteLine(header);
                 WriteTableContent(resultSet, rowCount, columnCount, csvWriter);
             }
@@ -57,24 +58,28 @@ public class DataLoggerExporter : BaseNetLogic {
             outMessage = new DelayedTask(ResetMessage, 2500, LogicObject);
             outMessage.Start();
 
-        } catch (Exception ex) {
+        }
+        catch (Exception ex)
+        {
             Log.Error("DataLoggerExporter", "Unable to export data logger: " + ex.Message);
         }
-
     }
 
-    private void WriteTableContent(object[,] resultSet, int rowCount, int columnCount, CSVFileWriter csvWriter) {
-        for (var r = 0; r < rowCount; ++r) {
-            var currentRow = new string[columnCount];
+    private void WriteTableContent(object[,] resultSet, int rowCount, int columnCount, CSVFileWriter csvWriter)
+    {
+        for (int r = 0; r < rowCount; ++r)
+        {
+            string[] currentRow = new string[columnCount];
 
-            for (var c = 0; c < columnCount; ++c)
+            for (int c = 0; c < columnCount; ++c)
                 currentRow[c] = resultSet[r, c]?.ToString() ?? "NULL";
 
             csvWriter.WriteLine(currentRow);
         }
     }
 
-    private Table GetTable() {
+    private Table GetTable()
+    {
         var tableVariable = LogicObject.GetVariable("Table");
 
         if (tableVariable == null)
@@ -91,11 +96,10 @@ public class DataLoggerExporter : BaseNetLogic {
         return tableNode;
     }
 
-    private Store GetStoreObject(Table tableNode) {
-        return tableNode.Owner.Owner as Store;
-    }
+    private Store GetStoreObject(Table tableNode) => tableNode.Owner.Owner as Store;
 
-    private string GetCSVFilePath() {
+    private string GetCSVFilePath()
+    {
         var csvPathVariable = LogicObject.GetVariable("CSVPath");
         if (csvPathVariable == null)
             throw new Exception("CSVPath variable not found");
@@ -103,7 +107,8 @@ public class DataLoggerExporter : BaseNetLogic {
         return new ResourceUri(csvPathVariable.Value).Uri;
     }
 
-    private char GetFieldDelimiter() {
+    private char GetFieldDelimiter()
+    {
         var separatorVariable = LogicObject.GetVariable("FieldDelimiter");
         if (separatorVariable == null)
             throw new Exception("FieldDelimiter variable not found");
@@ -122,7 +127,8 @@ public class DataLoggerExporter : BaseNetLogic {
         return result;
     }
 
-    private bool GetWrapFields() {
+    private bool GetWrapFields()
+    {
         var wrapFieldsVariable = LogicObject.GetVariable("WrapFields");
         if (wrapFieldsVariable == null)
             throw new Exception("WrapFields variable not found");
@@ -130,7 +136,8 @@ public class DataLoggerExporter : BaseNetLogic {
         return wrapFieldsVariable.Value;
     }
 
-    private string GetQueryFilter() {
+    private string GetQueryFilter()
+    {
         var queryVariable = LogicObject.GetVariable("Query");
         if (queryVariable == null)
             throw new Exception("Query variable not found");
@@ -143,19 +150,22 @@ public class DataLoggerExporter : BaseNetLogic {
         return query;
     }
 
-    private string CreateQuery(Table table) {
-        var queryColumns = GetQueryColumns(table);
-        var queryFilter = GetQueryFilter();
+    private string CreateQuery(Table table)
+    {
+        string queryColumns = GetQueryColumns(table);
+        string queryFilter = GetQueryFilter();
 
         return $"SELECT {queryColumns} FROM \"{table.BrowseName}\" WHERE {queryFilter}";
     }
 
-    private string GetQueryColumns(Table table) {
+    private string GetQueryColumns(Table table)
+    {
         var tableColumns = table.Columns;
         string columns = "";
 
-        for (int i = 0; i < tableColumns.Count; i++) {
-            var columnName = tableColumns[i].BrowseName;
+        for (int i = 0; i < tableColumns.Count; i++)
+        {
+            string columnName = tableColumns[i].BrowseName;
             if (columnName == "Id")
                 continue;
 
@@ -168,7 +178,8 @@ public class DataLoggerExporter : BaseNetLogic {
         return columns;
     }
 
-    private void ValidateTimeSlice() {
+    private void ValidateTimeSlice()
+    {
         var fromVariable = LogicObject.GetVariable("From");
         if (fromVariable == null || fromVariable.Value == null)
             throw new Exception("From variable is empty or missing");
@@ -193,55 +204,50 @@ public class DataLoggerExporter : BaseNetLogic {
     private readonly DateTime minimumOpcUaDate = new DateTime(1601, 01, 01, 0, 0, 0, 0, DateTimeKind.Utc);
 
     // An intersection of the minumum supported Timestamps by Sqlserver (1/1/1753), MYSQL (1/1/1970) and an Embedded database
-    private readonly DateTime minumumSupportedDate = new DateTime(1970, 01, 01, 0, 0, 0, 0, DateTimeKind.Utc);
+    private readonly DateTime minumumSupportedDate = DateTime.UnixEpoch;
 
     #region CSVFileWriter
-    private class CSVFileWriter : IDisposable {
+    private class CSVFileWriter : IDisposable
+    {
         public char FieldDelimiter { get; set; } = ',';
 
         public char QuoteChar { get; set; } = '"';
 
         public bool WrapFields { get; set; } = false;
 
-        public CSVFileWriter(string filePath) {
-            streamWriter = new StreamWriter(filePath, false, System.Text.Encoding.UTF8);
-        }
+        public CSVFileWriter(string filePath) => streamWriter = new StreamWriter(filePath, false, System.Text.Encoding.UTF8);
 
-        public CSVFileWriter(string filePath, System.Text.Encoding encoding) {
-            streamWriter = new StreamWriter(filePath, false, encoding);
-        }
-
-        public CSVFileWriter(StreamWriter streamWriter) {
-            this.streamWriter = streamWriter;
-        }
-
-        public void WriteLine(string[] fields) {
+        public void WriteLine(string[] fields)
+        {
             var stringBuilder = new StringBuilder();
 
-            for (var i = 0; i < fields.Length; ++i) {
+            for (int i = 0; i < fields.Length; ++i)
+            {
                 if (WrapFields)
-                    stringBuilder.AppendFormat("{0}{1}{0}", QuoteChar, EscapeField(fields[i]));
+                    _ = stringBuilder.AppendFormat("{0}{1}{0}", QuoteChar, EscapeField(fields[i]));
                 else
-                    stringBuilder.AppendFormat("{0}", fields[i]);
+                    _ = stringBuilder.AppendFormat("{0}", fields[i]);
 
                 if (i != fields.Length - 1)
-                    stringBuilder.Append(FieldDelimiter);
+                    _ = stringBuilder.Append(FieldDelimiter);
             }
 
             streamWriter.WriteLine(stringBuilder.ToString());
             streamWriter.Flush();
         }
 
-        private string EscapeField(string field) {
-            var quoteCharString = QuoteChar.ToString();
+        private string EscapeField(string field)
+        {
+            string quoteCharString = QuoteChar.ToString();
             return field.Replace(quoteCharString, quoteCharString + quoteCharString);
         }
 
-        private StreamWriter streamWriter;
+        private readonly StreamWriter streamWriter;
 
         #region IDisposable Support
         private bool disposed = false;
-        protected virtual void Dispose(bool disposing) {
+        protected virtual void Dispose(bool disposing)
+        {
             if (disposed)
                 return;
 
@@ -251,9 +257,7 @@ public class DataLoggerExporter : BaseNetLogic {
             disposed = true;
         }
 
-        public void Dispose() {
-            Dispose(true);
-        }
+        public void Dispose() => Dispose(true);
 
         #endregion
     }

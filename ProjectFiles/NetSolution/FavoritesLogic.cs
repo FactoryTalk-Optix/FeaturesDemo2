@@ -1,19 +1,20 @@
 #region Using directives
+using System.Linq;
 using FTOptix.Core;
 using FTOptix.HMIProject;
 using FTOptix.NetLogic;
 using FTOptix.UI;
-using System.Linq;
 using UAManagedCore;
-using FTOptix.NativeUI;
-using FTOptix.System;
 #endregion
 
-public class FavoritesLogic : BaseNetLogic {
-    public override void Start() {
+public class FavoritesLogic : BaseNetLogic
+{
+    public override void Start()
+    {
         // Check if user already have some favorites
         var userChildren = Session.User.Children.OfType<IUAObject>();
-        if (!userChildren.Any(t => t.GetVariable("Tile_Favorite").Value)) {
+        if (!userChildren.Any(t => t.GetVariable("Tile_Favorite").Value))
+        {
             //if (!userChildren.Any()) {
             //    // User has no favorite, generate random ones
             //    Log.Info("FavoritesLogic.Start", $"User {Session.User.BrowseName} has no favorites, assigning random tiles");
@@ -31,10 +32,13 @@ public class FavoritesLogic : BaseNetLogic {
             Owner.Get("ScrollView").Delete();
             Owner.Add(myLabel);
             return;
-        } else {
+        }
+        else
+        {
             // User have some favorite, delete random ones
             Log.Debug("FavoritesLogic.Start", "Removing random tiles from the current user");
-            foreach (var defaultFav in userChildren.Where(t => !t.GetVariable("Tile_Favorite").Value)) {
+            foreach (var defaultFav in userChildren.Where(t => !t.GetVariable("Tile_Favorite").Value))
+            {
                 defaultFav.Delete();
             }
         }
@@ -42,7 +46,8 @@ public class FavoritesLogic : BaseNetLogic {
         TilesSetup();
     }
 
-    public override void Stop() {
+    public override void Stop()
+    {
         // Insert code to be executed when the user-defined logic is stopped
     }
 
@@ -73,17 +78,20 @@ public class FavoritesLogic : BaseNetLogic {
     //    }
     //}
 
-    private void TilesSetup() {
+    private void TilesSetup()
+    {
         Log.Debug("FavoritesLogic.TilesSetup", "Populating favorites page");
         var myUser = Session.User;
         var scrollViewRows = Owner.Get("ScrollView/Rows");
         // Delete all RowLayout in page (if any)
-        foreach (var child in scrollViewRows.Children) {
+        foreach (var child in scrollViewRows.Children)
+        {
             child.Delete();
         }
         int piecesCounter = 0;
         // Generate all the tiles
-        foreach (var child in myUser.Children.OfType<IUAObject>()) {
+        foreach (var child in myUser.Children.OfType<IUAObject>())
+        {
             // Prepare tiles to put in page
             piecesCounter++;
             var newTile = InformationModel.Make<FeatureTileObject>($"Tile{piecesCounter}");

@@ -1,10 +1,10 @@
 #region Using directives
 using System;
-using UAManagedCore;
+using System.Linq;
 using FTOptix.HMIProject;
 using FTOptix.NetLogic;
 using FTOptix.UI;
-using System.Linq;
+using UAManagedCore;
 #endregion
 
 public class NetworkSettingsLogic : BaseNetLogic
@@ -13,7 +13,7 @@ public class NetworkSettingsLogic : BaseNetLogic
 
     public override void Start()
     {
-        IUAVariable systemNodePointer = Owner.GetVariable("SystemNode");
+        var systemNodePointer = Owner.GetVariable("SystemNode");
         if (systemNodePointer == null)
         {
             HandleInvalidConfiguration();
@@ -21,7 +21,7 @@ public class NetworkSettingsLogic : BaseNetLogic
             return;
         }
 
-        NodeId systemNodeId = (NodeId)systemNodePointer.Value;
+        var systemNodeId = (NodeId)systemNodePointer.Value;
         if (systemNodeId == null || systemNodeId == NodeId.Empty)
         {
             HandleInvalidConfiguration();
@@ -58,7 +58,7 @@ public class NetworkSettingsLogic : BaseNetLogic
 
         navPanel.CurrentPanelVariable.VariableChange += CurrentPanelVariable_VariableChange;
 
-        NodeId nodeId = (NodeId)navPanel.CurrentPanel;
+        var nodeId = navPanel.CurrentPanel;
         if (nodeId != null && nodeId != NodeId.Empty)
             HandleNetworkInterfacePanel(nodeId);
     }
@@ -106,22 +106,16 @@ public class NetworkSettingsLogic : BaseNetLogic
         systemNode.Reboot();
     }
 
-    private void CurrentPanelVariable_VariableChange(object sender, VariableChangeEventArgs e)
-    {
-        HandleNetworkInterfacePanel((NodeId)e.NewValue.Value);
-    }
+    private void CurrentPanelVariable_VariableChange(object sender, VariableChangeEventArgs e) => HandleNetworkInterfacePanel((NodeId)e.NewValue.Value);
 
-    private void RebootRequiredVariable_VariableChange(object sender, VariableChangeEventArgs e)
-    {
-        EnableControlsForRebootRequired((bool)e.NewValue.Value);
-    }
+    private void RebootRequiredVariable_VariableChange(object sender, VariableChangeEventArgs e) => EnableControlsForRebootRequired((bool)e.NewValue.Value);
 
     private void HandleNetworkInterfacePanel(NodeId nodeId)
     {
         if (nodeId == null || nodeId == NodeId.Empty)
             return;
 
-        IUANode node = InformationModel.Get(nodeId);
+        var node = InformationModel.Get(nodeId);
 
         networkInterfaceLogic = new NetworkInterfaceLogic();
         networkInterfaceLogic.SetMembers(systemNode, node.BrowseName, networkConfiguratorEditModels, node);
@@ -129,19 +123,19 @@ public class NetworkSettingsLogic : BaseNetLogic
 
     private void EnableControlsForRebootRequired(bool rebootRequired)
     {
-        Button rebootButton = Owner.Get<Button>("BottomBar/RebootButton");
+        var rebootButton = Owner.Get<Button>("BottomBar/RebootButton");
         if (rebootButton == null)
             throw new CoreConfigurationException("BottomBar/RebootButton object not found");
 
         rebootButton.Enabled = rebootRequired;
 
-        Image warningIcon = Owner.Get<Image>("BottomBar/WarningImage");
+        var warningIcon = Owner.Get<Image>("BottomBar/WarningImage");
         if (warningIcon == null)
             throw new CoreConfigurationException("BottomBar/WarningImage object not found");
 
         warningIcon.Visible = rebootRequired;
 
-        Label messageLabel = Owner.Get<Label>("BottomBar/MessageLabel");
+        var messageLabel = Owner.Get<Label>("BottomBar/MessageLabel");
         if (messageLabel == null)
             throw new CoreConfigurationException("BottomBar/MessageLabel object not found");
 
@@ -150,7 +144,7 @@ public class NetworkSettingsLogic : BaseNetLogic
 
     private void HandleInvalidConfiguration()
     {
-        Button applyButton = Owner.Get<Button>("BottomBar/ApplyButton");
+        var applyButton = Owner.Get<Button>("BottomBar/ApplyButton");
         if (applyButton != null)
             applyButton.Enabled = false;
 

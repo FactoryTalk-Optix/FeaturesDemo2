@@ -1,25 +1,10 @@
 #region Using directives
-using System;
-using UAManagedCore;
-using OpcUa = UAManagedCore.OpcUa;
 using FTOptix.HMIProject;
-using FTOptix.NetLogic;
-using FTOptix.WebUI;
 using FTOptix.NativeUI;
-using FTOptix.Alarm;
+using FTOptix.NetLogic;
 using FTOptix.UI;
-using FTOptix.Recipe;
-using FTOptix.DataLogger;
-using FTOptix.EventLogger;
-using FTOptix.SQLiteStore;
-using FTOptix.Store;
-using FTOptix.Report;
-using FTOptix.OPCUAServer;
-using FTOptix.System;
-using FTOptix.Retentivity;
-using FTOptix.CoreBase;
-using FTOptix.UI;
-using FTOptix.Core;
+using FTOptix.WebUI;
+using UAManagedCore;
 #endregion
 
 public class GetCurrentStylesheet : BaseNetLogic
@@ -27,7 +12,7 @@ public class GetCurrentStylesheet : BaseNetLogic
     public override void Start()
     {
         // Insert code to be executed when the user-defined logic is started
-        var presentationEngine = GetPresentationEngine((IUANode)Owner);
+        var presentationEngine = GetPresentationEngine(Owner);
         if (presentationEngine == null)
         {
             Log.Error("GetCurrentStylesheetLogic.GetCurrentStylesheet", "Cannot find any PresentationEngine!");

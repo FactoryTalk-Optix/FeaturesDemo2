@@ -1,26 +1,25 @@
 #region Using directives
-using FTOptix.Core;
-using FTOptix.HMIProject;
-using FTOptix.NetLogic;
-using FTOptix.Recipe;
-using FTOptix.Store;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
+using FTOptix.Core;
+using FTOptix.HMIProject;
+using FTOptix.NetLogic;
+using FTOptix.Recipe;
+using FTOptix.Store;
 using UAManagedCore;
-using FTOptix.NativeUI;
-using FTOptix.System;
-using FTOptix.UI;
 using OpcUa = UAManagedCore.OpcUa;
 
 #endregion
 
-public class RecipeController : BaseNetLogic {
+public class RecipeController : BaseNetLogic
+{
 
-    public override void Start() {
+    public override void Start()
+    {
         variableSynchronizer = new RemoteVariableSynchronizer();
 
         ApplyFromDBTrigger = LogicObject.GetVariable("ApplyFromDBTrigger");
@@ -56,24 +55,30 @@ public class RecipeController : BaseNetLogic {
             variableSynchronizer.Add(SelectFromDBTrigger);
     }
 
-    public override void Stop() {
-        lock (lockObject) {
+    public override void Stop()
+    {
+        lock (lockObject)
+        {
             task?.Dispose();
         }
     }
 
     [ExportMethod]
-    public void SelectFromDB(string RecipeName, CopyErrorPolicy ErrorPolicy) {
+    public void SelectFromDB(string RecipeName, CopyErrorPolicy ErrorPolicy)
+    {
         if (SelectFromDBTrigger != null)
             SelectFromDBTrigger.Value = 0;
 
-        RecipeSchema schema = GetRecipeSchema();
-        if (schema == null) return;
+        var schema = GetRecipeSchema();
+        if (schema == null)
+            return;
 
         string name = RecipeName;
-        if (String.IsNullOrEmpty(RecipeName)) {
+        if (string.IsNullOrEmpty(RecipeName))
+        {
             name = GetRecipeName();
-            if (String.IsNullOrEmpty(name)) {
+            if (string.IsNullOrEmpty(name))
+            {
                 SetFeedback(2, GetLocalizedTextString("RecipeControllerEmptyRecipeName"));
                 return;
             }
@@ -87,32 +92,41 @@ public class RecipeController : BaseNetLogic {
     }
 
     [ExportMethod]
-    public void SaveToDB(string RecipeName, CopyErrorPolicy ErrorPolicy) {
+    public void SaveToDB(string RecipeName, CopyErrorPolicy ErrorPolicy)
+    {
         if (SaveToDBTrigger != null)
             SaveToDBTrigger.Value = 0;
 
-        RecipeSchema schema = GetRecipeSchema();
-        if (schema == null) return;
+        var schema = GetRecipeSchema();
+        if (schema == null)
+            return;
 
         string name = RecipeName;
-        if (String.IsNullOrEmpty(RecipeName)) {
+        if (string.IsNullOrEmpty(RecipeName))
+        {
             name = GetRecipeName();
-            if (String.IsNullOrEmpty(name)) {
+            if (string.IsNullOrEmpty(name))
+            {
                 SetFeedback(2, GetLocalizedTextString("RecipeControllerEmptyRecipeName"));
                 return;
             }
         }
 
-        try {
+        try
+        {
             var store = GetRecipeStore(schema);
             var editModel = GetEditModel(schema);
 
-            if (store != null && editModel != null) {
-                if (RecipeExistsInStore(store, schema, name)) {
+            if (store != null && editModel != null)
+            {
+                if (RecipeExistsInStore(store, schema, name))
+                {
                     // Save Recipe
                     schema.CopyToStoreRecipe(editModel.NodeId, name, ErrorPolicy);
                     SetFeedback(1, $"{GetLocalizedTextString("RecipeControllerRecipe")} {name} {GetLocalizedTextString("RecipeControllerSaved")}");
-                } else {
+                }
+                else
+                {
                     // Create recipe
                     schema.CreateStoreRecipe(name);
                     // Save Recipe
@@ -120,117 +134,149 @@ public class RecipeController : BaseNetLogic {
                     SetFeedback(1, $"{GetLocalizedTextString("RecipeControllerRecipe")} {name} {GetLocalizedTextString("RecipeControllerCreatedAndSaved")}");
                 }
             }
-        } catch (Exception e) {
+        }
+        catch (Exception e)
+        {
             SetFeedback(2, e.Message);
         }
     }
 
     [ExportMethod]
-    public void Delete(string RecipeName) {
+    public void Delete(string RecipeName)
+    {
         if (DeleteTrigger != null)
             DeleteTrigger.Value = 0;
 
-        RecipeSchema schema = GetRecipeSchema();
-        if (schema == null) return;
+        var schema = GetRecipeSchema();
+        if (schema == null)
+            return;
 
         string name = RecipeName;
-        if (String.IsNullOrEmpty(RecipeName)) {
+        if (string.IsNullOrEmpty(RecipeName))
+        {
             name = GetRecipeName();
-            if (String.IsNullOrEmpty(name)) {
+            if (string.IsNullOrEmpty(name))
+            {
                 SetFeedback(2, GetLocalizedTextString("RecipeControllerEmptyRecipeName"));
                 return;
             }
         }
 
-        try {
+        try
+        {
             schema.DeleteStoreRecipe(name);
             SetFeedback(1, $"{GetLocalizedTextString("RecipeControllerRecipe")} {name} {GetLocalizedTextString("RecipeControllerDeleted")}");
-        } catch (Exception e) {
+        }
+        catch (Exception e)
+        {
             SetFeedback(2, e.Message);
         }
     }
 
     [ExportMethod]
-    public void LoadFromPLC(CopyErrorPolicy ErrorPolicy) {
+    public void LoadFromPLC(CopyErrorPolicy ErrorPolicy)
+    {
         if (LoadFromPLCTrigger != null)
             LoadFromPLCTrigger.Value = 0;
 
-        RecipeSchema schema = GetRecipeSchema();
-        if (schema == null) return;
+        var schema = GetRecipeSchema();
+        if (schema == null)
+            return;
 
-        try {
+        try
+        {
             var editModel = GetEditModel(schema);
-            if (editModel != null) {
+            if (editModel != null)
+            {
                 schema.Copy(schema.TargetNode, editModel.NodeId, ErrorPolicy);
                 SetFeedback(1, GetLocalizedTextString("RecipeControllerRecipeLoaded"));
             }
-        } catch (Exception e) {
+        }
+        catch (Exception e)
+        {
             SetFeedback(2, e.Message);
         }
     }
 
     [ExportMethod]
-    public void ApplyFromEditModel(CopyErrorPolicy ErrorPolicy) {
+    public void ApplyFromEditModel(CopyErrorPolicy ErrorPolicy)
+    {
         if (ApplyFromEditModelTrigger != null)
             ApplyFromEditModelTrigger.Value = 0;
 
-        RecipeSchema schema = GetRecipeSchema();
-        if (schema == null) return;
+        var schema = GetRecipeSchema();
+        if (schema == null)
+            return;
 
-        try {
+        try
+        {
             var editModel = GetEditModel(schema);
-            if (editModel != null) {
+            if (editModel != null)
+            {
                 schema.CopyFromEditModel(editModel.NodeId, schema.TargetNode, ErrorPolicy);
                 SetFeedback(1, GetLocalizedTextString("RecipeControllerRecipeApplied"));
             }
-        } catch (Exception e) {
+        }
+        catch (Exception e)
+        {
             SetFeedback(2, e.Message);
         }
     }
 
     [ExportMethod]
-    public void ApplyFromDB(string RecipeName, CopyErrorPolicy ErrorPolicy) {
+    public void ApplyFromDB(string RecipeName, CopyErrorPolicy ErrorPolicy)
+    {
         if (ApplyFromDBTrigger != null)
             ApplyFromDBTrigger.Value = 0;
 
-        RecipeSchema schema = GetRecipeSchema();
-        if (schema == null) return;
+        var schema = GetRecipeSchema();
+        if (schema == null)
+            return;
 
         string name = RecipeName;
-        if (String.IsNullOrEmpty(RecipeName)) {
+        if (string.IsNullOrEmpty(RecipeName))
+        {
             name = GetRecipeName();
-            if (String.IsNullOrEmpty(name)) {
+            if (string.IsNullOrEmpty(name))
+            {
                 SetFeedback(2, GetLocalizedTextString("RecipeControllerEmptyRecipeName"));
                 return;
             }
         }
 
-        try {
+        try
+        {
             schema.CopyFromStoreRecipe(name, schema.TargetNode, ErrorPolicy);
             SetFeedback(1, GetLocalizedTextString("RecipeControllerRecipeApplied"));
             LogicObject.GetVariable("LastAppliedRecipe").SetValueNoPermissions(name);
-        } catch (Exception e) {
+        }
+        catch (Exception e)
+        {
             SetFeedback(2, e.Message);
         }
     }
 
     [ExportMethod]
-    public void Export() {
+    public void Export()
+    {
         if (ExportTrigger != null)
             ExportTrigger.Value = 0;
 
-        RecipeSchema schema = GetRecipeSchema();
-        if (schema == null) return;
+        var schema = GetRecipeSchema();
+        if (schema == null)
+            return;
 
-        var csvPath = GetCSVFilePath();
+        string csvPath = GetCSVFilePath();
 
-        if (string.IsNullOrEmpty(csvPath)) {
+        if (string.IsNullOrEmpty(csvPath))
+        {
             SetFeedback(2, "Unable to export recipes: please specify the output CSV file");
             return;
         }
 
-        var separator = GetSeparator();
-        if (separator == '.') {
+        char separator = GetSeparator();
+        if (separator == '.')
+        {
             SetFeedback(2, "Unable to import recipes: CSV separator " + separator + " is not supported");
             return;
         }
@@ -238,48 +284,54 @@ public class RecipeController : BaseNetLogic {
         bool wrapFields = GetWrapFields();
 
         var storeObject = GetStoreObject(schema);
-        if (storeObject == null) {
+        if (storeObject == null)
+        {
             SetFeedback(2, "Unable to export recipes to CSV file: Store object not found");
             return;
         }
 
-        var tableName = GetTableName(schema);
+        string tableName = GetTableName(schema);
 
         // Retrieve all recipes from table
-        object[,] resultSet;
-        string[] header;
         string selectQuery = "SELECT * FROM \"" + tableName + "\"";
-        storeObject.Query(selectQuery, out header, out resultSet);
+        storeObject.Query(selectQuery, out string[] header, out object[,] resultSet);
 
-        if (header == null || resultSet == null || resultSet.Length == 0) {
+        if (header == null || resultSet == null || resultSet.Length == 0)
+        {
             // No recipes or wrong result
             SetFeedback(2, $"No recipes found to export. Store {storeObject.BrowseName} has no recipes or an error occurred");
             return;
         }
 
         // Check column names
-        foreach (var columnName in header) {
-            if (columnName.Contains(separator.ToString())) {
+        foreach (string columnName in header)
+        {
+            if (columnName.Contains(separator.ToString()))
+            {
                 SetFeedback(2, "Unable to export recipes to CSV file: the name of parameter " +
                     columnName + " contains the CSV separator " + separator + ". Please specify a different CSV separator");
                 return;
             }
         }
 
-        var rowCount = resultSet.GetLength(0);
-        var columnCount = resultSet.GetLength(1);
+        int rowCount = resultSet.GetLength(0);
+        int columnCount = resultSet.GetLength(1);
 
-        try {
-            using (var csvWriter = new CSVFileWriter(csvPath) { FieldDelimiter = separator, WrapFields = wrapFields }) {
+        try
+        {
+            using (var csvWriter = new CSVFileWriter(csvPath) { FieldDelimiter = separator, WrapFields = wrapFields })
+            {
                 // Write header
                 csvWriter.WriteLine(header);
 
                 // For each recipe write a line to the CSV file
-                for (var r = 0; r < rowCount; ++r) {
-                    var currentRow = new string[columnCount];
+                for (int r = 0; r < rowCount; ++r)
+                {
+                    string[] currentRow = new string[columnCount];
 
-                    for (var c = 0; c < columnCount; ++c) {
-                        var recipeParameter = Convert.ToString(resultSet[r, c], CultureInfo.InvariantCulture);
+                    for (int c = 0; c < columnCount; ++c)
+                    {
+                        string recipeParameter = Convert.ToString(resultSet[r, c], CultureInfo.InvariantCulture);
                         currentRow[c] = string.IsNullOrEmpty(recipeParameter) ? "NULL" : recipeParameter;
                     }
 
@@ -287,121 +339,146 @@ public class RecipeController : BaseNetLogic {
                 }
             }
             SetFeedback(1, "Recipes successfully exported to " + csvPath);
-        } catch (Exception e) {
+        }
+        catch (Exception e)
+        {
             SetFeedback(2, "Unable to write CSV file: " + e.Message);
         }
     }
 
     [ExportMethod]
-    public void Import() {
+    public void Import()
+    {
         if (ImportTrigger != null)
             ImportTrigger.Value = 0;
 
-        RecipeSchema schema = GetRecipeSchema();
-        if (schema == null) return;
+        var schema = GetRecipeSchema();
+        if (schema == null)
+            return;
 
-        var csvPath = GetCSVFilePath();
+        string csvPath = GetCSVFilePath();
 
-        if (string.IsNullOrEmpty(csvPath)) {
+        if (string.IsNullOrEmpty(csvPath))
+        {
             SetFeedback(2, "Unable to import recipes: please specify the input CSV file");
             return;
         }
 
-        var separator = GetSeparator();
-        if (separator == '.') {
+        char separator = GetSeparator();
+        if (separator == '.')
+        {
             SetFeedback(2, "Unable to import recipes: CSV separator . is not supported");
             return;
         }
 
         bool wrapFields = GetWrapFields();
 
-        if (!File.Exists(csvPath)) {
+        if (!File.Exists(csvPath))
+        {
             SetFeedback(2, "Unable to import recipes: CSV file " + csvPath + " not found");
             return;
         }
 
         var storeObject = GetStoreObject(schema);
-        if (storeObject == null) {
+        if (storeObject == null)
+        {
             SetFeedback(2, "Unable to import recipes from CSV file: Store object not found");
             return;
         }
 
-        var tableName = GetTableName(schema);
+        string tableName = GetTableName(schema);
         var tableNode = storeObject.Tables.Get<Table>(tableName);
-        if (tableNode == null) {
+        if (tableNode == null)
+        {
             SetFeedback(2, "Unable to import recipes from CSV file: table '" + tableName + "' not found in Store " + storeObject.BrowseName);
             return;
         }
 
         DeleteAlreadyExistingRecipes(storeObject, tableName, csvPath, separator, wrapFields);
 
-        try {
-            using (var csvReader = new CSVFileReader(csvPath) { FieldDelimiter = separator, IgnoreMalformedLines = true, WrapFields = wrapFields }) {
-                if (csvReader.EndOfFile()) {
-                    SetFeedback(2, "The file " + csvPath + " is empty");
-                    return;
+        try
+        {
+            using var csvReader = new CSVFileReader(csvPath) { FieldDelimiter = separator, IgnoreMalformedLines = true, WrapFields = wrapFields };
+            if (csvReader.EndOfFile())
+            {
+                SetFeedback(2, "The file " + csvPath + " is empty");
+                return;
+            }
+
+            var header = csvReader.ReadLine();
+            if (header == null || header.Count == 0)
+            {
+                SetFeedback(2, "Error importing recipes. Recipe header does not contain any value or CSV file has an incorrect format");
+                return;
+            }
+
+            while (!csvReader.EndOfFile())
+            {
+                var parameters = csvReader.ReadLine();
+
+                if (parameters.Count != header.Count)
+                {
+                    // invalid line
+                    continue;
                 }
 
-                var header = csvReader.ReadLine();
-                if (header == null || header.Count == 0) {
-                    SetFeedback(2, "Error importing recipes. Recipe header does not contain any value or CSV file has an incorrect format");
-                    return;
-                }
+                string recipeName = parameters[0];
 
-                while (!csvReader.EndOfFile()) {
-                    var parameters = csvReader.ReadLine();
+                object[,] values = new object[1, header.Count];
+                values[0, 0] = recipeName;
 
-                    if (parameters.Count != header.Count) {
-                        // invalid line
+                for (int p = 1; p < header.Count; ++p)
+                {
+                    // Remove "/" from the beginning of column name
+                    string parameterBrowsePath = header[p][1..];
+
+                    if (parameters[p] == "NULL")
+                    {
+                        // NULL field
                         continue;
                     }
 
-                    var recipeName = parameters[0];
-
-                    var values = new object[1, header.Count];
-                    values[0, 0] = recipeName;
-
-                    for (var p = 1; p < header.Count; ++p) {
-                        // Remove "/" from the beginning of column name
-                        var parameterBrowsePath = header[p].Substring(1);
-
-                        if (parameters[p] == "NULL") {
-                            // NULL field
-                            continue;
-                        }
-
-                        var recipeParameterVariable = GetVariableFromRecipeSchema(schema.Root, parameterBrowsePath);
-                        if (recipeParameterVariable == null) {
-                            Log.Warning("RecipeManager", $"Could not find {parameterBrowsePath} in recipe {recipeName}");
-                            continue;
-                        }
-
-                        if (IsVariableLinearArray(recipeParameterVariable)) {
-                            var arraySize = recipeParameterVariable.ArrayDimensions[0];
-                            ImportArrayVariable(recipeParameterVariable, p, values, parameters);
-                            p += (int)arraySize - 1;
-                        } else {
-                            try {
-                                values[0, p] = ConvertVariableValueToObject(recipeParameterVariable, parameters[p]);
-                            } catch (Exception e) {
-                                Log.Warning("RecipeManager", "Unable to import parameter '" + parameterBrowsePath +
-                                                "' of recipe '" + recipeName +
-                                                "': unsupported data type " + e.Message);
-                            }
-                        }
+                    var recipeParameterVariable = GetVariableFromRecipeSchema(schema.Root, parameterBrowsePath);
+                    if (recipeParameterVariable == null)
+                    {
+                        Log.Warning("RecipeManager", $"Could not find {parameterBrowsePath} in recipe {recipeName}");
+                        continue;
                     }
 
-                    tableNode.Insert(header.ToArray(), values);
+                    if (IsVariableLinearArray(recipeParameterVariable))
+                    {
+                        uint arraySize = recipeParameterVariable.ArrayDimensions[0];
+                        ImportArrayVariable(recipeParameterVariable, p, values, parameters);
+                        p += (int)arraySize - 1;
+                    }
+                    else
+                    {
+                        try
+                        {
+                            values[0, p] = ConvertVariableValueToObject(recipeParameterVariable, parameters[p]);
+                        }
+                        catch (Exception e)
+                        {
+                            Log.Warning("RecipeManager", "Unable to import parameter '" + parameterBrowsePath +
+                                            "' of recipe '" + recipeName +
+                                            "': unsupported data type " + e.Message);
+                        }
+                    }
                 }
 
-                SetFeedback(1, "Recipes successfully imported to " + tableNode.BrowseName);
+                tableNode.Insert(header.ToArray(), values);
             }
-        } catch (Exception e) {
+
+            SetFeedback(1, "Recipes successfully imported to " + tableNode.BrowseName);
+        }
+        catch (Exception e)
+        {
             SetFeedback(2, "Unable to read CSV file " + csvPath + ": " + e.Message);
         }
     }
 
-    private void SetFeedback(byte result, string message) {
+    private void SetFeedback(byte result, string message)
+    {
         // result = 0 --> Idle
         // result = 1 --> Ok
         // result = 2 --> Error
@@ -410,22 +487,24 @@ public class RecipeController : BaseNetLogic {
         LogicObject.GetVariable("Result").SetValueNoPermissions(result);
         LogicObject.GetVariable("Message").SetValueNoPermissions(message);
 
-        lock (lockObject) {
+        lock (lockObject)
+        {
             task?.Dispose();
             task = new DelayedTask(() => { ResetFeedback(); }, 5000, LogicObject);
             task.Start();
         }
     }
 
-    private void ResetFeedback() {
+    private void ResetFeedback()
+    {
         LogicObject.GetVariable("Result").SetValueNoPermissions(0);
         LogicObject.GetVariable("Message").SetValueNoPermissions(string.Empty);
     }
 
-    private RecipeSchema GetRecipeSchema() {
-        var schema = Owner as RecipeSchema;
-
-        if (schema == null) {
+    private RecipeSchema GetRecipeSchema()
+    {
+        if (Owner is not RecipeSchema schema)
+        {
             var recipeSchemaPtr = LogicObject.GetVariable("RecipeSchema");
             if (recipeSchemaPtr == null)
                 SetFeedback(2, GetLocalizedTextString("RecipesEditorRecipeSchemaNotFound"));
@@ -447,12 +526,14 @@ public class RecipeController : BaseNetLogic {
         return schema;
     }
 
-    private string GetRecipeName() {
+    private string GetRecipeName()
+    {
         var logicObjectVariable = LogicObject.GetVariable("RecipeName");
         return logicObjectVariable.Value;
     }
 
-    private FTOptix.Store.Store GetRecipeStore(RecipeSchema schema) {
+    private FTOptix.Store.Store GetRecipeStore(RecipeSchema schema)
+    {
         // Check if the store is set
         if (schema.Store == NodeId.Empty)
             SetFeedback(2, $"{GetLocalizedTextString("RecipesEditorStoreOfSchema")} {schema.BrowseName} {GetLocalizedTextString("RecipesEditorNotSet")}");
@@ -470,7 +551,8 @@ public class RecipeController : BaseNetLogic {
         return store;
     }
 
-    private IUANode GetEditModel(RecipeSchema schema) {
+    private IUANode GetEditModel(RecipeSchema schema)
+    {
         var editModel = schema.Get("EditModel");
         if (editModel == null)
             SetFeedback(2, $"{GetLocalizedTextString("RecipesEditorEditModelOfSchema")} {schema.BrowseName} {GetLocalizedTextString("RecipesEditorNotFound")}");
@@ -478,27 +560,29 @@ public class RecipeController : BaseNetLogic {
         return editModel;
     }
 
-    private bool RecipeExistsInStore(FTOptix.Store.Store store, RecipeSchema schema, string recipeName) {
+    private bool RecipeExistsInStore(FTOptix.Store.Store store, RecipeSchema schema, string recipeName)
+    {
         // Perform query on the store in order to check if the recipe already exists
-        object[,] resultSet;
-        string[] header;
-        var tableName = !String.IsNullOrEmpty(schema.TableName) ? schema.TableName : schema.BrowseName;
-        store.Query("SELECT * FROM \"" + tableName + "\" WHERE Name LIKE \'" + recipeName + "\'", out header, out resultSet);
-        var rowCount = resultSet != null ? resultSet.GetLength(0) : 0;
+        string tableName = !string.IsNullOrEmpty(schema.TableName) ? schema.TableName : schema.BrowseName;
+
+        store.Query("SELECT * FROM \"" + tableName + "\" WHERE Name LIKE \'" + recipeName + "\'", out _, out object[,] resultSet);
+        int rowCount = resultSet != null ? resultSet.GetLength(0) : 0;
         return rowCount > 0;
     }
 
-    private string GetLocalizedTextString(string textId) {
+    private string GetLocalizedTextString(string textId)
+    {
         var myLocalizedText = new LocalizedText(textId);
         return InformationModel.LookupTranslation(myLocalizedText).Text;
     }
 
-
     #region ImportExport
 
-    private string GetCSVFilePath() {
+    private string GetCSVFilePath()
+    {
         var csvPathVariable = LogicObject.GetVariable("CSVFile");
-        if (csvPathVariable == null) {
+        if (csvPathVariable == null)
+        {
             SetFeedback(2, "CSVFile variable not found");
             return "";
         }
@@ -506,16 +590,19 @@ public class RecipeController : BaseNetLogic {
         return new ResourceUri(csvPathVariable.Value).Uri;
     }
 
-    private char GetSeparator() {
+    private char GetSeparator()
+    {
         var separatorVariable = LogicObject.GetVariable("CSVSeparator");
         string separatorString = separatorVariable.Value;
 
         return (separatorString.Length != 1) ? ',' : separatorString[0];
     }
 
-    private bool GetWrapFields() {
+    private bool GetWrapFields()
+    {
         var wrapFieldsVariable = LogicObject.GetVariable("WrapFields");
-        if (wrapFieldsVariable == null) {
+        if (wrapFieldsVariable == null)
+        {
             Log.Error("RecipeManager", "WrapFields variable not found");
             return false;
         }
@@ -523,8 +610,9 @@ public class RecipeController : BaseNetLogic {
         return wrapFieldsVariable.Value;
     }
 
-    private Store GetStoreObject(RecipeSchema recipeSchema) {
-        NodeId storeNodeId = recipeSchema.Store;
+    private Store GetStoreObject(RecipeSchema recipeSchema)
+    {
+        var storeNodeId = recipeSchema.Store;
         var storeObject = InformationModel.Get(storeNodeId);
         if (storeObject == null)
             return null;
@@ -532,8 +620,9 @@ public class RecipeController : BaseNetLogic {
         return storeObject as Store;
     }
 
-    private string GetTableName(RecipeSchema recipeSchema) {
-        var tableName = recipeSchema.TableName;
+    private string GetTableName(RecipeSchema recipeSchema)
+    {
+        string tableName = recipeSchema.TableName;
 
         if (string.IsNullOrEmpty(tableName))
             tableName = recipeSchema.BrowseName;
@@ -541,78 +630,87 @@ public class RecipeController : BaseNetLogic {
         return tableName;
     }
 
-    private void DeleteAlreadyExistingRecipes(Store storeObject, string tableName, string inputFile, char separator, bool wrapFields) {
+    private void DeleteAlreadyExistingRecipes(Store storeObject, string tableName, string inputFile, char separator, bool wrapFields)
+    {
         var recipes = GetRecipes(storeObject, tableName);
 
-        try {
-            using (var csvReader = new CSVFileReader(inputFile) { FieldDelimiter = separator, IgnoreMalformedLines = true, WrapFields = wrapFields }) {
-                if (csvReader.EndOfFile())
-                    return;
+        try
+        {
+            using var csvReader = new CSVFileReader(inputFile) { FieldDelimiter = separator, IgnoreMalformedLines = true, WrapFields = wrapFields };
+            if (csvReader.EndOfFile())
+                return;
 
-                var header = csvReader.ReadLine();
-                if (header == null || header.Count == 0) {
-                    SetFeedback(2, "Error deleting existing recipes. Recipe header does not contain any value or CSV file has an incorrect format");
-                    return;
-                }
-
-                while (!csvReader.EndOfFile()) {
-                    var parameters = csvReader.ReadLine();
-
-                    if (parameters.Count != header.Count) {
-                        // invalid line
-                        continue;
-                    }
-
-                    // Delete recipe if it already exists
-                    var recipeName = parameters[0];
-                    if (recipes.Contains(recipeName))
-                        DeleteRecipeForImport(storeObject, tableName, recipeName);
-                }
+            var header = csvReader.ReadLine();
+            if (header == null || header.Count == 0)
+            {
+                SetFeedback(2, "Error deleting existing recipes. Recipe header does not contain any value or CSV file has an incorrect format");
+                return;
             }
-        } catch (Exception e) {
+
+            while (!csvReader.EndOfFile())
+            {
+                var parameters = csvReader.ReadLine();
+
+                if (parameters.Count != header.Count)
+                {
+                    // invalid line
+                    continue;
+                }
+
+                // Delete recipe if it already exists
+                string recipeName = parameters[0];
+                if (recipes.Contains(recipeName))
+                    DeleteRecipeForImport(storeObject, tableName, recipeName);
+            }
+        }
+        catch (Exception e)
+        {
             SetFeedback(2, "Unable to read CSV file " + inputFile + ": " + e.Message);
         }
     }
 
-    private void DeleteRecipeForImport(Store storeObject, string tableName, string recipeName) {
-        object[,] resultSet;
-        string[] header;
+    private void DeleteRecipeForImport(Store storeObject, string tableName, string recipeName)
+    {
 
         string deleteQuery = "DELETE FROM \"" + tableName + "\" WHERE Name LIKE '" + recipeName + "'";
-        storeObject.Query(deleteQuery, out header, out resultSet);
+
+        storeObject.Query(deleteQuery, out _, out _);
     }
 
-    private HashSet<string> GetRecipes(Store storeObject, string tableName) {
-        HashSet<string> result = new HashSet<string>();
+    private HashSet<string> GetRecipes(Store storeObject, string tableName)
+    {
+        var result = new HashSet<string>();
 
         // Retrieve all recipes from table
-        object[,] resultSet;
-        string[] header;
-        storeObject.Query("SELECT Name FROM \"" + tableName + "\"", out header, out resultSet);
+        storeObject.Query("SELECT Name FROM \"" + tableName + "\"", out _, out object[,] resultSet);
 
-        if (resultSet == null || resultSet.Length == 0) {
+        if (resultSet == null || resultSet.Length == 0)
+        {
             // No recipes
             return result;
         }
 
-        var rowCount = resultSet.GetLength(0);
-        var columnCount = resultSet.GetLength(1);
+        int rowCount = resultSet.GetLength(0);
+        int columnCount = resultSet.GetLength(1);
 
         if (columnCount == 0)
             return result;
 
-        for (var r = 0; r < rowCount; ++r)
-            result.Add(resultSet[r, 0] as String);
+        for (int r = 0; r < rowCount; ++r)
+            _ = result.Add(resultSet[r, 0] as string);
 
         return result;
     }
 
-    private IUAVariable GetVariableFromRecipeSchema(IUAObject recipeShemaRoot, string variableName) {
+    private IUAVariable GetVariableFromRecipeSchema(IUAObject recipeShemaRoot, string variableName)
+    {
         var recipeVariable = recipeShemaRoot.GetVariable(variableName);
-        if (recipeVariable == null) {
-            var underscoreIndex = variableName.LastIndexOf("_");
-            if (underscoreIndex > -1) {
-                var arrayVariableName = variableName.Substring(0, underscoreIndex);
+        if (recipeVariable == null)
+        {
+            int underscoreIndex = variableName.LastIndexOf("_");
+            if (underscoreIndex > -1)
+            {
+                string arrayVariableName = variableName[..underscoreIndex];
                 recipeVariable = recipeShemaRoot.GetVariable(arrayVariableName);
             }
         }
@@ -620,23 +718,27 @@ public class RecipeController : BaseNetLogic {
         return recipeVariable;
     }
 
-    private bool IsVariableLinearArray(IUAVariable variable) {
-        return variable.ActualArrayDimensions.Length == 1;
-    }
+    private bool IsVariableLinearArray(IUAVariable variable) => variable.ActualArrayDimensions.Length == 1;
 
-    private void ImportArrayVariable(IUAVariable arrayVariable, int startIndex, object[,] values, List<string> parameterList) {
-        var arraySize = arrayVariable.ActualArrayDimensions[0];
-        for (int k = 0; k < arraySize; ++k) {
-            var currentArrayIndex = startIndex + k;
-            try {
+    private void ImportArrayVariable(IUAVariable arrayVariable, int startIndex, object[,] values, List<string> parameterList)
+    {
+        uint arraySize = arrayVariable.ActualArrayDimensions[0];
+        for (int k = 0; k < arraySize; ++k)
+        {
+            int currentArrayIndex = startIndex + k;
+            try
+            {
                 values[0, currentArrayIndex] = ConvertVariableValueToObject(arrayVariable, parameterList[currentArrayIndex]);
-            } catch (Exception e) {
+            }
+            catch (Exception e)
+            {
                 Log.Warning("RecipeImportExport", "Unable to import parameter '" + arrayVariable.BrowseName + e.Message);
             }
         }
     }
 
-    private object ConvertVariableValueToObject(IUAVariable recipeParameterVariable, string parameterValue) {
+    private object ConvertVariableValueToObject(IUAVariable recipeParameterVariable, string parameterValue)
+    {
         if (IsInteger(recipeParameterVariable))
             return Convert.ToInt64(parameterValue);
         else if (IsBool(recipeParameterVariable))
@@ -651,7 +753,8 @@ public class RecipeController : BaseNetLogic {
             throw new Exception("Unable to convert recipe variable value, unsupported datatype");
     }
 
-    private bool IsInteger(IUAVariable variable) {
+    private bool IsInteger(IUAVariable variable)
+    {
         var dataTypeNode = variable.Context.GetDataType(variable.DataType);
         if (dataTypeNode == null)
             return false;
@@ -660,7 +763,8 @@ public class RecipeController : BaseNetLogic {
             dataTypeNode.IsSubTypeOf(OpcUa.DataTypes.UInteger);
     }
 
-    private bool IsReal(IUAVariable variable) {
+    private bool IsReal(IUAVariable variable)
+    {
         var dataTypeNode = variable.Context.GetDataType(variable.DataType);
         if (dataTypeNode == null)
             return false;
@@ -669,11 +773,10 @@ public class RecipeController : BaseNetLogic {
             dataTypeNode.IsSubTypeOf(OpcUa.DataTypes.Double);
     }
 
-    private bool IsBool(IUAVariable variable) {
-        return variable.DataType == OpcUa.DataTypes.Boolean;
-    }
+    private bool IsBool(IUAVariable variable) => variable.DataType == OpcUa.DataTypes.Boolean;
 
-    private bool IsString(IUAVariable variable) {
+    private bool IsString(IUAVariable variable)
+    {
         var dataTypeNode = variable.Context.GetDataType(variable.DataType);
         if (dataTypeNode == null)
             return false;
@@ -681,7 +784,8 @@ public class RecipeController : BaseNetLogic {
         return dataTypeNode.IsSubTypeOf(OpcUa.DataTypes.String);
     }
 
-    private bool IsDuration(IUAVariable variable) {
+    private bool IsDuration(IUAVariable variable)
+    {
         var dataTypeNode = variable.Context.GetDataType(variable.DataType);
         if (dataTypeNode == null)
             return false;
@@ -690,9 +794,9 @@ public class RecipeController : BaseNetLogic {
     }
     #endregion
 
-
     #region CSVFileReader
-    private class CSVFileReader : IDisposable {
+    private class CSVFileReader : IDisposable
+    {
         public char FieldDelimiter { get; set; } = ',';
 
         public char QuoteChar { get; set; } = '"';
@@ -701,27 +805,16 @@ public class RecipeController : BaseNetLogic {
 
         public bool IgnoreMalformedLines { get; set; } = false;
 
-        public CSVFileReader(string filePath, System.Text.Encoding encoding) {
-            streamReader = new StreamReader(filePath, encoding);
-        }
+        public CSVFileReader(string filePath) => streamReader = new StreamReader(filePath, System.Text.Encoding.UTF8);
 
-        public CSVFileReader(string filePath) {
-            streamReader = new StreamReader(filePath, System.Text.Encoding.UTF8);
-        }
+        public bool EndOfFile() => streamReader.EndOfStream;
 
-        public CSVFileReader(StreamReader streamReader) {
-            this.streamReader = streamReader;
-        }
-
-        public bool EndOfFile() {
-            return streamReader.EndOfStream;
-        }
-
-        public List<string> ReadLine() {
+        public List<string> ReadLine()
+        {
             if (EndOfFile())
                 return null;
 
-            var line = streamReader.ReadLine();
+            string line = streamReader.ReadLine();
 
             var result = WrapFields ? ParseLineWrappingFields(line) : ParseLineWithoutWrappingFields(line);
 
@@ -730,39 +823,38 @@ public class RecipeController : BaseNetLogic {
 
         }
 
-        public List<List<string>> ReadAll() {
-            var result = new List<List<string>>();
-            while (!EndOfFile())
-                result.Add(ReadLine());
-
-            return result;
-        }
-
-        private List<string> ParseLineWithoutWrappingFields(string line) {
+        private List<string> ParseLineWithoutWrappingFields(string line)
+        {
             if (string.IsNullOrEmpty(line) && !IgnoreMalformedLines)
                 throw new FormatException($"Error processing line {currentLineNumber}. Line cannot be empty");
 
             return line.Split(FieldDelimiter).ToList();
         }
 
-        private List<string> ParseLineWrappingFields(string line) {
+        private List<string> ParseLineWrappingFields(string line)
+        {
             var fields = new List<string>();
             var buffer = new StringBuilder("");
-            var fieldParsing = false;
+            bool fieldParsing = false;
 
             int i = 0;
-            while (i < line.Length) {
-                if (!fieldParsing) {
-                    if (IsWhiteSpace(line, i)) {
+            while (i < line.Length)
+            {
+                if (!fieldParsing)
+                {
+                    if (IsWhiteSpace(line, i))
+                    {
                         ++i;
                         continue;
                     }
 
                     // Line and column numbers must be 1-based for messages to user
-                    var lineErrorMessage = $"Error processing line {currentLineNumber}";
-                    if (i == 0) {
+                    string lineErrorMessage = $"Error processing line {currentLineNumber}";
+                    if (i == 0)
+                    {
                         // A line must begin with the quotation mark
-                        if (!IsQuoteChar(line, i)) {
+                        if (!IsQuoteChar(line, i))
+                        {
                             if (IgnoreMalformedLines)
                                 return null;
                             else
@@ -770,10 +862,15 @@ public class RecipeController : BaseNetLogic {
                         }
 
                         fieldParsing = true;
-                    } else {
+                    }
+                    else
+                    {
                         if (IsQuoteChar(line, i))
+                        {
                             fieldParsing = true;
-                        else if (!IsFieldDelimiter(line, i)) {
+                        }
+                        else if (!IsFieldDelimiter(line, i))
+                        {
                             if (IgnoreMalformedLines)
                                 return null;
                             else
@@ -782,17 +879,24 @@ public class RecipeController : BaseNetLogic {
                     }
 
                     ++i;
-                } else {
-                    if (IsEscapedQuoteChar(line, i)) {
+                }
+                else
+                {
+                    if (IsEscapedQuoteChar(line, i))
+                    {
                         i += 2;
-                        buffer.Append(QuoteChar);
-                    } else if (IsQuoteChar(line, i)) {
+                        _ = buffer.Append(QuoteChar);
+                    }
+                    else if (IsQuoteChar(line, i))
+                    {
                         fields.Add(buffer.ToString());
-                        buffer.Clear();
+                        _ = buffer.Clear();
                         fieldParsing = false;
                         ++i;
-                    } else {
-                        buffer.Append(line[i]);
+                    }
+                    else
+                    {
+                        _ = buffer.Append(line[i]);
                         ++i;
                     }
                 }
@@ -801,28 +905,21 @@ public class RecipeController : BaseNetLogic {
             return fields;
         }
 
-        private bool IsEscapedQuoteChar(string line, int i) {
-            return line[i] == QuoteChar && i != line.Length - 1 && line[i + 1] == QuoteChar;
-        }
+        private bool IsEscapedQuoteChar(string line, int i) => line[i] == QuoteChar && i != line.Length - 1 && line[i + 1] == QuoteChar;
 
-        private bool IsQuoteChar(string line, int i) {
-            return line[i] == QuoteChar;
-        }
+        private bool IsQuoteChar(string line, int i) => line[i] == QuoteChar;
 
-        private bool IsFieldDelimiter(string line, int i) {
-            return line[i] == FieldDelimiter;
-        }
+        private bool IsFieldDelimiter(string line, int i) => line[i] == FieldDelimiter;
 
-        private bool IsWhiteSpace(string line, int i) {
-            return Char.IsWhiteSpace(line[i]);
-        }
+        private bool IsWhiteSpace(string line, int i) => char.IsWhiteSpace(line[i]);
 
-        private StreamReader streamReader;
+        private readonly StreamReader streamReader;
         private int currentLineNumber = 1;
 
         #region IDisposable support
         private bool disposed = false;
-        protected virtual void Dispose(bool disposing) {
+        protected virtual void Dispose(bool disposing)
+        {
             if (disposed)
                 return;
 
@@ -832,58 +929,51 @@ public class RecipeController : BaseNetLogic {
             disposed = true;
         }
 
-        public void Dispose() {
-            Dispose(true);
-        }
+        public void Dispose() => Dispose(true);
         #endregion
     }
 
-    private class CSVFileWriter : IDisposable {
+    private class CSVFileWriter : IDisposable
+    {
         public char FieldDelimiter { get; set; } = ',';
 
         public char QuoteChar { get; set; } = '"';
 
         public bool WrapFields { get; set; } = false;
 
-        public CSVFileWriter(string filePath) {
-            streamWriter = new StreamWriter(filePath, false, System.Text.Encoding.UTF8);
-        }
+        public CSVFileWriter(string filePath) => streamWriter = new StreamWriter(filePath, false, System.Text.Encoding.UTF8);
 
-        public CSVFileWriter(string filePath, System.Text.Encoding encoding) {
-            streamWriter = new StreamWriter(filePath, false, encoding);
-        }
-
-        public CSVFileWriter(StreamWriter streamWriter) {
-            this.streamWriter = streamWriter;
-        }
-
-        public void WriteLine(string[] fields) {
+        public void WriteLine(string[] fields)
+        {
             var stringBuilder = new StringBuilder();
 
-            for (var i = 0; i < fields.Length; ++i) {
+            for (int i = 0; i < fields.Length; ++i)
+            {
                 if (WrapFields)
-                    stringBuilder.AppendFormat("{0}{1}{0}", QuoteChar, EscapeField(fields[i]));
+                    _ = stringBuilder.AppendFormat("{0}{1}{0}", QuoteChar, EscapeField(fields[i]));
                 else
-                    stringBuilder.AppendFormat("{0}", fields[i]);
+                    _ = stringBuilder.AppendFormat("{0}", fields[i]);
 
                 if (i != fields.Length - 1)
-                    stringBuilder.Append(FieldDelimiter);
+                    _ = stringBuilder.Append(FieldDelimiter);
             }
 
             streamWriter.WriteLine(stringBuilder.ToString());
             streamWriter.Flush();
         }
 
-        private string EscapeField(string field) {
-            var quoteCharString = QuoteChar.ToString();
+        private string EscapeField(string field)
+        {
+            string quoteCharString = QuoteChar.ToString();
             return field.Replace(quoteCharString, quoteCharString + quoteCharString);
         }
 
-        private StreamWriter streamWriter;
+        private readonly StreamWriter streamWriter;
 
         #region IDisposable Support
         private bool disposed = false;
-        protected virtual void Dispose(bool disposing) {
+        protected virtual void Dispose(bool disposing)
+        {
             if (disposed)
                 return;
 
@@ -893,9 +983,7 @@ public class RecipeController : BaseNetLogic {
             disposed = true;
         }
 
-        public void Dispose() {
-            Dispose(true);
-        }
+        public void Dispose() => Dispose(true);
 
         #endregion
     }
@@ -903,7 +991,7 @@ public class RecipeController : BaseNetLogic {
 
     private RemoteVariableSynchronizer variableSynchronizer;
     private DelayedTask task;
-    private object lockObject = new object();
+    private readonly object lockObject = new object();
     private IUAVariable ApplyFromDBTrigger;
     private IUAVariable ApplyFromEditModelTrigger;
     private IUAVariable DeleteTrigger;

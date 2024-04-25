@@ -1,12 +1,9 @@
 #region Using directives
+using System.Linq;
 using FTOptix.HMIProject;
-using UAManagedCore;
 using FTOptix.NetLogic;
 using FTOptix.UI;
-using System.Linq;
-using FTOptix.WebUI;
-using FTOptix.NativeUI;
-using FTOptix.System;
+using UAManagedCore;
 #endregion
 
 public class DeleteUserButtonLogic : BaseNetLogic
@@ -39,12 +36,12 @@ public class DeleteUserButtonLogic : BaseNetLogic
             Log.Error("UserEditor", "Cannot obtain Users folder.");
             return;
         }
-        
+
         usersFolder.Remove(userObjectToRemove);
 
         if (usersFolder.Children.Count > 0)
         {
-            var usersList = (ListBox)Owner.Owner.Owner.Get<ListBox>("HorizontalLayout1/UsersList");
+            var usersList = Owner.Owner.Owner.Get<ListBox>("HorizontalLayout1/UsersList");
             usersList.SelectedItem = usersFolder.Children.First().NodeId;
         }
     }
