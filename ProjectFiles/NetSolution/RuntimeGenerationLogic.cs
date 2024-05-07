@@ -71,7 +71,7 @@ public class RuntimeGenerationLogic : BaseNetLogic
         GenerateCoords(topMargin, leftMargin, out topMargin, out leftMargin);
         myControl.TopMargin = topMargin;
         myControl.LeftMargin = leftMargin;
-        myControl.Path = new ResourceUri("%PROJECTDIR%\\imgs\\Logos\\LogoFTOptixDarkGrey.svg").Uri;
+        myControl.Path = ResourceUri.FromProjectRelativePath("imgs/Logos/LogoFTOptixDarkGrey.svg");
         myControl.Width = 75;
         myControl.Height = 40;
         Owner.Get("WorkspaceArea/RuntimeGeneratedObjects/VerticalLayout/UI_Controls/UI_ControlsArea").Add(myControl);
