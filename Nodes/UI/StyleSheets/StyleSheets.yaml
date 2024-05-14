@@ -722,11 +722,6 @@ Children:
       Id: g=778aa4935539aaff3b41c231c01469b4
       Type: ButtonStyle
       Children:
-      - Name: Color
-        Id: g=5580f01e35a3559204e2008b99523b30
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#3b3b3b"
       - Name: BorderColor
         Id: g=05cd7cfb87e7c2bf9a55e69580c9cef6
         Type: BaseDataVariableType
@@ -737,6 +732,11 @@ Children:
         Type: BaseDataVariableType
         DataType: Size
         Value: 0.0
+      - Name: Color
+        Id: g=5580f01e35a3559204e2008b99523b30
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#3b3b3b00"
   - Name: InputBoxStyles
     Id: g=ff2c545bcd0d90ed56114f1e286cdd54
     Type: BaseObjectType
@@ -803,16 +803,11 @@ Children:
         Type: BaseDataVariableType
         DataType: Color
         Value: "#e4e4e400"
-      - Name: InactiveTextColor
-        Id: g=b06397a074e1c6d1d2c50f921391216c
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#9e9e9e"
       - Name: ActivePrimaryColor
         Id: g=9a88a5e09fcd9cb86762fe325af9284c
         Type: BaseDataVariableType
         DataType: Color
-        Value: "#2e6fc9"
+        Value: "#007aff"
       - Name: BackgroundColor
         Id: g=fd621a8c1af83dae75d84e2327598d65
         Type: BaseDataVariableType
@@ -822,12 +817,22 @@ Children:
         Id: g=fd11a150c9c5c86e92549e48e1022db0
         Type: BaseDataVariableType
         DataType: Size
-        Value: 16.0
+        Value: 14.0
       - Name: IconUsesTextColor
         Id: g=44af73697c03186176158a5181df88d4
         Type: BaseDataVariableType
         DataType: Boolean
         Value: true
+      - Name: FontWeight
+        Id: g=a53785a8e5701af62b4c088b9b6c481a
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 700
+      - Name: InactiveTextColor
+        Id: g=6ed401a43e87e4cea066cd1c8214d6b8
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#9e9e9e"
   - Name: ChartStyles
     Id: g=9044e1ecbff29f2cb7669a2d39afd787
     Type: BaseObjectType
@@ -969,6 +974,11 @@ Children:
         Type: BaseDataVariableType
         DataType: Size
         Value: 18.0
+  - Name: FontFamily
+    Id: g=b17b96b6daef6c017c939e65909b2703
+    Type: BaseDataVariableType
+    DataType: Font
+    Value: "Roboto"
 - Name: MaterialDark
   Id: g=05c737d5a6570c1bea1ce20288a3b829
   Type: StyleSheet

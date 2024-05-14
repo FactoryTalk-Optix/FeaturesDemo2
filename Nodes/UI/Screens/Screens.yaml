@@ -329,13 +329,19 @@ Children:
       Type: BaseDataVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 132.0
+      Value: 160.0
     - Class: Reference
       Target: ns=3;i=1181
       Direction: Forward
     - Class: Reference
       Target: ns=3;i=1183
       Direction: Forward
+    - Name: TabHeight
+      Id: g=489de4d39471cb7f30b6aab12f2de31e
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 48.0
   - Name: BackgroundColor
     Id: g=4aadfa5da54bc88688e9890daf52be34
     Type: BaseDataVariableType
