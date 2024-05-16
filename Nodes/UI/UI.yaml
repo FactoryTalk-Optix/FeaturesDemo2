@@ -171,7 +171,7 @@ Children:
     DataType: String
     ValueRank: OneDimension
     ArrayDimensions: [0]
-    Value: ["https://www.rockwellautomation.com/","https://www.asemautomation.com/"]
+    Value: ["https://www.rockwellautomation.com/*","https://www.asemautomation.com/*","https://127.0.0.1/*"]
 - Name: NativePresentationEngine
   Id: g=f97bf56f837beb7fa47c15159e5db05a
   Type: NativePresentationEngine
@@ -10566,7 +10566,7 @@ Children:
                       Id: g=8deab9f2830b6c48187b2247aa980f33
                       Type: BaseDataVariableType
                       DataType: NodeId
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/OptixPanels/SystemManager"
+                      Value: "/Objects/FeaturesDemo2/UI/Screens/OptixPanels/DeviceManager"
                     - Name: AliasNode
                       Id: g=a371d162c7d5c5931cdc37bfbd62ee10
                       Type: BaseDataVariableType

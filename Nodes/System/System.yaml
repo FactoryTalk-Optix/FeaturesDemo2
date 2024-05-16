@@ -333,3 +333,291 @@ Children:
   - Class: Reference
     Target: ns=35;i=90
     Direction: Forward
+  - Name: RemoteConnectionRequestEventHandler
+    Id: g=889fd854ece54519a1ebb37f9c6895ff
+    Type: EventHandler
+    Children:
+    - Name: ListenEventType
+      Id: g=aba7021031a236d2a9d8ddbb0f385c0f
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/EventTypes/BaseEventType/RemoteConnectionRequestEvent"
+    - Name: MethodsToCall
+      Id: g=7f15ac0008cc697e50cf27cac91ce869
+      Type: BaseObjectType
+      Children:
+      - Name: MethodContainerFTRemoteAccessWidgetUsername
+        Id: g=f5e46736b1f0422b8208a7ce23fec9aa
+        Type: BaseObjectType
+        Children:
+        - Name: ObjectPointer
+          Id: g=5405c2f644ad440c8fc6963dbbd4479e
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/Commands/VariableCommands"
+          Children:
+          - Name: Kind
+            Id: g=5865148cd30b621df08d48dda31c5476
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: Method
+          Id: g=567d7d624d12457c98beb94831a9cfb1
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Set"
+        - Name: InputArguments
+          Id: g=0af8ddefc1994ceebf213f6927882f3b
+          Type: BaseObjectType
+          Children:
+          - Name: VariableToModify
+            Id: g=531afca32d944007a9ab13e68936e994
+            Type: BaseDataVariableType
+            DataType: VariablePointer
+            Value: "/Objects/FeaturesDemo2/System/FTRemoteAccess/FTRemoteAccessWidgetUsername"
+          - Name: Value
+            Id: g=d2a86743be224ddab4ba6977f5492413
+            Type: BaseDataVariableType
+            DataType: String
+            Value: ""
+            Children:
+            - Name: DynamicLink
+              Id: g=f6fc553eb4904d5baef6de9724513c52
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/FeaturesDemo2/System/FTRemoteAccess/RemoteConnectionRequestEventHandler/EventArguments/Username"
+              Children:
+              - Name: Mode
+                Id: g=00a2db5af59b4938ad1b91426f7a251d
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: ArrayIndex
+            Id: g=5a60331ec7a3480eb29c9ff5dc64994f
+            Type: BaseDataVariableType
+            DataType: UInt32
+            ValueRank: ScalarOrOneDimension
+            Value: 0
+      - Name: MethodContainerFTRemoteAccessWidgetIPAddress
+        Id: g=4178569d31d04f8ea5d963c1394e1e15
+        Type: BaseObjectType
+        Children:
+        - Name: ObjectPointer
+          Id: g=6df57de74c094a7396c0f10b83f3ef7f
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/Commands/VariableCommands"
+          Children:
+          - Name: Kind
+            Id: g=086fa70e2def055a4a04b984f6df6cc6
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: Method
+          Id: g=24a1a7ddf6fd4c1a8f8099fa6dfd1a08
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Set"
+        - Name: InputArguments
+          Id: g=94217d6799da48588204235f33e43f3b
+          Type: BaseObjectType
+          Children:
+          - Name: VariableToModify
+            Id: g=791e79bf46a944c8b540885337b345ba
+            Type: BaseDataVariableType
+            DataType: VariablePointer
+            Value: "/Objects/FeaturesDemo2/System/FTRemoteAccess/FTRemoteAccessWidgetIPAddress"
+          - Name: Value
+            Id: g=5a771d37a854401aba17c6e59f62d0aa
+            Type: BaseDataVariableType
+            DataType: String
+            Value: ""
+            Children:
+            - Name: DynamicLink
+              Id: g=4b9c327e9fcb4ce3805bf0fb99188140
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/FeaturesDemo2/System/FTRemoteAccess/RemoteConnectionRequestEventHandler/EventArguments/IpAddress"
+              Children:
+              - Name: Mode
+                Id: g=cce5d5af33c24f99b2e5bfb5bf4b2112
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: ArrayIndex
+            Id: g=5d7e96af915340d3ae1b391c72a26f50
+            Type: BaseDataVariableType
+            DataType: UInt32
+            ValueRank: ScalarOrOneDimension
+            Value: 0
+      - Name: MethodContainerFTRemoteAccessWidgetSupervisorId
+        Id: g=4ef1f6c50c804aaabc7d0992d037a24f
+        Type: BaseObjectType
+        Children:
+        - Name: ObjectPointer
+          Id: g=5c726e760a424d9f9ff046ffad3da090
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/Commands/VariableCommands"
+          Children:
+          - Name: Kind
+            Id: g=df01321e8547540fd16e55b616bb0123
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: Method
+          Id: g=e3fbb38e81684f8190d0fdff6e30fb76
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Set"
+        - Name: InputArguments
+          Id: g=b3c6a6163a434eabbe804cf7f75d5f44
+          Type: BaseObjectType
+          Children:
+          - Name: VariableToModify
+            Id: g=d0408e1822f945689acb2200dadb4b61
+            Type: BaseDataVariableType
+            DataType: VariablePointer
+            Value: "/Objects/FeaturesDemo2/System/FTRemoteAccess/FTRemoteAccessWidgetSupervisorId"
+          - Name: Value
+            Id: g=52bd7eb4eeea462cb6eb7c63c834418f
+            Type: BaseDataVariableType
+            DataType: ByteString
+            Value: ""
+            Children:
+            - Name: DynamicLink
+              Id: g=873db6f0bbd548568888009f9a7bdc0b
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/FeaturesDemo2/System/FTRemoteAccess/RemoteConnectionRequestEventHandler/EventArguments/SupervisorId"
+              Children:
+              - Name: Mode
+                Id: g=ab4511ad75f24fd68afa5559ec1e0dc4
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: ArrayIndex
+            Id: g=b9626fa7b04b4d79b32d8e3689b2dc94
+            Type: BaseDataVariableType
+            DataType: UInt32
+            ValueRank: ScalarOrOneDimension
+            Value: 0
+      - Name: MethodContainerFTRemoteAccessWidgetConnectionPending
+        Id: g=21cc37a1372747bcb6bc939b05b86dff
+        Type: BaseObjectType
+        Children:
+        - Name: ObjectPointer
+          Id: g=ded50bbcfa6d43489af9309906623043
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/Commands/VariableCommands"
+          Children:
+          - Name: Kind
+            Id: g=31c9aa275cd2c984d91371ff780d3c71
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: Method
+          Id: g=9e4219db3f324b08ab812a8c4fbff26a
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Set"
+        - Name: InputArguments
+          Id: g=3ef7d18797404eaf974596488caa3a29
+          Type: BaseObjectType
+          Children:
+          - Name: VariableToModify
+            Id: g=45541fb3d3de43b298343f95e505bdea
+            Type: BaseDataVariableType
+            DataType: VariablePointer
+            Value: "/Objects/FeaturesDemo2/System/FTRemoteAccess/FTRemoteAccessWidgetConnectionPending"
+          - Name: Value
+            Id: g=1161d4a7acdc4f76861b40a116ac4401
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: ArrayIndex
+            Id: g=93ac333d7392477893e0a23c2c874ff9
+            Type: BaseDataVariableType
+            DataType: UInt32
+            ValueRank: ScalarOrOneDimension
+            Value: 0
+    - Name: EventArguments
+      Id: g=84fd2d6fd30c4e478e3b495d42c5f4e3
+      Type: RemoteConnectionRequestEvent
+      Children:
+      - Name: SupervisorId
+        Id: g=cabcccc93824016862d8e70928a26628
+        Type: BaseDataVariableType
+        DataType: ByteString
+        Value: ""
+      - Name: Username
+        Id: g=bf0aad2615a56dfd2248992bb9f7b811
+        Type: BaseDataVariableType
+        DataType: String
+        Value: ""
+      - Name: IpAddress
+        Id: g=ccb9fd6c694e6573ea84b5a3be8706ce
+        Type: BaseDataVariableType
+        DataType: String
+        Value: ""
+      - Name: EventId
+        Id: g=ae67ff4dd46d261d74f1ee9288a03938
+        Type: PropertyType
+        DataType: ByteString
+        Value: ""
+      - Name: EventType
+        Id: g=6a46e92c2bbcab8a2df309c0f144d72b
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: SourceNode
+        Id: g=6e56457ff4eb331265554809baa078aa
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: SourceName
+        Id: g=5f3d1a8cf2fdc87abbb50ce4853d0876
+        Type: PropertyType
+        DataType: String
+        Value: ""
+      - Name: Time
+        Id: g=02be643042a6000d378ff6189fba296c
+        Type: PropertyType
+        DataType: UtcTime
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: ReceiveTime
+        Id: g=4950d77ed57e28e44d4128cf23fd7252
+        Type: PropertyType
+        DataType: UtcTime
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: Message
+        Id: g=3152b300f9a69d7c6fb2cd98643a48a3
+        Type: PropertyType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: Severity
+        Id: g=a569906baec7c47d7ccf1aa0186dfa18
+        Type: PropertyType
+        DataType: UInt16
+        Value: 0
+  - Name: FTRemoteAccessWidgetUsername
+    Id: g=b85a7adbc9464161996577ec80c4f3c7
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: FTRemoteAccessWidgetIPAddress
+    Id: g=603233ef44e0423d9653fbad86f69a6e
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: FTRemoteAccessWidgetSupervisorId
+    Id: g=84484ed24d4f4d90bc236acc3d5a7fa2
+    Type: BaseDataVariableType
+    DataType: ByteString
+    Value: ""
+  - Name: FTRemoteAccessWidgetConnectionPending
+    Id: g=cb7c7734fa3f4964928a819bfd92d4a1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false

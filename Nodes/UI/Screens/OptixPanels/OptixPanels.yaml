@@ -2,7 +2,7 @@ Name: OptixPanels
 Id: g=9569d790769818dc712f842d0e786831
 Type: FolderType
 Children:
-- Name: SystemManager
+- Name: DeviceManager
   Id: g=d719ab09de6cf7d9e5575d41c2d85ed5
   Supertype: BaseScreen
   ReferenceType: HasComponent
@@ -165,6 +165,56 @@ Children:
                 Type: DynamicLink
                 DataType: NodePath
                 Value: "../../../../../../FeatureName"
+  - Name: OptixPanelOnly
+    Id: g=e11ede60233a3df68ab8afffe1af5e3f
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=97bdf2c07de35186791fba2166e097f9
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":8,"TextId":"OptixPanelOnly"}
+    - Name: HorizontalAlignment
+      Id: g=66abc8127d03a6f748f777b252628c08
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: VerticalAlignment
+      Id: g=3afb9e2435b2f8dcd0a2c6d38d06a081
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: Visible
+      Id: g=d7799d270be749901d510d6f195eb996
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: ExpressionEvaluator1
+        Id: g=b4269ad3b952f0764aefb19325aec4fd
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Id: g=0a89260282e0f99ab238f52da45d0700
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "!{0}"
+        - Name: ns=2;Source0
+          Id: g=29b6280d60324736cba0d13902ca55c7
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=13404470c3dbb82d4987d8c79e2922dd
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/FeaturesDemo2/Model/HasSystemManager"
   - Name: WorkspaceArea
     Id: g=8ee3c152ec3c2325153f9f1c17376790
     Type: Rectangle
@@ -770,6 +820,17 @@ Children:
         DataType: VerticalAlignment
         ModellingRule: Optional
         Value: 3
+    - Name: Visible
+      Id: g=362e9fcc2f3271cb41aacc53203eaf85
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Id: g=c8bc93f23e0d0d137941361e8b640ca9
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/FeaturesDemo2/Model/HasSystemManager"
   - Name: CategoryName
     Id: g=76ccbd3e986d3937e4d2872f89438373
     Type: BaseDataVariableType
@@ -943,6 +1004,56 @@ Children:
                 Type: DynamicLink
                 DataType: NodePath
                 Value: "../../../../../../FeatureName"
+  - Name: OptixPanelOnly
+    Id: g=c4b036c0c93dbc053773e4dc217ad3b1
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=8c6e08d82d3ea466888919ff457a76d4
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":8,"TextId":"OptixPanelOnly"}
+    - Name: HorizontalAlignment
+      Id: g=08bf988e2de08771df676d8265bff05f
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: VerticalAlignment
+      Id: g=0ba1c590243887a66dcfe8a0b0b80cac
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: Visible
+      Id: g=654f0ba7f570cc7718bcabb80eb0fa48
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: ExpressionEvaluator1
+        Id: g=c76cff016616e87115da9645c64d7f5b
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Id: g=4033b309b18f815ad2ef96004e5a2354
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "!{0}"
+        - Name: ns=2;Source0
+          Id: g=82fbb9af319e9adc8741f68dc251911e
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=954c69a1b270f7d24236110fe7120bb0
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/FeaturesDemo2/Model/HasSystemManager"
   - Name: WorkspaceArea
     Id: g=8adb8889373d2106de0a9c24e9f21137
     Type: Rectangle
@@ -1184,6 +1295,17 @@ Children:
         DataType: VerticalAlignment
         ModellingRule: Optional
         Value: 2
+    - Name: Visible
+      Id: g=a5b2bd4b4028805594304264f2062c7c
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Id: g=57bb685b8519a7baac9cd7a06db4f37c
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/FeaturesDemo2/Model/HasSystemManager"
   - Name: CategoryName
     Id: g=00912bae37faf2b57635e155528a9bfe
     Type: BaseDataVariableType
@@ -1191,6 +1313,321 @@ Children:
     Value: {"NamespaceIndex":8,"TextId":"OptixPanel"}
   - Name: FeatureName
     Id: g=ca4a8b0ba7a7033fea2576f707d1cd79
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":8,"TextId":"FactoryTalkRemoteAccess"}
+- Name: SystemManager
+  Id: g=79eaf74a52f5260ae2250fe48f1220c6
+  Supertype: BaseScreen
+  ReferenceType: HasComponent
+  Children:
+  - Name: ScreenBackground_static
+    Id: g=7490db03c4c982ff204bfefff4e56f99
+    Type: Rectangle
+    Children:
+    - Name: TitleGrid
+      Id: g=6468e27d66df2ddbc233cde266a144a2
+      Type: RowLayout
+      Children:
+      - Name: CategoryTitle
+        Id: g=be84d7c6b3f35df568accc76eccf0a32
+        Type: Button
+        Children:
+        - Name: Text
+          Id: g=4bb1609904c796c8b2314076a35e3108
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          Children:
+          - Name: StringFormatter1
+            Id: g=ec3dd074368b93e64caf6acdb94d134a
+            Type: StringFormatter
+            Children:
+            - Name: Source0
+              Id: g=000a08fb0bdd4eb0c54853353042a7bf
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Id: g=f48b554f894a5e54b3a1c0acf0f3a0c8
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../CategoryName"
+        - Name: MouseClickEventHandler1
+          Id: g=6045dc0f8b37425f65834339ddace374
+          Type: EventHandler
+          Children:
+          - Name: ListenEventType
+            Id: g=eb07c4d0d41c563e4cd1698e17abaa0b
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+          - Name: MethodsToCall
+            Id: g=6b414498431c25b33d4b64a4dea96f24
+            Type: BaseObjectType
+            Children:
+            - Name: MethodContainer1
+              Id: g=021e30196307062cd68ae7b7949e1064
+              Type: BaseObjectType
+              Children:
+              - Name: ObjectPointer
+                Id: g=712dbcc6cdc1e0246d3906524ac35850
+                Type: NodePointer
+                DataType: NodeId
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Children:
+                - Name: Kind
+                  Id: g=1d0d651b009251c7c3ddb47c8a914869
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: DynamicLink
+                  Id: g=17472c0fe22c5f98eb87b658c951f6c0
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{PanelLoader}@NodeId"
+              - Name: Method
+                Id: g=ab0c3af15f45270639830686ef2811dd
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "ChangePanel"
+              - Name: InputArguments
+                Id: g=b225441a10b0c452f4c2e30644904990
+                Type: BaseObjectType
+                Children:
+                - Name: NewPanel
+                  Id: g=ba037d4661d886856e71da1074806190
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Value: "/Objects/FeaturesDemo2/UI/Screens/FeaturesNavigationScreen"
+                - Name: AliasNode
+                  Id: g=6055a9635a1b6080c1ee52efe9d578e9
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  ValueRank: ScalarOrOneDimension
+                  Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: EventArguments
+            Id: g=cf6faf23a8e5e19c2717b22799570b3b
+            Type: MouseClickEvent
+            Children:
+            - Name: EventId
+              Id: g=9031ee5b97e0156ac7cc11401eb39c64
+              Type: PropertyType
+              DataType: ByteString
+              Value: ""
+            - Name: EventType
+              Id: g=8b251006842a064ebe3b489545ff56cb
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+            - Name: SourceNode
+              Id: g=55c8b67a6a61ba04f873905008802fc7
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+            - Name: SourceName
+              Id: g=01fd7e50a32ee63d81d2cadf567744d1
+              Type: PropertyType
+              DataType: String
+              Value: ""
+            - Name: Time
+              Id: g=65b8c605419162ce5906543036d798a0
+              Type: PropertyType
+              DataType: UtcTime
+              Value: "1601-01-01T00:00:00.0000000"
+            - Name: ReceiveTime
+              Id: g=bf38b7bb1b3c1d465584193d80af2217
+              Type: PropertyType
+              DataType: UtcTime
+              Value: "1601-01-01T00:00:00.0000000"
+            - Name: Message
+              Id: g=b2e3569c9cc112106a959b82f6fc89b5
+              Type: PropertyType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+            - Name: Severity
+              Id: g=bf383ded1baa30f11e2760400efdce5c
+              Type: PropertyType
+              DataType: UInt16
+              Value: 0
+      - Name: TextSeparator
+        Id: g=94dee3e6039f8fddd35fdafb9ceba3a8
+        Type: Label
+      - Name: FeatureTitle
+        Id: g=3134e107bf3f5ac465e4fcd29ca0eb1d
+        Type: Label
+        Children:
+        - Name: Text
+          Id: g=1abfd8390f9a0e882f70061cec68db60
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          Children:
+          - Name: StringFormatter1
+            Id: g=cba9212805322172833aaa815a536794
+            Type: StringFormatter
+            Children:
+            - Name: Source1
+              Id: g=05672d359947fa59a29cbe9bec3bee5e
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Id: g=21ab62ddd3b7380104217d8c99a81571
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../FeatureName"
+  - Name: OptixPanelOnly
+    Id: g=0dbeee7f4b43abcbb2ba7d6d10eef8a6
+    Type: Label
+    Children:
+    - Name: Text
+      Id: g=29832c7ff064619ad84781f5dd5d40e4
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":8,"TextId":"OptixPanelOnly"}
+    - Name: HorizontalAlignment
+      Id: g=c9abffadb328fb189dc32e435cc12e54
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: VerticalAlignment
+      Id: g=67bc0083941a26f144e69916fcbb6018
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: Visible
+      Id: g=553ce0fb2a676df2e0a0f37c688adcd9
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: ExpressionEvaluator1
+        Id: g=3293ffd0d355b55da91bab508271cf31
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Id: g=1959f1d6089dcb4f7ec9a9903febb8c9
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "!{0}"
+        - Name: ns=2;Source0
+          Id: g=42c3f83d518e77a307a06113009b2587
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=e6a5ca5f742139830887c8dae5658374
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/FeaturesDemo2/Model/HasSystemManager"
+  - Name: WorkspaceArea
+    Id: g=d8de53ff0e93d9da977845c00398d46a
+    Type: Rectangle
+    Children:
+    - Name: FillColor
+      Id: g=918658bdb7b7b31712bf81cfd19dbdc5
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#fbfdfd"
+      Children:
+      - Name: DynamicLink
+        Id: g=173fda3b4d4b3a14ff68ff74fb2c1faa
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{CurrentStylesheet}/WindowColor"
+    - Name: Visible
+      Id: g=5df143660b3d139e23fd8b52f63c09e9
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Id: g=d327ee7185ac59ef502a50df41241e07
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/FeaturesDemo2/Model/HasSystemManager"
+    - Name: SystemManagerWebBrowser
+      Id: g=c971ded0e9b04588164c49be7b4c7ae0
+      Type: WebBrowser
+      Children:
+      - Name: URL
+        Id: g=866772f934d7a50df532d7a1825ec800
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "https://127.0.0.1"
+      - Class: Reference
+        Target: ns=3;i=354
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=356
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=358
+        Direction: Forward
+      - Name: Width
+        Id: g=5deb29fe0700e30a729c0f6c81f16f1b
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 300.0
+      - Name: Height
+        Id: g=0fea184113ad8e26bd728d2f72b84c5b
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 300.0
+      - Name: HorizontalAlignment
+        Id: g=707fa44643eec45f5fceef8251a6f48b
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: VerticalAlignment
+        Id: g=d30ec66bad432049130213d3f327121f
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: LeftMargin
+        Id: g=eb302a94f38a63cb5dce550f8a2c673d
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 8.0
+      - Name: TopMargin
+        Id: g=43c1ee54fe31bee398b3770633e465b0
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 8.0
+      - Name: RightMargin
+        Id: g=4dcb38e480340bb0b675677291f8329e
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 8.0
+      - Name: BottomMargin
+        Id: g=0f5c7114b40274b9a01766fee2b37048
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 8.0
+  - Name: CategoryName
+    Id: g=3af76bc87de94710687f53f216e0ed66
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":8,"TextId":"OptixPanel"}
+  - Name: FeatureName
+    Id: g=7875fddbdf84774501d492150d7bbbd8
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":8,"TextId":"FactoryTalkRemoteAccess"}

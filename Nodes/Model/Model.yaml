@@ -435,3 +435,30 @@ Children:
     ArrayDimensions: [0]
     Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"NamespaceIndex":8,"TextId":"FitWidth"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"NamespaceIndex":8,"TextId":"FitHeight"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"NamespaceIndex":8,"TextId":"FitPage"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"NamespaceIndex":8,"TextId":"ActualSize"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"NamespaceIndex":8,"TextId":"CustomLevel"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
 - File: MarginsForRetentivity/MarginsForRetentivity.yaml
+- Name: HasSystemManager
+  Id: g=6d8f11531070dc103ac333688f38005c
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: ExpressionEvaluator1
+    Id: g=a4fa61ee0dcb45d5cc05cf83ac9f404b
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Id: g=62f4143c336c7af3b7c6b734f5900aba
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "!isempty({0})"
+    - Name: ns=2;Source0
+      Id: g=907cbbc244987a289fc5ea61e8b95898
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=e974cba9ea0bca70de9e2db8ec91fb17
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../System/System/Device/SystemManagerVersion"

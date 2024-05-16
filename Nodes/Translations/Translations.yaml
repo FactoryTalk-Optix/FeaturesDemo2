@@ -11,7 +11,7 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [646,4],
+    "Dimensions": [648,4],
     "Body": [
      "","en-US","it-IT","zh-CN",
      "Acknowledge","Ack","Riconosci","确认",
@@ -651,14 +651,16 @@ Children:
      "FactoryTalkRemoteAccess","FactoryTalk Remote Access","FactoryTalk Remote Access","",
      "FactoryTalkRemoteAccessDescription","Tool to remotely connect and manage any device","Strumento di accesso e gestione remota multi-piattaforma","",
      "DeviceSettings","Device Settings","Impostazioni Dispositivo","",
-     "DeviceSettingsDescription","View and configure all the main settings for an Optix Panel terminal (does not work on PC)","Visualizza e configura tutti i principali parametri di un Optix Panel (non funziona su PC)","",
+     "DeviceSettingsDescription","View and configure all the main settings for an Optix Panel terminal (works only on devices where SystemManager is installed, like OptixPanels and EmbeddedEgde)","Visualizza e configura tutti i principali parametri di un Optix Panel (disponibile solo su dispositivi con SystemManager installato, ad esempio OptixPanel e EmbeddedEdge)","",
      "OptixPanel","Optix Panel","Optix Panel","",
      "FullScreenMode","Full Screen Mode","Schermo Intero","",
      "Network Settings","Network Settings","Impostazioni di rete","",
      "Select Option 3","Select Option 3","Seleziona Opzione 3","",
      "ScrollView","ScrollView","Vista a scorrimento","",
      "ScrollViewDescription","UI Container that can be used to interact with the content by zooming or panning","Contenitore che permette di far scorrere il contenuto tramite trascinamento. Supporta anche lo zoom.","",
-     "ScrollViewInteraction","Pan or zoom the content to the desired area","Trascina o modifica le dimensioni della immagine interagendo con il cursore/tocco",""
+     "ScrollViewInteraction","Pan or zoom the content to the desired area","Trascina o modifica le dimensioni della immagine interagendo con il cursore/tocco","",
+     "OptixPanelOnly","This Widget is only available on devices\nwith SystemManager (like OptixPanels)","Questo Widget è disponibile solo su dispositivi\ncon SystemManager installato (ad esempio OptixPanel)","",
+     "SystemManagerDescription","Access the SystemManager interface from the WebBrowser","Accedi a tutte le impostazioni del SystemManager tramite WebBrowser",""
     ]
    }
 - Name: ImportAndExportTranslations
