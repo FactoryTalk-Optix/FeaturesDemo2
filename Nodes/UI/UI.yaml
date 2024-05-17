@@ -181,6 +181,18 @@ Children:
     Type: BaseDataVariableType
     DataType: Boolean
     Value: false
+    Children:
+    - Name: DynamicLink
+      Id: g=98fabc3a6a796facb77980657a82122f
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/HasSystemManager"
+      Children:
+      - Name: Mode
+        Id: g=dfd215627147bd1e2664bf40423379cb
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
   - Name: StartWindow
     Id: g=987ebe6fecc4d6745c649eb3c7aa0cc1
     Type: NodePointer
