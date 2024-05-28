@@ -28615,7 +28615,7 @@ Children:
           Id: g=ff71e113f9478bbe05c064a0dddf919a
           Type: BaseDataVariableType
           DataType: NodeId
-          Value: "/Objects/FeaturesDemo2/UI/Screens/OptixPanels/FactoryTalkRemoteAccess"
+          Value: "/Objects/FeaturesDemo2/UI/Screens/OptixPanels/SystemManager"
         - Name: EditFavoriteTilesLogic
           Id: g=5f456594b4a9f8ae386ac681064e7cef
           Type: NetLogic
