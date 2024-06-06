@@ -2283,7 +2283,7 @@ Children:
                   Id: g=2476b6f1acac473c475c05229d015e17
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{FeatureInformationAlias}/ButtonScreenOpen/MouseClickEventHandler1/MethodsToCall/MethodContainer1/InputArguments/NewPanel@NodeId"
+                  Value: "{FeatureInformationAlias}/Tile_Open_Panel@NodeId"
                   Children:
                   - Name: Mode
                     Id: g=cb3d29c54d1f87fa9314ef8f0649c300
