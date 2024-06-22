@@ -19,12 +19,10 @@ Children:
     Id: g=94ea879b0c129a664bdbc215cb8f44ea
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
   - Name: InputValue
     Id: g=72d2058345500ad7703534ba25f344db
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
   - Name: LastEvent
     Id: g=e9129227718a201efac64c847c7f1f5d
     Type: BaseDataVariableType
@@ -39,6 +37,15 @@ Children:
   - Class: Reference
     Type: GeneratesEvent
     Target: g=cb7b11436db2cbf5101ebc1be628a6a6
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
 - Name: DigitalAlarmWithArea1
   Id: g=272a9e24d8aa07018166f62a271c0ee5
   Type: DigitalAlarmWithAreaType
@@ -56,12 +63,10 @@ Children:
     Id: g=3c376b6c16943d404f3b5a256c6eb560
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
   - Name: InputValue
     Id: g=ae8c10b27f9a64fab24b788107ab417a
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
     Children:
     - Name: DynamicLink
       Id: g=48cd26e02c4307ea321034c50bd2dd1b
@@ -95,6 +100,15 @@ Children:
     Type: BaseDataVariableType
     DataType: UInt16
     Value: 400
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
 - Name: DigitalAlarmWithArea2
   Id: g=2e3f1ff55573bb906b72ebdee139652d
   Type: DigitalAlarmWithAreaType
@@ -112,12 +126,10 @@ Children:
     Id: g=78d6c61cbc6e5d3ed452b9aaea9b2be4
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
   - Name: InputValue
     Id: g=d76bfdc0d9eb546427cf2ab794f73a53
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
     Children:
     - Name: DynamicLink
       Id: g=b1105ee3d51daf737cfdbd2c6b9d4f92
@@ -151,6 +163,15 @@ Children:
     Type: BaseDataVariableType
     DataType: UInt16
     Value: 600
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
 - Name: DigitalAlarmWithArea3
   Id: g=80d67a5d8d59bf4656f72d06ac787dd5
   Type: DigitalAlarmWithAreaType
@@ -168,12 +189,10 @@ Children:
     Id: g=f5ab3d5a78e08a6bfe52e94c3cc0a3fe
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
   - Name: InputValue
     Id: g=3d93660ee54aedc2bd24460a50acc4a9
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
     Children:
     - Name: DynamicLink
       Id: g=af9e705947a3669ab4faa2afe3873896
@@ -207,6 +226,15 @@ Children:
     Type: BaseDataVariableType
     DataType: UInt16
     Value: 400
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
 - Name: DigitalAlarmWithArea4
   Id: g=cde234a60d387f416ffaf58f879bf595
   Type: DigitalAlarmWithAreaType
@@ -224,12 +252,10 @@ Children:
     Id: g=984bf86c19195a87f0e8980ce1491e0b
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
   - Name: InputValue
     Id: g=f42d292b9998e5e600e2e8100ba1a431
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
     Children:
     - Name: DynamicLink
       Id: g=60044b036c5c54861c6725a9ed2f64ea
@@ -263,6 +289,15 @@ Children:
     Type: BaseDataVariableType
     DataType: UInt16
     Value: 600
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
 - Name: DigitalAlarmWithArea5
   Id: g=b0f76792513dc889f7b52b9184135bbb
   Type: DigitalAlarmWithAreaType
@@ -280,12 +315,10 @@ Children:
     Id: g=e4db124302db3181c8fca534f53a0704
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
   - Name: InputValue
     Id: g=b7d3942a8c9d9d486f00de1faa9975a8
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
     Children:
     - Name: DynamicLink
       Id: g=99181880ae20d9e47b8f324bb1877b5d
@@ -319,6 +352,15 @@ Children:
     Type: BaseDataVariableType
     DataType: UInt16
     Value: 400
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
 - Name: DigitalAlarmWithArea6
   Id: g=286ab2068b3aab453def27457c3bdcd0
   Type: DigitalAlarmWithAreaType
@@ -336,12 +378,10 @@ Children:
     Id: g=a944967845ca49f7c6832d08e4a2e3ff
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
   - Name: InputValue
     Id: g=97e30f396eeb7279ef997088f82698a2
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
     Children:
     - Name: DynamicLink
       Id: g=fb5d0e939b6c4b14fb631c333750235d
@@ -375,3 +415,12 @@ Children:
     Type: BaseDataVariableType
     DataType: UInt16
     Value: 600
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward

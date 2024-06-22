@@ -11,7 +11,6 @@ Children:
     Id: g=61186f05135831f151613f130dc3a52b
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
     Children:
     - Name: Kind
       Id: g=9c5905bd23728df07e4adcbc3b33fc3c
@@ -27,7 +26,6 @@ Children:
         Type: BaseDataVariableType
         DataType: Boolean
         ReferenceType: HasSource
-        Value: false
         Children:
         - Name: DynamicLink
           Id: g=0468928e928c8037bd1517fc779937bc
@@ -53,7 +51,6 @@ Children:
     Type: NodePointer
     DataType: NodeId
     AccessLevel: Read
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
     Children:
     - Name: Kind
       Id: g=e4bf0674039363206a90c2e09f852aa3
@@ -79,7 +76,6 @@ Children:
     Id: g=aaddc4b58f24a4155e1a3c9c3ad1bb85
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
     Children:
     - Name: Kind
       Id: g=4058fadd477ae978e2a60fffa85de963
@@ -91,7 +87,6 @@ Children:
     Type: BaseDataVariableType
     DataType: NodeId
     ValueRank: ScalarOrOneDimension
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
     Children:
     - Name: DynamicLink
       Id: g=2f643832ac392448899dcfb014876ecf

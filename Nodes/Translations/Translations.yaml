@@ -693,7 +693,6 @@ Children:
     Id: g=12ce200771edbcd77a30aa4a230b9215
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
   - Name: LocalizationDictionary
     Id: g=97f2ac041c7128722a111d9ecb6e3069
     Type: NodePointer

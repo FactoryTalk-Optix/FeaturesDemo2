@@ -264,7 +264,6 @@ Children:
       Type: NodePointer
       DataType: NodeId
       AccessLevel: Read
-      Value: {"IdType":0,"Id":0,"Namespace":-1}
       Children:
       - Name: Kind
         Id: g=f5c32b212ed33814503ef288306befa1
@@ -275,7 +274,6 @@ Children:
       Id: g=cfe1fa651404269851b7e501178489ab
       Type: BaseDataVariableType
       DataType: Int32
-      Value: 0
       Children:
       - Name: DynamicLink
         Id: g=198fedcaddbefcad6b8210b30d375e82
@@ -323,7 +321,6 @@ Children:
       Type: BaseVariableType
       DataType: NavigationPanelTabPositionEnum
       ModellingRule: Optional
-      Value: 0
     - Name: TabWidth
       Id: g=0faa2da034375ba9b7af09e41b7ce7c1
       Type: BaseDataVariableType

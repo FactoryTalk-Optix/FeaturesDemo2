@@ -10,12 +10,10 @@ Children:
     Id: g=51f69f14127d0a188a891f20634a722d
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
   - Name: InputValue
     Id: g=ee4d2197fcbb3282afdee66dfa029f26
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
     Children:
     - Name: DynamicLink
       Id: g=fc6f622cf38eb125e79217c8de46f8de
@@ -53,6 +51,15 @@ Children:
     Type: BaseDataVariableType
     DataType: UInt16
     Value: 300
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
 - Name: LowPressure
   Id: g=0573527e68ad9f751ff952ce15e0544f
   Type: OffNormalAlarmController
@@ -61,12 +68,10 @@ Children:
     Id: g=be96712b82844d22700396892a30d878
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
   - Name: InputValue
     Id: g=31fca4f17b60440cd10c3112cdc2b0f2
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
     Children:
     - Name: DynamicLink
       Id: g=fe3da79a3c865fb27b74c2abe0de5404
@@ -104,6 +109,15 @@ Children:
     Type: BaseDataVariableType
     DataType: UInt16
     Value: 600
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
 - Name: HighTemperature
   Id: g=f421cfa57d004b7f2bd57724a9f31cb1
   Type: ExclusiveLevelAlarmController
@@ -112,7 +126,6 @@ Children:
     Id: g=74a25b32a5779e62d7b316d52ce9bfd9
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
     Children:
     - Name: DynamicLink
       Id: g=97280e625c9cd145928907a1491ab91f
@@ -159,6 +172,14 @@ Children:
     Id: g=161b4239e4c35f2e615578250496beff
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
+  - Class: Reference
+    Target: ns=19;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=135
+    Direction: Forward
 - File: AlarmsWithArea/AlarmsWithArea.yaml
 - File: RuntimeAlarms/RuntimeAlarms.yaml

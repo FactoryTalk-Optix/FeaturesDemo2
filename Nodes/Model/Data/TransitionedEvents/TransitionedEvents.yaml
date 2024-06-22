@@ -6,17 +6,14 @@ Children:
   Id: g=79788585af8cc8cbcbd7a69a2902c281
   Type: BaseDataVariableType
   DataType: Boolean
-  Value: false
 - Name: TransitionVariable
   Id: g=ec916baf2d39c27169937a78a0cf0269
   Type: BaseDataVariableType
   DataType: Int32
-  Value: 0
 - Name: RangeTransitionVariable
   Id: g=681fe22eeea7b98c43448ca566a953b9
   Type: BaseDataVariableType
   DataType: Int32
-  Value: 0
 - Name: Variable1Transitioned
   Id: g=ddf7d53a3e1fbb5ae4902b16e00338c8
   Type: VariableTransitionEventDispatcher
@@ -57,7 +54,6 @@ Children:
           Id: g=eeb5ba2bde4fa79b3b738ef168d30cb1
           Type: NodePointer
           DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
           Children:
           - Name: Kind
             Id: g=940379e3addb780791fb864b1b484aee
@@ -88,7 +84,6 @@ Children:
         Id: g=02b6246f46c6f53f410fb243f5251da1
         Type: BaseVariableType
         DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
       - Name: NewValue
         Id: g=88c4a2d34036b875f409b737f16a7ef0
         Type: BaseVariableType
@@ -101,42 +96,34 @@ Children:
         Id: g=480e56ed766bbaf95c5ce091a2f9b671
         Type: PropertyType
         DataType: ByteString
-        Value: ""
       - Name: EventType
         Id: g=a93afb0c9ae4fc99d29b958c4548e598
         Type: PropertyType
         DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
       - Name: SourceNode
         Id: g=4b965e532981e6ec494d08cea231899b
         Type: PropertyType
         DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
       - Name: SourceName
         Id: g=7a0d9c5071aa7fefa230c22061c5b187
         Type: PropertyType
         DataType: String
-        Value: ""
       - Name: Time
         Id: g=2db7be3743d22989159d9e52779e1f12
         Type: PropertyType
         DataType: UtcTime
-        Value: "1601-01-01T00:00:00.0000000"
       - Name: ReceiveTime
         Id: g=6a5c34cbb0ef6b4ced91f3c98c4f40d5
         Type: PropertyType
         DataType: UtcTime
-        Value: "1601-01-01T00:00:00.0000000"
       - Name: Message
         Id: g=1e391b5d4e77c31aff1da0d642a580b3
         Type: PropertyType
         DataType: LocalizedText
-        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       - Name: Severity
         Id: g=ca5292a29ec0c48b770abea520feb688
         Type: PropertyType
         DataType: UInt16
-        Value: 0
 - Name: Variable2RangeTransitioned
   Id: g=589dc68d545ced37912ffbc69cb02cb3
   Type: VariableRangeTransitionEventDispatcher
@@ -155,7 +142,6 @@ Children:
     Id: g=d5df4617237587409002285065933e0f
     Type: BaseVariableType
     DataType: VariableRangeTransition
-    Value: 0
   - Name: VariableNodePath
     Id: g=ece90259e45efc81460853880eed0769
     Type: BaseVariableType
@@ -182,7 +168,6 @@ Children:
           Id: g=627c3af9a9cca69aa89b2a1a17423896
           Type: NodePointer
           DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
           Children:
           - Name: Kind
             Id: g=5f9bec197b0004391078690534be9772
@@ -213,7 +198,6 @@ Children:
         Id: g=5fd470688916d259bc5894bba2be6d69
         Type: BaseVariableType
         DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
       - Name: NewValue
         Id: g=6e997462ae976185f0a7091bb35e5ad3
         Type: BaseVariableType
@@ -226,42 +210,34 @@ Children:
         Id: g=6282912a4e5c42409733ebac3fb0c86e
         Type: PropertyType
         DataType: ByteString
-        Value: ""
       - Name: EventType
         Id: g=b31a45ceb9fad1ca282c1749649fe132
         Type: PropertyType
         DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
       - Name: SourceNode
         Id: g=e52e538fcb5254c66fd6d2cd31ce8613
         Type: PropertyType
         DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
       - Name: SourceName
         Id: g=e2b865bcbc1f822bca72b22286537b06
         Type: PropertyType
         DataType: String
-        Value: ""
       - Name: Time
         Id: g=b4db21f04b380116111c992b438afa30
         Type: PropertyType
         DataType: UtcTime
-        Value: "1601-01-01T00:00:00.0000000"
       - Name: ReceiveTime
         Id: g=9e90dd4d6559405907774282d0077d36
         Type: PropertyType
         DataType: UtcTime
-        Value: "1601-01-01T00:00:00.0000000"
       - Name: Message
         Id: g=d494576235f525883d28808fab228d7f
         Type: PropertyType
         DataType: LocalizedText
-        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       - Name: Severity
         Id: g=3e8da3ec0cb1ce0c433d0bce2abcd34e
         Type: PropertyType
         DataType: UInt16
-        Value: 0
 - Name: OnChangeVariableChanged
   Id: g=e8c7e6320c183399b3f1c618d979c501
   Type: VariableChangedEventDispatcher
@@ -292,7 +268,6 @@ Children:
           Id: g=751355b8aa85b7f14c80e8908fb14712
           Type: NodePointer
           DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
           Children:
           - Name: Kind
             Id: g=1a9650d40f75539380ee056ce0147d1b
@@ -323,7 +298,6 @@ Children:
         Id: g=fbcc975f442ce331574cb055f0808059
         Type: BaseVariableType
         DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
       - Name: NewValue
         Id: g=d1f89c237f430914f1f667f971fc0c3e
         Type: BaseVariableType
@@ -336,39 +310,31 @@ Children:
         Id: g=55a3367ec9ecdc9501c6a8fe45738bec
         Type: PropertyType
         DataType: ByteString
-        Value: ""
       - Name: EventType
         Id: g=3966e5e1ba24d0014cdf17b0c7f40bbf
         Type: PropertyType
         DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
       - Name: SourceNode
         Id: g=5c2974aeac9c7bc2b525179b5ce1ce82
         Type: PropertyType
         DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
       - Name: SourceName
         Id: g=8b5855ffe6613c7af9b567f61cb22c9e
         Type: PropertyType
         DataType: String
-        Value: ""
       - Name: Time
         Id: g=693ecedf3c2a8545295bb81661a5f853
         Type: PropertyType
         DataType: UtcTime
-        Value: "1601-01-01T00:00:00.0000000"
       - Name: ReceiveTime
         Id: g=802eae548c79b8464880a9eb80b18444
         Type: PropertyType
         DataType: UtcTime
-        Value: "1601-01-01T00:00:00.0000000"
       - Name: Message
         Id: g=24f83ff12ea02a8fb78f1eb59732e6cd
         Type: PropertyType
         DataType: LocalizedText
-        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       - Name: Severity
         Id: g=5c701f1e3475d62fc23155817453f066
         Type: PropertyType
         DataType: UInt16
-        Value: 0

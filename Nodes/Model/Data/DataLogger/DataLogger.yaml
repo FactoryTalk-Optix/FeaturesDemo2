@@ -6,7 +6,6 @@ Children:
   Id: g=b7b4d8f20bff98db631c3ac9724d0d9c
   Type: BaseDataVariableType
   DataType: Int32
-  Value: 0
   Children:
   - Name: DynamicLink
     Id: g=590fa46789a557a1de85183143c95a48
@@ -23,7 +22,6 @@ Children:
   Id: g=ec151bca604dd8d234c1e173bfdeacde
   Type: BaseDataVariableType
   DataType: Int32
-  Value: 0
   Children:
   - Name: DynamicLink
     Id: g=80e6f168403a65385a2c0cf7c7064f34
@@ -40,7 +38,6 @@ Children:
   Id: g=2f477037a8e6ef080c0d7f9af236b41e
   Type: BaseDataVariableType
   DataType: Int32
-  Value: 0
   Children:
   - Name: ns=0;EURange
     Id: g=9d98fb7ae048e51405e299249f822a20
@@ -52,7 +49,6 @@ Children:
       Type: BaseVariableType
       DataType: Double
       ReferenceType: HasProperty
-      Value: 0.0
     - Name: High
       Id: g=bcd5d06d8f066a12c81f2bf257d6acb5
       Type: BaseVariableType

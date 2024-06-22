@@ -12,13 +12,11 @@ Children:
     Type: BaseVariableType
     DataType: HorizontalAlignment
     ModellingRule: Optional
-    Value: 0
   - Name: VerticalAlignment
     Id: g=9bd1e65a2be53ba0824672569fb45090
     Type: BaseVariableType
     DataType: VerticalAlignment
     ModellingRule: Optional
-    Value: 0
   - Name: Width
     Id: g=3354fda2bebd4f2891610491452e9d4b
     Type: BaseVariableType
@@ -47,7 +45,6 @@ Children:
           Id: g=b9d80898eee76fbed3f60b7b273944ed
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           Children:
           - Name: ConditionalConverter1
             Id: g=365c62249c18ea6247332bf3bc03114c
@@ -58,7 +55,6 @@ Children:
               Type: BaseDataVariableType
               DataType: Boolean
               ReferenceType: HasSource
-              Value: false
               Children:
               - Name: ExpressionEvaluator1
                 Id: g=cd7c0de03c2ab07de8fc5192dff9861b
@@ -134,7 +130,6 @@ Children:
           Type: BaseDataVariableType
           DataType: NodeId
           ValueRank: ScalarOrOneDimension
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
           Children:
           - Name: DynamicLink
             Id: g=8ab93cf1cf7e73b95be8978750fa8791
@@ -166,7 +161,6 @@ Children:
           Type: BaseDataVariableType
           DataType: NodeId
           ValueRank: ScalarOrOneDimension
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
           Children:
           - Name: DynamicLink
             Id: g=0596105d969b4fe11bea48e9634bb5c6
@@ -178,7 +172,6 @@ Children:
       Type: NodePointer
       DataType: NodeId
       AccessLevel: Read
-      Value: {"IdType":0,"Id":0,"Namespace":-1}
       Children:
       - Name: Kind
         Id: g=15169728d78847315b3312ca7a9ce67e
@@ -201,7 +194,6 @@ Children:
       Id: g=a613d3d301d7bf1b3b88ba969a03a732
       Type: BaseDataVariableType
       DataType: Int32
-      Value: 0
     - Class: Reference
       Target: ns=3;i=1181
       Direction: Forward
@@ -216,27 +208,22 @@ Children:
       Id: g=c550b351cfd3c427e6ba3ad337c1cfeb
       Type: BaseDataVariableType
       DataType: Boolean
-      Value: false
     - Name: Username
       Id: g=ebb717727600d050081076805399a322
       Type: BaseDataVariableType
       DataType: String
-      Value: ""
     - Name: IpAddress
       Id: g=0dc1afadce4c8069cfeda1038732175f
       Type: BaseDataVariableType
       DataType: String
-      Value: ""
     - Name: SupervisorId
       Id: g=736aeacdd2da173776787af20c6a324f
       Type: BaseDataVariableType
       DataType: ByteString
-      Value: ""
     - Name: FTRemoteAccessNode
       Id: g=57c84ee26fca8fce9c37f9d0f8f880cc
       Type: Alias
       DataType: NodeId
-      Value: {"IdType":0,"Id":0,"Namespace":-1}
       Children:
       - Name: Kind
         Id: g=e3adc302050c0c7109240896765c4773

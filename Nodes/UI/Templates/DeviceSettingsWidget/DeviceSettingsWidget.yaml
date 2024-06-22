@@ -12,13 +12,11 @@ Children:
     Type: BaseVariableType
     DataType: HorizontalAlignment
     ModellingRule: Optional
-    Value: 0
   - Name: VerticalAlignment
     Id: g=f38cadc7cdaae22f62c084e28caa4ae2
     Type: BaseVariableType
     DataType: VerticalAlignment
     ModellingRule: Optional
-    Value: 0
   - Name: Width
     Id: g=9413ae841bbedaff82fe4610f029c387
     Type: BaseVariableType
@@ -64,7 +62,6 @@ Children:
           Type: BaseDataVariableType
           DataType: NodeId
           ValueRank: ScalarOrOneDimension
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
           Children:
           - Name: DynamicLink
             Id: g=38f168f164b88103aa386b24b70d81bc
@@ -96,7 +93,6 @@ Children:
           Type: BaseDataVariableType
           DataType: NodeId
           ValueRank: ScalarOrOneDimension
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
           Children:
           - Name: DynamicLink
             Id: g=323ec5cdbab7a38815c67d77b222fad5
@@ -128,7 +124,6 @@ Children:
           Type: BaseDataVariableType
           DataType: NodeId
           ValueRank: ScalarOrOneDimension
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
           Children:
           - Name: DynamicLink
             Id: g=ea0ce7222a249458175919be5de3a3ef
@@ -140,7 +135,6 @@ Children:
       Type: NodePointer
       DataType: NodeId
       AccessLevel: Read
-      Value: {"IdType":0,"Id":0,"Namespace":-1}
       Children:
       - Name: Kind
         Id: g=a93161df0d28f7547e535ef55c1ed192
@@ -176,18 +170,15 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 0.0
     - Name: BottomMargin
       Id: g=d4490bad051fbabea81731db66d11efb
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 0.0
     - Name: CurrentTabIndex
       Id: g=81736e881a34cf430a35309a2a1f902a
       Type: BaseDataVariableType
       DataType: Int32
-      Value: 0
     - Class: Reference
       Target: ns=3;i=1181
       Direction: Forward

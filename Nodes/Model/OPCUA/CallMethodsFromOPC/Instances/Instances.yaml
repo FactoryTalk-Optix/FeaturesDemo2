@@ -10,7 +10,6 @@ Children:
     Id: g=9dbf4c10b9ab48ce56494bbd5cd68ec2
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
   - Class: Reference
     Target: g=399dcdca44aad4daeae55a0eb34148d8
     Direction: Forward
@@ -25,7 +24,6 @@ Children:
     Id: g=dd162379c79e8c9579411caf8513e637
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
   - Class: Reference
     Target: g=399dcdca44aad4daeae55a0eb34148d8
     Direction: Forward
@@ -40,7 +38,6 @@ Children:
     Id: g=7b017c2d3bc983a834885d8cd281ad96
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
   - Class: Reference
     Target: g=399dcdca44aad4daeae55a0eb34148d8
     Direction: Forward

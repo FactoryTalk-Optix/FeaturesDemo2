@@ -6,27 +6,22 @@ Children:
   Id: g=99a717a6ad76ca5d09331b6329c4ce8f
   Type: BaseDataVariableType
   DataType: Int32
-  Value: 0
 - Name: Voltage
   Id: g=1851176d6ee38adef9dc86b94cc8b410
   Type: BaseDataVariableType
   DataType: Boolean
-  Value: false
 - Name: Pressure
   Id: g=09477e8f7c2cac8b2783d7d76e28824a
   Type: BaseDataVariableType
   DataType: Boolean
-  Value: false
 - Name: DigitalMail
   Id: g=450b1c4ad202282320598dc53af095a3
   Type: BaseDataVariableType
   DataType: Int32
-  Value: 0
 - Name: AnalogMail
   Id: g=ca4e425362bbb8d5180248787d1350b4
   Type: AnalogItemType
   DataType: Float
-  Value: 0.0
   Children:
   - Name: EURange
     Id: g=01dff2424bab5287281fe89cae5adf8b
@@ -38,13 +33,11 @@ Children:
       Type: BaseVariableType
       DataType: Double
       ReferenceType: HasProperty
-      Value: 0.0
     - Name: High
       Id: g=cfd84412e11168d88d016d2a702de381
       Type: BaseVariableType
       DataType: Double
       ReferenceType: HasProperty
-      Value: 0.0
   - Name: EngineeringUnits
     Id: g=f633212ecb3aae653b3bce154590439e
     Type: EUInformationType
@@ -61,13 +54,11 @@ Children:
       Type: BaseVariableType
       DataType: LocalizedText
       ReferenceType: HasProperty
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
     - Name: Description
       Id: g=275055a807d36b99cb7e9209f4057a93
       Type: BaseVariableType
       DataType: LocalizedText
       ReferenceType: HasProperty
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
 - Class: DataType
   Name: Alarm_Zones
   Id: g=3c127255eb3604c354f2afa60ed3054d

@@ -33,7 +33,6 @@ Children:
             Id: g=b288e416003186dcb89833c81da75187
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: NodeClass
             Id: g=3714079fb728ecd2793fd94c35243b51
             Type: PropertyType
@@ -58,7 +57,6 @@ Children:
             Id: g=09949d1994e2e132523c58c4b1a4c4f1
             Type: PropertyType
             DataType: NodePointerNodeClass
-            Value: 0
       - Name: PublishDynamicConfiguration
         Id: g=84e8652d965866fc24c2983d389c65ef
         Type: BaseDataVariableType
@@ -68,12 +66,10 @@ Children:
     Id: g=d5483df826bbe92bf2f60803dc6037a2
     Type: PropertyType
     DataType: MessageSecurityModeEnum
-    Value: 0
   - Name: MinimumSecurityPolicy
     Id: g=90e565d21a0c2fa4af9627c422d5fad2
     Type: PropertyType
     DataType: SecurityPolicyEnum
-    Value: 0
   - Name: MaxNumberOfConnections
     Id: g=56e348b8781e849aa60500df0d6ed622
     Type: BaseDataVariableType

@@ -439,7 +439,6 @@ Children:
   Id: g=6d8f11531070dc103ac333688f38005c
   Type: BaseDataVariableType
   DataType: Boolean
-  Value: false
   Children:
   - Name: ExpressionEvaluator1
     Id: g=a4fa61ee0dcb45d5cc05cf83ac9f404b

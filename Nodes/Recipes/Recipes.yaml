@@ -14,19 +14,16 @@ Children:
       Id: g=05d52600fa9e3635a9d6ebec465363fe
       Type: BaseDataVariableType
       DataType: Int32
-      Value: 0
     - Name: Component2
       Id: g=1a4d33b1c597961ef4181d2bd581b69e
       Type: BaseDataVariableType
       DataType: Boolean
-      Value: false
     - Name: Component3
       Id: g=2c045f12bf7ab3d05a48d8a3113fb5cf
       Type: BaseDataVariableType
       DataType: Int32
       ValueRank: OneDimension
       ArrayDimensions: [3]
-      Value: [0,0,0]
   - Class: Reference
     Target: ns=29;i=27
     Direction: Forward
@@ -89,7 +86,6 @@ Children:
       Id: g=a942cb85458618f0eadfea411b6af9b1
       Type: PropertyType
       DataType: NodeId
-      Value: {"IdType":0,"Id":0,"Namespace":-1}
   - Name: EditModel
     Id: g=0f18cb0fcb10c3ebeea8a56c682e0d25
     Type: BaseObjectType
@@ -98,16 +94,13 @@ Children:
       Id: g=955075e22c28b5a2521afb0bb007dfe7
       Type: BaseDataVariableType
       DataType: Int32
-      Value: 0
     - Name: Component2
       Id: g=e1ec1d4500e4650891159ec2d99b5129
       Type: BaseDataVariableType
       DataType: Boolean
-      Value: false
     - Name: Component3
       Id: g=93b98c53db117ab25f1ae788fd1212d8
       Type: BaseDataVariableType
       DataType: Int32
       ValueRank: OneDimension
       ArrayDimensions: [3]
-      Value: [0,0,0]

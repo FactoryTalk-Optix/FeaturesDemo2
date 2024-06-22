@@ -10,22 +10,18 @@ Children:
     Id: g=b4ac2525f865e15b8b9bb36e289308b4
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 0
   - Name: iCos
     Id: g=93812db29a081d0a1244de14df071250
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 0
   - Name: iRamp
     Id: g=3864919a00268c748ebe09f715f017e0
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 0
   - Name: bRunSimulation
     Id: g=3b28df5e89c33e27cb02fc4af8e99b84
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
 - Name: TrendVariablesSimulator
   Id: g=444e757d399932fd702903379758c95a
   Type: NetLogic
@@ -34,17 +30,14 @@ Children:
     Id: g=96523e1c1e2836eac64fef57ae095203
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 0
   - Name: iCos
     Id: g=4df53bf62756f35c8d5da5ee7bc67c2e
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 0
   - Name: iRamp
     Id: g=f9be89548f89db176a342bcab5c5aab0
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 0
   - Name: bRunSimulation
     Id: g=7a6cd1726193ba177b2e2916cb6a12bc
     Type: BaseDataVariableType
@@ -131,12 +124,10 @@ Children:
     Id: g=32125727d8b1d3459328affdc823f6f2
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
   - Name: ExportResult
     Id: g=1b50798f1e69f1ae364c5ba1cad78178
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
 - Name: ClockLogic
   Id: g=c1ec005911b3406eb587c8db4b92b6d4
   Type: NetLogic
@@ -146,12 +137,10 @@ Children:
     Id: g=3c157b91d9a8ce1a9cc97b2fe0813966
     Type: BaseDataVariableType
     DataType: DateTime
-    Value: "1601-01-01T00:00:00.0000000"
   - Name: UTCTime
     Id: g=94d24445e08f49bbeec81b21159a9f21
     Type: BaseDataVariableType
     DataType: DateTime
-    Value: "1601-01-01T00:00:00.0000000"
 - Name: RecipesCreation
   Id: g=725ff6d28be3f4b08ec8c13a275d5c52
   Type: NetLogic

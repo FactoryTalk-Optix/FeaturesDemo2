@@ -23,7 +23,6 @@ Children:
       Id: g=2dcde81cfa2f57b3f8f185bfb4348f85
       Type: BaseDataVariableType
       DataType: LocalizedText
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       Children:
       - Name: DynamicLink
         Id: g=a0313f76ff6842a1dbf9993c66556d2c
@@ -38,7 +37,6 @@ Children:
       Id: g=c33628d111cc21fb03bd7060e730bd30
       Type: BaseDataVariableType
       DataType: LocalizedText
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       Children:
       - Name: DynamicLink
         Id: g=4f2b8bca5578973ac670f4e04d932dae
@@ -67,7 +65,6 @@ Children:
     Id: g=cc264910310e008f4fad5dbd4aca1e2a
     Type: Alias
     DataType: NodeId
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
     Children:
     - Name: Kind
       Id: g=51ba9ba3a044264fd46c0ed2c7c07e20
@@ -79,13 +76,11 @@ Children:
     Type: BaseVariableType
     DataType: HorizontalAlignment
     ModellingRule: Optional
-    Value: 0
   - Name: VerticalAlignment
     Id: g=da721926deaba643d5dadede4fbff232
     Type: BaseVariableType
     DataType: VerticalAlignment
     ModellingRule: Optional
-    Value: 0
   - Name: Width
     Id: g=5bee92a0144efca1e5bd7cd5844af15b
     Type: BaseVariableType
@@ -134,7 +129,6 @@ Children:
         Type: BaseDataVariableType
         DataType: FillModeEnum
         ModellingRule: Optional
-        Value: 0
       - Name: VerticalAlignment
         Id: g=0a35efe2c1c999f93a2e7d7374c67eb2
         Type: BaseVariableType
@@ -152,7 +146,6 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 0.0
       - Name: DynamicColor
         Id: g=71f230688c6419b518e27dbc35546bb1
         Type: BaseDataVariableType
@@ -212,13 +205,11 @@ Children:
           Type: BaseDataVariableType
           DataType: Font
           ModellingRule: Optional
-          Value: ""
         - Name: VerticalAlignment
           Id: g=c157372b937cfa80693a2d63c7a12e7c
           Type: BaseVariableType
           DataType: VerticalAlignment
           ModellingRule: Optional
-          Value: 0
         - Name: Height
           Id: g=132f66b2f1642d66c78c5eb1e9f66b3f
           Type: BaseVariableType
@@ -245,7 +236,6 @@ Children:
           Id: g=169f7f6a03b344c3d76c0f6542441533
           Type: BaseDataVariableType
           DataType: Boolean
-          Value: false
           Children:
           - Name: DynamicLink
             Id: g=cdb8d90a3534741fe57a7235c604dad7
@@ -264,19 +254,16 @@ Children:
           Type: BaseDataVariableType
           DataType: Font
           ModellingRule: Optional
-          Value: ""
         - Name: FontItalic
           Id: g=0b48ed324b54475415c9ec6ae9a95037
           Type: BaseDataVariableType
           DataType: Boolean
           ModellingRule: Optional
-          Value: false
         - Name: VerticalAlignment
           Id: g=f125e86e13d3619924cf1a38419e5b33
           Type: BaseVariableType
           DataType: VerticalAlignment
           ModellingRule: Optional
-          Value: 0
         - Name: Width
           Id: g=e76122107dfe4fe6a789df1a009a1c8f
           Type: BaseVariableType
@@ -377,13 +364,11 @@ Children:
           Type: BaseDataVariableType
           DataType: Font
           ModellingRule: Optional
-          Value: ""
         - Name: VerticalAlignment
           Id: g=c91e6b80cd8c8eb7a91276be256e464b
           Type: BaseVariableType
           DataType: VerticalAlignment
           ModellingRule: Optional
-          Value: 0
         - Name: Height
           Id: g=3ae279c7cc06a16380bfa752db8ef245
           Type: BaseVariableType
@@ -416,7 +401,6 @@ Children:
           Id: g=5b58f9709f717361787e456a0ccce104
           Type: BaseDataVariableType
           DataType: Boolean
-          Value: false
           Children:
           - Name: DynamicLink
             Id: g=eff44c3f25ada2a53a0deee5b488bc25
@@ -435,19 +419,16 @@ Children:
           Type: BaseDataVariableType
           DataType: Font
           ModellingRule: Optional
-          Value: ""
         - Name: FontItalic
           Id: g=efacc1ca7432c34c7d499a14071db374
           Type: BaseDataVariableType
           DataType: Boolean
           ModellingRule: Optional
-          Value: false
         - Name: VerticalAlignment
           Id: g=d02dc32bd2a46866218e16510c327c33
           Type: BaseVariableType
           DataType: VerticalAlignment
           ModellingRule: Optional
-          Value: 0
         - Name: Width
           Id: g=da37982a7f4235abd57daa00e8b89ef6
           Type: BaseVariableType

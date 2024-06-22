@@ -5,7 +5,7 @@ Project:
  Company: ''
  Copyright: ''
  FormatVersion: 1
- ProductVersion: 1.3
+ ProductVersion: 1.4
  CoreVersion: 3.0
  Dependencies:
   2:
@@ -14,7 +14,7 @@ Project:
   3:
    Uri: 'urn:FTOptix:CoreBase'
    Module: FTOptix.CoreBase
-   Version: 3.1
+   Version: 4.0
   5:
    Uri: 'urn:FTOptix:CoreBase:Net'
    Module: FTOptix.CoreBase.Net
@@ -22,7 +22,7 @@ Project:
   6:
    Uri: 'urn:FTOptix:NetLogic'
    Module: FTOptix.NetLogic
-   Version: 1.0
+   Version: 3.0
  Statistics:
   TotalNodeCount: 0
   Objects: 0

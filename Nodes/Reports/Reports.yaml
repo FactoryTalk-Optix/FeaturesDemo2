@@ -34,13 +34,11 @@ Children:
         Type: BaseVariableType
         DataType: LocalizedText
         ReferenceType: HasProperty
-        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       - Name: Description
         Id: g=b85665c35a1e502548552373540cdc28
         Type: BaseVariableType
         DataType: LocalizedText
         ReferenceType: HasProperty
-        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
   - Name: PageHeight
     Id: g=9e7bee90c9901663c475bf56a2693394
     Type: BaseDataVariableType
@@ -64,13 +62,11 @@ Children:
         Type: BaseVariableType
         DataType: LocalizedText
         ReferenceType: HasProperty
-        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       - Name: Description
         Id: g=c2038de6f438cb9b764cd8a166e8da04
         Type: BaseVariableType
         DataType: LocalizedText
         ReferenceType: HasProperty
-        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
   - Name: StyleSheet
     Id: g=6d28ae886a27b907e1a70d6b8f3f1e58
     Type: NodePointer
@@ -99,7 +95,6 @@ Children:
     Type: BaseDataVariableType
     DataType: DateTime
     AccessLevel: Read
-    Value: "1601-01-01T00:00:00.0000000"
   - Name: Header
     Id: g=6545a57d52b2a4d80490c445c5bfee6d
     Type: Panel
@@ -127,13 +122,11 @@ Children:
           Type: BaseVariableType
           DataType: LocalizedText
           ReferenceType: HasProperty
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
         - Name: Description
           Id: g=00a90eb54067bffd62113fcaad68b940
           Type: BaseVariableType
           DataType: LocalizedText
           ReferenceType: HasProperty
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
     - Name: FTOptixLogo
       Id: g=cf2800884d2cab5f0567a235f970dd13
       Type: ReportImage
@@ -166,13 +159,11 @@ Children:
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Description
             Id: g=89e0fd6498640ebea9ec8d3919d5b62b
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       - Name: Height
         Id: g=3f11c773cb6f1dd6e7074f28d9ac85b8
         Type: BaseDataVariableType
@@ -196,18 +187,15 @@ Children:
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Description
             Id: g=1669559bb6aeace09dbbf2d94361d461
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       - Name: HorizontalAlignment
         Id: g=5189527636b19cd25129125ae55644f6
         Type: BaseVariableType
         DataType: HorizontalAlignment
-        Value: 0
       - Name: VerticalAlignment
         Id: g=768ab40958a61b96f5a3a7bae8438d0a
         Type: BaseVariableType
@@ -236,13 +224,11 @@ Children:
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Description
             Id: g=1d28aab23792b3e1e0a747d027ef01d4
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       - Name: TopMargin
         Id: g=8da9444b0605b2feb9b4d7a69f036fa3
         Type: BaseDataVariableType
@@ -266,18 +252,15 @@ Children:
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Description
             Id: g=4be620527d431507985867ff79fc07c3
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       - Name: BottomMargin
         Id: g=a186e021dd0dcec6420520b3b1854647
         Type: BaseDataVariableType
         DataType: Size
-        Value: 0.0
         Children:
         - Name: EngineeringUnits
           Id: g=14a7c85c999bc65a1477764213703fd5
@@ -296,13 +279,11 @@ Children:
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Description
             Id: g=aaf5d294175418e6c9077cb602342a17
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
     - Name: DateTime
       Id: g=a24dfb0abbf4442328c4704051a1be59
       Type: ReportLabel
@@ -367,13 +348,11 @@ Children:
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Description
             Id: g=3d9a9c53c6d00d26b8645d3bacc33bf2
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       - Name: Width
         Id: g=593d7247ef9a541353c12bae444b04a9
         Type: BaseDataVariableType
@@ -397,13 +376,11 @@ Children:
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Description
             Id: g=1a55ef34b887890b538c88cb884711eb
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       - Name: TextHorizontalAlignment
         Id: g=6c5fb2b4f8a81cad0bda650f22e70be7
         Type: BaseVariableType
@@ -413,7 +390,6 @@ Children:
         Id: g=38eff3a35c943dee3746007d2d5f4f76
         Type: BaseDataVariableType
         DataType: Size
-        Value: 0.0
         Children:
         - Name: EngineeringUnits
           Id: g=5fdb9fd3fc47d7b4dc5b79c5c46d92e0
@@ -432,18 +408,15 @@ Children:
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Description
             Id: g=361f78c4ddd7c5c8de313c508f87e518
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       - Name: BottomMargin
         Id: g=2bfd2c9f444d36f81fcc4ebc06b04662
         Type: BaseDataVariableType
         DataType: Size
-        Value: 0.0
         Children:
         - Name: EngineeringUnits
           Id: g=07035354c97eb3fe7dadf4a0d8d00807
@@ -462,13 +435,11 @@ Children:
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Description
             Id: g=28bf24c59ab01765674aafd8ea059716
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
     - Name: ParametersHeader
       Id: g=60b1466e7cf6a8824809d6a262854564
       Type: PanelSection
@@ -496,13 +467,11 @@ Children:
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Description
             Id: g=83731a675e72fc4d0f3f1fc1df687496
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       - Name: CoatingParametersLogging
         Id: g=acec566ef6f3ea3d07d99258e1c4aef9
         Type: ReportLabel
@@ -550,13 +519,11 @@ Children:
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Description
             Id: g=2dc947b71b892dce5fa41dc6d996af9c
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
   - Name: Sections
     Id: g=1548bb4f701ff7656c9fabf82144b7ee
     Type: ReportColumnLayout
@@ -596,13 +563,11 @@ Children:
                 Type: BaseVariableType
                 DataType: LocalizedText
                 ReferenceType: HasProperty
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
               - Name: Description
                 Id: g=71f5876572ab836b7b6003fcca595326
                 Type: BaseVariableType
                 DataType: LocalizedText
                 ReferenceType: HasProperty
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Title
             Id: g=d1de5866d42538444e117c81c34d6fff
             Type: BaseDataVariableType
@@ -612,12 +577,10 @@ Children:
             Id: g=a16c9fea7186b0d2b508ee863c1df499
             Type: BaseDataVariableType
             DataType: TextHorizontalAlignment
-            Value: 0
           - Name: ContentAlignment
             Id: g=4f0da1f4d5f0213c80e38eea7919a877
             Type: BaseVariableType
             DataType: HorizontalAlignment
-            Value: 0
           - Name: OrderBy
             Id: g=f2d49f3e1dc9c186205434460542e154
             Type: BaseDataVariableType
@@ -631,13 +594,17 @@ Children:
               Id: g=f6c6dfe8c41595129da27be85e8872ce
               Type: BaseDataVariableType
               DataType: LocalizedText
-              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
               Children:
               - Name: DynamicLink
                 Id: g=b12e26618cbfecbee9afcb099b6ff858
                 Type: DynamicLink
                 DataType: NodePath
                 Value: "{Item}/LocalTimestamp"
+          - Name: Visible
+            Id: g=2d68e1ef32e2d90ff726cc6ee1d5cd45
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
         - Name: Variable1
           Id: g=4676c7b02936d46b3a0d0e638af3ea6f
           Type: ReportDataGridColumn
@@ -665,13 +632,11 @@ Children:
                 Type: BaseVariableType
                 DataType: LocalizedText
                 ReferenceType: HasProperty
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
               - Name: Description
                 Id: g=21673a34ae6c270f74ff22e360463b2e
                 Type: BaseVariableType
                 DataType: LocalizedText
                 ReferenceType: HasProperty
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Title
             Id: g=79cf7a1c5eef0415c9d69a6deee63774
             Type: BaseDataVariableType
@@ -681,12 +646,10 @@ Children:
             Id: g=5c92198dacabd0bf980a606b5122e177
             Type: BaseDataVariableType
             DataType: TextHorizontalAlignment
-            Value: 0
           - Name: ContentAlignment
             Id: g=d3f95062cec7b534dbbb6627f46af8bc
             Type: BaseVariableType
             DataType: HorizontalAlignment
-            Value: 0
           - Name: OrderBy
             Id: g=cc4ad50f217bad5c67c0817a029b81d9
             Type: BaseDataVariableType
@@ -700,13 +663,17 @@ Children:
               Id: g=f3dc64c6e5bfa0da6c7776f6d1ad0c23
               Type: BaseDataVariableType
               DataType: LocalizedText
-              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
               Children:
               - Name: DynamicLink
                 Id: g=4bb9b46aa4d61302a7afdea1418c5d24
                 Type: DynamicLink
                 DataType: NodePath
                 Value: "{Item}/dataloggerVariable1"
+          - Name: Visible
+            Id: g=520eab0e57356ed308ba21d83e824fe7
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
         - Name: Variable2
           Id: g=517d531f2dd4945adba4bfb1cca6bd23
           Type: ReportDataGridColumn
@@ -734,13 +701,11 @@ Children:
                 Type: BaseVariableType
                 DataType: LocalizedText
                 ReferenceType: HasProperty
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
               - Name: Description
                 Id: g=16f43aed1afcb8b8a567bc4c48c87860
                 Type: BaseVariableType
                 DataType: LocalizedText
                 ReferenceType: HasProperty
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Title
             Id: g=cfc62f2888475a886f1f1f45258ff00d
             Type: BaseDataVariableType
@@ -750,12 +715,10 @@ Children:
             Id: g=cee60f2b64741c5017109caff057afb1
             Type: BaseDataVariableType
             DataType: TextHorizontalAlignment
-            Value: 0
           - Name: ContentAlignment
             Id: g=c2024604ae76ab34db44b4c527a5ce62
             Type: BaseVariableType
             DataType: HorizontalAlignment
-            Value: 0
           - Name: OrderBy
             Id: g=4a664862ac2fbf7570827d704f87d5c8
             Type: BaseDataVariableType
@@ -769,13 +732,17 @@ Children:
               Id: g=01f65465ba277842392be1a2a74ba0e4
               Type: BaseDataVariableType
               DataType: LocalizedText
-              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
               Children:
               - Name: DynamicLink
                 Id: g=4f36082f66d59580a63eb55ddabfff84
                 Type: DynamicLink
                 DataType: NodePath
                 Value: "{Item}/dataloggerVariable2"
+          - Name: Visible
+            Id: g=2a5a36adcc4fc50c351c7414acb596e1
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
         - Name: Variable3
           Id: g=22c8ee59a067a71c83da4945155b5e13
           Type: ReportDataGridColumn
@@ -803,13 +770,11 @@ Children:
                 Type: BaseVariableType
                 DataType: LocalizedText
                 ReferenceType: HasProperty
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
               - Name: Description
                 Id: g=1c70337960b1e4dde54cd9c65435110b
                 Type: BaseVariableType
                 DataType: LocalizedText
                 ReferenceType: HasProperty
-                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Title
             Id: g=97604287271d78e5ea3dd81fc51ddd0f
             Type: BaseDataVariableType
@@ -819,12 +784,10 @@ Children:
             Id: g=4eb8bc12fd10b92c091843eb38978844
             Type: BaseDataVariableType
             DataType: TextHorizontalAlignment
-            Value: 0
           - Name: ContentAlignment
             Id: g=aa2cd52946032722baba2292b2d6bdf5
             Type: BaseVariableType
             DataType: HorizontalAlignment
-            Value: 0
           - Name: OrderBy
             Id: g=d11abfb66324e58764cc0b70692ae796
             Type: BaseDataVariableType
@@ -838,25 +801,27 @@ Children:
               Id: g=cae723b788a51e9a4882033be328f8d4
               Type: BaseDataVariableType
               DataType: LocalizedText
-              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
               Children:
               - Name: DynamicLink
                 Id: g=2c2a03e3f8a22497d03f7c5dc1247324
                 Type: DynamicLink
                 DataType: NodePath
                 Value: "{Item}/dataloggerVariable3"
+          - Name: Visible
+            Id: g=b434e29888b59d1aa36db6e38cce0834
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
       - Name: SelectedItem
         Id: g=9ff06fac118bdafd3299becde9bc305f
         Type: NodePointer
         DataType: NodeId
         AccessLevel: Read
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
         Children:
         - Name: Kind
           Id: g=356db3a791e8dedbaaba3a8617e4d796
           Type: PropertyType
           DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
       - Name: Model
         Id: g=33e5a7e800d68b477fa6ed6d027de012
         Type: NodePointer
@@ -867,12 +832,10 @@ Children:
           Id: g=adc9f7f4ba1c0c2605232ed3b3cd63e8
           Type: PropertyType
           DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
         - Name: Kind
           Id: g=1d1b03f6fad7db0842c9a2c8021745fd
           Type: PropertyType
           DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
       - Name: Query
         Id: g=ed2c299ffce7e3afc698d4d8f55fdef0
         Type: BaseDataVariableType
@@ -883,7 +846,6 @@ Children:
         Type: BaseDataVariableType
         DataType: NodeId
         AccessLevel: Read
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
       - Name: Height
         Id: g=42f1fd16d604175cfd4a99774298a521
         Type: BaseDataVariableType
@@ -907,24 +869,20 @@ Children:
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Description
             Id: g=836e5ed6c527841dadb2aa12720fafc0
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       - Name: Item
         Id: g=69551110697d37913c84451e07058f66
         Type: Alias
         DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
         Children:
         - Name: Kind
           Id: g=344f181ab45f2b4854ba6d1d43bae493
           Type: PropertyType
           DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
       - Name: SortColumn
         Id: g=801e740a59baa54e9102a2e5bca125f9
         Type: BaseDataVariableType
@@ -958,13 +916,11 @@ Children:
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Description
             Id: g=af4dfe6722e820ab5d4c42f1691e46de
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       - Name: LeftMargin
         Id: g=66e7abd98f1fadc06c1aece4538c5e68
         Type: BaseDataVariableType
@@ -988,13 +944,11 @@ Children:
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Description
             Id: g=4d971ac57b2f45533cbf6cbcb11d7862
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       - Name: TopMargin
         Id: g=8302f1abaa9a818db2bf6705db9afea3
         Type: BaseDataVariableType
@@ -1018,13 +972,11 @@ Children:
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Description
             Id: g=6387fc73ce1f34cf367757a17059c786
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       - Class: Reference
         Target: ns=3;i=504
         Direction: Forward
@@ -1055,13 +1007,11 @@ Children:
           Type: BaseVariableType
           DataType: LocalizedText
           ReferenceType: HasProperty
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
         - Name: Description
           Id: g=3847055c50daff23205ae63a6e3a84b7
           Type: BaseVariableType
           DataType: LocalizedText
           ReferenceType: HasProperty
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
     - Name: ReportFooter
       Id: g=09cce0af2155de423baf5cf0d6307a1f
       Type: ReportLabel
@@ -1104,13 +1054,11 @@ Children:
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Description
             Id: g=ead88852540dc91c2c8f15a728609ae9
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       - Name: TextHorizontalAlignment
         Id: g=4368398d26130f23bd0e0d02d88be7fd
         Type: BaseVariableType
@@ -1120,7 +1068,6 @@ Children:
         Id: g=0d17e4791ca1290fb501b925c5d46c96
         Type: BaseDataVariableType
         DataType: Size
-        Value: 0.0
         Children:
         - Name: EngineeringUnits
           Id: g=6bf57ca896f1c06a51bccfdf65ac5ad5
@@ -1139,18 +1086,15 @@ Children:
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Description
             Id: g=6bf40a0dcfeee58d5cdf27fce0b46b01
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       - Name: RightMargin
         Id: g=1afe2d44f56a74dde899e40cabd6263d
         Type: BaseDataVariableType
         DataType: Size
-        Value: 0.0
         Children:
         - Name: EngineeringUnits
           Id: g=fad6f9f14e2cf7eb3198f4b46b3015db
@@ -1169,13 +1113,11 @@ Children:
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Description
             Id: g=bc10da6024fbc0b2bb4d4f9f967ce559
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       - Name: TopMargin
         Id: g=570515598b8d3c7859b691db44c9ae57
         Type: BaseDataVariableType
@@ -1199,18 +1141,15 @@ Children:
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Description
             Id: g=38cf8603d3bd4098ed5a72a445f0dd96
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       - Name: BottomMargin
         Id: g=d0fb455d2edfb00447b4c06119978c82
         Type: BaseDataVariableType
         DataType: Size
-        Value: 0.0
         Children:
         - Name: EngineeringUnits
           Id: g=097346db89f2ef963ce39c80d6fdf653
@@ -1229,13 +1168,11 @@ Children:
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Description
             Id: g=aa1f48cba9ced822f6266fa5ee5d2696
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
     - Name: Copyright
       Id: g=0fb2e47c215927d6a19d14949657576a
       Type: ReportLabel
@@ -1279,7 +1216,6 @@ Children:
         Id: g=6daeaba9006f8641d4f863c36498d5bd
         Type: BaseDataVariableType
         DataType: Size
-        Value: 0.0
         Children:
         - Name: EngineeringUnits
           Id: g=7848ddd33ebbbc41fcad124b551520cd
@@ -1298,13 +1234,11 @@ Children:
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Description
             Id: g=6e2373a644bd3c08c9731394645e87a9
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       - Name: BottomMargin
         Id: g=e56de080fc5af575544ec07024eab736
         Type: BaseDataVariableType
@@ -1328,13 +1262,11 @@ Children:
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Description
             Id: g=0287995bd69378815d45e71275f9d855
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       - Name: Width
         Id: g=a505bcd6a1190ba9052732adb06c3f35
         Type: BaseDataVariableType
@@ -1358,13 +1290,11 @@ Children:
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Description
             Id: g=0f302329084f00b526b139c032f2f690
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       - Name: LeftMargin
         Id: g=494e6926682954d41537ca2c6ab3827a
         Type: BaseDataVariableType
@@ -1388,13 +1318,11 @@ Children:
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Description
             Id: g=bba8bb130fa2f5d07a9805438668c741
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
     - Name: PageNumber
       Id: g=145d7bd1509b3b1412c9207f0488753c
       Type: ReportLabel
@@ -1470,13 +1398,11 @@ Children:
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Description
             Id: g=5ea0e93d750633d8f202fef32053c138
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       - Name: RightMargin
         Id: g=5c313e1b0a9d2c6464a62cbf817ce325
         Type: BaseDataVariableType
@@ -1500,13 +1426,11 @@ Children:
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Description
             Id: g=a0fb40aee6abfda04903f0d3972dbb7f
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       - Name: Height
         Id: g=88bcee74e1ac0c8475709091402385ef
         Type: BaseDataVariableType
@@ -1530,13 +1454,11 @@ Children:
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Description
             Id: g=d5f643f074b3cc46fb7f113ed8b4c7f3
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       - Name: Width
         Id: g=77dbc0b4e0b1b00eee1f4ccd48d761d7
         Type: BaseDataVariableType
@@ -1560,13 +1482,11 @@ Children:
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           - Name: Description
             Id: g=fbd704ef9d8a0f6a8c4a6a70fb9304c0
             Type: BaseVariableType
             DataType: LocalizedText
             ReferenceType: HasProperty
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       - Name: TextHorizontalAlignment
         Id: g=9f495f557d0f1be6311f9595338789e9
         Type: BaseVariableType
@@ -1608,13 +1528,11 @@ Children:
         Type: BaseVariableType
         DataType: LocalizedText
         ReferenceType: HasProperty
-        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       - Name: Description
         Id: g=a8e00c8742dd81c3b0cfdca20036983d
         Type: BaseVariableType
         DataType: LocalizedText
         ReferenceType: HasProperty
-        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
   - Name: ButtonStyles
     Id: g=3882485f776a7a33aa8d4578456df332
     Type: BaseObjectType
@@ -1736,12 +1654,10 @@ Children:
         Id: g=9f8b10ca870f29fe193ec892584c2ca3
         Type: BaseDataVariableType
         DataType: Color
-        Value: "#00000000"
       - Name: BorderWidth
         Id: g=1a12ee4b7a13b5081f664ab4eec55e9e
         Type: BaseDataVariableType
         DataType: Size
-        Value: 0.0
   - Name: InputBoxStyles
     Id: g=ddbdf04b46cf829315f02435624b2f9a
     Type: BaseObjectType
@@ -1892,13 +1808,11 @@ Children:
         Type: BaseVariableType
         DataType: LocalizedText
         ReferenceType: HasProperty
-        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       - Name: Description
         Id: g=4ac4fdc356ee937eb55f3d88ec66af66
         Type: BaseVariableType
         DataType: LocalizedText
         ReferenceType: HasProperty
-        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
   - Name: BorderColor
     Id: g=c3a17a68e37464f46243a6efc996a15a
     Type: BaseDataVariableType
@@ -2025,12 +1939,10 @@ Children:
         Id: g=2d2d00c86019b215d039b3e50aee1ff1
         Type: BaseDataVariableType
         DataType: Color
-        Value: "#00000000"
       - Name: BorderWidth
         Id: g=d117c801c174c1524f21e8d20da449fe
         Type: BaseDataVariableType
         DataType: Size
-        Value: 0.0
   - Name: InputBoxStyles
     Id: g=5ed7b31defaeb05392efd7d26e0d437d
     Type: BaseObjectType

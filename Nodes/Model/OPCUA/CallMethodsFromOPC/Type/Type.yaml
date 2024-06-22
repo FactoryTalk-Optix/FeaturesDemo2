@@ -10,7 +10,6 @@ Children:
     Id: g=d032a45077a011a1d017b6a53d4d402d
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
   - Class: Method
     Name: StartMotor
     Id: g=399dcdca44aad4daeae55a0eb34148d8

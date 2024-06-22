@@ -15,7 +15,6 @@ Children:
     Id: g=e37b39d2ed17ac5c47995b4cd64958f4
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
 - Name: CustomMotor2
   Id: g=7823dfe62229437a0e3a75170ca9e0a8
   Type: CustomMotor
@@ -24,12 +23,10 @@ Children:
     Id: g=6731c6346a32645d6120b44701078aeb
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
   - Name: Mode
     Id: g=f408e0d0531db58a7044891f6e0a0d8e
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
 - Name: CustomMotor3
   Id: g=c7521f70358172c2242e3b22af44553c
   Type: CustomMotor
@@ -43,7 +40,6 @@ Children:
     Id: g=18352ae6f30972cc70dca89711364cda
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
 - Name: CustomMotor4
   Id: g=6d54d2dc03a6571d70db10367018a50f
   Type: CustomMotor
@@ -52,9 +48,7 @@ Children:
     Id: g=71a2ab2df9a723022a95d0260f30c43f
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
   - Name: Mode
     Id: g=22e41206bb088ecbd896daa51f046907
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false

@@ -6,21 +6,21 @@ Project:
  Company: ''
  Copyright: ''
  FormatVersion: 1
- ProductVersion: 1.3
+ ProductVersion: 1.4
  CoreVersion: 3.0
  Dependencies:
   2:
    Uri: 'urn:FTOptix:CoreBase'
    Module: FTOptix.CoreBase
-   Version: 3.1
+   Version: 4.0
   3:
    Uri: 'urn:FTOptix:UI'
    Module: FTOptix.UI
-   Version: 11.0
+   Version: 12.4
   4:
    Uri: 'urn:FTOptix:HMIProject'
    Module: FTOptix.HMIProject
-   Version: 5.3
+   Version: 6.1
   6:
    Uri: 'urn:FTOptix:Retentivity'
    Module: FTOptix.Retentivity
@@ -40,7 +40,7 @@ Project:
   11:
    Uri: 'urn:FTOptix:UI:Net'
    Module: FTOptix.UI.Net
-   Version: 11.0
+   Version: 12.4
   12:
    Uri: 'urn:FTOptix:HMIProject:Net'
    Module: FTOptix.HMIProject.Net
@@ -48,7 +48,7 @@ Project:
   14:
    Uri: 'urn:FTOptix:NetLogic'
    Module: FTOptix.NetLogic
-   Version: 1.0
+   Version: 3.0
   15:
    Uri: 'urn:FTOptix:Retentivity:Net'
    Module: FTOptix.Retentivity.Net
@@ -68,11 +68,11 @@ Project:
   19:
    Uri: 'urn:FTOptix:Alarm'
    Module: FTOptix.Alarm
-   Version: 2.0
+   Version: 4.0
   20:
    Uri: 'urn:FTOptix:Alarm:Net'
    Module: FTOptix.Alarm.Net
-   Version: 1.0
+   Version: 1.2
   21:
    Uri: 'urn:FTOptix:Report'
    Module: FTOptix.Report
@@ -138,14 +138,14 @@ Project:
    Module: FTOptix.System.Net
    Version: 2.0
  Statistics:
-  TotalNodeCount: 31470
+  TotalNodeCount: 31550
   Objects: 7087
   ObjectTypes: 119
-  Variables: 24205
+  Variables: 24285
   VariableTypes: 0
   DataTypes: 6
   Methods: 53
-  References: 271
+  References: 301
   ReferenceTypes: 0
   Files: 72
  Nodes:

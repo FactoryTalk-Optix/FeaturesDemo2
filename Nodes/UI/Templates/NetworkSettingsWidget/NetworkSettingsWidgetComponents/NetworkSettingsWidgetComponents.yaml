@@ -73,19 +73,16 @@ Children:
       Type: BaseDataVariableType
       DataType: Font
       ModellingRule: Optional
-      Value: ""
     - Name: TextHorizontalAlignment
       Id: g=9d8e56ba8f093ffc98bbbebdd23f9a9c
       Type: BaseVariableType
       DataType: TextHorizontalAlignment
       ModellingRule: Optional
-      Value: 0
     - Name: HorizontalAlignment
       Id: g=eff3d4916d1a3a6fd69a6de41be23886
       Type: BaseVariableType
       DataType: HorizontalAlignment
       ModellingRule: Optional
-      Value: 0
   - Name: IPAddressTextBox
     Id: g=bc2ccd170a7b2fc26ebf8f2b1b52357c
     Type: TextBox
@@ -140,19 +137,16 @@ Children:
       Type: BaseDataVariableType
       DataType: Font
       ModellingRule: Optional
-      Value: ""
     - Name: TextHorizontalAlignment
       Id: g=4263024123a3e5e7ca2a8c73cb3a1d48
       Type: BaseVariableType
       DataType: TextHorizontalAlignment
       ModellingRule: Optional
-      Value: 0
     - Name: HorizontalAlignment
       Id: g=4863afa01033bdcabc8d1b722824a222
       Type: BaseVariableType
       DataType: HorizontalAlignment
       ModellingRule: Optional
-      Value: 0
   - Name: MaskTextBox
     Id: g=0561db28036eaff9d6c40869f6312ada
     Type: TextBox
@@ -223,13 +217,11 @@ Children:
         Type: BaseDataVariableType
         DataType: Font
         ModellingRule: Optional
-        Value: ""
       - Name: TextHorizontalAlignment
         Id: g=6f9f8804ac5816090c7b7e10f952b351
         Type: BaseVariableType
         DataType: TextHorizontalAlignment
         ModellingRule: Optional
-        Value: 0
       - Name: HorizontalAlignment
         Id: g=5fc35336c8afcf25e59afced6476d2f7
         Type: BaseVariableType
@@ -302,19 +294,16 @@ Children:
       Type: BaseDataVariableType
       DataType: Font
       ModellingRule: Optional
-      Value: ""
     - Name: TextHorizontalAlignment
       Id: g=5acbac43ec994e79ff7b5373d7bf30da
       Type: BaseVariableType
       DataType: TextHorizontalAlignment
       ModellingRule: Optional
-      Value: 0
     - Name: HorizontalAlignment
       Id: g=02d8ffa00875ce448a4a3ba40d4bdb94
       Type: BaseVariableType
       DataType: HorizontalAlignment
       ModellingRule: Optional
-      Value: 0
   - Name: DNS1TextBox
     Id: g=53f5bbb3528a66f5e12864263fa4e135
     Type: TextBox
@@ -369,19 +358,16 @@ Children:
       Type: BaseDataVariableType
       DataType: Font
       ModellingRule: Optional
-      Value: ""
     - Name: TextHorizontalAlignment
       Id: g=68f750665086c639d7588c697051f215
       Type: BaseVariableType
       DataType: TextHorizontalAlignment
       ModellingRule: Optional
-      Value: 0
     - Name: HorizontalAlignment
       Id: g=98563d9b0aa4600131e2127070dad167
       Type: BaseVariableType
       DataType: HorizontalAlignment
       ModellingRule: Optional
-      Value: 0
   - Name: DNS2TextBox
     Id: g=99914a00171a53923c5e9a4476e08867
     Type: TextBox
@@ -492,19 +478,16 @@ Children:
       Type: BaseDataVariableType
       DataType: Font
       ModellingRule: Optional
-      Value: ""
     - Name: TextHorizontalAlignment
       Id: g=90b73390dc260f6449d50f404db33947
       Type: BaseVariableType
       DataType: TextHorizontalAlignment
       ModellingRule: Optional
-      Value: 0
     - Name: HorizontalAlignment
       Id: g=34a3fc0fbe160f2b30a00430f8d9abf4
       Type: BaseVariableType
       DataType: HorizontalAlignment
       ModellingRule: Optional
-      Value: 0
   - Name: IPAddressTextBox
     Id: g=1f88f7beed2630ceb04103d8fe1407fb
     Type: TextBox
@@ -565,19 +548,16 @@ Children:
       Type: BaseDataVariableType
       DataType: Font
       ModellingRule: Optional
-      Value: ""
     - Name: TextHorizontalAlignment
       Id: g=9302d570c1d1871e847e4de279127958
       Type: BaseVariableType
       DataType: TextHorizontalAlignment
       ModellingRule: Optional
-      Value: 0
     - Name: HorizontalAlignment
       Id: g=46ba0b587e96d76a27c42f7315788468
       Type: BaseVariableType
       DataType: HorizontalAlignment
       ModellingRule: Optional
-      Value: 0
   - Name: MaskTextBox
     Id: g=291435d4a7b391d2c190d154c08478ff
     Type: TextBox
@@ -660,13 +640,11 @@ Children:
         Type: BaseDataVariableType
         DataType: Font
         ModellingRule: Optional
-        Value: ""
       - Name: TextHorizontalAlignment
         Id: g=20d8c8312d1bf2164c27ddd9dad0951b
         Type: BaseVariableType
         DataType: TextHorizontalAlignment
         ModellingRule: Optional
-        Value: 0
       - Name: HorizontalAlignment
         Id: g=c4bbba17d1b75e9312963091dd21e120
         Type: BaseVariableType
@@ -739,19 +717,16 @@ Children:
       Type: BaseDataVariableType
       DataType: Font
       ModellingRule: Optional
-      Value: ""
     - Name: TextHorizontalAlignment
       Id: g=e267008daf7e9eee5c21a25fd1e0253e
       Type: BaseVariableType
       DataType: TextHorizontalAlignment
       ModellingRule: Optional
-      Value: 0
     - Name: HorizontalAlignment
       Id: g=38673bdb016f8825ff85c4790c620f53
       Type: BaseVariableType
       DataType: HorizontalAlignment
       ModellingRule: Optional
-      Value: 0
   - Name: DNS1TextBox
     Id: g=ed6bcca0ac061c0d40361b22ddc864c2
     Type: TextBox
@@ -812,19 +787,16 @@ Children:
       Type: BaseDataVariableType
       DataType: Font
       ModellingRule: Optional
-      Value: ""
     - Name: TextHorizontalAlignment
       Id: g=0c8c1b5de78d927908cc5c3f1ebd6446
       Type: BaseVariableType
       DataType: TextHorizontalAlignment
       ModellingRule: Optional
-      Value: 0
     - Name: HorizontalAlignment
       Id: g=ba02b58fd7270745d6da9cb103d109ef
       Type: BaseVariableType
       DataType: HorizontalAlignment
       ModellingRule: Optional
-      Value: 0
   - Name: DNS2TextBox
     Id: g=d1fce98cdb2317dd7ec79a4e2c6a5046
     Type: TextBox
