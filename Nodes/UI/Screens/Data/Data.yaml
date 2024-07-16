@@ -7154,113 +7154,113 @@ Children:
                 Type: BaseObjectType
                 Children:
                 - Name: Variable1
-                  Id: g=8ea17af451af944775621c9da3b420b1
+                  Id: g=fcc002bee198c8f8e86b3448a7e24416
                   Type: TrendPen
                   DataType: BaseDataType
                   Children:
                   - Name: Thickness
-                    Id: g=3e957c300b82f4cb1d98e9d2829b1718
+                    Id: g=ecc9102701ed13fde5bf73cae4b9a860
                     Type: BaseDataVariableType
                     DataType: Size
                     Value: -1.0
                   - Name: Enabled
-                    Id: g=98b6212746f00ea8cfb5f913df38a724
+                    Id: g=f76b2766c009ad5ad1ab95eb32d97626
                     Type: BaseDataVariableType
                     DataType: Boolean
                     Value: true
+                  - Name: Thresholds
+                    Id: g=3a782bf181f83be34ce34f70381e5009
+                    Type: BaseObjectType
                   - Name: Color
-                    Id: g=30f13fb5efe653b1e9cd96217fa48ed9
+                    Id: g=26cc0ea1a4c29acb53bc69e8cdae57f9
                     Type: BaseDataVariableType
                     DataType: Color
                     ModellingRule: Optional
                     Value: "#1b5583"
                   - Name: DynamicLink
-                    Id: g=7ce7148b40aa9b64a77166a0e5c3f101
+                    Id: g=f0fd2629ee23b212132bea169cc65414
                     Type: DynamicLink
                     DataType: NodePath
-                    Value: "/Objects/FeaturesDemo2/Loggers/TrendDataLogger/VariablesToLog/Variable1/LastValue"
+                    Value: "../../Model/VariablesToLog/Variable1/LastValue"
                     Children:
                     - Name: Mode
-                      Id: g=5d936fe8d849869e87317437fc91ee8b
+                      Id: g=93899ade8d4acd62a36bba174cafc47c
                       Type: BaseVariableType
                       DataType: DynamicLinkMode
                       ModellingRule: Optional
                       Value: 2
-                  - Name: Thresholds
-                    Id: g=05e321b011c6dccb3b1efd95218a8f0d
-                    Type: BaseObjectType
                 - Name: Variable2
-                  Id: g=d85b725af9f8a587f23066af20ce65fd
+                  Id: g=e529b33e84241994bb1839644c25082a
                   Type: TrendPen
                   DataType: BaseDataType
                   Children:
                   - Name: Thickness
-                    Id: g=38290c2d8980b224670f3836ac22545e
+                    Id: g=291a3f415f57dd3ab188092617c60b5c
                     Type: BaseDataVariableType
                     DataType: Size
                     Value: -1.0
                   - Name: Enabled
-                    Id: g=86126ed954309756af28f3ed5c166df7
+                    Id: g=e7abc691fbe27f6503e9f5c23f7f9e01
                     Type: BaseDataVariableType
                     DataType: Boolean
                     Value: true
+                  - Name: Thresholds
+                    Id: g=1648f5deb0b719c924e75f7a07e51a04
+                    Type: BaseObjectType
                   - Name: Color
-                    Id: g=23483c60182b2e3d3eb6579f7de25892
+                    Id: g=0b464620063ef75489acc052b52f9887
                     Type: BaseDataVariableType
                     DataType: Color
                     ModellingRule: Optional
                     Value: "#f3da08"
                   - Name: DynamicLink
-                    Id: g=1b64a7d3f72d36e3fabfd1dce0f7c7b6
+                    Id: g=01638ced5123691688a23b35d2f2b24f
                     Type: DynamicLink
                     DataType: NodePath
-                    Value: "/Objects/FeaturesDemo2/Loggers/TrendDataLogger/VariablesToLog/Variable2/LastValue"
+                    Value: "../../Model/VariablesToLog/Variable2/LastValue"
                     Children:
                     - Name: Mode
-                      Id: g=5eea72fc97258fe09476fa47fe75c6c7
+                      Id: g=77bc38381523f272f6a39585e1cb80bd
                       Type: BaseVariableType
                       DataType: DynamicLinkMode
                       ModellingRule: Optional
                       Value: 2
-                  - Name: Thresholds
-                    Id: g=070d5b8c55845b4c39e8a872c20ae3fa
-                    Type: BaseObjectType
                 - Name: Variable3
-                  Id: g=fa9fe93d89f354f91d885a79f337b4f3
+                  Id: g=6c6b8b8a3ecb4ac9145c51020302ffb7
                   Type: TrendPen
                   DataType: BaseDataType
                   Children:
                   - Name: Thickness
-                    Id: g=3a2605643d4590cad04f10b19a3d5b4e
+                    Id: g=3e1caf56b455047ee65271ba91263222
                     Type: BaseDataVariableType
                     DataType: Size
                     Value: -1.0
                   - Name: Enabled
-                    Id: g=24511a770cd8512e396033ca09db6519
+                    Id: g=c0f96b0f5c2731688d470929a63eea67
                     Type: BaseDataVariableType
                     DataType: Boolean
                     Value: true
+                  - Name: Thresholds
+                    Id: g=5051a317008cc24cdc8488b61bdc360d
+                    Type: BaseObjectType
                   - Name: Color
-                    Id: g=3eb3bce7481215d729af9e266299544b
+                    Id: g=1a1a3ae83153c9301dc352202fb77539
                     Type: BaseDataVariableType
                     DataType: Color
                     ModellingRule: Optional
                     Value: "#ff7514"
                   - Name: DynamicLink
-                    Id: g=e1669f0673e04f4ab60dc087e65b8ddb
+                    Id: g=c8784425ddabfa2fc6326decc704efdb
                     Type: DynamicLink
                     DataType: NodePath
-                    Value: "/Objects/FeaturesDemo2/Loggers/TrendDataLogger/VariablesToLog/Variable3/LastValue"
+                    Value: "../../Model/VariablesToLog/Variable3/LastValue"
                     Children:
                     - Name: Mode
-                      Id: g=6f5ed2a92bbe6dacebb6ab7843adb2f1
+                      Id: g=c382f3bf175c76d61169c89f6cf6130e
                       Type: BaseVariableType
                       DataType: DynamicLinkMode
                       ModellingRule: Optional
                       Value: 2
-                  - Name: Thresholds
-                    Id: g=cca9dba441ea715bdd6bbff11635ac08
-                    Type: BaseObjectType
               - Name: XAxis
                 Id: g=12144b77f83b6daf3edf958be9d016d7
                 Type: DateTimeAxis
@@ -7399,6 +7399,20 @@ Children:
               - Class: Reference
                 Target: ns=3;i=1209
                 Direction: Forward
+              - Name: Model
+                Id: g=3cc2673cae4d8bc66eb8d1a2d1a73f5c
+                Type: NodePointer
+                DataType: NodeId
+                Value: "/Objects/FeaturesDemo2/Loggers/TrendDataLogger"
+                Children:
+                - Name: ItemKind
+                  Id: g=ed67b79b04a4a9bfc474a492a5cbee79
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: Kind
+                  Id: g=579398602230057962d0f1a2d881147c
+                  Type: PropertyType
+                  DataType: NodeId
             - Name: Height
               Id: g=990342551a0f473e811abe993eeb88b9
               Type: BaseVariableType
