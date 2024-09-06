@@ -50,6 +50,11 @@ Children:
           Id: g=7d9a0e001defa8af6f832c7bc436a956
           Type: StoreColumn
           DataType: Int32
+      - Name: RecordLimit
+        Id: g=834827f600179ac4588b637788992468
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 1000
     - Name: AlarmsEventLogger
       Id: g=43d16d7e9c88baaf592fcb29dc7c338e
       Type: SQLiteStoreTable
@@ -118,6 +123,11 @@ Children:
           Id: g=24a5ee3c9a33f63a959fde84a8a1317c
           Type: StoreColumn
           DataType: DateTime
+      - Name: RecordLimit
+        Id: g=f6b870c2d2e119df9c353407f0c859a5
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 1000
     - Name: TrendDataLogger
       Id: g=056a952cd877f803295ff6a643ff3188
       Type: SQLiteStoreTable
@@ -158,6 +168,11 @@ Children:
           Id: g=f08ec7d632f022d4df3743c9ee772e7d
           Type: StoreColumn
           DataType: Int32
+      - Name: RecordLimit
+        Id: g=829b64e45adcba4a5657087579b59edc
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 1000
     - Name: AuditEventLogger
       Id: g=f737e7e2b9e4a54d7f032d518e020a8b
       Type: SQLiteStoreTable
@@ -226,6 +241,11 @@ Children:
           Id: g=fa282e9eac94ea6628f5dc5e57e7f067
           Type: StoreColumn
           DataType: String
+      - Name: RecordLimit
+        Id: g=1a021484a29e0fa847ced047d7f744f4
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 1000
     - Name: TransitionedEventLogger
       Id: g=37b34e272dde6a255e365fa6241f6f94
       Type: SQLiteStoreTable
@@ -266,6 +286,11 @@ Children:
           Id: g=3a1284af09e0f4ef2f26b093ba620b9b
           Type: StoreColumn
           DataType: Boolean
+      - Name: RecordLimit
+        Id: g=51e125812ef3e8ce0926eafaf4066e95
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 1000
     - Name: Recipes
       Id: g=5efb22ed76bf06ef4fca235e2e19bd2f
       Type: SQLiteStoreTable

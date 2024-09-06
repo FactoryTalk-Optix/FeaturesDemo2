@@ -2053,7 +2053,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 340.0
+          Value: 374.0
         - Name: SetStyleSheetToPresentationEngine
           Id: g=9cb60010e37088af7a79c1a6dabd5ffb
           Type: NetLogic
