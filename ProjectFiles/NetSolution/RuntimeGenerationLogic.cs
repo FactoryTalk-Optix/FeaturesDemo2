@@ -44,6 +44,7 @@ public class RuntimeGenerationLogic : BaseNetLogic
             newLeft = leftMargin;
         }
     }
+
     [ExportMethod]
     public void GenerateButton(int topMargin, int leftMargin, string textToDisplay)
     {
@@ -54,6 +55,7 @@ public class RuntimeGenerationLogic : BaseNetLogic
         myControl.Text = textToDisplay;
         Owner.Get("WorkspaceArea/RuntimeGeneratedObjects/VerticalLayout/UI_Controls/UI_ControlsArea").Add(myControl);
     }
+
     [ExportMethod]
     public void GenerateLabel(int topMargin, int leftMargin, string textToDisplay)
     {
@@ -64,6 +66,7 @@ public class RuntimeGenerationLogic : BaseNetLogic
         myControl.Text = textToDisplay;
         Owner.Get("WorkspaceArea/RuntimeGeneratedObjects/VerticalLayout/UI_Controls/UI_ControlsArea").Add(myControl);
     }
+
     [ExportMethod]
     public void GenerateImage(int topMargin, int leftMargin)
     {
@@ -76,6 +79,7 @@ public class RuntimeGenerationLogic : BaseNetLogic
         myControl.Height = 40;
         Owner.Get("WorkspaceArea/RuntimeGeneratedObjects/VerticalLayout/UI_Controls/UI_ControlsArea").Add(myControl);
     }
+
     [ExportMethod]
     public void GenerateInstances(int instCount)
     {

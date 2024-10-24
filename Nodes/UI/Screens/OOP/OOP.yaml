@@ -2707,7 +2707,7 @@ Children:
           Type: BaseDataVariableType
           DataType: Double
           ModellingRule: Optional
-          Value: 15.0
+          Value: 100.0
       - Name: LbGenerate
         Id: g=e647ed6c3fca7a80d0b71195f75f2136
         Type: Label

@@ -11,7 +11,7 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [648,4],
+    "Dimensions": [654,4],
     "Body": [
      "","en-US","it-IT","zh-CN",
      "Acknowledge","Ack","Riconosci","确认",
@@ -437,7 +437,7 @@ Children:
      "ComponentName","Component name","Nome del componente","组件名称",
      "AccordionDescription","Container that includes expandable content blocks.\nShow or collapse blocks of secondary content in a panel.\nTip: To add content to the Accordion object, insert objects to the Header and Content","Contenitore che include blocchi di contenuti espandibili.\nMostra o comprimi blocchi di contenuti secondari in un riquadro.\nSuggerimento: per aggiungere contenuto all'oggetto Accordion, inserire gli oggetti nell'intestazione e nel contenuto","包含可扩展内容块的容器。\n在面板中显示或折叠辅助内容块。\n提示：要将内容添加到 Accordion 对象，请将对象插入到标题和内容",
      "KeyValueDescription","Convert the value of the source to its corresponding parent value based on a table of key-value pairs. The key-value converter converts heterogeneous data  such as a color to value","Converti il valore dell'origine nel valore principale corrispondente in base a una tabella di coppie chiave-valore. Il convertitore chiave-valore converte dati eterogenei come un colore in un valore","根据键值对表将源值转换为其对应的父值。 键值转换器将异构数据（例如颜色）转换为值",
-     "Copyright","Copyright ©2022 Rockwell Automation Inc","Copyright ©2022 Rockwell Automation Inc","Copyright ©2022 Rockwell Automation Inc",
+     "Copyright","Copyright ©2022-2025 Rockwell Automation Inc","Copyright ©2022-2025 Rockwell Automation Inc","Copyright ©2022-2025 Rockwell Automation Inc",
      "Counter","Counter","Contatore","柜台",
      "CreateNewAlarm","Create a new alarm","Crea un nuovo allarme","创建一个新的警报",
      "MovableObjectsDescription","Create objects that are moveable at Runtime. Create moveable objects through the Move target property for panels, rectangles and images.","Crea oggetti mobili in fase di runtime. Crea oggetti mobili tramite la proprietà Sposta target per pannelli, rettangoli e immagini.","创建在运行时可移动的对象。 通过面板、矩形和图像的移动目标属性创建可移动对象。",
@@ -660,7 +660,13 @@ Children:
      "ScrollViewDescription","UI Container that can be used to interact with the content by zooming or panning","Contenitore che permette di far scorrere il contenuto tramite trascinamento. Supporta anche lo zoom.","",
      "ScrollViewInteraction","Pan or zoom the content to the desired area","Trascina o modifica le dimensioni della immagine interagendo con il cursore/tocco","",
      "OptixPanelOnly","This Widget is only available on devices\nwith SystemManager (like OptixPanels)","Questo Widget è disponibile solo su dispositivi\ncon SystemManager installato (ad esempio OptixPanel)","",
-     "SystemManagerDescription","Access the SystemManager interface from the WebBrowser","Accedi a tutte le impostazioni del SystemManager tramite WebBrowser",""
+     "SystemManagerDescription","Access the SystemManager interface from the WebBrowser","Accedi a tutte le impostazioni del SystemManager tramite WebBrowser","",
+     "ReportInvalidPath","Invalid PDF Path","Percorso Report PDF non valido","",
+     "ReportEmptyPath","Empty PDF Path","Percorso Report PDF vuoto","",
+     "ReportEmptyLocale","Empty PDF Locale","Locale Report PDF vuoto","",
+     "ReportInvalidLocale","Invalid PDF Locale","Locale Report PDF non valido","",
+     "ReportSuccess","Report Generated Succesfully","Report generato correttamente","",
+     "ReportFailed","Report Generation Failed","Creazione report fallita",""
     ]
    }
 - Name: ImportAndExportTranslations

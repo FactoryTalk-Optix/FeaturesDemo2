@@ -140,6 +140,16 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         AccessLevel: Read
+      - Name: StyleSheet
+        Id: g=b98533a41a38c01f5457b6fcccf9138d
+        Type: NodePointer
+        DataType: NodeId
+        Children:
+        - Name: Kind
+          Id: g=adc3a4d327b23c2c28ddc203ff121447
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType/StyleSheet"
   - Name: MaxNumberOfConnections
     Id: g=d96adbb96369e4c4c91b4fe130ad59c5
     Type: BaseDataVariableType
@@ -303,6 +313,16 @@ Children:
         Type: BaseVariableType
         DataType: Boolean
         AccessLevel: Read
+      - Name: StyleSheet
+        Id: g=1a3c4b132b1f6b9198b01bab1d1ab9d7
+        Type: NodePointer
+        DataType: NodeId
+        Children:
+        - Name: Kind
+          Id: g=8187cb14aa3fc706136fe83e2f5897db
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType/StyleSheet"
   - Name: Session
     Id: g=bb871c92ea4c51ff48f1290354e5f409
     Type: NodePointer
@@ -401,6 +421,16 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     AccessLevel: Read
+  - Name: StyleSheet
+    Id: g=17c47dc63a4c46e53a1f3ed9e99074ae
+    Type: NodePointer
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Id: g=c9f384985bcd5b184e19132bda3656c5
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/StyleSheet"
 - Name: MainWindow
   Id: g=01a7e8933afd7c95fe894b0859308138
   Supertype: Window
@@ -10575,7 +10605,7 @@ Children:
             - Name: ImagePosition
               Id: g=c169f92d94cd9b7752bd8758bae9823e
               Type: BaseDataVariableType
-              DataType: Position
+              DataType: ButtonImagePosition
               ModellingRule: Optional
               Value: 5
             - Name: TextPosition
@@ -10753,7 +10783,7 @@ Children:
               - Name: ImagePosition
                 Id: g=f26fe2c7026d2c62d353b72184f00348
                 Type: BaseDataVariableType
-                DataType: Position
+                DataType: ButtonImagePosition
                 ModellingRule: Optional
                 Value: 5
               - Name: TextPosition

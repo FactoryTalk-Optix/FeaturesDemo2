@@ -3622,7 +3622,7 @@ Children:
         Type: BaseDataVariableType
         DataType: Duration
         ModellingRule: Optional
-        Value: "0:00:00:1.0000000"
+        Value: "0:00:00:01.0000000"
       - Name: HorizontalAlignment
         Id: g=a85f0dd57234bc9df38261667a8da54d
         Type: BaseVariableType

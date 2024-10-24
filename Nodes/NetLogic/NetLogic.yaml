@@ -22,6 +22,7 @@ Children:
     Id: g=3b28df5e89c33e27cb02fc4af8e99b84
     Type: BaseDataVariableType
     DataType: Boolean
+    Value: true
 - Name: TrendVariablesSimulator
   Id: g=444e757d399932fd702903379758c95a
   Type: NetLogic

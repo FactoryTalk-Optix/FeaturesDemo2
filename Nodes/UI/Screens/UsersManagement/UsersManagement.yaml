@@ -2915,7 +2915,7 @@ Children:
                 - Name: ImagePosition
                   Id: g=3cdbc8eab6cdf5975e7c80d56b1d49fc
                   Type: BaseDataVariableType
-                  DataType: Position
+                  DataType: ButtonImagePosition
                   ModellingRule: Optional
                   Value: 4
                 - Name: ImageWidth
@@ -4315,20 +4315,17 @@ Children:
                     Children:
                     - Name: UnitId
                       Id: g=16b81716f0352c15d5553195e0f8e2d5
-                      Type: BaseVariableType
+                      Type: BaseDataVariableType
                       DataType: Int32
-                      ReferenceType: HasProperty
                       Value: 5067858
                     - Name: DisplayName
                       Id: g=f8d5f48f685e64fa32e7e6951687eeca
-                      Type: BaseVariableType
+                      Type: BaseDataVariableType
                       DataType: LocalizedText
-                      ReferenceType: HasProperty
                     - Name: Description
                       Id: g=7bdda278d5b9760de6c63fb110f72f36
-                      Type: BaseVariableType
+                      Type: BaseDataVariableType
                       DataType: LocalizedText
-                      ReferenceType: HasProperty
                 - Name: RightMargin
                   Id: g=8846a14a1bdd87fdc81af69413664727
                   Type: BaseVariableType

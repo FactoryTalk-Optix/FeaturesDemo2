@@ -5,8 +5,8 @@ Project:
  Company: ''
  Copyright: ''
  FormatVersion: 1
- ProductVersion: 1.4
- CoreVersion: 3.0
+ ProductVersion: 1.5
+ CoreVersion: 4.0
  Dependencies:
   2:
    Uri: FeaturesDemo2
@@ -22,7 +22,7 @@ Project:
   6:
    Uri: 'urn:FTOptix:NetLogic'
    Module: FTOptix.NetLogic
-   Version: 3.0
+   Version: 4.0
  Statistics:
   TotalNodeCount: 0
   Objects: 0

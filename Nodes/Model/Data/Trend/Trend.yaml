@@ -64,4 +64,4 @@ Children:
   Id: g=583a7f73e8c7a6d8177fda8a223d7399
   Type: BaseDataVariableType
   DataType: Duration
-  Value: "0:00:01:0.0000000"
+  Value: "0:00:01:00.0000000"

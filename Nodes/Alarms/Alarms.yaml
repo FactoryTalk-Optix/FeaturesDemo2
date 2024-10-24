@@ -60,6 +60,21 @@ Children:
   - Class: Reference
     Target: ns=19;i=135
     Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
 - Name: LowPressure
   Id: g=0573527e68ad9f751ff952ce15e0544f
   Type: OffNormalAlarmController
@@ -117,6 +132,21 @@ Children:
     Direction: Forward
   - Class: Reference
     Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
     Direction: Forward
 - Name: HighTemperature
   Id: g=f421cfa57d004b7f2bd57724a9f31cb1
@@ -180,6 +210,21 @@ Children:
     Direction: Forward
   - Class: Reference
     Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
     Direction: Forward
 - File: AlarmsWithArea/AlarmsWithArea.yaml
 - File: RuntimeAlarms/RuntimeAlarms.yaml

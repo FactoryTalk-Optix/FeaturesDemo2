@@ -2663,7 +2663,7 @@ Children:
           Id: g=8b75c05a284d338f72dd004d511d65e0
           Type: BaseDataVariableType
           DataType: Duration
-          Value: "0:00:00:5.0000000"
+          Value: "0:00:00:05.0000000"
         - Name: BlinkEnabled
           Id: g=69e2e12e3e8d25d8ed9c121479e349ba
           Type: BaseDataVariableType

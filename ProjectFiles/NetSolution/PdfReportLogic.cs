@@ -1,118 +1,135 @@
 #region Using directives
+using System;
 using System.IO;
+using System.Linq;
+using System.Reflection.Emit;
 using FTOptix.Core;
+using FTOptix.HMIProject;
 using FTOptix.NetLogic;
+using FTOptix.Report;
 using FTOptix.UI;
 using UAManagedCore;
 #endregion
 
-public class PdfReportLogic : BaseNetLogic
+public partial class PdfReportLogic : BaseNetLogic
 {
-    private PeriodicTask myPeriodicTask;
-    private LongRunningTask myLongRunningTask;
-    private Button myButton = null;
-    private IUANode myPathNode = null;
-    private string pdfPathStr = null;
-
     public override void Start()
     {
         // Try to assign a value to the button
         try
         {
-            myButton = Owner.Get<Button>("TrackedValues/Generate");
+            generatePdfButton = Owner.Get<Button>("TrackedValues/Generate");
+            viewPdfButton = Owner.Get<Button>("TrackedValues/View");
+            viewPdfButton.Enabled = false;
         }
         catch
         {
             // Button does not exist
-            Log.Warning("PdfReportLogic", "Can't find Generate PDF button, maybe with a different name?");
-            return;
-        }
-        // Execute search in asynchronous mode
-        myLongRunningTask = new LongRunningTask(LrtRecursiveSearch, LogicObject);
-        myLongRunningTask.Start();
-    }
-
-    private void LrtRecursiveSearch()
-    {
-        // Loop in button elements to find the MouseClickEvent
-        foreach (var item1 in myButton.Children)
-        {
-            if (item1.BrowseName.Contains("MouseClickEventHandler"))
-            {
-                foreach (var item2 in item1.Children)
-                {
-                    RecursiveSearch(item2, "OutputPath");
-                    if (myPathNode != null)
-                    {
-                        break;
-                    }
-                }
-            }
-            if (myPathNode != null)
-            {
-                break;
-            }
-        }
-        // Get value from found IUANode
-        if (myPathNode == null)
-        {
-            Log.Warning("PdfReportLogic", "Can't find any OutputPath value");
-            myLongRunningTask.Dispose();
-            return;
-        }
-        else
-        {
-            // Get path from PDF
-            pdfPathStr = new ResourceUri(((IUAVariable)myPathNode).Value).Uri;
-            Log.Debug("PdfReportLogic", pdfPathStr);
-            // Execute periodic check of PDF file
-            myPeriodicTask = new PeriodicTask(CheckForPdf, 1000, LogicObject);
-            myPeriodicTask.Start();
-        }
-    }
-
-    private void RecursiveSearch(IUANode inputNode, string nodeName)
-    {
-        if (inputNode.BrowseName == nodeName)
-        {
-            // required name matches the search value
-            myPathNode = inputNode;
-            return;
-        }
-        else
-        {
-            if (inputNode.Children.Count > 0)
-            {
-                foreach (var item in inputNode.Children)
-                {
-                    // Loop again
-                    RecursiveSearch(item, nodeName);
-                }
-            }
-            else
-            {
-                return;
-            }
+            Log.Warning("PdfReportLogic", "Can't find PDF buttons, maybe they were renamed?");
         }
     }
 
     public override void Stop()
     {
-        // Insert code to be executed when the user-defined logic is stopped
-        myPeriodicTask?.Dispose();
-        myLongRunningTask?.Dispose();
+        myReport.OnGeneratePdfCompleted -= MyReport_OnGeneratePdfCompleted;
     }
 
-    public void CheckForPdf()
+    [ExportMethod]
+    public void GenerateReport(string fileName, string pdfLocale)
     {
-        var myButton = (Button)Owner.Get("TrackedValues/View");
-        if (File.Exists(pdfPathStr))
+        // Hide button
+        generatePdfButton.Enabled = false;
+
+        // Check if the path is empty
+        if (string.IsNullOrEmpty(fileName))
         {
-            myButton.Enabled = true;
+            Log.Error("PdfReportLogic", "Empty PDF name");
+            SetOutputMessage("ReportEmptyPath");
+            throw new ArgumentNullException();
+        }
+
+        // Check if the pdf has the extension
+        if (!fileName.EndsWith(".pdf", StringComparison.InvariantCultureIgnoreCase))
+        {
+            Log.Warning("PdfReportLogic", "PDF extension not found, adding it");
+            fileName += ".pdf";
+        }
+
+        // Make sure to use only the file name
+        fileName = fileName.Split('\\', '/').Last();
+
+        // Check if the path is an Optix path variable
+        var pdfResourceUri = ResourceUri.FromApplicationRelativePath(fileName);
+
+        // Check if the locale is valid
+        if (string.IsNullOrEmpty(pdfLocale))
+        {
+            Log.Error("PdfReportLogic", "Empty locale");
+            SetOutputMessage("ReportEmptyLocale");
+            throw new ArgumentNullException();
+        }
+
+        // Check if the locale is valid using regex
+        if (!LocaleIdRegex().IsMatch(pdfLocale))
+        {
+            Log.Error("PdfReportLogic", "Invalid locale");
+            SetOutputMessage("ReportInvalidLocale");
+            throw new ArgumentException();
+        }
+
+        // Generate the report
+        myReport = Project.Current.Get<Report>("Reports/LoggerReport");
+        Log.Debug("PdfReportLogic", $"Generating PDF report with locale: {pdfLocale}");
+        Log.Debug("PdfReportLogic", $"Saving PDF report to: {pdfResourceUri.Uri}");
+        myReport.GeneratePdf(pdfResourceUri, pdfLocale, out Guid operationId);
+
+        // TODO: Uncomment this line to enable the event after the 1.5.1 release
+        //myReport.OnGeneratePdfCompleted += MyReport_OnGeneratePdfCompleted;
+
+        // TODO: Remove these lines after the 1.5.1 release
+        viewPdfButton.Enabled = true;
+        generatePdfButton.Enabled = true;
+
+        Log.Debug("PdfReportLogic", $"Report generation started with operation ID: {operationId}");
+    }
+
+    private void MyReport_OnGeneratePdfCompleted(object sender, GeneratePdfCompletedEvent e)
+    {
+        Log.Info("PdfReportLogic", $"Report generation completed with result: {e.Result}");
+        if (e.Result == GeneratePdfCompletedResult.PdfSuccessfullyGenerated)
+        {
+            SetOutputMessage("ReportSuccess");
+            viewPdfButton.Enabled = true;
         }
         else
         {
-            myButton.Enabled = false;
+            SetOutputMessage("ReportFailed");
+            viewPdfButton.Enabled = false;
+        }
+
+        generatePdfButton.Enabled = true;
+    }
+
+    // Set output message
+    private void SetOutputMessage(string translationKey)
+    {
+        var outputLabel = Owner.Get<FTOptix.UI.Label>("TrackedValues/OutputMessage");
+        try
+        {
+            outputLabel.LocalizedText = new LocalizedText(outputLabel.NodeId.NamespaceIndex, translationKey);
+        }
+        catch
+        {
+            Log.Warning("PdfReportLogic", $"Translation key not found: {translationKey}");
+            outputLabel.Text = translationKey;
         }
     }
+
+    // Regex for locale ID
+    [System.Text.RegularExpressions.GeneratedRegex("^[a-z]{2}-[A-Z]{2}$")]
+    private static partial System.Text.RegularExpressions.Regex LocaleIdRegex();
+    // PDF generator button
+    private FTOptix.UI.Button generatePdfButton;
+    private FTOptix.UI.Button viewPdfButton;
+    private FTOptix.Report.Report myReport;
 }

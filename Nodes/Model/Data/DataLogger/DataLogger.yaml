@@ -46,20 +46,17 @@ Children:
     Children:
     - Name: Low
       Id: g=c4fbee6f897351ce56b4aeeca11259cc
-      Type: BaseVariableType
+      Type: BaseDataVariableType
       DataType: Double
-      ReferenceType: HasProperty
     - Name: High
       Id: g=bcd5d06d8f066a12c81f2bf257d6acb5
-      Type: BaseVariableType
+      Type: BaseDataVariableType
       DataType: Double
-      ReferenceType: HasProperty
       Value: 100.0
     - Name: Constrain
       Id: g=3b4b9c3a0aa3157813a8e19d01cc06fe
-      Type: BaseVariableType
+      Type: BaseDataVariableType
       DataType: Boolean
-      ReferenceType: HasProperty
       Value: true
   - Name: DynamicLink
     Id: g=9fcb380b38cf961859ecf5c93c452c00

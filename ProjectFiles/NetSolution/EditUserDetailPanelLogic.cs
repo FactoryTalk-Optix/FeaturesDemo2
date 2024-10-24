@@ -103,7 +103,7 @@ public class EditUserDetailPanelLogic : BaseNetLogic
         var groups = groupsPanel.GetAlias("Groups");
         var panel = groupsPanel.Children.Get("ScrollView").Get("Container");
 
-        if (editable.Value)
+        if (!editable.Value)
             return;
 
         if (user == null || groups == null || panel == null)

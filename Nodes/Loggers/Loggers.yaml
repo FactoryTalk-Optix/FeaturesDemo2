@@ -10,7 +10,7 @@ Children:
     Id: g=558719dc21313d19bb172f9f16c34f4c
     Type: PropertyType
     DataType: SamplingModeEnum
-    Value: 2
+    Value: 1
   - Name: Store
     Id: g=80cf64a9b16e74ab7248b1ec71b29e38
     Type: NodePointer
@@ -161,12 +161,12 @@ Children:
     Id: g=a8f98ac21221eae5b9d4ee0fbf419dec
     Type: PropertyType
     DataType: Duration
-    Value: "0:00:00:1.0000000"
+    Value: "0:00:00:01.0000000"
   - Name: PollingPeriod
     Id: g=4481a5f9c7f0abb284551012a467f024
     Type: PropertyType
     DataType: Duration
-    Value: "0:00:00:0.1000000"
+    Value: "0:00:00:00.1000000"
   - Name: DefaultDeadBandValue
     Id: g=91f4b6f44001a6f67b23d00019ba1716
     Type: PropertyType
@@ -641,7 +641,7 @@ Children:
     Id: g=5795b75ad3378b19815ddc241efd00cb
     Type: PropertyType
     DataType: Duration
-    Value: "0:00:00:5.0000000"
+    Value: "0:00:00:05.0000000"
 - Name: AuditEventLogger
   Id: g=43342a4da30e8d9ab188167fc95bcbca
   Type: EventLogger

@@ -65,7 +65,11 @@ Children:
     Id: g=0f1f24e064625f6bfcfcea16b0c3333a
     Type: BaseDataVariableType
     DataType: Duration
-    Value: "0:00:00:0.1000000"
+    Value: "0:00:00:00.1000000"
+  - Name: AlarmsCollectionEnabled
+    Id: g=135e7a0f2e2a8127e1fb890b78d3f78e
+    Type: BaseDataVariableType
+    DataType: Boolean
 - File: UI/UI.yaml
 - File: Model/Model.yaml
 - File: Converters/Converters.yaml

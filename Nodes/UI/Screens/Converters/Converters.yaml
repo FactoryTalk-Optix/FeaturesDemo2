@@ -10518,20 +10518,17 @@ Children:
             Children:
             - Name: Low
               Id: g=8062eb3d0853cf2be147d0e1c081c4dc
-              Type: BaseVariableType
+              Type: BaseDataVariableType
               DataType: Double
-              ReferenceType: HasProperty
             - Name: High
               Id: g=5565a41de7c983272e9824abc328dcdb
-              Type: BaseVariableType
+              Type: BaseDataVariableType
               DataType: Double
-              ReferenceType: HasProperty
               Value: 100.0
             - Name: Constrain
               Id: g=f021a0aeb7acbca3466d9c4674cba35a
-              Type: BaseVariableType
+              Type: BaseDataVariableType
               DataType: Boolean
-              ReferenceType: HasProperty
               ModellingRule: Optional
               Value: true
       - Name: AlarmThreshold
@@ -10585,20 +10582,17 @@ Children:
             Children:
             - Name: Low
               Id: g=9720213146b963dced3e3d69ccdf26ff
-              Type: BaseVariableType
+              Type: BaseDataVariableType
               DataType: Double
-              ReferenceType: HasProperty
             - Name: High
               Id: g=e98469a1c56fd83d0ac9cdbb035cb4ee
-              Type: BaseVariableType
+              Type: BaseDataVariableType
               DataType: Double
-              ReferenceType: HasProperty
               Value: 100.0
             - Name: Constrain
               Id: g=8ef128e88eaae0f0bdc9c3c291d076bc
-              Type: BaseVariableType
+              Type: BaseDataVariableType
               DataType: Boolean
-              ReferenceType: HasProperty
               ModellingRule: Optional
               Value: true
     - Name: LevelValue

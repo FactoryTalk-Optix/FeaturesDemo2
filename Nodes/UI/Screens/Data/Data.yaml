@@ -4329,7 +4329,7 @@ Children:
                       Type: BaseDataVariableType
                       DataType: Duration
                       ModellingRule: None
-                      Value: "0:00:00:1.0000000"
+                      Value: "0:00:00:01.0000000"
             - Name: VerticalAlignment
               Id: g=937a4f86f54e74d935cc995b17d1b9a3
               Type: BaseVariableType
@@ -5523,17 +5523,17 @@ Children:
               Id: g=af251225e7f0405d4213f78b081dbe4c
               Type: BaseDataVariableType
               DataType: Duration
-              Value: "0:00:01:0.0000000"
+              Value: "0:00:01:00.0000000"
             - Name: 10 Minutes
               Id: g=282108c21917a1c7a3ab95cc4b748582
               Type: BaseDataVariableType
               DataType: Duration
-              Value: "0:00:10:0.0000000"
+              Value: "0:00:10:00.0000000"
             - Name: 30 Minutes
               Id: g=99b2906f8564affe893d7866cc404c06
               Type: BaseDataVariableType
               DataType: Duration
-              Value: "0:00:30:0.0000000"
+              Value: "0:00:30:00.0000000"
           - Name: SelectedValuePath
             Id: g=fa5868cd60a09056a324ae4a1053d290
             Type: BaseDataVariableType
@@ -6803,7 +6803,7 @@ Children:
                   Id: g=a0c40933f3a4ffef8571ac144fb0d869
                   Type: BaseDataVariableType
                   DataType: Duration
-                  Value: "0:00:00:5.0000000"
+                  Value: "0:00:00:05.0000000"
                   Children:
                   - Name: DynamicLink
                     Id: g=9e87763439410cd32eff5b2a6cd3379e
@@ -7274,7 +7274,7 @@ Children:
                   Id: g=2fc6e90f62fb535472c2c38723b464b0
                   Type: BaseDataVariableType
                   DataType: Duration
-                  Value: "0:00:00:5.0000000"
+                  Value: "0:00:00:05.0000000"
                   Children:
                   - Name: DynamicLink
                     Id: g=392d01c8f6d4335ada4ec27d36751513
@@ -7683,7 +7683,7 @@ Children:
                   Id: g=48fb639096f4845070f74950daae0b59
                   Type: BaseDataVariableType
                   DataType: Duration
-                  Value: "0:00:00:5.0000000"
+                  Value: "0:00:00:05.0000000"
                   Children:
                   - Name: DynamicLink
                     Id: g=cf7d635bfa2889b2d4aeaac0124ef653
@@ -15862,7 +15862,7 @@ Children:
           Type: BaseDataVariableType
           DataType: Duration
           ModellingRule: Optional
-          Value: "0:00:00:1.0000000"
+          Value: "0:00:00:01.0000000"
         - Name: Height
           Id: g=f269ad79678d986a14e2240221301077
           Type: BaseVariableType
@@ -18775,7 +18775,7 @@ Children:
           Id: g=462d99574fde42845ff0d40ac9bcb8ce
           Type: BaseDataVariableType
           DataType: String
-          Value: "SELECT * FROM \"DataLogger\" LIMIT 100"
+          Value: "SELECT * FROM \"DataLogger\" LIMIT 20"
         - Name: Columns
           Id: g=d0e0a48aaa6f1d1e50d33943a60c8a44
           Type: BaseObjectType
@@ -19019,7 +19019,7 @@ Children:
           Type: BaseDataVariableType
           DataType: Duration
           ModellingRule: Optional
-          Value: "0:00:00:0.5000000"
+          Value: "0:00:00:01.0000000"
         - Name: SortColumn
           Id: g=5d75625c92188e7f188c67ea4fc5c700
           Type: BaseDataVariableType
@@ -19424,38 +19424,6 @@ Children:
           Type: BaseVariableType
           DataType: VerticalAlignment
           ModellingRule: Optional
-        - Name: ReportEditorOutputMessageLogic
-          Id: g=4b60f9af8e443e1fcf3782eb6541551c
-          Type: NetLogic
-          Children:
-          - Class: Method
-            Name: SetOutputMessage
-            Id: g=1591a055b7d3ff5caf0d94840d3edbb6
-            Children:
-            - Name: ns=0;InputArguments
-              Id: g=8af4dca51b9f9be9b40f8d4d21da2bb8
-              Type: BaseVariableType
-              DataType: Argument
-              ReferenceType: HasProperty
-              ValueRank: OneDimension
-              ArrayDimensions: [0]
-              Value: [{"TypeId":{"Id":296},"Body":{"Name":"message","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
-          - Class: Method
-            Name: SetOutputLocalizedMessage
-            Id: g=ef65d6b00d246fe550a5c0a7ee39082a
-            Children:
-            - Name: ns=0;InputArguments
-              Id: g=ced797b09383a34a96467eaef59f185d
-              Type: BaseVariableType
-              DataType: Argument
-              ReferenceType: HasProperty
-              ValueRank: OneDimension
-              ArrayDimensions: [0]
-              Value: [{"TypeId":{"Id":296},"Body":{"Name":"message","DataType":{"Id":21},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
-        - Name: Message
-          Id: g=1b330c9721974f11f704f14aecc42677
-          Type: BaseDataVariableType
-          DataType: String
         - Name: TextHorizontalAlignment
           Id: g=097e0abfb8eabca6e4a035b1f7847202
           Type: BaseVariableType
@@ -19667,145 +19635,111 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-        - Name: MouseClickEventHandler1
-          Id: g=8e46bba64ab205e221924906bdf9b7c3
-          Type: EventHandler
-          Children:
-          - Name: ListenEventType
-            Id: g=2caf0b2883caf2103939231d445bd109
-            Type: PropertyType
-            DataType: NodeId
-            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
-          - Name: MethodsToCall
-            Id: g=b1f64ad1bc4a6dfe6841d2df30931efb
-            Type: BaseObjectType
-            Children:
-            - Name: MethodContainer1
-              Id: g=d511dbac8eff218c5e5f7e02ae026278
-              Type: BaseObjectType
-              Children:
-              - Name: ns=2;ObjectPointer
-                Id: g=a69143025792b1a35628bf68e3fb8363
-                Type: NodePointer
-                DataType: NodeId
-                Value: "/Objects/FeaturesDemo2/Reports/Reports"
-                Children:
-                - Name: Kind
-                  Id: g=a99818c3bd55eb1f7215bb5cef8338b6
-                  Type: PropertyType
-                  DataType: NodeId
-                  Value: "/Types/ObjectTypes/BaseObjectType"
-              - Name: ns=2;Method
-                Id: g=302e4b6dbbb7b4c07efa54fd2a71bd47
-                Type: BaseDataVariableType
-                DataType: String
-                Value: "GeneratePdf"
-              - Name: InputArguments
-                Id: g=5cb76aabbd03c4c4759cec45de8e7178
-                Type: BaseObjectType
-                Children:
-                - Name: OutputPath
-                  Id: g=ab0b93f1c30694a8c8003f53a32b826a
-                  Type: BaseDataVariableType
-                  DataType: ResourceUri
-                  Description: {"NamespaceIndex":21,"TextId":"GeneratePdfOutputPathDescription"}
-                  Value: "ns=8;%APPLICATIONDIR%/DataloggerReport.pdf"
-                - Name: LocaleId
-                  Id: g=212f9a34fad86b4328fe23621469fdce
-                  Type: BaseDataVariableType
-                  DataType: LocaleId
-                  Description: {"NamespaceIndex":21,"TextId":"GeneratePdfLocaleIdDescription"}
-              - Name: OutputArguments
-                Id: g=08a8ce042f192a3e359ff334fdc6ebc4
-                Type: BaseObjectType
-                Children:
-                - Name: OperationId
-                  Id: g=1626115064bb479fa09e5b350710edf0
-                  Type: BaseDataVariableType
-                  DataType: Guid
-                  Description: {"NamespaceIndex":21,"TextId":"GeneratePdfOperationIdDescription"}
-            - Name: MethodContainer2
-              Id: g=078f516aa9fb6b79e0aac77960f90557
-              Type: BaseObjectType
-              Children:
-              - Name: ns=2;ObjectPointer
-                Id: g=9458ff4b9925bddf5858a8cb7874bfb8
-                Type: NodePointer
-                DataType: NodeId
-                Children:
-                - Name: Kind
-                  Id: g=9d2ab62d39ec175451ff0b4da92ffbf2
-                  Type: PropertyType
-                  DataType: NodeId
-                  Value: "/Types/ObjectTypes/BaseObjectType"
-                - Name: DynamicLink
-                  Id: g=be5610aa5ca40e4ba94d7c4fa4b72875
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../../../OutputMessage/ReportEditorOutputMessageLogic@NodeId"
-                  Children:
-                  - Name: Mode
-                    Id: g=89c9d889c23157d046f7ca8c528b6b5f
-                    Type: BaseVariableType
-                    DataType: DynamicLinkMode
-                    ModellingRule: Optional
-                    Value: 2
-              - Name: ns=2;Method
-                Id: g=9eecea153822cebd9bac6cd2048e9bf0
-                Type: BaseDataVariableType
-                DataType: String
-                Value: "SetOutputMessage"
-              - Name: InputArguments
-                Id: g=4927b7419773526711f2939c44b05c7d
-                Type: BaseObjectType
-                Children:
-                - Name: message
-                  Id: g=2ef3fefee37bc07de9b1cba75238c5cc
-                  Type: BaseDataVariableType
-                  DataType: String
-                  Value: "Report created"
-          - Name: EventArguments
-            Id: g=fb03818122c7d17de8059a6dea3ae1e2
-            Type: MouseClickEvent
-            Children:
-            - Name: EventId
-              Id: g=5d00302299e2bafa3d6413909a26aac2
-              Type: PropertyType
-              DataType: ByteString
-            - Name: EventType
-              Id: g=fb74c0b35d7a15073a9f6108738fa629
-              Type: PropertyType
-              DataType: NodeId
-            - Name: SourceNode
-              Id: g=57a9227c9c456fffad3dd77498b096f9
-              Type: PropertyType
-              DataType: NodeId
-            - Name: SourceName
-              Id: g=404277150e62e8e50080a807870cfc00
-              Type: PropertyType
-              DataType: String
-            - Name: Time
-              Id: g=fa3b171cca643902d51fa316a3badd29
-              Type: PropertyType
-              DataType: UtcTime
-            - Name: ReceiveTime
-              Id: g=41b005ab3e91ad8660ba93452c78cf6c
-              Type: PropertyType
-              DataType: UtcTime
-            - Name: Message
-              Id: g=fd5c93abb91cb246f7431e6f6d4d5602
-              Type: PropertyType
-              DataType: LocalizedText
-            - Name: Severity
-              Id: g=6aed1750a6da163d4515b0867da1413f
-              Type: PropertyType
-              DataType: UInt16
         - Name: HorizontalAlignment
           Id: g=4d2381cfbd51cfe3a5d97c93fdf2e579
           Type: BaseVariableType
           DataType: HorizontalAlignment
           ModellingRule: Optional
           Value: 1
+        - Name: MouseClickEventHandler1
+          Id: g=43f0b5b63121f5a57fa7e8925fac1fca
+          Type: EventHandler
+          Children:
+          - Name: ListenEventType
+            Id: g=57fff2207cacca878adc9f0882731997
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+          - Name: MethodsToCall
+            Id: g=2f4dfc127ec45225c4da68c756b03b91
+            Type: BaseObjectType
+            Children:
+            - Name: MethodContainer1
+              Id: g=bccbe4ba1bd174389609508f1a21f0e4
+              Type: BaseObjectType
+              Children:
+              - Name: ns=2;ObjectPointer
+                Id: g=6815f3586e24a4ce92c466c6dcaef909
+                Type: NodePointer
+                DataType: NodeId
+                Children:
+                - Name: Kind
+                  Id: g=0ebd0c7f69bd283ca6beeb4e2d4ca737
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: DynamicLink
+                  Id: g=8a36acbec2ce5af73d9c0fd66b7d5424
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../PdfReportLogic@NodeId"
+                  Children:
+                  - Name: Mode
+                    Id: g=7d28a9b09e4d4a539c791ce128a9af77
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
+              - Name: ns=2;Method
+                Id: g=9cea9768e35d327f6984dda03265e077
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "GenerateReport"
+              - Name: InputArguments
+                Id: g=4b06e06e6cffa93de0b7642715aa4238
+                Type: BaseObjectType
+                Children:
+                - Name: fileName
+                  Id: g=1bec6a9a4537618ff3079edd8d585d70
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "DataloggerReport.pdf"
+                - Name: pdfLocale
+                  Id: g=a70c84f952ab098f5eb30608707ef68d
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Children:
+                  - Name: DynamicLink
+                    Id: g=08919befc26e11921b84b45aa1856af7
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{Session}/ActualLocaleId"
+          - Name: EventArguments
+            Id: g=2f15e424d46db84855710134c3edce6c
+            Type: MouseClickEvent
+            Children:
+            - Name: EventId
+              Id: g=4164d1f8dd339a654e38450f7c9d842f
+              Type: PropertyType
+              DataType: ByteString
+            - Name: EventType
+              Id: g=f304d8b9eec520a7b86e9edfd603bad5
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceNode
+              Id: g=da56aed23f82261fae75006694987a09
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceName
+              Id: g=87ddbf0e8fc6da3d83b0a40bb3d1be6d
+              Type: PropertyType
+              DataType: String
+            - Name: Time
+              Id: g=0fa424e7ed0222accd41274b1ccaa098
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: ReceiveTime
+              Id: g=75a577956301c6b56518330739cfbf53
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: Message
+              Id: g=1faf49d955971623f8fefb7f4a8eff00
+              Type: PropertyType
+              DataType: LocalizedText
+            - Name: Severity
+              Id: g=74f9556cc7d04da5f28bbd9d50687f88
+              Type: PropertyType
+              DataType: UInt16
       - Name: VerticalAlignment
         Id: g=eaabc773d89138862024dbd06b01fb47
         Type: BaseVariableType
@@ -19880,7 +19814,7 @@ Children:
                 Id: g=0f73053e1bbd556184ff215be093b233
                 Type: BaseDataVariableType
                 DataType: VariablePointer
-                Value: "/Objects/FeaturesDemo2/Reports/Reports/StyleSheet@Pointer"
+                Value: "/Objects/FeaturesDemo2/Reports/LoggerReport/StyleSheet@Pointer"
               - Name: Value
                 Id: g=12b882c4e5ceab5addb9010d6689d9cc
                 Type: BaseDataVariableType
@@ -20042,7 +19976,7 @@ Children:
                 Id: g=bd0ddc7f5cded83fcd256650b2f69535
                 Type: BaseDataVariableType
                 DataType: VariablePointer
-                Value: "/Objects/FeaturesDemo2/Reports/Reports/StyleSheet@Pointer"
+                Value: "/Objects/FeaturesDemo2/Reports/LoggerReport/StyleSheet@Pointer"
               - Name: Value
                 Id: g=b0c03b7a517299f06957c508586b45ca
                 Type: BaseDataVariableType
@@ -20152,6 +20086,19 @@ Children:
     - Name: PdfReportLogic
       Id: g=d43274d8c60a75bacf3c1a27c1c6efe4
       Type: NetLogic
+      Children:
+      - Class: Method
+        Name: GenerateReport
+        Id: g=562f2e196da8885caf7fbd757939680f
+        Children:
+        - Name: ns=0;InputArguments
+          Id: g=bc22afecbd4c01fc32c462c4562af725
+          Type: BaseVariableType
+          DataType: Argument
+          ReferenceType: HasProperty
+          ValueRank: OneDimension
+          ArrayDimensions: [0]
+          Value: [{"TypeId":{"Id":296},"Body":{"Name":"fileName","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"pdfLocale","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
     - Name: ReportPreview1
       Id: g=f31bbee584a6f83f5d63d128bd75efaf
       Type: Image

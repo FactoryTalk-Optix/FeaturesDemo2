@@ -30,14 +30,12 @@ Children:
     Children:
     - Name: Low
       Id: g=0ac6a34a662cf70df5945dfda2097be6
-      Type: BaseVariableType
+      Type: BaseDataVariableType
       DataType: Double
-      ReferenceType: HasProperty
     - Name: High
       Id: g=cfd84412e11168d88d016d2a702de381
-      Type: BaseVariableType
+      Type: BaseDataVariableType
       DataType: Double
-      ReferenceType: HasProperty
   - Name: EngineeringUnits
     Id: g=f633212ecb3aae653b3bce154590439e
     Type: EUInformationType
@@ -45,20 +43,17 @@ Children:
     Children:
     - Name: UnitId
       Id: g=f8edcf7a006e1b105819a24cea900e48
-      Type: BaseVariableType
+      Type: BaseDataVariableType
       DataType: Int32
-      ReferenceType: HasProperty
       Value: -1
     - Name: DisplayName
       Id: g=7d6b063ce8553860e493cecd454777ea
-      Type: BaseVariableType
+      Type: BaseDataVariableType
       DataType: LocalizedText
-      ReferenceType: HasProperty
     - Name: Description
       Id: g=275055a807d36b99cb7e9209f4057a93
-      Type: BaseVariableType
+      Type: BaseDataVariableType
       DataType: LocalizedText
-      ReferenceType: HasProperty
 - Class: DataType
   Name: Alarm_Zones
   Id: g=3c127255eb3604c354f2afa60ed3054d

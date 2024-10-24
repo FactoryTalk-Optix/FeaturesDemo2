@@ -46,6 +46,21 @@ Children:
   - Class: Reference
     Target: ns=19;i=135
     Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
 - Name: DigitalAlarmWithArea1
   Id: g=272a9e24d8aa07018166f62a271c0ee5
   Type: DigitalAlarmWithAreaType
@@ -108,6 +123,21 @@ Children:
     Direction: Forward
   - Class: Reference
     Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
     Direction: Forward
 - Name: DigitalAlarmWithArea2
   Id: g=2e3f1ff55573bb906b72ebdee139652d
@@ -172,6 +202,21 @@ Children:
   - Class: Reference
     Target: ns=19;i=135
     Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
 - Name: DigitalAlarmWithArea3
   Id: g=80d67a5d8d59bf4656f72d06ac787dd5
   Type: DigitalAlarmWithAreaType
@@ -234,6 +279,21 @@ Children:
     Direction: Forward
   - Class: Reference
     Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
     Direction: Forward
 - Name: DigitalAlarmWithArea4
   Id: g=cde234a60d387f416ffaf58f879bf595
@@ -298,6 +358,21 @@ Children:
   - Class: Reference
     Target: ns=19;i=135
     Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
 - Name: DigitalAlarmWithArea5
   Id: g=b0f76792513dc889f7b52b9184135bbb
   Type: DigitalAlarmWithAreaType
@@ -361,6 +436,21 @@ Children:
   - Class: Reference
     Target: ns=19;i=135
     Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
+    Direction: Forward
 - Name: DigitalAlarmWithArea6
   Id: g=286ab2068b3aab453def27457c3bdcd0
   Type: DigitalAlarmWithAreaType
@@ -423,4 +513,19 @@ Children:
     Direction: Forward
   - Class: Reference
     Target: ns=19;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=19;i=154
     Direction: Forward

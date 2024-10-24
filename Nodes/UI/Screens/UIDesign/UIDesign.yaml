@@ -441,7 +441,7 @@ Children:
                 - Name: ImagePosition
                   Id: g=a74550fa2bde8fa1860116c45b069715
                   Type: BaseDataVariableType
-                  DataType: Position
+                  DataType: ButtonImagePosition
                   ModellingRule: Optional
                   Value: 4
                 - Name: Text
@@ -734,7 +734,7 @@ Children:
                 - Name: ImagePosition
                   Id: g=78ec1b0529450744af521275abda4a5a
                   Type: BaseDataVariableType
-                  DataType: Position
+                  DataType: ButtonImagePosition
                   ModellingRule: Optional
                   Value: 4
                 - Name: Width
@@ -1021,7 +1021,7 @@ Children:
                 - Name: ImagePosition
                   Id: g=668fe2a1b6ed0a7dc4db9f80c26e1cb5
                   Type: BaseDataVariableType
-                  DataType: Position
+                  DataType: ButtonImagePosition
                   ModellingRule: Optional
                   Value: 4
                 - Name: Width
@@ -1589,7 +1589,7 @@ Children:
                 - Name: ImagePosition
                   Id: g=947be4a88657d4cf98c0256e2f09e7d8
                   Type: BaseDataVariableType
-                  DataType: Position
+                  DataType: ButtonImagePosition
                   ModellingRule: Optional
                   Value: 4
                 - Name: Width
