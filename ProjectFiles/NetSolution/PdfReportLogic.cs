@@ -83,12 +83,8 @@ public partial class PdfReportLogic : BaseNetLogic
         Log.Debug("PdfReportLogic", $"Saving PDF report to: {pdfResourceUri.Uri}");
         myReport.GeneratePdf(pdfResourceUri, pdfLocale, out Guid operationId);
 
-        // TODO: Uncomment this line to enable the event after the 1.5.1 release
-        //myReport.OnGeneratePdfCompleted += MyReport_OnGeneratePdfCompleted;
-
-        // TODO: Remove these lines after the 1.5.1 release
-        viewPdfButton.Enabled = true;
-        generatePdfButton.Enabled = true;
+        // Subscribe to the report generation event
+        myReport.OnGeneratePdfCompleted += MyReport_OnGeneratePdfCompleted;
 
         Log.Debug("PdfReportLogic", $"Report generation started with operation ID: {operationId}");
     }
@@ -105,6 +101,7 @@ public partial class PdfReportLogic : BaseNetLogic
         {
             SetOutputMessage("ReportFailed");
             viewPdfButton.Enabled = false;
+            Log.Error("PdfReportLogic", $"PDF generation failed, error: {e.Result}");
         }
 
         generatePdfButton.Enabled = true;
