@@ -11,7 +11,7 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [654,4],
+    "Dimensions": [655,4],
     "Body": [
      "","en-US","it-IT","zh-CN",
      "Acknowledge","Ack","Riconosci","确认",
@@ -666,7 +666,8 @@ Children:
      "ReportEmptyLocale","Empty PDF Locale","Locale Report PDF vuoto","",
      "ReportInvalidLocale","Invalid PDF Locale","Locale Report PDF non valido","",
      "ReportSuccess","Report Generated Succesfully","Report generato correttamente","",
-     "ReportFailed","Report Generation Failed","Creazione report fallita",""
+     "ReportFailed","Report Generation Failed","Creazione report fallita","",
+     "UserHasBlankPassword","All users have no password by default (blank)","Di default, gli utenti non hanno password configurate","默认情况下，用户没有配置密码"
     ]
    }
 - Name: ImportAndExportTranslations

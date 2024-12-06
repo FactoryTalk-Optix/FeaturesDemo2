@@ -235,7 +235,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 16.0
+      Value: 80.0
   - Name: Password
     Id: g=b2b245927022c94e18f56dec2e3ceff1
     Type: TextBox
@@ -688,13 +688,132 @@ Children:
     Id: g=8f4dd57a4a4396e459e0478396bcd503
     Type: Alias
     DataType: NodeId
-    Value: "/Objects/FeaturesDemo2/UI/Templates/Localization/LoginForm1/LoginFormComponents/LoginPasswordExpiredDialog"
+    Value: "/Objects/FeaturesDemo2/UI/Templates/Localization/LoginForm/LoginFormComponents/LoginPasswordExpiredDialog"
     Children:
     - Name: Kind
       Id: g=ae6f39e85e49030fffb4c021bbb752d0
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container/Dialog"
+  - Name: Image1
+    Id: g=73e2cc0f4c51fc32e590056a1c7afaf2
+    Type: Image
+    Children:
+    - Name: Path
+      Id: g=0a66f6baa6a78e41f47d8e3c66891847
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Children:
+      - Name: KeyValueConverter1
+        Id: g=f460a024d1a3f0e2621d4d290253dfe1
+        Type: ValueMapConverter
+        Children:
+        - Name: Source
+          Id: g=2489595e4b05dd5899cdf4383eefe27e
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Id: g=b55b833d11879b0001aa5cc42b750e16
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../Username/UISelectedItem"
+        - Name: ns=2;Pairs
+          Id: g=19ec67f22424eb142f14ad42d75b1e1d
+          Type: BaseObjectType
+          ModellingRule: None
+          Children:
+          - Name: Pair
+            Id: g=d74651ef9eef5fd2dfd64a42f0adb28e
+            Type: ValueMapPair
+            ModellingRule: None
+            Children:
+            - Name: Key
+              Id: g=6b1e06b64c21f236c882573cd0733eb3
+              Type: BaseDataVariableType
+              DataType: NodeId
+              ModellingRule: None
+            - Name: Value
+              Id: g=9c9d01cd5f7f823c61558cb8b4db543b
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              ModellingRule: None
+          - Name: Pair1
+            Id: g=76264a2bcb8edfc40e54d9d36c283811
+            Type: ValueMapPair
+            ModellingRule: None
+            Children:
+            - Name: Key
+              Id: g=f8af7f527a77554a8227ea48720039a2
+              Type: BaseDataVariableType
+              DataType: NodeId
+              ModellingRule: None
+              Value: "/Objects/FeaturesDemo2/Security/Users/User1"
+            - Name: Value
+              Id: g=875622a2858cbd99dc60a2a50b4dc4fc
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              ModellingRule: None
+              Value: "ns=8;%PROJECTDIR%/imgs/Flags/USA.svg"
+          - Name: Pair2
+            Id: g=6dbdd65267239f50d0ac869121c1771f
+            Type: ValueMapPair
+            ModellingRule: None
+            Children:
+            - Name: Key
+              Id: g=b77a1a93d641f8448cac35712813c5a3
+              Type: BaseDataVariableType
+              DataType: NodeId
+              ModellingRule: None
+              Value: "/Objects/FeaturesDemo2/Security/Users/User2"
+            - Name: Value
+              Id: g=a73c5bbc715d9180bcc3477ff5bf2369
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              ModellingRule: None
+              Value: "ns=8;%PROJECTDIR%/imgs/Flags/Italy.svg"
+          - Name: Pair3
+            Id: g=1ddd9075c0ebdb4f21140787fcc52708
+            Type: ValueMapPair
+            ModellingRule: None
+            Children:
+            - Name: Key
+              Id: g=a13acbe3a629556aaf6eb7c0351ba64e
+              Type: BaseDataVariableType
+              DataType: NodeId
+              ModellingRule: None
+              Value: "/Objects/FeaturesDemo2/Security/Users/User3"
+            - Name: Value
+              Id: g=5d022a0e42e80455d9981ad749daa94d
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              ModellingRule: None
+              Value: "ns=8;%PROJECTDIR%/imgs/Flags/China.svg"
+    - Name: Width
+      Id: g=af75cbae164588aa6c76dffc00b1e9d6
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Id: g=e90b18752c4105bd3234868824ec94e0
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: LeftMargin
+      Id: g=97f9d50e2b0c83730d61c707f01f1fd2
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 230.0
+    - Name: TopMargin
+      Id: g=3db87dd76d2e568b8b14020da5e55918
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 120.0
 - Name: LoginPasswordExpiredDialog
   Id: g=53b1bd1b17b4de66926108a7dfdf143e
   Supertype: Dialog

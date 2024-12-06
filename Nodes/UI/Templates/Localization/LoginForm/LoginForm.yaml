@@ -1,4 +1,4 @@
-Name: LoginForm1
+Name: LoginForm
 Id: g=2974c2394b0cdb937f55f57bf28c30b8
 Type: FolderType
 Children:
@@ -38,14 +38,14 @@ Children:
         DataType: NodeId
         ReferenceType: HasParameter
         ModellingRule: Optional
-        Value: "/Objects/FeaturesDemo2/UI/Templates/Localization/LoginForm1/LoginFormComponents/Logout"
+        Value: "/Objects/FeaturesDemo2/UI/Templates/Localization/LoginForm/LoginFormComponents/Logout"
       - Name: FalseValue
         Id: g=a149c621686d7f29ee53dbbaf0875dc8
         Type: BaseDataVariableType
         DataType: NodeId
         ReferenceType: HasParameter
         ModellingRule: Optional
-        Value: "/Objects/FeaturesDemo2/UI/Templates/Localization/LoginForm1/LoginFormComponents/Login"
+        Value: "/Objects/FeaturesDemo2/UI/Templates/Localization/LoginForm/LoginFormComponents/Login"
   - Name: CurrentPanel
     Id: g=f1d953d077506378eaec60e36cdc33cf
     Type: NodePointer
