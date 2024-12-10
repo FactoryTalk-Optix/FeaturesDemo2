@@ -172,7 +172,7 @@ Children:
     DataType: String
     ValueRank: OneDimension
     ArrayDimensions: [0]
-    Value: ["https://www.rockwellautomation.com/*","https://www.asemautomation.com/*","https://127.0.0.1/*"]
+    Value: ["https://www.rockwellautomation.com/","https://www.asemautomation.com/","https://127.0.0.1/","https://www.youtube.com/"]
   - Name: LoginWindow
     Id: g=c33683d889ee1f1f93d34cee7716e415
     Type: NodePointer
