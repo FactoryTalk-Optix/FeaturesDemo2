@@ -11,7 +11,7 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [655,4],
+    "Dimensions": [657,4],
     "Body": [
      "","en-US","it-IT","zh-CN",
      "Acknowledge","Ack","Riconosci","确认",
@@ -667,7 +667,9 @@ Children:
      "ReportInvalidLocale","Invalid PDF Locale","Locale Report PDF non valido","",
      "ReportSuccess","Report Generated Succesfully","Report generato correttamente","",
      "ReportFailed","Report Generation Failed","Creazione report fallita","",
-     "UserHasBlankPassword","All users have no password by default (blank)","Di default, gli utenti non hanno password configurate","默认情况下，用户没有配置密码"
+     "UserHasBlankPassword","All users have no password by default (blank)","Di default, gli utenti non hanno password configurate","默认情况下，用户没有配置密码",
+     "Sparkline","Sparkline","Sparkline","",
+     "SparklineDescription","A sparkline is a trend with no stored data, useful to monitor the trend of a changing value","La sparkline è un componente che consente di monitorare l'andamento di una variabile senza storicizzarla",""
     ]
    }
 - Name: ImportAndExportTranslations

@@ -150,6 +150,9 @@ Children:
           Type: PropertyType
           DataType: NodeId
           Value: "/Types/ObjectTypes/BaseObjectType/StyleSheet"
+      - Class: Reference
+        Target: ns=1;i=303
+        Direction: Forward
   - Name: MaxNumberOfConnections
     Id: g=d96adbb96369e4c4c91b4fe130ad59c5
     Type: BaseDataVariableType
@@ -334,6 +337,9 @@ Children:
           Type: PropertyType
           DataType: NodeId
           Value: "/Types/ObjectTypes/BaseObjectType/StyleSheet"
+      - Class: Reference
+        Target: ns=1;i=303
+        Direction: Forward
   - Name: Session
     Id: g=bb871c92ea4c51ff48f1290354e5f409
     Type: NodePointer
@@ -436,12 +442,16 @@ Children:
     Id: g=17c47dc63a4c46e53a1f3ed9e99074ae
     Type: NodePointer
     DataType: NodeId
+    Value: "/Objects/FeaturesDemo2/UI/StyleSheets/FeatureDemo2"
     Children:
     - Name: Kind
       Id: g=c9f384985bcd5b184e19132bda3656c5
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/ObjectTypes/BaseObjectType/StyleSheet"
+  - Class: Reference
+    Target: ns=1;i=303
+    Direction: Forward
 - Name: MainWindow
   Id: g=01a7e8933afd7c95fe894b0859308138
   Supertype: Window
@@ -563,6 +573,9 @@ Children:
         DataType: FillModeEnum
         ModellingRule: Optional
         Value: 1
+      - Class: Reference
+        Target: ns=3;i=1360
+        Direction: Forward
     - Name: LeftContainer
       Id: g=b34ed859b7890fabf905112acf83d120
       Type: RowLayout
@@ -948,6 +961,9 @@ Children:
               Id: g=18feddbf126e24bf51fac9454b4bc0f2
               Type: PropertyType
               DataType: UInt16
+        - Class: Reference
+          Target: ns=3;i=1360
+          Direction: Forward
       - Name: EmptyPanel
         Id: g=a1c18d8c3e773e526685311dd3f5b436
         Type: Panel
@@ -1782,6 +1798,9 @@ Children:
               DataType: VerticalAlignment
               ModellingRule: Optional
               Value: 2
+            - Class: Reference
+              Target: ns=3;i=1360
+              Direction: Forward
           - Name: FeaturesDemoHome
             Id: g=9287caf9a3b6bf3d92b32e4ed8db859a
             Type: Label
@@ -2079,6 +2098,9 @@ Children:
               DataType: VerticalAlignment
               ModellingRule: Optional
               Value: 2
+            - Class: Reference
+              Target: ns=3;i=1360
+              Direction: Forward
           - Name: FeaturesDemoHome
             Id: g=be6f81476cdad1e7c70f74ecd0967b67
             Type: Label
@@ -10172,16 +10194,6 @@ Children:
     Id: g=8dfab6478986a7225c5657d766e70d48
     Type: BaseDataVariableType
     DataType: Boolean
-  - Name: CurrentStylesheet
-    Id: g=b7a9b1132796e1390ef0364e6ff9387c
-    Type: Alias
-    DataType: NodeId
-    Children:
-    - Name: Kind
-      Id: g=defec121b236ad18143e664012eb4f59
-      Type: PropertyType
-      DataType: NodeId
-      Value: "/Types/ObjectTypes/BaseObjectType/StyleSheet"
   - Name: HelpMenu
     Id: g=c1059cf4a30f7876cd0aecefb11d0596
     Type: Panel
@@ -10991,6 +11003,9 @@ Children:
         DataType: FillModeEnum
         ModellingRule: Optional
         Value: 1
+      - Class: Reference
+        Target: ns=3;i=1360
+        Direction: Forward
     - Name: click_menu
       Id: g=9886ebcc697d1f5513d2a7164d2708b1
       Type: BaseDataVariableType
@@ -11050,6 +11065,9 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 4.0
+      - Class: Reference
+        Target: ns=3;i=1360
+        Direction: Forward
   - Name: OutherBackground
     Id: g=88ec25686e186d117bc20a450f7fc3b3
     Type: Rectangle

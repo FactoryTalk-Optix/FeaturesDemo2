@@ -10,26 +10,17 @@ public class ResetDefaultStyle : BaseNetLogic
 {
     public override void Start()
     {
-        // Method intentionally left empty.
+        // Insert code to be executed when the user-defined logic is started
+        styleSheetVariable = InformationModel.GetVariable(LogicObject.GetVariable("CurrentStylesheet").Value);
+        startingStylesheet = styleSheetVariable.Value;
     }
 
     public override void Stop()
     {
-        // Set Style to "Default"
-
-        // Get Native Presentation Engine object to set StyleSheet property
-        var nodeToUI = Project.Current.Get<NativeUIPresentationEngine>("UI/NativePresentationEngine");
-
-        // Get "Default" StyleSheet object to get its NodeID
-        var nodeToDefaultStyleSheet = Project.Current.Get<StyleSheet>("UI/StyleSheets/FeatureDemo2");
-        try
-        {
-            // Set StyleSheet property with "Default"
-            nodeToUI.StyleSheet = nodeToDefaultStyleSheet.NodeId;
-        }
-        catch
-        {
-            return;
-        }
+        // Insert code to be executed when the user-defined logic is stopped
+        styleSheetVariable.Value = startingStylesheet;
     }
+
+    NodeId startingStylesheet;
+    IUAVariable styleSheetVariable;
 }

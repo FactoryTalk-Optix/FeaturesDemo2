@@ -1323,6 +1323,11 @@ Children:
         Type: BaseDataVariableType
         DataType: Size
         Value: 18.0
+  - Name: ScreenColor
+    Id: g=cfb1860243be7e159e8ff7da8ad38ebe
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#121212"
 - Name: FriendlyDark
   Id: g=d2f3ef5116643c813a13c1fcc70027c8
   Type: StyleSheet
