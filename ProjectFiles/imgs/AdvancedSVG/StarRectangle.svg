@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<svg version="1.1" id="Overall" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" viewBox="0 0 300 300">
+  <g id="MyPaths" opacity="1.0">
+	  <path style="fill:#3C4660;" d="M 0 67.2262 L 72.1921 67.2262 L 94.5 0 L 116.8079 67.2262 L 189 67.2262 L 130.5954 108.7738 L 152.9045 176 L 94.5 134.4513 L 36.0954 176 L 58.4045 108.7738 L 0 67.2262 Z" transform="rotate(0, 150, 219)"/>
+  </g>
+  <g id="Box1">
+    <polygon style="fill:#CB8252;" points="25,270 75,270 75,220 25,220" transform="rotate(0, 20, 20)"/>
+  </g>
+</svg>

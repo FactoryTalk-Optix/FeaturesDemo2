@@ -2902,7 +2902,7 @@ Children:
                       Id: g=fae26c702412b0e133029b6c11fa91e0
                       Type: BaseDataVariableType
                       DataType: NodeId
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/UIDesign/AnimationsOnBehavior"
+                      Value: {"IdType":2,"Id":"f0fb3210fbdb40b9b12bef75c410d517","Namespace":8}
                     - Name: AliasNode
                       Id: g=3c183806fe88ffea269afb1205541164
                       Type: BaseDataVariableType
@@ -10924,9 +10924,6 @@ Children:
           ReferenceType: HasParameter
           ModellingRule: Optional
           Value: -320
-  - Name: GetCurrentStylesheet
-    Id: g=2ca89f09a394ffd905cd2a5052b6d3f0
-    Type: NetLogic
   - Name: FullScreen
     Id: g=01b4b08c75bcce353f6ef7cc5e8aea4d
     Type: BaseDataVariableType
@@ -11349,9 +11346,6 @@ Children:
     Id: g=8f9c2d7d6cc8449a762be7154aba3096
     Type: BaseDataVariableType
     DataType: Boolean
-  - Name: GetCurrentStylesheet
-    Id: g=0719fa596b2d97d628f2b9db99612df7
-    Type: NetLogic
   - Name: VerticalLayout1
     Id: g=df64f40f2c5736d386a0f8afb58ac953
     Type: ColumnLayout

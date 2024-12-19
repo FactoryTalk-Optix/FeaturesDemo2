@@ -11,7 +11,7 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [657,4],
+    "Dimensions": [666,4],
     "Body": [
      "","en-US","it-IT","zh-CN",
      "Acknowledge","Ack","Riconosci","确认",
@@ -669,7 +669,16 @@ Children:
      "ReportFailed","Report Generation Failed","Creazione report fallita","",
      "UserHasBlankPassword","All users have no password by default (blank)","Di default, gli utenti non hanno password configurate","默认情况下，用户没有配置密码",
      "Sparkline","Sparkline","Sparkline","",
-     "SparklineDescription","A sparkline is a trend with no stored data, useful to monitor the trend of a changing value","La sparkline è un componente che consente di monitorare l'andamento di una variabile senza storicizzarla",""
+     "SparklineDescription","A sparkline is a trend with no stored data, useful to monitor the trend of a changing value","La sparkline è un componente che consente di monitorare l'andamento di una variabile senza storicizzarla","",
+     "ChangeColors","Change colors","Modifica colori","",
+     "ClickToInteractWithImage","Click to interact with the SVG image","Fai click per interagire con l'SVG","",
+     "RotateElements","Rotate elements","Ruota elementi","",
+     "SvgBufferManipulation","SVG buffer manipulation","Manipolazione buffer SVG","",
+     "SvgBufferManipulationDescription","The AdvancedSVG component allows direct manipulation of the graphical buffer allowing fast and efficient runtime editing of SVG images","Il componente AdvancedSVG consente la manipolazione diretta del buffer grafico, permettendo una modifica rapida ed efficiente delle immagini SVG in tempo reale","",
+     "SetTheAnimationTime","Set the animation duration","Imposta la durata della animazione","",
+     "SetTheItemPosition","Set the item position","Imposta le coordinate della immagine","",
+     "ValueChangeAnimationDescription","When any property changes, an animation can be added to smooth the transition between the old and the new value","Quando una proprietà cambia, è possibile aggiungere un'animazione per rendere più fluida la transizione tra il vecchio e il nuovo valore","",
+     "Duration","Duration (ms)","Durata (ms)",""
     ]
    }
 - Name: ImportAndExportTranslations
