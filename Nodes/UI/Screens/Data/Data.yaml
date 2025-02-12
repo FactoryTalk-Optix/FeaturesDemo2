@@ -25209,7 +25209,7 @@ Children:
         Id: g=f8a7b454a742fe3059407cc034914fd5
         Type: BaseDataVariableType
         DataType: ResourceUri
-        Value: "ns=8;%APPLICATIONDIR%/DataloggerReport.pdf"
+        Value: "ns=8;%PROJECTDIR%/DataloggerReport.pdf"
       - Name: CurrentPage
         Id: g=29b9749586e49a5e1925844e9bda56c5
         Type: BaseDataVariableType

@@ -1432,7 +1432,7 @@ Children:
               Id: g=2663bc6118d3d2140e4833f501d0e01d
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../../../../../../NetLogic/ClockLogic/UTCTime"
+              Value: "../../../../../../../NetLogic/ClockLogic/Time"
         - Name: YAxis
           Id: g=ab785b5633c6047935bcf03f7b642554
           Type: ValueAxis
@@ -1528,6 +1528,7 @@ Children:
           Id: g=f2ad2cf2d1bddeba04aaa44a1a4cd5a8
           Type: BaseDataVariableType
           DataType: ReferenceTimeZone
+          Value: 1
         - Name: HorizontalAlignment
           Id: g=e41caabb33996994549cef40db3e782c
           Type: BaseVariableType

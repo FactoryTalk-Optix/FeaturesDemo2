@@ -59,7 +59,7 @@ public partial class PdfReportLogic : BaseNetLogic
         fileName = fileName.Split('\\', '/').Last();
 
         // Check if the path is an Optix path variable
-        var pdfResourceUri = ResourceUri.FromApplicationRelativePath(fileName);
+        var pdfResourceUri = ResourceUri.FromProjectRelativePath(fileName);
 
         // Check if the locale is valid
         if (string.IsNullOrEmpty(pdfLocale))
