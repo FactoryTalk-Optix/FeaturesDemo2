@@ -11,7 +11,7 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [666,4],
+    "Dimensions": [671,4],
     "Body": [
      "","en-US","it-IT","zh-CN",
      "Acknowledge","Ack","Riconosci","确认",
@@ -678,7 +678,12 @@ Children:
      "SetTheAnimationTime","Set the animation duration","Imposta la durata della animazione","",
      "SetTheItemPosition","Set the item position","Imposta le coordinate della immagine","",
      "ValueChangeAnimationDescription","When any property changes, an animation can be added to smooth the transition between the old and the new value","Quando una proprietà cambia, è possibile aggiungere un'animazione per rendere più fluida la transizione tra il vecchio e il nuovo valore","",
-     "Duration","Duration (ms)","Durata (ms)",""
+     "Duration","Duration (ms)","Durata (ms)","",
+     "EmptyOrInvalidResourceUri","Empty or invalid resource uri","Il percorso selezionato e' invalido","",
+     "FailedToProcessTemplate","Failed to process template","Errore nella lettura del template","",
+     "UnableToGeneratePdf","Unable to generate PDF","Impossibile generare il PDF","",
+     "UnableToOverwriteFile","Unable to overwrite file","Impossibile sovrascrivere il file","",
+     "UnsupportedLocaleId","Unsupported LocaleId","LocaleId non supportato",""
     ]
    }
 - Name: ImportAndExportTranslations

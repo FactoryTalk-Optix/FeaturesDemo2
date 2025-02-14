@@ -19403,205 +19403,6 @@ Children:
           DataType: Size
           ModellingRule: Optional
           Value: 480.0
-      - Name: OutputMessage
-        Id: g=88d62aadea20e906e8d96d0caf9b2a9c
-        Type: Label
-        Children:
-        - Name: TopMargin
-          Id: g=d968b7eda32cf8b6176a6ff7006f984f
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 580.0
-        - Name: HorizontalAlignment
-          Id: g=b57b46eedbb7e277e406d7ce7bb0063b
-          Type: BaseVariableType
-          DataType: HorizontalAlignment
-          ModellingRule: Optional
-          Value: 1
-        - Name: VerticalAlignment
-          Id: g=0473e9b93ba7094fe99f65ccf5b717d3
-          Type: BaseVariableType
-          DataType: VerticalAlignment
-          ModellingRule: Optional
-        - Name: TextHorizontalAlignment
-          Id: g=097e0abfb8eabca6e4a035b1f7847202
-          Type: BaseVariableType
-          DataType: TextHorizontalAlignment
-          ModellingRule: Optional
-          Value: 2
-        - Name: Width
-          Id: g=fac9001ce90f132a9427a69949afefbd
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 216.0
-        - Name: Text
-          Id: g=813fde5a61b417434a3ce0d7bdad172d
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          Children:
-          - Name: DynamicLink
-            Id: g=426037a145a4f061eb4a83ee026ebccc
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../Message"
-        - Name: TextVerticalAlignment
-          Id: g=dfabb6b209e7b3caf51932db12421fde
-          Type: BaseVariableType
-          DataType: TextVerticalAlignment
-          ModellingRule: Optional
-          Value: 1
-        - Name: RightMargin
-          Id: g=4e9d2b0c5cdfbe57d3a7737c5112dde5
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 16.0
-      - Name: View
-        Id: g=3635ee89fc67c2c303f6410b870adbb5
-        Type: Button
-        Children:
-        - Name: Text
-          Id: g=b6c5a315668a7262b8eb132744088bfb
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          ModellingRule: Optional
-          Value: {"NamespaceIndex":8,"TextId":"View"}
-        - Name: TopMargin
-          Id: g=3a600d2411f8a54844e5c56f42b1690a
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 512.0
-        - Name: Width
-          Id: g=fe37039d018d757f2ddb3dd9a4670531
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 88.0
-        - Name: RightMargin
-          Id: g=cceeb413809efd91347afc1435f7ddad
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 16.0
-        - Name: BottomMargin
-          Id: g=496124140ca5b2314b75a3a9d54f919d
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-        - Name: HorizontalAlignment
-          Id: g=5f9fc030843a6ed032eb717a660d92a2
-          Type: BaseVariableType
-          DataType: HorizontalAlignment
-          ModellingRule: Optional
-          Value: 1
-        - Name: MouseClickEventHandler1
-          Id: g=deaef008f830570b83fc534e6dfc0515
-          Type: EventHandler
-          Children:
-          - Name: ListenEventType
-            Id: g=cb3c5d7766274e2decce36716d7e96c7
-            Type: PropertyType
-            DataType: NodeId
-            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
-          - Name: MethodsToCall
-            Id: g=a45679bd3875cdd982994a4e2b164848
-            Type: BaseObjectType
-            Children:
-            - Name: MethodContainer1
-              Id: g=4dc999f22a021cb631e9fe6f522a0626
-              Type: BaseObjectType
-              Children:
-              - Name: ns=2;ObjectPointer
-                Id: g=52488aa53628fbea9bb1072201d899d2
-                Type: NodePointer
-                DataType: NodeId
-                Value: "/Objects/Commands/UICommands"
-                Children:
-                - Name: Kind
-                  Id: g=c85bda3da0d26e5415275bbbcd33caa0
-                  Type: PropertyType
-                  DataType: NodeId
-                  Value: "/Types/ObjectTypes/BaseObjectType"
-              - Name: ns=2;Method
-                Id: g=84d2994be8a9d1a7a1fd9052404742f2
-                Type: BaseDataVariableType
-                DataType: String
-                Value: "OpenDialog"
-              - Name: InputArguments
-                Id: g=383841485a94c2dbe208d2914b793ce3
-                Type: BaseObjectType
-                Children:
-                - Name: Dialog
-                  Id: g=c7b2dd591839c7940c3455529825f1b0
-                  Type: BaseDataVariableType
-                  DataType: NodeId
-                  Description: {"NamespaceIndex":3,"TextId":"OpenDialogDialogDescription"}
-                  Value: "/Objects/FeaturesDemo2/UI/Screens/Data/PDFViewer"
-                - Name: AliasNode
-                  Id: g=004785a9b12546d9bb746167266a01c0
-                  Type: BaseDataVariableType
-                  DataType: NodeId
-                  Description: {"NamespaceIndex":3,"TextId":"OpenDialogAliasNodeDescription"}
-                  ValueRank: ScalarOrOneDimension
-                - Name: ParentItem
-                  Id: g=1f1d3776292781b5ee15fa5da79f3b41
-                  Type: BaseDataVariableType
-                  DataType: NodeId
-                  Description: {"NamespaceIndex":3,"TextId":"OpenDialogParentItemDescription"}
-                  Children:
-                  - Name: DynamicLink
-                    Id: g=a99d24a50d07acd12cf52af384787534
-                    Type: DynamicLink
-                    DataType: NodePath
-                    Value: "../../../../..@NodeId"
-              - Name: OutputArguments
-                Id: g=9047bb4f1d9f9307332499671dba8ab4
-                Type: BaseObjectType
-                Children:
-                - Name: DialogNodeId
-                  Id: g=41b55f5d6a4b2f1cbb6c725337801b33
-                  Type: BaseDataVariableType
-                  DataType: NodeId
-                  Description: {"NamespaceIndex":3,"TextId":"OpenDialogDialogNodeIdDescription"}
-          - Name: EventArguments
-            Id: g=b4c52d2db6bcdeb272a7e6ad96364471
-            Type: MouseClickEvent
-            Children:
-            - Name: EventId
-              Id: g=3b16bd1cba5bd2620c4c935e37d6923a
-              Type: PropertyType
-              DataType: ByteString
-            - Name: EventType
-              Id: g=2da8e7c39733253af41a33985002225f
-              Type: PropertyType
-              DataType: NodeId
-            - Name: SourceNode
-              Id: g=ee617a03dd90a001d2562aa1fa60128a
-              Type: PropertyType
-              DataType: NodeId
-            - Name: SourceName
-              Id: g=8fc48432ca9f739bc91628f5c81a05f5
-              Type: PropertyType
-              DataType: String
-            - Name: Time
-              Id: g=23be097d493f4e0c490cbe44fe18982d
-              Type: PropertyType
-              DataType: UtcTime
-            - Name: ReceiveTime
-              Id: g=3915066d6c105a0b6d0ce11b79ad3dc4
-              Type: PropertyType
-              DataType: UtcTime
-            - Name: Message
-              Id: g=f574bdcc35c9f51cbcd53251570bfa43
-              Type: PropertyType
-              DataType: LocalizedText
-            - Name: Severity
-              Id: g=11a37c7953d624f5673871f9b8662562
-              Type: PropertyType
-              DataType: UInt16
       - Name: Generate
         Id: g=6e81dfefaac9c3310d0316632df6000e
         Type: Button
@@ -19617,19 +19418,19 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 512.0
+          Value: 510.0
         - Name: Width
           Id: g=206dbdfd07314b2cf56efb932daa7532
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 88.0
+          Value: 128.0
         - Name: RightMargin
           Id: g=4e71b89a6745a31294929128a1e8ca63
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 116.0
+          Value: 134.0
         - Name: BottomMargin
           Id: g=1646a2547ed5858140c22311327d11e6
           Type: BaseVariableType
@@ -19642,104 +19443,295 @@ Children:
           ModellingRule: Optional
           Value: 1
         - Name: MouseClickEventHandler1
-          Id: g=43f0b5b63121f5a57fa7e8925fac1fca
+          Id: g=350e106d3abd850079a98ae42a8ca9f3
           Type: EventHandler
           Children:
           - Name: ListenEventType
-            Id: g=57fff2207cacca878adc9f0882731997
+            Id: g=73713427e26159a544c34a32414a6ded
             Type: PropertyType
             DataType: NodeId
             Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
           - Name: MethodsToCall
-            Id: g=2f4dfc127ec45225c4da68c756b03b91
+            Id: g=1069c00093d5a5e692bf14b74a15ca79
             Type: BaseObjectType
             Children:
             - Name: MethodContainer1
-              Id: g=bccbe4ba1bd174389609508f1a21f0e4
+              Id: g=5d986fe6fc024832ef9efe0da2ad2305
               Type: BaseObjectType
               Children:
               - Name: ns=2;ObjectPointer
-                Id: g=6815f3586e24a4ce92c466c6dcaef909
+                Id: g=2b5b3e88c1aa3018556cf8ebc05f394b
                 Type: NodePointer
                 DataType: NodeId
+                Value: "/Objects/FeaturesDemo2/Reports/LoggerReport"
                 Children:
                 - Name: Kind
-                  Id: g=0ebd0c7f69bd283ca6beeb4e2d4ca737
+                  Id: g=5ca15363f069a929fb39e696940078fd
                   Type: PropertyType
                   DataType: NodeId
                   Value: "/Types/ObjectTypes/BaseObjectType"
-                - Name: DynamicLink
-                  Id: g=8a36acbec2ce5af73d9c0fd66b7d5424
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../../../../PdfReportLogic@NodeId"
-                  Children:
-                  - Name: Mode
-                    Id: g=7d28a9b09e4d4a539c791ce128a9af77
-                    Type: BaseVariableType
-                    DataType: DynamicLinkMode
-                    ModellingRule: Optional
-                    Value: 2
               - Name: ns=2;Method
-                Id: g=9cea9768e35d327f6984dda03265e077
+                Id: g=c18dfff48da563fdae9d7a85217357e9
                 Type: BaseDataVariableType
                 DataType: String
-                Value: "GenerateReport"
+                Value: "GeneratePdf"
               - Name: InputArguments
-                Id: g=4b06e06e6cffa93de0b7642715aa4238
+                Id: g=20aab8c8742b5d3007ce9b5fd052c3d1
                 Type: BaseObjectType
                 Children:
-                - Name: fileName
-                  Id: g=1bec6a9a4537618ff3079edd8d585d70
+                - Name: OutputPath
+                  Id: g=5f9b098ae0f11ed5d119bc09e3907e86
                   Type: BaseDataVariableType
-                  DataType: String
-                  Value: "DataloggerReport.pdf"
-                - Name: pdfLocale
-                  Id: g=a70c84f952ab098f5eb30608707ef68d
+                  DataType: ResourceUri
+                  Description: {"NamespaceIndex":21,"TextId":"GeneratePdfOutputPathDescription"}
+                  Value: "ns=8;%PROJECTDIR%/DataloggerReport.pdf"
+                - Name: LocaleId
+                  Id: g=2fd132fbe3182b27f9fb65c88b11e487
                   Type: BaseDataVariableType
-                  DataType: String
+                  DataType: LocaleId
+                  Description: {"NamespaceIndex":21,"TextId":"GeneratePdfLocaleIdDescription"}
                   Children:
                   - Name: DynamicLink
-                    Id: g=08919befc26e11921b84b45aa1856af7
+                    Id: g=160c44d7ab718d94685982f650be6aea
                     Type: DynamicLink
                     DataType: NodePath
                     Value: "{Session}/ActualLocaleId"
+              - Name: OutputArguments
+                Id: g=adc2a82a5d7213f832dde58ec920a0f9
+                Type: BaseObjectType
+                Children:
+                - Name: OperationId
+                  Id: g=098fb4f8eee2d355886c76600d8e5cff
+                  Type: BaseDataVariableType
+                  DataType: Guid
+                  Description: {"NamespaceIndex":21,"TextId":"GeneratePdfOperationIdDescription"}
           - Name: EventArguments
-            Id: g=2f15e424d46db84855710134c3edce6c
+            Id: g=d87e68243cedd5b68fe3376ecc055cae
             Type: MouseClickEvent
             Children:
             - Name: EventId
-              Id: g=4164d1f8dd339a654e38450f7c9d842f
+              Id: g=84fa3eb9619a9db6d8197206519059cf
               Type: PropertyType
               DataType: ByteString
             - Name: EventType
-              Id: g=f304d8b9eec520a7b86e9edfd603bad5
+              Id: g=8f4aa644985c1bf2b3df702bd7f88789
               Type: PropertyType
               DataType: NodeId
             - Name: SourceNode
-              Id: g=da56aed23f82261fae75006694987a09
+              Id: g=a4caa850af11c674b78ca125b5ae595d
               Type: PropertyType
               DataType: NodeId
             - Name: SourceName
-              Id: g=87ddbf0e8fc6da3d83b0a40bb3d1be6d
+              Id: g=57eca75f00a3906c643b6a43c0a9f43a
               Type: PropertyType
               DataType: String
             - Name: Time
-              Id: g=0fa424e7ed0222accd41274b1ccaa098
+              Id: g=d2471ce6daeef5f361b34ff80fa5f969
               Type: PropertyType
               DataType: UtcTime
             - Name: ReceiveTime
-              Id: g=75a577956301c6b56518330739cfbf53
+              Id: g=2262e51566d6724607c3189f49b78c9c
               Type: PropertyType
               DataType: UtcTime
             - Name: Message
-              Id: g=1faf49d955971623f8fefb7f4a8eff00
+              Id: g=8535666e761f80a9afc254ec6c3a4e99
               Type: PropertyType
               DataType: LocalizedText
             - Name: Severity
-              Id: g=74f9556cc7d04da5f28bbd9d50687f88
+              Id: g=f3f1edcc115413cc32ce5054f0e649a5
               Type: PropertyType
               DataType: UInt16
+        - Name: PDFGeneratedHandler1
+          Id: g=b5d40ec2f211a568eb366270908a55f8
+          Type: EventHandler
+          Children:
+          - Name: ListenEventType
+            Id: g=cb020d628875ece994a9dbafae586ceb
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/EventTypes/BaseEventType/GeneratePdfCompletedEvent"
+          - Name: ListenObject
+            Id: g=6a30ebca5802fb7cfbc4c15da41bec50
+            Type: NodePointer
+            DataType: NodeId
+            ReferenceType: HasProperty
+            Value: "/Objects/FeaturesDemo2/Reports/LoggerReport"
+            Children:
+            - Name: Kind
+              Id: g=1eb24787fed7c0d66b0aac2946608f68
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: NodeClass
+              Id: g=49229ac9eb625796c7f0524754f82917
+              Type: PropertyType
+              DataType: NodePointerNodeClass
+              ModellingRule: Optional
+          - Name: MethodsToCall
+            Id: g=15abac8baf775be529c59cb57333c1f9
+            Type: BaseObjectType
+            Children:
+            - Name: MethodContainer1
+              Id: g=024cdaf38c2915f1f1fddb7b97fe3b0c
+              Type: BaseObjectType
+              Children:
+              - Name: ns=2;ObjectPointer
+                Id: g=5d1c23b06476d5a9bd0607cb77d426a2
+                Type: NodePointer
+                DataType: NodeId
+                Value: "/Objects/Commands/UICommands"
+                Children:
+                - Name: Kind
+                  Id: g=348631860e519f9fc1748763af697fd7
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType"
+              - Name: ns=2;Method
+                Id: g=f8ed7b89660f0764110310043794a95f
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "OpenDialog"
+              - Name: InputArguments
+                Id: g=1a778219ec28396f384b87b285d40f00
+                Type: BaseObjectType
+                Children:
+                - Name: Dialog
+                  Id: g=561f33d5886fa8b39b285e788ce7a7e7
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":3,"TextId":"OpenDialogDialogDescription"}
+                  Value: "/Objects/FeaturesDemo2/UI/Screens/Data/PDFViewer"
+                - Name: AliasNode
+                  Id: g=ea14aa4bd3061f037dd98d1e14fa33b7
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":3,"TextId":"OpenDialogAliasNodeDescription"}
+                  ValueRank: ScalarOrOneDimension
+                  Value: [{"IdType":0,"Id":0,"Namespace":-1},{"IdType":0,"Id":0,"Namespace":-1}]
+                  Children:
+                  - Name: DynamicLink_0
+                    Id: g=37cd484e78f3bd602545a6b58dba56aa
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../EventArguments/OutputPath@NodeId"
+                    Children:
+                    - Name: ParentArrayIndex
+                      Id: g=46bfa6772de22366f6d214260971cc81
+                      Type: BaseVariableType
+                      DataType: UInt32
+                      ValueRank: ScalarOrOneDimension
+                  - Name: DynamicLink_1
+                    Id: g=423d4af97d7db56d7b07a7c7a00b1bf4
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../EventArguments/Result@NodeId"
+                    Children:
+                    - Name: ParentArrayIndex
+                      Id: g=0386403c59ef523482bde92efa2c1dea
+                      Type: BaseVariableType
+                      DataType: UInt32
+                      ValueRank: ScalarOrOneDimension
+                      Value: 1
+                - Name: ParentItem
+                  Id: g=d2d8d8578f4df5fe541d1b90d62a3b2a
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":3,"TextId":"OpenDialogParentItemDescription"}
+                  Children:
+                  - Name: DynamicLink
+                    Id: g=8e08bca4c1a22e4774aa174d32dc4d50
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../..@NodeId"
+              - Name: OutputArguments
+                Id: g=461f2ba952c9cd21ee08ef680aebbb23
+                Type: BaseObjectType
+                Children:
+                - Name: DialogNodeId
+                  Id: g=150c5bb6e3f0f3e58ac84a5d4da4f28a
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":3,"TextId":"OpenDialogDialogNodeIdDescription"}
+          - Name: EventArguments
+            Id: g=4753908ecfe9658eae97135f5ce7c739
+            Type: GeneratePdfCompletedEvent
+            Children:
+            - Name: OutputPath
+              Id: g=4c6ed3a7dfeb2427f8f061af1a657dc8
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              ReferenceType: HasProperty
+            - Name: Result
+              Id: g=d0246a31276b3092529c80959a3d07ac
+              Type: BaseDataVariableType
+              DataType: GeneratePdfCompletedResult
+              ReferenceType: HasProperty
+            - Name: OperationId
+              Id: g=e0e9dc141c7a522515365505dc9a90c5
+              Type: BaseDataVariableType
+              DataType: Guid
+              ReferenceType: HasProperty
+            - Name: EventId
+              Id: g=1f8e8fbfe51ba6a6391887c4c555c7f3
+              Type: PropertyType
+              DataType: ByteString
+            - Name: EventType
+              Id: g=bcf8c09bff0454c43f8e62a92d454104
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceNode
+              Id: g=4ed8d72f4c7944ec9684318271e396f7
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceName
+              Id: g=393d9e9e2b3d3acb5ee68ccd853aaf38
+              Type: PropertyType
+              DataType: String
+            - Name: Time
+              Id: g=9d78b104fc76d6ee96b7809e36715db9
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: ReceiveTime
+              Id: g=c8e1b092828e6039db0d200779dcf719
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: LocalTime
+              Id: g=c513c2ec9f0c42e8ec254792151fd7dd
+              Type: PropertyType
+              DataType: TimeZoneDataType
+              ModellingRule: Optional
+            - Name: Message
+              Id: g=584a673730ae71805e6bd932425ae920
+              Type: PropertyType
+              DataType: LocalizedText
+            - Name: Severity
+              Id: g=b8157b90795e3facfdce5ca981cf1b38
+              Type: PropertyType
+              DataType: UInt16
+            - Name: ConditionClassId
+              Id: g=34e7cc45ef1208664d5a9b8b981a03f2
+              Type: PropertyType
+              DataType: NodeId
+              ModellingRule: Optional
+            - Name: ConditionClassName
+              Id: g=05c6b50a3e6aa7a777e103b73ef08407
+              Type: PropertyType
+              DataType: LocalizedText
+              ModellingRule: Optional
+            - Name: ConditionSubClassId
+              Id: g=80ae30f512643c28519a64266e9198e8
+              Type: PropertyType
+              DataType: NodeId
+              ModellingRule: Optional
+              ValueRank: OneDimension
+              ArrayDimensions: [0]
+            - Name: ConditionSubClassName
+              Id: g=7e9a5a4ea37b11864ff7c2f91e415e06
+              Type: PropertyType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              ValueRank: OneDimension
+              ArrayDimensions: [0]
       - Name: VerticalAlignment
         Id: g=eaabc773d89138862024dbd06b01fb47
         Type: BaseVariableType
@@ -20083,22 +20075,6 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 460.0
-    - Name: PdfReportLogic
-      Id: g=d43274d8c60a75bacf3c1a27c1c6efe4
-      Type: NetLogic
-      Children:
-      - Class: Method
-        Name: GenerateReport
-        Id: g=562f2e196da8885caf7fbd757939680f
-        Children:
-        - Name: ns=0;InputArguments
-          Id: g=bc22afecbd4c01fc32c462c4562af725
-          Type: BaseVariableType
-          DataType: Argument
-          ReferenceType: HasProperty
-          ValueRank: OneDimension
-          ArrayDimensions: [0]
-          Value: [{"TypeId":{"Id":296},"Body":{"Name":"fileName","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"pdfLocale","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
     - Name: ReportPreview1
       Id: g=f31bbee584a6f83f5d63d128bd75efaf
       Type: Image
@@ -25209,7 +25185,12 @@ Children:
         Id: g=f8a7b454a742fe3059407cc034914fd5
         Type: BaseDataVariableType
         DataType: ResourceUri
-        Value: "ns=8;%PROJECTDIR%/DataloggerReport.pdf"
+        Children:
+        - Name: DynamicLink
+          Id: g=1a6894005271f207d323c1a20bd386b5
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{PdfOutputPath}@Value"
       - Name: CurrentPage
         Id: g=29b9749586e49a5e1925844e9bda56c5
         Type: BaseDataVariableType
@@ -25259,8 +25240,30 @@ Children:
         Id: g=4a1370250a91d7d65985d44581ff56f1
         Type: BaseDataVariableType
         DataType: Boolean
-        ModellingRule: Optional
         Value: true
+        Children:
+        - Name: ExpressionEvaluator1
+          Id: g=359af85828f57878f6325128beac569e
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Expression
+            Id: g=8f4fc51ee5df0c057dbfa1b8eea1e565
+            Type: BaseDataVariableType
+            DataType: String
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "{#pdfResult} == 0"
+          - Name: ns=2;SourcepdfResult
+            Id: g=f9bbee28d1c64cfd394866c8278289a5
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Id: g=d92bb2c2252bb1d49677eaabbeb88cc7
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{PdfGenerationResult}@Value"
       - Name: LeftMargin
         Id: g=f19035b513285bf951d4c8f379fd9f1d
         Type: BaseVariableType
@@ -25372,6 +25375,34 @@ Children:
         DataType: VerticalAlignment
         ModellingRule: Optional
         Value: 1
+      - Name: Visible
+        Id: g=6bea0f8dcc040703da29916f446e53a2
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: ExpressionEvaluator1
+          Id: g=3fdba3e7a65d79da3ebda933db28f127
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Expression
+            Id: g=441241e34f74c366b26dc83960ceca1f
+            Type: BaseDataVariableType
+            DataType: String
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "{#pdfResult} == 0"
+          - Name: ns=2;SourcepdfResult
+            Id: g=c20d7ed1e41987da1ed5e09dfb26f32f
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Id: g=f97647dfddefe1bd47369b2d706d2a2c
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{PdfGenerationResult}@Value"
     - Name: ZoomIn
       Id: g=9e98643109dc15afb112d1a6874eeff5
       Type: Button
@@ -25527,6 +25558,34 @@ Children:
         DataType: VerticalAlignment
         ModellingRule: Optional
         Value: 1
+      - Name: Visible
+        Id: g=a3d1804c7700dde4c7cba2fec725bdbc
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: ExpressionEvaluator1
+          Id: g=f3968342f64203d2e54d2dbeda9934fc
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Expression
+            Id: g=33bd8e2a11418ba457ac94449f9d5ff5
+            Type: BaseDataVariableType
+            DataType: String
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "{#pdfResult} == 0"
+          - Name: ns=2;SourcepdfResult
+            Id: g=57326dea047c0bd0d4ec1a4dbc4696c8
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Id: g=d3b9bca9bc15aaf6968a1eb94566970d
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{PdfGenerationResult}@Value"
     - Name: ZoomOut
       Id: g=3ee51c30f7c76c01751abc2ab1a216b8
       Type: Button
@@ -25682,6 +25741,34 @@ Children:
         DataType: VerticalAlignment
         ModellingRule: Optional
         Value: 1
+      - Name: Visible
+        Id: g=ac694e8b30dac3380d12d7645f38a8fc
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: ExpressionEvaluator1
+          Id: g=bcadc724eff548aaf475e905eb78403a
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Expression
+            Id: g=2b8eded665283c1ffe32f7f0e7fab301
+            Type: BaseDataVariableType
+            DataType: String
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "{#pdfResult} == 0"
+          - Name: ns=2;SourcepdfResult
+            Id: g=09a6ec450c8640534ebc0f9f4e571774
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Id: g=94649fed77808577d65c4a425a169ac0
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{PdfGenerationResult}@Value"
     - Name: HidePDFViewer
       Id: g=6f54b73d3627a1a9aec7b9c967a01b7e
       Type: Button
@@ -25813,6 +25900,176 @@ Children:
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
+    - Name: PDF_Error
+      Id: g=d7c5de5cc421c0cc7fa21ae98cacec08
+      Type: Label
+      Children:
+      - Name: Text
+        Id: g=6d5e15abb03b052690cff4a1233cb946
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: KeyValueConverter1
+          Id: g=2187af9483b510fb42290e46409f0a55
+          Type: ValueMapConverter
+          Children:
+          - Name: Source
+            Id: g=9d8a81942d43985e0de6dd28521fc785
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Id: g=3c888cbcdc6592366233a464ced27ee2
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{PdfGenerationResult}@Value"
+          - Name: ns=2;Pairs
+            Id: g=ac79b5a27f1cc5a0b134e082e3c30c04
+            Type: BaseObjectType
+            ModellingRule: None
+            Children:
+            - Name: Pair
+              Id: g=0ad4f5e866314038b410b3a2c2fa46f5
+              Type: ValueMapPair
+              ModellingRule: None
+              Children:
+              - Name: Key
+                Id: g=99c117a585810b8b2c2d122d6437c6ad
+                Type: BaseDataVariableType
+                DataType: UInt32
+                ModellingRule: None
+              - Name: Value
+                Id: g=97b5b524376ac453ceb3dd24f9abe306
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ModellingRule: None
+                Value: {"NamespaceIndex":8,"TextId":"Success"}
+            - Name: Pair1
+              Id: g=4c8120fa709dfc2e14595f83316c3d9a
+              Type: ValueMapPair
+              ModellingRule: None
+              Children:
+              - Name: Key
+                Id: g=0d8a0fb028af44a66359f557d9b41a1e
+                Type: BaseDataVariableType
+                DataType: UInt32
+                ModellingRule: None
+                Value: 1
+              - Name: Value
+                Id: g=fa17edde12eefe4b2aff96cc84c58e2a
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ModellingRule: None
+                Value: {"NamespaceIndex":8,"TextId":"UnsupportedLocaleId"}
+            - Name: Pair2
+              Id: g=58eac02482c10dbf834c573eb14f8dc5
+              Type: ValueMapPair
+              ModellingRule: None
+              Children:
+              - Name: Key
+                Id: g=f50da2327aa1782122199be7b621bf15
+                Type: BaseDataVariableType
+                DataType: UInt32
+                ModellingRule: None
+                Value: 2
+              - Name: Value
+                Id: g=390aed69816fe63bf37be2764d5cafd6
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ModellingRule: None
+                Value: {"NamespaceIndex":8,"TextId":"FailedToProcessTemplate"}
+            - Name: Pair3
+              Id: g=334c216ae2a757a5b0b13670090e182a
+              Type: ValueMapPair
+              ModellingRule: None
+              Children:
+              - Name: Key
+                Id: g=6ed93585f73cbc2a04cdff560260f8aa
+                Type: BaseDataVariableType
+                DataType: UInt32
+                ModellingRule: None
+                Value: 3
+              - Name: Value
+                Id: g=e467cf466a9331237eac77cc232d824d
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ModellingRule: None
+                Value: {"NamespaceIndex":8,"TextId":"UnableToOverwriteFile"}
+            - Name: Pair4
+              Id: g=0dfd63846e7f3d4f5ace2f0c957a6063
+              Type: ValueMapPair
+              ModellingRule: None
+              Children:
+              - Name: Key
+                Id: g=c6e79bd3e88707b6b6a2903aa89d9b66
+                Type: BaseDataVariableType
+                DataType: UInt32
+                ModellingRule: None
+                Value: 4
+              - Name: Value
+                Id: g=0f415e19090f71d1e7bcfbf4e855af21
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ModellingRule: None
+                Value: {"NamespaceIndex":8,"TextId":"UnableToGeneratePdf"}
+            - Name: Pair5
+              Id: g=161c7ab981d921f6841e54e0b0118819
+              Type: ValueMapPair
+              ModellingRule: None
+              Children:
+              - Name: Key
+                Id: g=ccc0b07efe4763af6c2819e107e90bf0
+                Type: BaseDataVariableType
+                DataType: UInt32
+                ModellingRule: None
+                Value: 5
+              - Name: Value
+                Id: g=dcd40ff67dacdd20012976d86140cc37
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ModellingRule: None
+                Value: {"NamespaceIndex":8,"TextId":"EmptyOrInvalidResourceUri"}
+      - Name: HorizontalAlignment
+        Id: g=a1937bfb4f72b747acb5c966f6b15f8a
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 2
+      - Name: VerticalAlignment
+        Id: g=7c41e694f77816f0c1320bc89bcde157
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 2
+      - Name: Visible
+        Id: g=19f581359031b82b2c9701a3591dfdb0
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: ExpressionEvaluator1
+          Id: g=df79df1c6d3d768f82e08b067f8516e3
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Expression
+            Id: g=51ce8f1e0f9b6c33af0e8d21fa453a07
+            Type: BaseDataVariableType
+            DataType: String
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "{#pdfResult} > 0"
+          - Name: ns=2;SourcepdfResult
+            Id: g=6488bf7d02b23f6f3453dc03842bd8e0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Id: g=938a8b3ad25656c7be7467e640ad5537
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{PdfGenerationResult}@Value"
   - Name: HorizontalAlignment
     Id: g=7acfe7256fa691e25613359f21ed6553
     Type: BaseVariableType
@@ -25849,3 +26106,23 @@ Children:
     DataType: Size
     ModellingRule: Optional
     Value: 32.0
+  - Name: PdfOutputPath
+    Id: g=4336ce3573933e34f0989075850b02f7
+    Type: Alias
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Id: g=104027ded0bcc6d1fb196ab0aa957df5
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/DataTypes/BaseDataType/String/ResourceUri"
+  - Name: PdfGenerationResult
+    Id: g=ee6df57ce03ed9ecbecb4c36b19bb24e
+    Type: Alias
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Id: g=344b207cba6a9e3d20c9c4494feea0a9
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/DataTypes/BaseDataType/Enumeration/GeneratePdfCompletedResult"
