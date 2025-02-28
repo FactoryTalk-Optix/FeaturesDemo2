@@ -47,7 +47,6 @@ Children:
     Id: g=7f1010c90a73da52f4c95d9137f396d2
     Type: BaseDataVariableType
     DataType: Byte
-    Value: 1
   - Name: MinimumPasswordAge
     Id: g=42e27a7dd28a141796bf5282b52f4986
     Type: BaseDataVariableType
@@ -56,7 +55,6 @@ Children:
     Id: g=2284193791d3a99b2ebe82abcdfe1109
     Type: BaseDataVariableType
     DataType: Byte
-    Value: 8
 - Name: AlarmConfiguration
   Id: g=7f6fa97b056e9683b21f6f4856ca1a01
   Type: PropertyGroup
