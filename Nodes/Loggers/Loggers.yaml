@@ -642,6 +642,11 @@ Children:
     Type: PropertyType
     DataType: Duration
     Value: "0:00:00:05.0000000"
+  - Name: PollingPeriod
+    Id: g=091f80cc11d99054743073847ba17396
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:05.0000000"
 - Name: AuditEventLogger
   Id: g=43342a4da30e8d9ab188167fc95bcbca
   Type: EventLogger

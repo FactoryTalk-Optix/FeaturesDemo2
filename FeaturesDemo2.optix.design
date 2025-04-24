@@ -5,8 +5,8 @@ Project:
  Company: ''
  Copyright: ''
  FormatVersion: 1
- ProductVersion: 1.5
- CoreVersion: 4.0
+ ProductVersion: 1.6
+ CoreVersion: 4.2
  Dependencies:
   2:
    Uri: FeaturesDemo2
@@ -14,11 +14,11 @@ Project:
   3:
    Uri: 'urn:FTOptix:CoreBase'
    Module: FTOptix.CoreBase
-   Version: 4.0
+   Version: 5.0
   5:
    Uri: 'urn:FTOptix:CoreBase:Net'
    Module: FTOptix.CoreBase.Net
-   Version: 1.1
+   Version: 2.0
   6:
    Uri: 'urn:FTOptix:NetLogic'
    Module: FTOptix.NetLogic

@@ -184,12 +184,6 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 380.0
-      - Name: BorderThickness
-        Id: g=626f09768dd7d31a3da2fa65606f67ba
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 1.0
       - Name: CornerRadius
         Id: g=c9fd28c1250b1f2ad29f960c271daddd
         Type: BaseDataVariableType
@@ -1564,7 +1558,6 @@ Children:
           Id: g=aa60cb29937b4872aca3914ad4718cae
           Type: BaseDataVariableType
           DataType: SortOrderEnum
-          ModellingRule: Optional
           Value: 1
         - Name: SortColumn
           Id: g=463b90189df27db427f55d21bf3abf66

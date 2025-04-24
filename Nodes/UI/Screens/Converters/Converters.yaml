@@ -943,6 +943,11 @@ Children:
             DataType: TextVerticalAlignment
             ModellingRule: Optional
             Value: 1
+        - Name: BorderThickness
+          Id: g=a7b8a2bb47486f69fadbc846624acccb
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
       - Name: ExpressionTiles
         Id: g=ca9a80cb371779b1e6c807b278b610f9
         Type: ScrollView
@@ -3548,6 +3553,37 @@ Children:
           DataType: Size
           ModellingRule: Optional
           Value: 8.0
+        - Name: ContentWidth
+          Id: g=955dbffded2d43ed2638a9fbd7a3d91e
+          Type: BaseDataVariableType
+          DataType: Size
+          AccessLevel: Read
+        - Name: ContentHeight
+          Id: g=e67dd8bdbc5b277b4e57aec5bc57ea73
+          Type: BaseDataVariableType
+          DataType: Size
+          AccessLevel: Read
+        - Name: ViewWidth
+          Id: g=0599848919fd432526b38090e195c1f3
+          Type: BaseDataVariableType
+          DataType: Size
+          AccessLevel: Read
+        - Name: ViewHeight
+          Id: g=5c068a91635d40a9356412a546a71600
+          Type: BaseDataVariableType
+          DataType: Size
+          AccessLevel: Read
+        - Name: ContentX
+          Id: g=5d932f89439b85a04fbd77baf0b3b2b0
+          Type: BaseDataVariableType
+          DataType: Size
+        - Name: ContentY
+          Id: g=6f1660149ddd0464c0f0ff5f5eefa780
+          Type: BaseDataVariableType
+          DataType: Size
+        - Class: Reference
+          Target: ns=3;i=1394
+          Direction: Forward
   - Name: CategoryName
     Id: g=489e0e2537db0689b2b504e9a9079f81
     Type: BaseDataVariableType
@@ -5611,6 +5647,11 @@ Children:
             DataType: FontWeightEnum
             ModellingRule: Optional
             Value: 700
+        - Name: BorderThickness
+          Id: g=945d541dcf94053c90ec29e23202b32b
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
       - Name: ColumnLayout
         Id: g=32a5a41f1a33e205ac7c177f3306d2ee
         Type: RowLayout
@@ -5864,6 +5905,11 @@ Children:
                 DataType: Size
                 ModellingRule: Optional
                 Value: 8.0
+              - Name: BorderThickness
+                Id: g=144b50e24b1c7cff002b06f9c3e5c080
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
             - Name: RightMargin
               Id: g=7bd45ac823b9421b25fb65fee0e97394
               Type: BaseVariableType
@@ -6237,6 +6283,11 @@ Children:
                 DataType: Color
                 ModellingRule: Optional
                 Value: "#dbdfe2"
+              - Name: BorderThickness
+                Id: g=d1213df48e027b2b28a7751bdc3474ef
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
             - Name: RightMargin
               Id: g=c9d28a074db57d091b0408f5bdb13d78
               Type: BaseVariableType
@@ -6585,12 +6636,6 @@ Children:
                 DataType: Size
                 ModellingRule: Optional
                 Value: 128.0
-              - Name: BorderThickness
-                Id: g=36742d42dbe032c934463fb1da21001d
-                Type: BaseDataVariableType
-                DataType: Size
-                ModellingRule: Optional
-                Value: 1.0
               - Name: HorizontalAlignment
                 Id: g=0ec9f833e14f2403f61cd6e28293c5ec
                 Type: BaseVariableType
@@ -7641,6 +7686,11 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 272.0
+      - Name: BorderThickness
+        Id: g=772c9152a2f638e566b41faf6f0c4351
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
     - Name: ScalingChart
       Id: g=dd084a6bd6a928c4cce0d3180bec33d2
       Type: BaseCard
@@ -9991,6 +10041,11 @@ Children:
             DataType: Color
             ModellingRule: Optional
             Value: "#ccd5d8"
+          - Name: BorderThickness
+            Id: g=04ddbe4b1ae288a3cb80a97d19cfc7e0
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
         - Name: FillColor
           Id: g=bcfb821c6472c02d6b9f1659aa801eb1
           Type: BaseDataVariableType
@@ -10595,6 +10650,11 @@ Children:
               DataType: Boolean
               ModellingRule: Optional
               Value: true
+      - Name: BorderThickness
+        Id: g=b68f0f40dfb07a3cffd88b62e9c8154e
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
     - Name: LevelValue
       Id: g=c94f51672d2c98838729d7a360b82d85
       Type: Label

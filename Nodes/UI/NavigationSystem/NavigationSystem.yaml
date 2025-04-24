@@ -19,6 +19,37 @@ Children:
         Id: g=6993fc842352a6152fee5961b99bd8eb
         Type: BaseVariableType
         DataType: ContentHorizontalAlignment
+    - Name: ContentWidth
+      Id: g=67245166e9a88509cd22231430882789
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ContentHeight
+      Id: g=b7e8e77ad6a6924479e4ceac6b052382
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ViewWidth
+      Id: g=1d23e8e99196f6d94fcf4ae5f2f8199d
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ViewHeight
+      Id: g=f10f4ed3a99303fb81f962a3a1be7b68
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ContentX
+      Id: g=365619239c69d853341b07d2f66c0084
+      Type: BaseDataVariableType
+      DataType: Size
+    - Name: ContentY
+      Id: g=19df460b79ba406d0f628916de1c468a
+      Type: BaseDataVariableType
+      DataType: Size
+    - Class: Reference
+      Target: ns=3;i=1394
+      Direction: Forward
   - Name: FavoritesLogic
     Id: g=00061d3b2ada2b7b3c360ba5359e8e0a
     Type: NetLogic
@@ -7937,6 +7968,37 @@ Children:
           Type: BaseDataVariableType
           DataType: Boolean
           Value: true
+    - Name: ContentWidth
+      Id: g=c6819d33482a5a454da45806e325e1fc
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ContentHeight
+      Id: g=05e1a8dfc8a4cff83abd9b0902cdb146
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ViewWidth
+      Id: g=aeaf93d4c33c8b0daa7e3b60c312efba
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ViewHeight
+      Id: g=c5edcbdda74c917150124f2cdaa09fcc
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ContentX
+      Id: g=538e778a40339b30ca8d743c967b5980
+      Type: BaseDataVariableType
+      DataType: Size
+    - Name: ContentY
+      Id: g=e71ae2cf12328ed6a73ab06bd14bff84
+      Type: BaseDataVariableType
+      DataType: Size
+    - Class: Reference
+      Target: ns=3;i=1394
+      Direction: Forward
 - Name: Converters
   Id: g=f0cf8b946fd42eb4dab6b5a169dc179b
   Supertype: BaseMenuTiles
@@ -10789,6 +10851,37 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 300.0
+    - Name: ContentWidth
+      Id: g=90f841945ebd8ce0b58965b525ba9bed
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ContentHeight
+      Id: g=af8ecf6b16f0fa7a2b9e5e7473c1d426
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ViewWidth
+      Id: g=17ccbce9b71eff321f53993956a41b91
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ViewHeight
+      Id: g=3be08b43e66214f7a401a0d3285a2bb2
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ContentX
+      Id: g=6150390d74382291ab87ee442145ee07
+      Type: BaseDataVariableType
+      DataType: Size
+    - Name: ContentY
+      Id: g=5d1eb329594bbb191552fada2ce6e964
+      Type: BaseDataVariableType
+      DataType: Size
+    - Class: Reference
+      Target: ns=3;i=1394
+      Direction: Forward
 - Name: UserManagement
   Id: g=14ce878356a6a6618157f3d9f6325239
   Supertype: BaseMenuTiles
@@ -12501,6 +12594,37 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 300.0
+    - Name: ContentWidth
+      Id: g=755f7d6d79c826ab2d416777102ba554
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ContentHeight
+      Id: g=810237c2e2360eae635fa16a9c366d71
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ViewWidth
+      Id: g=bc9e80f4c6de9dda7d28cf39af0366ab
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ViewHeight
+      Id: g=d5374853458aa2062d592fc4c78bc3ba
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ContentX
+      Id: g=dde368fc95dd845cff8a06ac480dfad1
+      Type: BaseDataVariableType
+      DataType: Size
+    - Name: ContentY
+      Id: g=d95d9dfbca7cf59f0c84fd5183ca5954
+      Type: BaseDataVariableType
+      DataType: Size
+    - Class: Reference
+      Target: ns=3;i=1394
+      Direction: Forward
 - Name: Alarms
   Id: g=bd3ed0b354c9e54840b7195b4e7ff8a6
   Supertype: BaseMenuTiles
@@ -14213,6 +14337,37 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 300.0
+    - Name: ContentWidth
+      Id: g=0c24e68da12c8f3772398ec46754a119
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ContentHeight
+      Id: g=b45c2975408e429e7725caba75b4888d
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ViewWidth
+      Id: g=cd4304044bcfd935e6062effce183c3c
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ViewHeight
+      Id: g=1b51ceabc0aec69e2723549be9d9d77d
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ContentX
+      Id: g=9f7cbd9d69764ccdc03aa46a8ca03f49
+      Type: BaseDataVariableType
+      DataType: Size
+    - Name: ContentY
+      Id: g=f0702c8275cb0a8dda103b07df945325
+      Type: BaseDataVariableType
+      DataType: Size
+    - Class: Reference
+      Target: ns=3;i=1394
+      Direction: Forward
 - Name: Data
   Id: g=535489223e3e9dbc8d1961307660c297
   Supertype: BaseMenuTiles
@@ -19845,6 +20000,37 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 300.0
+    - Name: ContentWidth
+      Id: g=3e4be5176d0f6cd34f6b3c9c2b372e61
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ContentHeight
+      Id: g=5a86cc67817e91ab62d85c030a528b17
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ViewWidth
+      Id: g=78a9367d4dc7ac234ae22953c660f8f4
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ViewHeight
+      Id: g=bfd0dc73b21dd27f44fe495c3d5576d8
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ContentX
+      Id: g=41b5442aeeb882c794484dd9f63e4c57
+      Type: BaseDataVariableType
+      DataType: Size
+    - Name: ContentY
+      Id: g=4e2d50a8a23405bb151f9794f4b5fce4
+      Type: BaseDataVariableType
+      DataType: Size
+    - Class: Reference
+      Target: ns=3;i=1394
+      Direction: Forward
 - Name: ObjectOrientedProgramming
   Id: g=91f9ba581412f1454f73871f755a9e6a
   Supertype: BaseMenuTiles
@@ -21557,6 +21743,37 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 300.0
+    - Name: ContentWidth
+      Id: g=12c480afb82b8a080f39bc15dad67af0
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ContentHeight
+      Id: g=d513a508b2e5fe1fecacaaffccfbde2d
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ViewWidth
+      Id: g=aa79d5da36b25263d170fdc01c60ae3f
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ViewHeight
+      Id: g=be6f5177a3addaf7dec63f70c4a24848
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ContentX
+      Id: g=6a8b4792d428f5efefe7a3cce38dda60
+      Type: BaseDataVariableType
+      DataType: Size
+    - Name: ContentY
+      Id: g=d6ad8e72b8b4d27c3d586b0d4d50408a
+      Type: BaseDataVariableType
+      DataType: Size
+    - Class: Reference
+      Target: ns=3;i=1394
+      Direction: Forward
 - Name: Auditing
   Id: g=ce198cc9ba8689d3edd10bae90c763b0
   Supertype: BaseMenuTiles
@@ -23273,6 +23490,37 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 300.0
+    - Name: ContentWidth
+      Id: g=22d05362c92a565d9445597987d59773
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ContentHeight
+      Id: g=ccf465e04ad30dbb56fc0dc2eb644c0c
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ViewWidth
+      Id: g=8107ed857b2a769a56d89d3e9a019dcb
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ViewHeight
+      Id: g=fc462e15c94631cd3f6f8e2897dfc847
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ContentX
+      Id: g=1e24c49f44e8dd98753c2c6169bd1270
+      Type: BaseDataVariableType
+      DataType: Size
+    - Name: ContentY
+      Id: g=7c83035cba1f4d0a58c146daee3026fd
+      Type: BaseDataVariableType
+      DataType: Size
+    - Class: Reference
+      Target: ns=3;i=1394
+      Direction: Forward
 - Name: OPCUA
   Id: g=b368c40cc6d4e1a3dd641322ccf637fe
   Supertype: BaseMenuTiles
@@ -24990,6 +25238,37 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 300.0
+    - Name: ContentWidth
+      Id: g=20f2de4b141682241ab1fab14a5c3c18
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ContentHeight
+      Id: g=49c06ca7adb5def004ad4a5e75e6aa41
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ViewWidth
+      Id: g=9126eeab08a6472557ab7ae7d89ca178
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ViewHeight
+      Id: g=d478e49da5f938d1a3dafb739cc8ee5c
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ContentX
+      Id: g=752f888ece1588c6d712397841a6a08d
+      Type: BaseDataVariableType
+      DataType: Size
+    - Name: ContentY
+      Id: g=263ac99757bcef94dd6e82de5cb40f8f
+      Type: BaseDataVariableType
+      DataType: Size
+    - Class: Reference
+      Target: ns=3;i=1394
+      Direction: Forward
 - Name: Retentivity
   Id: g=a98c3f927193616ab8ad44f409fe6fc7
   Supertype: BaseMenuTiles
@@ -26147,6 +26426,37 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 300.0
+    - Name: ContentWidth
+      Id: g=c6f021770fbcda6f4e9dfcf0eded087e
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ContentHeight
+      Id: g=6b61af2f41c2452a3679b6ec8b77041a
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ViewWidth
+      Id: g=099b1c5ab59ad10ff0d27982131d4be2
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ViewHeight
+      Id: g=1d79f8adbb5b1498afba94ee0f49df28
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ContentX
+      Id: g=2e6f0c832d7d9dff784ea29ac1631184
+      Type: BaseDataVariableType
+      DataType: Size
+    - Name: ContentY
+      Id: g=772c1d1a81cdc788aa38752e5ebebc79
+      Type: BaseDataVariableType
+      DataType: Size
+    - Class: Reference
+      Target: ns=3;i=1394
+      Direction: Forward
 - Name: OptixPanels
   Id: g=0102e561f6816189f5dd7d5ca999295d
   Supertype: BaseMenuTiles
@@ -27837,3 +28147,34 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 300.0
+    - Name: ContentWidth
+      Id: g=f91b082a9158a9a66eaaecb3178551c2
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ContentHeight
+      Id: g=12d9c0f884e98ccadf63c99bb904aedf
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ViewWidth
+      Id: g=ae230fa1a0ddc57907e2406da2b3e2ce
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ViewHeight
+      Id: g=722b4db0be263d50f38ab2cb8cfbc006
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ContentX
+      Id: g=0653613545918be634f44eb3f132a261
+      Type: BaseDataVariableType
+      DataType: Size
+    - Name: ContentY
+      Id: g=d7affdd9ba70c2a93702ca7d7da55af3
+      Type: BaseDataVariableType
+      DataType: Size
+    - Class: Reference
+      Target: ns=3;i=1394
+      Direction: Forward

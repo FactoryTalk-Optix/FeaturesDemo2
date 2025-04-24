@@ -76,12 +76,6 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       Value: {"NamespaceIndex":8,"TextId":"UserLogin"}
-    - Name: BorderThickness
-      Id: g=b564662f3b68556b6e1c7ae1c7d9fe34
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 1.0
     - Name: BorderColor
       Id: g=0a4aa506c12b9881284696b75c216505
       Type: BaseDataVariableType
@@ -2052,12 +2046,6 @@ Children:
       DataType: Color
       ModellingRule: Optional
       Value: "#dbdfe2"
-    - Name: BorderThickness
-      Id: g=2bbd96e836539f5abf19716fd2583b8e
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 1.0
   - Name: Button1
     Id: g=23b09bda77e549abdf3b349e2eb069bd
     Type: Button

@@ -637,6 +637,11 @@ Children:
           DataType: Size
           ModellingRule: Optional
           Value: 32.0
+      - Name: BorderThickness
+        Id: g=2912ecdfc95e09017ead2838a7f71f5d
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
     - Name: AlarmsVisualization
       Id: g=af9570ee3304956bbf3d147c491f232f
       Type: Rectangle
@@ -1863,7 +1868,6 @@ Children:
             Id: g=f36d332c08c3bc7b1d7c2864d2fa0f74
             Type: BaseDataVariableType
             DataType: SortOrderEnum
-            ModellingRule: Optional
             Value: 1
           - Name: SortColumn
             Id: g=f80e2ce7874720465e1108ee981403d8
@@ -2448,6 +2452,11 @@ Children:
           DataType: Size
           ModellingRule: Optional
           Value: 16.0
+        - Name: BorderThickness
+          Id: g=915707e815ca82892989d9c4e11e6ec7
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
       - Name: AlarmBanner
         Id: g=4027d508093fad37bdbe16d27af203ab
         Type: RowLayout
@@ -3084,6 +3093,11 @@ Children:
           DataType: Size
           ModellingRule: Optional
           Value: 8.0
+      - Name: BorderThickness
+        Id: g=843d5522f997264e11a9e03a09e229ba
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
   - Name: CategoryName
     Id: g=81019aa18f7f74efcff94ba20caee147
     Type: BaseDataVariableType
@@ -4251,6 +4265,11 @@ Children:
           DataType: Size
           ModellingRule: Optional
           Value: 25.0
+      - Name: BorderThickness
+        Id: g=981fcf9a47ddbfb28bf3c25ce71394fc
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
     - Name: AlarmsVisualization
       Id: g=4321eacc8a6a72c61299fc4bc22fd8a7
       Type: Rectangle
@@ -5490,7 +5509,6 @@ Children:
             Id: g=3d1e1ee1e58792cbb152669498757bec
             Type: BaseDataVariableType
             DataType: SortOrderEnum
-            ModellingRule: Optional
             Value: 1
           - Name: SortColumn
             Id: g=2b366f9f5936b35439acfda38d2c9df6
@@ -5565,6 +5583,11 @@ Children:
           DataType: VerticalAlignment
           ModellingRule: Optional
           Value: 3
+      - Name: BorderThickness
+        Id: g=4ca9b8c9efe0f41bf740d807fa590b91
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
   - Name: CategoryName
     Id: g=3c1afc575301e3048a3ba1b1c97fc891
     Type: BaseDataVariableType
@@ -6652,7 +6675,6 @@ Children:
           Id: g=1a7de854437e616fd4943ea47555375c
           Type: BaseDataVariableType
           DataType: SortOrderEnum
-          ModellingRule: Optional
           Value: 1
         - Name: VerticalAlignment
           Id: g=9bd27d976d63ce5ef89650e55110612b

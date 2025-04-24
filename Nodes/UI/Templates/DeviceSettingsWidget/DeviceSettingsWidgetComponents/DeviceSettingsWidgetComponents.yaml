@@ -744,12 +744,6 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 128.0
-    - Name: BorderThickness
-      Id: g=12132d26461959a7af0caa43436de83b
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 1.0
     - Name: TopMargin
       Id: g=5f8c4867988d1479dfe95a9356a0945c
       Type: BaseVariableType

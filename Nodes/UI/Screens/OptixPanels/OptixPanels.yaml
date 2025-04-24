@@ -781,6 +781,37 @@ Children:
         DataType: VerticalAlignment
         ModellingRule: Optional
         Value: 3
+      - Name: ContentWidth
+        Id: g=35b5f142b2323d5bec77b6395bc2bf19
+        Type: BaseDataVariableType
+        DataType: Size
+        AccessLevel: Read
+      - Name: ContentHeight
+        Id: g=7484e35d635c8b0ad74c61561e196f46
+        Type: BaseDataVariableType
+        DataType: Size
+        AccessLevel: Read
+      - Name: ViewWidth
+        Id: g=0a9d2902eef4450707ea0867ec134dfd
+        Type: BaseDataVariableType
+        DataType: Size
+        AccessLevel: Read
+      - Name: ViewHeight
+        Id: g=ee0934af69907a34b057555811c9d388
+        Type: BaseDataVariableType
+        DataType: Size
+        AccessLevel: Read
+      - Name: ContentX
+        Id: g=a366d18e7db320cfb995d100e0581427
+        Type: BaseDataVariableType
+        DataType: Size
+      - Name: ContentY
+        Id: g=17f3b3469c76d3022c43078fb627e421
+        Type: BaseDataVariableType
+        DataType: Size
+      - Class: Reference
+        Target: ns=3;i=1394
+        Direction: Forward
     - Name: Visible
       Id: g=362e9fcc2f3271cb41aacc53203eaf85
       Type: BaseDataVariableType

@@ -187,14 +187,18 @@ Children:
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Window"
+  - Name: VirtualKeyboard
+    Id: g=f29c410a52fd0e73003a5e068ff8340d
+    Type: BaseDataVariableType
+    DataType: VirtualKeyboardEngineTypeEnum
 - Name: NativePresentationEngine
   Id: g=f97bf56f837beb7fa47c15159e5db05a
   Type: NativePresentationEngine
   Children:
-  - Name: EnableVirtualKeyboard
+  - Name: VirtualKeyboard
     Id: g=642a930dcad055fe085ec43a8e7b6834
     Type: BaseDataVariableType
-    DataType: Boolean
+    DataType: VirtualKeyboardEngineTypeEnum
     Children:
     - Name: DynamicLink
       Id: g=98fabc3a6a796facb77980657a82122f
@@ -1441,6 +1445,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 53.0
+    - Name: BorderThickness
+      Id: g=1a0629b849ccadab3d76acb800d78b2b
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
   - Name: SideMenu
     Id: g=4fbee314fcd84cf9acd06f0589d4cddc
     Type: Panel
@@ -1515,6 +1524,11 @@ Children:
         DataType: VerticalAlignment
         ModellingRule: Optional
         Value: 3
+      - Name: BorderThickness
+        Id: g=275695382347049787cf595746970954
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
     - Name: Sections
       Id: g=87542a08ca168aa911325b18083ea55c
       Type: ColumnLayout
@@ -2028,6 +2042,11 @@ Children:
           DataType: Color
           ModellingRule: Optional
           Value: "#ffffff00"
+        - Name: BorderThickness
+          Id: g=7854a68a566adcecbdedca20557b73aa
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
       - Name: HorizontalAlignment
         Id: g=257f019fcb58381d0664c5b3e6289cbf
         Type: BaseVariableType
@@ -2221,6 +2240,11 @@ Children:
             DataType: Size
             ModellingRule: Optional
             Value: 4.0
+        - Name: BorderThickness
+          Id: g=1faeba1c0f9caf66aa062cd43146700a
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
       - Name: Separator1
         Id: g=b1a45f0ec6472c0f95732b0f4c92a499
         Type: SideMenuSectionSeparator
@@ -10172,6 +10196,37 @@ Children:
           - Name: Separator
             Id: g=49067b36168ee280c1fcc6a57839c02d
             Type: SideMenuSectionSeparator
+      - Name: ContentWidth
+        Id: g=683ba9c4a4218712770343bfe026efc9
+        Type: BaseDataVariableType
+        DataType: Size
+        AccessLevel: Read
+      - Name: ContentHeight
+        Id: g=24a3c269af90fd9dcdc68277de2ecaa5
+        Type: BaseDataVariableType
+        DataType: Size
+        AccessLevel: Read
+      - Name: ViewWidth
+        Id: g=d740b99f660f4c420147390fb5b3393e
+        Type: BaseDataVariableType
+        DataType: Size
+        AccessLevel: Read
+      - Name: ViewHeight
+        Id: g=7436d6deafd57c370cdce14d0965be1f
+        Type: BaseDataVariableType
+        DataType: Size
+        AccessLevel: Read
+      - Name: ContentX
+        Id: g=b17945ee45c0d907afe5383bf8953ae0
+        Type: BaseDataVariableType
+        DataType: Size
+      - Name: ContentY
+        Id: g=b4602c60a16418a78fb11f6055251003
+        Type: BaseDataVariableType
+        DataType: Size
+      - Class: Reference
+        Target: ns=3;i=1394
+        Direction: Forward
     - Name: VerticalAlignment
       Id: g=f17f8f5b0da5dedf14fd7625319d73e1
       Type: BaseVariableType
@@ -10269,6 +10324,11 @@ Children:
         DataType: VerticalAlignment
         ModellingRule: Optional
         Value: 3
+      - Name: BorderThickness
+        Id: g=7cbd35beafa2adb4792f7b042e12191c
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
     - Name: help_menu
       Id: g=5a6209134a639cae853fac6d27cdb930
       Type: BaseDataVariableType
@@ -10857,6 +10917,37 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 56.0
+      - Name: ContentWidth
+        Id: g=4bb809fe29fa1ef1dca4ac659ac50544
+        Type: BaseDataVariableType
+        DataType: Size
+        AccessLevel: Read
+      - Name: ContentHeight
+        Id: g=db728a2add7b1dc3645e92e432f63185
+        Type: BaseDataVariableType
+        DataType: Size
+        AccessLevel: Read
+      - Name: ViewWidth
+        Id: g=2477fbee344bc1244868e71dbe26f04a
+        Type: BaseDataVariableType
+        DataType: Size
+        AccessLevel: Read
+      - Name: ViewHeight
+        Id: g=c9088f08f774edb0c0f3904b934644ac
+        Type: BaseDataVariableType
+        DataType: Size
+        AccessLevel: Read
+      - Name: ContentX
+        Id: g=b68634552bdcddc27b2efcdf41ca7b67
+        Type: BaseDataVariableType
+        DataType: Size
+      - Name: ContentY
+        Id: g=830acac918ded6fa1f91d1f7a2676dc2
+        Type: BaseDataVariableType
+        DataType: Size
+      - Class: Reference
+        Target: ns=3;i=1394
+        Direction: Forward
     - Name: VerticalAlignment
       Id: g=e9fc3292df0503651cbf05cd50c0285d
       Type: BaseVariableType
@@ -11318,6 +11409,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 53.0
+    - Name: BorderThickness
+      Id: g=69dcd9bc9f1d09112e46280663098b63
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
   - Name: ToggleMenu
     Id: g=84c4ac93677b9e9ae724766d9976a53e
     Type: BaseDataVariableType
@@ -11494,3 +11590,4 @@ Children:
 - File: Screens/Screens.yaml
 - File: StyleSheets/StyleSheets.yaml
 - File: Templates/Templates.yaml
+- File: Keyboards/Keyboards.yaml

@@ -3062,6 +3062,11 @@ Children:
             DataType: LocalizedText
             AccessLevel: Read
             Value: {"NamespaceIndex":8,"TextId":"RecipesEditorEditModelOfSchema"}
+        - Name: BorderThickness
+          Id: g=2ebb7887b9199a97b4cac17335055e3a
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
       - Name: ScrollAxesEnabled
         Id: g=a89840db72cce886fe1ab702cd5da3c7
         Type: BaseDataVariableType
@@ -3080,6 +3085,37 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 20.0
+      - Name: ContentWidth
+        Id: g=f0f0e965d7dfe9ead1d25e254676e4b3
+        Type: BaseDataVariableType
+        DataType: Size
+        AccessLevel: Read
+      - Name: ContentHeight
+        Id: g=05ae83a7454f7856a981d2ada10ad760
+        Type: BaseDataVariableType
+        DataType: Size
+        AccessLevel: Read
+      - Name: ViewWidth
+        Id: g=b0311379c391df7e819a1bcaf3433d92
+        Type: BaseDataVariableType
+        DataType: Size
+        AccessLevel: Read
+      - Name: ViewHeight
+        Id: g=58d8675a7b38435a68070441abbdd1f6
+        Type: BaseDataVariableType
+        DataType: Size
+        AccessLevel: Read
+      - Name: ContentX
+        Id: g=52d2e696410c0a4c4b64cb571fd662c6
+        Type: BaseDataVariableType
+        DataType: Size
+      - Name: ContentY
+        Id: g=fa887bb52768aadda55c2a70c631051a
+        Type: BaseDataVariableType
+        DataType: Size
+      - Class: Reference
+        Target: ns=3;i=1394
+        Direction: Forward
     - Name: DataGrid
       Id: g=ae929c974a35329e55b528d94f4310e5
       Type: DataGrid
@@ -3661,7 +3697,6 @@ Children:
         Id: g=576780d5857fcdd95a3bbfaf1547cd87
         Type: BaseDataVariableType
         DataType: SortOrderEnum
-        ModellingRule: Optional
         Value: 1
   - Name: CategoryName
     Id: g=28df485216b841cbcfb2c9888c14ca23

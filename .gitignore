@@ -14,3 +14,5 @@ ProjectFiles/NetSolution/*.references
 ProjectFiles/UserDefinedModule.xml
 !README.md
 !LICENSE
+
+!*.optixt

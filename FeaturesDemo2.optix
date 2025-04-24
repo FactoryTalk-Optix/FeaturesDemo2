@@ -6,21 +6,21 @@ Project:
  Company: ''
  Copyright: ''
  FormatVersion: 1
- ProductVersion: 1.5
- CoreVersion: 4.0
+ ProductVersion: 1.6
+ CoreVersion: 4.2
  Dependencies:
   2:
    Uri: 'urn:FTOptix:CoreBase'
    Module: FTOptix.CoreBase
-   Version: 4.0
+   Version: 5.0
   3:
    Uri: 'urn:FTOptix:UI'
    Module: FTOptix.UI
-   Version: 14.2
+   Version: 18.1
   4:
    Uri: 'urn:FTOptix:HMIProject'
    Module: FTOptix.HMIProject
-   Version: 6.5
+   Version: 7.1
   6:
    Uri: 'urn:FTOptix:Retentivity'
    Module: FTOptix.Retentivity
@@ -32,19 +32,19 @@ Project:
   9:
    Uri: 'urn:FTOptix:Core:Net'
    Module: FTOptix.Core.Net
-   Version: 2.0
+   Version: 2.2
   10:
    Uri: 'urn:FTOptix:CoreBase:Net'
    Module: FTOptix.CoreBase.Net
-   Version: 1.1
+   Version: 2.0
   11:
    Uri: 'urn:FTOptix:UI:Net'
    Module: FTOptix.UI.Net
-   Version: 14.2
+   Version: 18.1
   12:
    Uri: 'urn:FTOptix:HMIProject:Net'
    Module: FTOptix.HMIProject.Net
-   Version: 4.8
+   Version: 4.9
   14:
    Uri: 'urn:FTOptix:NetLogic'
    Module: FTOptix.NetLogic
@@ -60,11 +60,11 @@ Project:
   17:
    Uri: 'urn:FTOptix:OPCUAServer'
    Module: FTOptix.OPCUAServer
-   Version: 1.1
+   Version: 1.2
   18:
    Uri: 'urn:FTOptix:OPCUAServer:Net'
    Module: FTOptix.OPCUAServer.Net
-   Version: 1.1
+   Version: 1.2
   19:
    Uri: 'urn:FTOptix:Alarm'
    Module: FTOptix.Alarm
@@ -76,15 +76,15 @@ Project:
   21:
    Uri: 'urn:FTOptix:Report'
    Module: FTOptix.Report
-   Version: 4.0
+   Version: 4.1
   22:
    Uri: 'urn:FTOptix:Report:Net'
    Module: FTOptix.Report.Net
-   Version: 2.4
+   Version: 2.5
   23:
    Uri: 'urn:FTOptix:DataLogger'
    Module: FTOptix.DataLogger
-   Version: 1.0
+   Version: 2.0
   24:
    Uri: 'urn:FTOptix:DataLogger:Net'
    Module: FTOptix.DataLogger.Net
@@ -124,7 +124,7 @@ Project:
   33:
    Uri: 'urn:FTOptix:NativeUI'
    Module: FTOptix.NativeUI
-   Version: 2.1
+   Version: 3.1
   34:
    Uri: 'urn:FTOptix:NativeUI:Net'
    Module: FTOptix.NativeUI.Net
@@ -138,15 +138,15 @@ Project:
    Module: FTOptix.System.Net
    Version: 2.0
  Statistics:
-  TotalNodeCount: 32737
-  Objects: 7315
+  TotalNodeCount: 33091
+  Objects: 7352
   ObjectTypes: 122
-  Variables: 25242
+  Variables: 25559
   VariableTypes: 0
   DataTypes: 6
   Methods: 52
-  References: 371
+  References: 407
   ReferenceTypes: 0
-  Files: 72
+  Files: 73
  Nodes:
  - File: Nodes/FeaturesDemo2.yaml
