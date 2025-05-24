@@ -638,11 +638,6 @@ Children:
             DataType: Size
             ModellingRule: Optional
             Value: 96.0
-        - Name: BorderThickness
-          Id: g=cc3de503e154180cedc11f65780be434
-          Type: BaseDataVariableType
-          DataType: Size
-          ModellingRule: Optional
       - Name: MotorInstances
         Id: g=bb1426ecd4208bd64b807bc7bac3eee1
         Type: Panel
@@ -3002,11 +2997,6 @@ Children:
           DataType: TextVerticalAlignment
           ModellingRule: Optional
           Value: 1
-      - Name: BorderThickness
-        Id: g=538fa128b28505d7c9a1b1e4ab40317f
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
     - Name: RuntimeGeneratedObjects
       Id: g=01b31a7a0091663162f73cee546f1052
       Type: Rectangle
@@ -3196,11 +3186,6 @@ Children:
               DataType: VerticalAlignment
               ModellingRule: Optional
               Value: 3
-            - Name: BorderThickness
-              Id: g=748423e6bd1ad87c14bbacce82231398
-              Type: BaseDataVariableType
-              DataType: Size
-              ModellingRule: Optional
           - Name: LeftMargin
             Id: g=5a6564e9f559d1a57a9448c85883b9a2
             Type: BaseVariableType
@@ -3455,11 +3440,6 @@ Children:
               DataType: VerticalAlignment
               ModellingRule: Optional
               Value: 3
-            - Name: BorderThickness
-              Id: g=e1558ac7962039c9792e2311ddc2f41d
-              Type: BaseDataVariableType
-              DataType: Size
-              ModellingRule: Optional
           - Name: LeftMargin
             Id: g=177b086dd3fff5ba7cdd9c496fcfef25
             Type: BaseVariableType
@@ -3502,11 +3482,6 @@ Children:
           DataType: VerticalAlignment
           ModellingRule: Optional
           Value: 3
-      - Name: BorderThickness
-        Id: g=1b8a46527ac1fd33b204a88d17a5a6c1
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
   - Name: RuntimeGenerationLogic
     Id: g=9abdb92f435d85e47b7d8be9efb01446
     Type: NetLogic
@@ -5067,11 +5042,6 @@ Children:
           DataType: TextVerticalAlignment
           ModellingRule: Optional
           Value: 1
-      - Name: BorderThickness
-        Id: g=85b4135847bacfc70f8cd0d9b624623f
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
     - Name: AlarmsVisualization
       Id: g=5747dd643b10b33d71623d83f97dbacd
       Type: Rectangle
@@ -6048,11 +6018,6 @@ Children:
           DataType: VerticalAlignment
           ModellingRule: Optional
           Value: 3
-      - Name: BorderThickness
-        Id: g=e74991a8bde0a31578109e49786dff9e
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
   - Name: CategoryName
     Id: g=0151d7f2fbe1321ebe823ac70d97b6e1
     Type: BaseDataVariableType

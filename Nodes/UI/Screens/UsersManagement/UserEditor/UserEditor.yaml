@@ -104,11 +104,6 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 4.0
-    - Name: BorderThickness
-      Id: g=b5a5f832fa71a107feae618c52e92f83
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
   - Name: VisibilityPanel
     Id: g=df94fed5c4aef5e1d2ad3bab6e783bed
     Type: Panel
@@ -199,11 +194,6 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 240.0
-      - Name: BorderThickness
-        Id: g=cdfc5ed4b1411cce45ed83ec87fef8f1
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
     - Name: HorizontalLayout1
       Id: g=0207047a333ddff85942389bd1285fc2
       Type: RowLayout
@@ -1410,11 +1400,6 @@ Children:
             DataType: Size
             ModellingRule: Optional
             Value: 1.0
-          - Name: BorderThickness
-            Id: g=f69923bc8f03cd9be0cf9e78f5c4b57e
-            Type: BaseDataVariableType
-            DataType: Size
-            ModellingRule: Optional
           - Name: HorizontalAlignment
             Id: g=a24463dab8a49ba31df75f879b7ea25b
             Type: BaseVariableType
@@ -1621,11 +1606,6 @@ Children:
             DataType: Size
             ModellingRule: Optional
             Value: 1.0
-          - Name: BorderThickness
-            Id: g=af758ca2bf8b2b398bd673f728aa6021
-            Type: BaseDataVariableType
-            DataType: Size
-            ModellingRule: Optional
           - Name: HorizontalAlignment
             Id: g=e1a0e232fd03ac3ea21f0d156bcf7683
             Type: BaseVariableType
@@ -1915,11 +1895,6 @@ Children:
           - Name: TopMargin
             Id: g=009e112f39cb2cf13d82e28962121b9a
             Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-          - Name: BorderThickness
-            Id: g=2df9f1c501b76479eba65cee6822b090
-            Type: BaseDataVariableType
             DataType: Size
             ModellingRule: Optional
         - Name: LeftMargin
@@ -2399,11 +2374,6 @@ Children:
           DataType: Size
           ModellingRule: Optional
           Value: 50.0
-        - Name: BorderThickness
-          Id: g=9b7c54be235b542e5e8259abcb7a1502
-          Type: BaseDataVariableType
-          DataType: Size
-          ModellingRule: Optional
         - Name: FillColor
           Id: g=b052d930720c7216857fd97d6c38ad07
           Type: BaseDataVariableType
@@ -3181,11 +3151,6 @@ Children:
             DataType: Size
             ModellingRule: Optional
             Value: 1.0
-          - Name: BorderThickness
-            Id: g=d00df9e800a292554fea66eeb718be1c
-            Type: BaseDataVariableType
-            DataType: Size
-            ModellingRule: Optional
           - Name: HorizontalAlignment
             Id: g=48035543cfd63b23253a81dbc2ab88ec
             Type: BaseVariableType
@@ -3391,11 +3356,6 @@ Children:
             DataType: Size
             ModellingRule: Optional
             Value: 1.0
-          - Name: BorderThickness
-            Id: g=1ae7322f8e5293c0d241bd1faf9652a5
-            Type: BaseDataVariableType
-            DataType: Size
-            ModellingRule: Optional
           - Name: HorizontalAlignment
             Id: g=0563e8380556e94f724c5fdffbe2b9fc
             Type: BaseVariableType

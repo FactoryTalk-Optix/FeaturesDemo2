@@ -1192,7 +1192,7 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 56.0
-  - Name: OutherBackground
+  - Name: OuterBackground
     Id: g=1f3aedf6d56795a9bc5d9121956c6cca
     Type: Rectangle
     Children:
@@ -1445,11 +1445,6 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 53.0
-    - Name: BorderThickness
-      Id: g=1a0629b849ccadab3d76acb800d78b2b
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
   - Name: SideMenu
     Id: g=4fbee314fcd84cf9acd06f0589d4cddc
     Type: Panel
@@ -1524,11 +1519,6 @@ Children:
         DataType: VerticalAlignment
         ModellingRule: Optional
         Value: 3
-      - Name: BorderThickness
-        Id: g=275695382347049787cf595746970954
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
     - Name: Sections
       Id: g=87542a08ca168aa911325b18083ea55c
       Type: ColumnLayout
@@ -2042,11 +2032,6 @@ Children:
           DataType: Color
           ModellingRule: Optional
           Value: "#ffffff00"
-        - Name: BorderThickness
-          Id: g=7854a68a566adcecbdedca20557b73aa
-          Type: BaseDataVariableType
-          DataType: Size
-          ModellingRule: Optional
       - Name: HorizontalAlignment
         Id: g=257f019fcb58381d0664c5b3e6289cbf
         Type: BaseVariableType
@@ -2240,11 +2225,6 @@ Children:
             DataType: Size
             ModellingRule: Optional
             Value: 4.0
-        - Name: BorderThickness
-          Id: g=1faeba1c0f9caf66aa062cd43146700a
-          Type: BaseDataVariableType
-          DataType: Size
-          ModellingRule: Optional
       - Name: Separator1
         Id: g=b1a45f0ec6472c0f95732b0f4c92a499
         Type: SideMenuSectionSeparator
@@ -10324,11 +10304,6 @@ Children:
         DataType: VerticalAlignment
         ModellingRule: Optional
         Value: 3
-      - Name: BorderThickness
-        Id: g=7cbd35beafa2adb4792f7b042e12191c
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
     - Name: help_menu
       Id: g=5a6209134a639cae853fac6d27cdb930
       Type: BaseDataVariableType
@@ -11156,7 +11131,7 @@ Children:
       - Class: Reference
         Target: ns=3;i=1360
         Direction: Forward
-  - Name: OutherBackground
+  - Name: OuterBackground
     Id: g=88ec25686e186d117bc20a450f7fc3b3
     Type: Rectangle
     Children:
@@ -11409,11 +11384,6 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 53.0
-    - Name: BorderThickness
-      Id: g=69dcd9bc9f1d09112e46280663098b63
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
   - Name: ToggleMenu
     Id: g=84c4ac93677b9e9ae724766d9976a53e
     Type: BaseDataVariableType

@@ -3062,11 +3062,6 @@ Children:
             DataType: LocalizedText
             AccessLevel: Read
             Value: {"NamespaceIndex":8,"TextId":"RecipesEditorEditModelOfSchema"}
-        - Name: BorderThickness
-          Id: g=2ebb7887b9199a97b4cac17335055e3a
-          Type: BaseDataVariableType
-          DataType: Size
-          ModellingRule: Optional
       - Name: ScrollAxesEnabled
         Id: g=a89840db72cce886fe1ab702cd5da3c7
         Type: BaseDataVariableType

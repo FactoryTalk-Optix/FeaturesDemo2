@@ -637,11 +637,6 @@ Children:
           DataType: Size
           ModellingRule: Optional
           Value: 32.0
-      - Name: BorderThickness
-        Id: g=2912ecdfc95e09017ead2838a7f71f5d
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
     - Name: AlarmsVisualization
       Id: g=af9570ee3304956bbf3d147c491f232f
       Type: Rectangle
@@ -2452,11 +2447,6 @@ Children:
           DataType: Size
           ModellingRule: Optional
           Value: 16.0
-        - Name: BorderThickness
-          Id: g=915707e815ca82892989d9c4e11e6ec7
-          Type: BaseDataVariableType
-          DataType: Size
-          ModellingRule: Optional
       - Name: AlarmBanner
         Id: g=4027d508093fad37bdbe16d27af203ab
         Type: RowLayout
@@ -4265,11 +4255,6 @@ Children:
           DataType: Size
           ModellingRule: Optional
           Value: 25.0
-      - Name: BorderThickness
-        Id: g=981fcf9a47ddbfb28bf3c25ce71394fc
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
     - Name: AlarmsVisualization
       Id: g=4321eacc8a6a72c61299fc4bc22fd8a7
       Type: Rectangle
@@ -5583,11 +5568,6 @@ Children:
           DataType: VerticalAlignment
           ModellingRule: Optional
           Value: 3
-      - Name: BorderThickness
-        Id: g=4ca9b8c9efe0f41bf740d807fa590b91
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
   - Name: CategoryName
     Id: g=3c1afc575301e3048a3ba1b1c97fc891
     Type: BaseDataVariableType
@@ -6120,7 +6100,7 @@ Children:
                         Id: g=0ed1d2cbb1c905089f8e15288209f748
                         Type: BaseDataVariableType
                         DataType: ResourceUri
-                        Value: "ns=8;%PROJECTDIR%/RadiobuttonDark.svg"
+                        Value: "ns=8;%PROJECTDIR%/imgs/RadiobuttonDark.svg"
                     - Name: Pair1
                       Id: g=53d06cb157d0e558184acb2b55a48301
                       Type: ValueMapPair
@@ -6133,7 +6113,7 @@ Children:
                         Id: g=2f00c64d16a00ba72565372f7d39eeed
                         Type: BaseDataVariableType
                         DataType: ResourceUri
-                        Value: "ns=8;%PROJECTDIR%/RadiobuttonDarkEmpty.svg"
+                        Value: "ns=8;%PROJECTDIR%/imgs/RadiobuttonDarkEmpty.svg"
               - Name: Width
                 Id: g=29c79951d5d257245ab15bfa1d12d61a
                 Type: BaseDataVariableType
@@ -6226,7 +6206,7 @@ Children:
                         Id: g=c9051aa20f8faafaf41195765c1a3fb3
                         Type: BaseDataVariableType
                         DataType: ResourceUri
-                        Value: "ns=8;%PROJECTDIR%/ApplyDark.png"
+                        Value: "ns=8;%PROJECTDIR%/imgs/ApplyDark.svg"
                     - Name: Pair1
                       Id: g=cdad3f0c12a03877a6c599b10fa72111
                       Type: ValueMapPair
@@ -6239,7 +6219,7 @@ Children:
                         Id: g=0baf905c5d6f03cd91d4f31f146fe595
                         Type: BaseDataVariableType
                         DataType: ResourceUri
-                        Value: "ns=8;%PROJECTDIR%/CloseDark.png"
+                        Value: "ns=8;%PROJECTDIR%/imgs/CloseDark.svg"
               - Name: Width
                 Id: g=340736cb3e871a9073fdcdb294d706f9
                 Type: BaseDataVariableType
@@ -6332,7 +6312,7 @@ Children:
                         Id: g=4b31f87f166cec2dbd341d7f50aa729b
                         Type: BaseDataVariableType
                         DataType: ResourceUri
-                        Value: "ns=8;%PROJECTDIR%/ApplyDark.png"
+                        Value: "ns=8;%PROJECTDIR%/imgs/ApplyDark.svg"
                     - Name: Pair1
                       Id: g=6fa10f2953c42ce315f16a34a035115a
                       Type: ValueMapPair
@@ -6345,7 +6325,7 @@ Children:
                         Id: g=57cd27119b922468f7b70a36487b4d50
                         Type: BaseDataVariableType
                         DataType: ResourceUri
-                        Value: "ns=8;%PROJECTDIR%/CloseDark.png"
+                        Value: "ns=8;%PROJECTDIR%/imgs/CloseDark.svg"
               - Name: Width
                 Id: g=c85561982cb60e20522c8d03cc8bd0da
                 Type: BaseDataVariableType
@@ -6457,7 +6437,6 @@ Children:
               Id: g=30046cfd95d14f9842487bf5fa2ae7bc
               Type: BaseDataVariableType
               DataType: Boolean
-              Value: true
           - Name: LowLowState_Id
             Id: g=372f7e57e55ec1f960ba1c08cb049fc9
             Type: DataGridColumn
@@ -6505,7 +6484,6 @@ Children:
               Id: g=eccbe90c91ef57dcc9b4ccdda0a555ea
               Type: BaseDataVariableType
               DataType: Boolean
-              Value: true
           - Name: LowState_Id
             Id: g=a3a29ba1ab5a7d22e23a250b4235a1e0
             Type: DataGridColumn
@@ -6553,7 +6531,6 @@ Children:
               Id: g=1d288bf4c633dec5f6bfe9556ac1139f
               Type: BaseDataVariableType
               DataType: Boolean
-              Value: true
           - Name: HighState_Id
             Id: g=6fbbd2c0a59cef7929c2d507ecb6212b
             Type: DataGridColumn
@@ -6601,7 +6578,6 @@ Children:
               Id: g=76044405950f34ed98fef0b0f296b418
               Type: BaseDataVariableType
               DataType: Boolean
-              Value: true
           - Name: HighHighState_Id
             Id: g=b1541b7cd3d576c04b1f87eec54d7ed4
             Type: DataGridColumn
@@ -6649,7 +6625,6 @@ Children:
               Id: g=ef1c293a95cdc411aa9e80c5849eb62c
               Type: BaseDataVariableType
               DataType: Boolean
-              Value: true
         - Name: SelectedItem
           Id: g=c1cf924e51bba8822ca4211649346c98
           Type: NodePointer
