@@ -264,7 +264,6 @@ Children:
         Id: g=442ae4985e39a18d9a2768f78b453e2e
         Type: BaseDataVariableType
         DataType: Size
-        Value: 1.0
   - Name: ScreenStyles
     Id: g=e3813f715f30dd250884a7e8ec3af5a1
     Type: BaseObjectType
@@ -605,7 +604,6 @@ Children:
         Id: g=9b4fc670dd4e1e541e52d517b34f5ae6
         Type: BaseDataVariableType
         DataType: Size
-        Value: 1.0
   - Name: ScreenStyles
     Id: g=201012e80d18aa0405a6e88159a59900
     Type: BaseObjectType
@@ -1013,12 +1011,6 @@ Children:
     - Name: Default
       Id: g=d4381c0469053ffa21f282bd86cc847b
       Type: RectangleStyle
-      Children:
-      - Name: BorderThickness
-        Id: g=9b445bee30fc6c5ac9d5601074cdb7f6
-        Type: BaseDataVariableType
-        DataType: Size
-        Value: 1.0
   - Name: ScreenStyles
     Id: g=bd3d00161941e3fce28426dfeedeb5b4
     Type: BaseObjectType
@@ -1400,7 +1392,6 @@ Children:
         Id: g=a64ac434578f683c9e461f4a91fa573c
         Type: BaseDataVariableType
         DataType: Size
-        Value: 1.0
   - Name: ScreenStyles
     Id: g=c8ceb352c256b106b6489260025a56fc
     Type: BaseObjectType
@@ -1839,7 +1830,6 @@ Children:
         Id: g=36e36c392e032b356eefe9f4d260da4e
         Type: BaseDataVariableType
         DataType: Size
-        Value: 1.0
   - Name: ScreenStyles
     Id: g=1c45632725c5d8d375aeb7a4feabab71
     Type: BaseObjectType
@@ -2395,7 +2385,6 @@ Children:
         Id: g=842ffa9fc6c825a5ff2f20e67daa1322
         Type: BaseDataVariableType
         DataType: Size
-        Value: 1.0
   - Name: ScreenStyles
     Id: g=acf887ea106267f42d4728cba2c306b1
     Type: BaseObjectType
@@ -2893,7 +2882,6 @@ Children:
         Id: g=28a8c8b1eeb0300c9900910331aadd29
         Type: BaseDataVariableType
         DataType: Size
-        Value: 1.0
   - Name: ScreenStyles
     Id: g=c25b47e512b20e4f32f015182a1980e1
     Type: BaseObjectType
