@@ -200,56 +200,51 @@ Children:
     Id: g=f9fa4c7e3efabdff5d8ccced0c1cc25a
     Type: BaseObjectType
     Children:
-    - Name: ActiveState_Id
-      Id: g=79779cbcd9af196cc967b9bc1b34fbb8
-      Type: EventFieldPath
-      DataType: NodePath
-      Value: "0:ActiveState/0:Id"
-    - Name: AckedState_Id
-      Id: g=93e6738cf01cf88064b05ccda9ee2b24
-      Type: EventFieldPath
-      DataType: NodePath
-      Value: "0:AckedState/0:Id"
     - Name: ConfirmedState_Id
       Id: g=623c69fedd22aa59529beee7c03abaee
       Type: EventFieldPath
       DataType: NodePath
       Value: "0:ConfirmedState/0:Id"
-    - Name: ConditionName
-      Id: g=b03786abb84fcd138461744495caba7f
-      Type: EventFieldPath
-      DataType: NodePath
-      Value: "0:ConditionName"
-    - Name: EnabledState_Id
-      Id: g=5c632aef93f475f1af12e4129a0cea5b
-      Type: EventFieldPath
-      DataType: NodePath
-      Value: "0:EnabledState/0:Id"
-    - Name: SourceName
-      Id: g=fb0019fc23cb1cbf51c455112e705976
-      Type: EventFieldPath
-      DataType: NodePath
-      Value: "0:SourceName"
-    - Name: Time
-      Id: g=e8c2a186da792fb25c80beff9ee2eadc
-      Type: EventFieldPath
-      DataType: NodePath
-      Value: "0:Time"
     - Name: Message
       Id: g=1a502435584ef8022fa6b9e2bedda0dc
       Type: EventFieldPath
       DataType: NodePath
       Value: "0:Message"
-    - Name: Severity
-      Id: g=ad99ec0cabe54563bf9c94d96d9d8dfd
-      Type: EventFieldPath
-      DataType: NodePath
-      Value: "0:Severity"
     - Name: LocalTime
       Id: g=d001fb1b1751bcf8e6ce04e712fd074e
       Type: EventFieldPath
       DataType: NodePath
       Value: "0:LocalTime"
+    - Name: AckedState_Id
+      Id: g=3403f601af0fac66819060b122090718
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:AckedState/0:Id"
+    - Name: ConditionName
+      Id: g=8b62897ef0a53f0bd4e11a41ee01b5dc
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:ConditionName"
+    - Name: EnabledState_Id
+      Id: g=36d063ebd89a585e475431315506efa7
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:EnabledState/0:Id"
+    - Name: Severity
+      Id: g=afd035b1a8729de75be5cbb67483f8d5
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:Severity"
+    - Name: SourceName
+      Id: g=f1705ef3054fee3e5c29cbbf6c86d824
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:SourceName"
+    - Name: Time
+      Id: g=7517c815b75025ad17d83b8d2a170fc7
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:Time"
   - Name: EventConfigurations
     Id: g=df7468dc5782989ec124d2f3cbc712e0
     Type: BaseObjectType
@@ -283,42 +278,14 @@ Children:
     Id: g=987ce5b79d3a267cae594f1f601b2de9
     Type: BaseObjectType
     Children:
-    - Name: ActiveState_Id
-      Id: g=49b5fffac37b8ce4df9ffca0ae9e148b
-      Type: BaseDataVariableType
-      DataType: Boolean
-    - Name: AckedState_Id
-      Id: g=93581c8e26ac343560a51b731471c1d0
-      Type: BaseDataVariableType
-      DataType: Boolean
     - Name: ConfirmedState_Id
       Id: g=7faf7751f6c06e396545e8d9348e573a
       Type: BaseDataVariableType
       DataType: Boolean
-    - Name: ConditionName
-      Id: g=8b3ab86f6f78648ed43641f01daf7e2e
-      Type: BaseDataVariableType
-      DataType: String
-    - Name: EnabledState_Id
-      Id: g=de58c5e80a0daa636f58fc10e44ace90
-      Type: BaseDataVariableType
-      DataType: Boolean
-    - Name: SourceName
-      Id: g=20daf69f8cb755e0cc3e1679d535a15c
-      Type: BaseDataVariableType
-      DataType: String
-    - Name: Time
-      Id: g=b94251de09cc579b271a3d90cdab40d0
-      Type: BaseDataVariableType
-      DataType: UtcTime
     - Name: Message
       Id: g=1c58b2dd1373419898c6ec23d83d88b2
       Type: BaseDataVariableType
       DataType: LocalizedText
-    - Name: Severity
-      Id: g=9de3876beec635f90ca025508837b56a
-      Type: BaseDataVariableType
-      DataType: UInt16
     - Name: EventTypeId
       Id: g=d7e7a6d997e7ccd2a12243d77769d00d
       Type: BaseDataVariableType
@@ -327,42 +294,34 @@ Children:
       Id: g=98d6fa50e7ef2e49b1ffaa2057e92fae
       Type: BaseDataVariableType
       DataType: TimeZoneDataType
+    - Name: AckedState_Id
+      Id: g=7c1b7ab54f8a312235ab42fef0086394
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ConditionName
+      Id: g=af166b99835660006d145750f0a2a8e7
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: EnabledState_Id
+      Id: g=28690ba7ce492439b5a9b76cb9a2ad46
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: Severity
+      Id: g=63b4d61423aeb802e34711e7f460df41
+      Type: BaseDataVariableType
+      DataType: UInt16
+    - Name: SourceName
+      Id: g=2e9d3780a335c35b3c7396557569be72
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: Time
+      Id: g=223872b15189a59f3761f4b65b4c9b16
+      Type: BaseDataVariableType
+      DataType: UtcTime
   - Name: EventFieldsToLog
     Id: g=f85993c5221a1b36b463a687f48b2658
     Type: BaseObjectType
     Children:
-    - Name: ActiveState_Id
-      Id: g=cfab7603f30051832181ce98a39ad4bc
-      Type: EventFieldToLog
-      DataType: Boolean
-      Children:
-      - Name: DynamicLink
-        Id: g=a2c10a4221a39255e8de5dd25c151b88
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../EventArguments/ActiveState_Id"
-        Children:
-        - Name: Mode
-          Id: g=0a38b0bfc9b9a321f1ed535ce894773c
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          Value: 2
-    - Name: AckedState_Id
-      Id: g=a2fadd9d7ee32586cb6ced3dd1b6b6e1
-      Type: EventFieldToLog
-      DataType: Boolean
-      Children:
-      - Name: DynamicLink
-        Id: g=e13d60978f0b8317bd13d22fb4472759
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../EventArguments/AckedState_Id"
-        Children:
-        - Name: Mode
-          Id: g=efffd287bc268a48d1bfd377cda601e1
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          Value: 2
     - Name: ConfirmedState_Id
       Id: g=b11be930d84eb41ba82c20546d3625e0
       Type: EventFieldToLog
@@ -379,70 +338,6 @@ Children:
           Type: BaseVariableType
           DataType: DynamicLinkMode
           Value: 2
-    - Name: ConditionName
-      Id: g=2c88cd155097e9d355a029b1b606f40f
-      Type: EventFieldToLog
-      DataType: String
-      Children:
-      - Name: DynamicLink
-        Id: g=fa12839e292dbd993ae3ca841ab192f7
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../EventArguments/ConditionName"
-        Children:
-        - Name: Mode
-          Id: g=7817a1c2a347b50876961a70f99c491e
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          Value: 2
-    - Name: EnabledState_Id
-      Id: g=4e4113abf8133e6c39831787569e2e0f
-      Type: EventFieldToLog
-      DataType: Boolean
-      Children:
-      - Name: DynamicLink
-        Id: g=fe3fbc28c0d8131f55f9847f51ecde07
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../EventArguments/EnabledState_Id"
-        Children:
-        - Name: Mode
-          Id: g=ed71f340dcfbe92f886fb7440b9e6dbb
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          Value: 2
-    - Name: SourceName
-      Id: g=fd5dfcc994b2f94b839d40755a750421
-      Type: EventFieldToLog
-      DataType: String
-      Children:
-      - Name: DynamicLink
-        Id: g=d94039011fc3af76dd69c934a2dcb71d
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../EventArguments/SourceName"
-        Children:
-        - Name: Mode
-          Id: g=b088c818b93000f4e968d868beada427
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          Value: 2
-    - Name: Time
-      Id: g=aeb296856fd9a7f681e68621a4d82649
-      Type: EventFieldToLog
-      DataType: UtcTime
-      Children:
-      - Name: DynamicLink
-        Id: g=3a6d8f6326de2b253c2e43c3507fd52a
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../EventArguments/Time"
-        Children:
-        - Name: Mode
-          Id: g=36676a1c41e99fe86c5fadf0f7481a99
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          Value: 2
     - Name: Message
       Id: g=1475e3de15b23078d5176b58516172dc
       Type: EventFieldToLog
@@ -456,22 +351,6 @@ Children:
         Children:
         - Name: Mode
           Id: g=0cfb3d5224a8715bed5a2d8a945196b9
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          Value: 2
-    - Name: Severity
-      Id: g=9d3ee3689f7ac03349eb77c677483260
-      Type: EventFieldToLog
-      DataType: UInt16
-      Children:
-      - Name: DynamicLink
-        Id: g=cc6453024965823414c3a712be65c4b5
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../EventArguments/Severity"
-        Children:
-        - Name: Mode
-          Id: g=5262f20335ebe580f2731a61615f463a
           Type: BaseVariableType
           DataType: DynamicLinkMode
           Value: 2
@@ -512,6 +391,66 @@ Children:
             Type: DynamicLink
             DataType: NodePath
             Value: "../../../../EventArguments/LocalTime"
+    - Name: AckedState_Id
+      Id: g=6a4efd331a73f6421bec868d3aaa336f
+      Type: EventFieldToLog
+      DataType: Boolean
+      Children:
+      - Name: DynamicLink
+        Id: g=716005d636f62f698acbdd4a35e2392c
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/AckedState_Id"
+    - Name: ConditionName
+      Id: g=11fa606226015b689706cf399687df54
+      Type: EventFieldToLog
+      DataType: String
+      Children:
+      - Name: DynamicLink
+        Id: g=664796c1b5713a0664ffe04fee07d796
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/ConditionName"
+    - Name: EnabledState_Id
+      Id: g=e2e2f46284873ee992eddf358bce48e5
+      Type: EventFieldToLog
+      DataType: Boolean
+      Children:
+      - Name: DynamicLink
+        Id: g=4b8d8a9d7737886b7f894b39ffb81d54
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/EnabledState_Id"
+    - Name: Severity
+      Id: g=00903cf2099a566f50f185a146e25c3e
+      Type: EventFieldToLog
+      DataType: UInt16
+      Children:
+      - Name: DynamicLink
+        Id: g=e1e0a467314c5fd96f8a97f15f0e85e5
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/Severity"
+    - Name: SourceName
+      Id: g=30db5c338f2a72428c2d9d22c9de4103
+      Type: EventFieldToLog
+      DataType: String
+      Children:
+      - Name: DynamicLink
+        Id: g=b05ca5cc004fa1a051d380c0707f5eba
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/SourceName"
+    - Name: Time
+      Id: g=6a64d881ccb98771531604f848d8943f
+      Type: EventFieldToLog
+      DataType: UtcTime
+      Children:
+      - Name: DynamicLink
+        Id: g=6101f86c1cfdf96043cfdca26cfc1a52
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/Time"
 - Name: TrendDataLogger
   Id: g=3bb36990464933c3e159f6d7c59cb497
   Type: DataLogger

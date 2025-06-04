@@ -1,7 +1,16 @@
 #region Using directives
 using System;
-using FTOptix.NetLogic;
+using FTOptix.CoreBase;
+using FTOptix.HMIProject;
 using UAManagedCore;
+using OpcUa = UAManagedCore.OpcUa;
+using FTOptix.NetLogic;
+using FTOptix.UI;
+using FTOptix.Alarm;
+using FTOptix.EventLogger;
+using FTOptix.OPCUAServer;
+using FTOptix.Store;
+using FTOptix.SQLiteStore;
 #endregion
 
 public class FilteredAlarmHistoryGridLogic : BaseNetLogic
@@ -16,8 +25,7 @@ public class FilteredAlarmHistoryGridLogic : BaseNetLogic
             return;
         }
 
-        if (toVariable.Value == null)
-        {
+        if (toVariable.Value == null){
             Log.Error("FilteredAlarmHistoryGridLogic", "Missing To variable value");
             return;
         }
@@ -30,8 +38,7 @@ public class FilteredAlarmHistoryGridLogic : BaseNetLogic
             return;
         }
 
-        if (fromVariable.Value == null)
-        {
+        if (fromVariable.Value == null){
             Log.Error("FilteredAlarmHistoryGridLogic", "Missing From variable value");
             return;
         }
