@@ -11,6 +11,7 @@ using System.Diagnostics;
 #endregion
 
 using FeaturesDemo2;
+using FTOptix.MQTTClient;
 
 public class FilesystemBrowserLogic : BaseNetLogic
 {

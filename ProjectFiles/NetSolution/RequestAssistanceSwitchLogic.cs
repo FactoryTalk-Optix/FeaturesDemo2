@@ -3,6 +3,7 @@ using FTOptix.NetLogic;
 using FTOptix.System;
 using FTOptix.UI;
 using UAManagedCore;
+using FTOptix.MQTTClient;
 #endregion
 
 public class RequestAssistanceSwitchLogic : BaseNetLogic

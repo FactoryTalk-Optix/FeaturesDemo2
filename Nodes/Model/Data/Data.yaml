@@ -8,3 +8,4 @@ Children:
 - File: Recipes/Recipes.yaml
 - File: Trend/Trend.yaml
 - File: TransitionedEvents/TransitionedEvents.yaml
+- File: MQTT/MQTT.yaml

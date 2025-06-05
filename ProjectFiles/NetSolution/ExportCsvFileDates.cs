@@ -3,6 +3,7 @@ using System;
 using FTOptix.HMIProject;
 using FTOptix.NetLogic;
 using UAManagedCore;
+using FTOptix.MQTTClient;
 #endregion
 
 public class ExportCsvFileDates : BaseNetLogic

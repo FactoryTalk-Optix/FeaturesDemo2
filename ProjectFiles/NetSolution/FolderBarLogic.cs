@@ -11,6 +11,7 @@ using System.Linq;
 #endregion
 
 using FeaturesDemo2;
+using FTOptix.MQTTClient;
 
 public class FolderBarLogic : BaseNetLogic
 {

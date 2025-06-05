@@ -4,6 +4,7 @@ using FTOptix.HMIProject;
 using FTOptix.NetLogic;
 using FTOptix.System;
 using UAManagedCore;
+using FTOptix.MQTTClient;
 #endregion
 
 public class SystemToNetworkInterfacesEditModelWriterLogic : BaseNetLogic

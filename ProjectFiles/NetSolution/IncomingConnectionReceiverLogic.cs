@@ -2,6 +2,7 @@
 using FTOptix.NetLogic;
 using FTOptix.System;
 using UAManagedCore;
+using FTOptix.MQTTClient;
 #endregion
 
 public class IncomingConnectionReceiverLogic : BaseNetLogic

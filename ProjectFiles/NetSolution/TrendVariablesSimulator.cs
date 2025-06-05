@@ -2,6 +2,7 @@
 using System;
 using FTOptix.NetLogic;
 using UAManagedCore;
+using FTOptix.MQTTClient;
 #endregion
 
 public class TrendVariablesSimulator : BaseNetLogic

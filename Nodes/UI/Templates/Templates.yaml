@@ -10,3 +10,4 @@ Children:
 - File: FactoryTalkRemoteAccessWidget/FactoryTalkRemoteAccessWidget.yaml
 - File: DeviceSettingsWidget/DeviceSettingsWidget.yaml
 - File: NetworkSettingsWidget/NetworkSettingsWidget.yaml
+- File: MqttChat/MqttChat.yaml

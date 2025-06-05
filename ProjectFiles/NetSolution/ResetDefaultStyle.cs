@@ -4,6 +4,7 @@ using FTOptix.NativeUI;
 using FTOptix.NetLogic;
 using FTOptix.UI;
 using UAManagedCore;
+using FTOptix.MQTTClient;
 #endregion
 
 public class ResetDefaultStyle : BaseNetLogic

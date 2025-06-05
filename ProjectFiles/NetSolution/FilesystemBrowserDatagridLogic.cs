@@ -7,6 +7,7 @@ using System;
 #endregion
 
 using FeaturesDemo2;
+using FTOptix.MQTTClient;
 
 public class FilesystemBrowserDatagridLogic : BaseNetLogic
 {

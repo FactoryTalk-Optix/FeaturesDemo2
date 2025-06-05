@@ -2,6 +2,7 @@
 using System.IO;
 using FTOptix.NetLogic;
 using FTOptix.UI;
+using FTOptix.MQTTClient;
 #endregion
 
 public class FTOptixStudioVersionLogic : BaseNetLogic

@@ -95,3 +95,4 @@ Children:
     Type: PropertyType
     DataType: NodeId
     Value: "/Objects/FeaturesDemo2/Recipes/RecipeSchema/EditModel"
+- File: MQTT/MQTT.yaml

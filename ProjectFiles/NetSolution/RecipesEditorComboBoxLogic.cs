@@ -4,6 +4,7 @@ using FTOptix.NetLogic;
 using FTOptix.Recipe;
 using FTOptix.UI;
 using UAManagedCore;
+using FTOptix.MQTTClient;
 #endregion
 
 public class RecipesEditorComboBoxLogic : BaseNetLogic

@@ -11,6 +11,7 @@ using FTOptix.EventLogger;
 using FTOptix.OPCUAServer;
 using FTOptix.Store;
 using FTOptix.SQLiteStore;
+using FTOptix.MQTTClient;
 #endregion
 
 public class FilteredAlarmHistoryGridLogic : BaseNetLogic

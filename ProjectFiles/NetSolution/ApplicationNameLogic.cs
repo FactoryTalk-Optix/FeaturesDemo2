@@ -2,6 +2,7 @@
 using FTOptix.HMIProject;
 using FTOptix.NetLogic;
 using FTOptix.UI;
+using FTOptix.MQTTClient;
 #endregion
 
 public class ApplicationNameLogic : BaseNetLogic

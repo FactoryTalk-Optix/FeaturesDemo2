@@ -182,3 +182,67 @@ Children:
     DataType: Boolean
     ReferenceType: HasProperty
     Value: true
+- Name: MqttStorage
+  Id: g=11df6848142fb79d77fe40255d6a6d65
+  Type: RetentivityStorage
+  Children:
+  - Name: Nodes
+    Id: g=289c369ca18b149b393b133244d60814
+    Type: BaseObjectType
+    Children:
+    - Name: Node1
+      Id: g=ae1bb9427c4ad9c29727b12d366887d5
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/FeaturesDemo2/MQTT/MQTTClient/ClientId"
+      Children:
+      - Name: Kind
+        Id: g=f3980b315fc505f67e23478502254ede
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Id: g=af294d5dccf38f3ab0f95a42aaac04a6
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: Node2
+      Id: g=b2ea6fc130a68562f3e1ae844170d58a
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/FeaturesDemo2/Model/Data/MQTT/IncomingMessage"
+      Children:
+      - Name: Kind
+        Id: g=bcfce7f4187f1dec892a18f93004d73d
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Id: g=545d19441a93eaf4102204dfcd009b3c
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: Node3
+      Id: g=5e86f570988c8124b6a0096521765a88
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/FeaturesDemo2/Model/Data/MQTT/MessagesHistory"
+      Children:
+      - Name: Kind
+        Id: g=9e0ec70b395367137352cb9f501a5042
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Id: g=c1d7acd9e886cf46f70334d8876fde32
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+  - Name: WriteDelay
+    Id: g=48d719251c3afc7a4ccae3c65797d22a
+    Type: BaseDataVariableType
+    DataType: Duration
+    ReferenceType: HasProperty
+  - Name: DeltaObserverEnabled
+    Id: g=e25fe4638f69dcc5895378340bea5c42
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ReferenceType: HasProperty
+    Value: true

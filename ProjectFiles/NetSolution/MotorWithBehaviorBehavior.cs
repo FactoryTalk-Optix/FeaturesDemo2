@@ -1,5 +1,6 @@
 #region Using directives
 using FTOptix.NetLogic;
+using FTOptix.MQTTClient;
 #endregion
 
 [CustomBehavior]

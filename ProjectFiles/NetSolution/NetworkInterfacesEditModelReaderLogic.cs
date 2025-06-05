@@ -1,6 +1,7 @@
 #region Using directives
 using FTOptix.NetLogic;
 using UAManagedCore;
+using FTOptix.MQTTClient;
 #endregion
 
 public class NetworkInterfacesEditModelReaderLogic : BaseNetLogic

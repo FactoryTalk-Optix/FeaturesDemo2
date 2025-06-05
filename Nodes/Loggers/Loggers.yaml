@@ -9,7 +9,7 @@ Children:
   - Name: SamplingMode
     Id: g=558719dc21313d19bb172f9f16c34f4c
     Type: PropertyType
-    DataType: SamplingModeEnum
+    DataType: ns=23;SamplingModeEnum
     Value: 1
   - Name: Store
     Id: g=80cf64a9b16e74ab7248b1ec71b29e38
@@ -458,7 +458,7 @@ Children:
   - Name: SamplingMode
     Id: g=470b14a8c8e667c3999a204d397bc5a9
     Type: PropertyType
-    DataType: SamplingModeEnum
+    DataType: ns=23;SamplingModeEnum
     Value: 1
   - Name: Store
     Id: g=a2991e6c3fbc5c1a981cd3c4659ca1bd
@@ -987,7 +987,7 @@ Children:
   - Name: SamplingMode
     Id: g=aa6907afbcfc8f218b6dbbb05423e82e
     Type: PropertyType
-    DataType: SamplingModeEnum
+    DataType: ns=23;SamplingModeEnum
   - Name: Store
     Id: g=78ceb4199a57a61cd60735646a88a280
     Type: NodePointer

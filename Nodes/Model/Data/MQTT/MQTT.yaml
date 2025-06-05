@@ -1,0 +1,14 @@
+Name: MQTT
+Id: g=e770bc29cbadab016dabbf65825fdcf7
+Type: FolderType
+Children:
+- Name: MessagesHistory
+  Id: g=52c245754ad78cf7f6c277f8fd8146fe
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [15]
+- Name: IncomingMessage
+  Id: g=9fc71b3395a92f42ac0955548e7b244f
+  Type: BaseDataVariableType
+  DataType: String

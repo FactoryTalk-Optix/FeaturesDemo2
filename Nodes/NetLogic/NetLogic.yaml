@@ -145,3 +145,6 @@ Children:
 - Name: RecipesCreation
   Id: g=725ff6d28be3f4b08ec8c13a275d5c52
   Type: NetLogic
+- Name: MqttChatLogic
+  Id: g=6e06e675146741e95d2330b18318c529
+  Type: NetLogic

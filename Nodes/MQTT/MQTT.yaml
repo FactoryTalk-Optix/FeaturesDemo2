@@ -1,0 +1,165 @@
+Name: MQTT
+Id: g=bbcdf0e6159dcf90c32ac50d0b81f4e2
+Type: MQTTCategoryFolder
+Children:
+- Name: MQTTClient
+  Id: g=0b1f8f0ef577c5d32176436b65d228f5
+  Type: MQTTClient
+  Children:
+  - Name: BrokerAddress
+    Id: g=738d09648ee339f4ec5f9d7a20499511
+    Type: PropertyType
+    DataType: String
+    Value: "test.mosquitto.org"
+  - Name: BrokerPort
+    Id: g=b1f86990ed1217cae52dbc7c5c8b0082
+    Type: PropertyType
+    DataType: UInt16
+    Value: 8883
+  - Name: ClientId
+    Id: g=d9f52c3a10ddad717a5f57f60ed750ea
+    Type: PropertyType
+    DataType: String
+    Value: "FTOptix-1"
+  - Name: Status
+    Id: g=6a3ebc737f7023daef319836d669bb0c
+    Type: BaseDataVariableType
+    DataType: StatusEnum
+    ReferenceType: HasProperty
+    AccessLevel: Read
+  - Name: UserIdentityType
+    Id: g=d5e2b924d3c7f3a01e19668bc24a8ecc
+    Type: BaseDataVariableType
+    DataType: UserIdentityTypeEnum
+  - Name: SSLTLSEnabled
+    Id: g=2b6104557a61ef91d961cac986b82c66
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: ValidateBrokerCertificate
+    Id: g=0e61021b7294622edb8ff36f0a953ea5
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Class: Reference
+    Target: ns=37;i=12
+    Direction: Forward
+  - Class: Reference
+    Target: ns=37;i=44
+    Direction: Forward
+  - Name: ClientIdGeneratorLogic
+    Id: g=86efc8821b6ddaef1325887be3dcbfde
+    Type: NetLogic
+  - Name: MQTTSubscriber
+    Id: g=8bfc39e0a611a7e5d32d83da5c2f3f2b
+    Type: MQTTSubscriber
+    Children:
+    - Name: Subscriptions
+      Id: g=30243ee3cec98df83ff87c80357da2be
+      Type: BaseObjectType
+      Children:
+      - Name: PlainTextSubscription1
+        Id: g=c7c50c4ae0553bb7bc4a894b77ff91ae
+        Type: SubscriptionPlainText
+        ReferenceType: HasOrderedComponent
+        Children:
+        - Name: Variable
+          Id: g=dd8ae774d28b572030a284312b0b46ed
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/FeaturesDemo2/Model/Data/MQTT/IncomingMessage"
+          Children:
+          - Name: Kind
+            Id: g=6c2b180b05fbf8f16b90521c79c967f0
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/VariableTypes/BaseVariableType/BaseDataVariableType"
+        - Name: Topic
+          Id: g=96dd2fd1b9e2447352d8f5388372a69b
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "/FTOptixFeaturesDemo2/Chat"
+        - Name: QoS
+          Id: g=6fb4b5499f2ac1a6162e3f63e48f6b01
+          Type: BaseDataVariableType
+          DataType: QoSLevelEnum
+          Value: 1
+    - Class: Reference
+      Target: ns=37;i=47
+      Direction: Forward
+  - Name: MQTTPublisher
+    Id: g=433cb485d96bcd8f94895ec33589ef87
+    Type: MQTTPublisher
+    Children:
+    - Name: SamplingMode
+      Id: g=8aa4fb4567fb1f4bfe65c28b199c88b7
+      Type: PropertyType
+      DataType: ns=37;SamplingModeEnum
+    - Name: Folder
+      Id: g=80f8ef012a99d934534be60cb89eccd0
+      Type: NodePointer
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Id: g=1967d9097cd627a0fddeda7280304e8b
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
+      - Name: ItemKind
+        Id: g=efffe9dc290a28283c784247580107b0
+        Type: PropertyType
+        DataType: NodeId
+    - Name: Topic
+      Id: g=7745f5c46bfbb0693bb114e66b9e1ddc
+      Type: BaseDataVariableType
+      DataType: String
+      Children:
+      - Name: DynamicLink
+        Id: g=263ae86adfb74ad67113ebbc82f9517f
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../MQTTSubscriber/Subscriptions/PlainTextSubscription1/Topic"
+        Children:
+        - Name: Mode
+          Id: g=e894e255bbbf7746344b898520b98b59
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: QoS
+      Id: g=5c95b876a73fcb3401be89b4235313de
+      Type: BaseDataVariableType
+      DataType: QoSLevelEnum
+      Children:
+      - Name: DynamicLink
+        Id: g=3f67a259fac4055c53cdbdab0893aeb6
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../MQTTSubscriber/Subscriptions/PlainTextSubscription1/QoS"
+        Children:
+        - Name: Mode
+          Id: g=d0af4550e3742886c60106b3028c0dc0
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: Retain
+      Id: g=3c851b3689bd71f06b6f35822899fb3a
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: PFEnabled
+      Id: g=e35303598c4e0d8bd3e57e9cd4d9fba9
+      Type: PropertyType
+      DataType: Boolean
+    - Name: PayloadUpdateTimestamp
+      Id: g=2311c7b3a3c8e7fb796c9afeca92cd38
+      Type: BaseDataVariableType
+      DataType: DateTime
+      ReferenceType: HasProperty
+      AccessLevel: Read
+    - Name: Item
+      Id: g=97e4793539366a63abb868b50ceabac0
+      Type: Alias
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Id: g=f24cbb7b369eb52b9b0369946be23333
+        Type: PropertyType
+        DataType: NodeId
