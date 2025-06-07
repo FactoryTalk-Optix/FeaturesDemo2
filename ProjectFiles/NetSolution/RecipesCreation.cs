@@ -6,6 +6,7 @@ using System;
 using System.Threading;
 using UAManagedCore;
 using FTOptix.MQTTClient;
+using FTOptix.MQTTBroker;
 #endregion
 
 public class RecipesCreation : BaseNetLogic

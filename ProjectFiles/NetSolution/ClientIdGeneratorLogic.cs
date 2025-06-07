@@ -22,6 +22,7 @@ using FTOptix.UI;
 using FTOptix.Core;
 using FTOptix.MQTTClient;
 using System.Linq;
+using FTOptix.MQTTBroker;
 #endregion
 
 public class ClientIdGeneratorLogic : BaseNetLogic
@@ -33,6 +34,7 @@ public class ClientIdGeneratorLogic : BaseNetLogic
         if (mqttClient.ClientId == "FTOptix-1")
         {
             mqttClient.ClientId = $"OptixUser-{Guid.NewGuid().ToString().Split("-")[0]}";
+            Log.Warning("ClientIdGeneratorLogic", $"ClientId was set to {mqttClient.ClientId}, please restart the application to load the new value");
         }
     }
 

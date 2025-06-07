@@ -24,6 +24,7 @@ using System.Threading;
 using System.Xml.Linq;
 using System.Linq;
 using FTOptix.MQTTClient;
+using FTOptix.MQTTBroker;
 #endregion
 
 public class AdvacedSvgRotationLogic : BaseNetLogic

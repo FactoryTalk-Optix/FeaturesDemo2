@@ -145,16 +145,24 @@ Project:
    Uri: 'urn:FTOptix:MQTTClient:Net'
    Module: FTOptix.MQTTClient.Net
    Version: 3.0
+  39:
+   Uri: 'urn:FTOptix:MQTTBroker'
+   Module: FTOptix.MQTTBroker
+   Version: 6.0
+  40:
+   Uri: 'urn:FTOptix:MQTTBroker:Net'
+   Module: FTOptix.MQTTBroker.Net
+   Version: 6.0
  Statistics:
-  TotalNodeCount: 33367
-  Objects: 7440
-  ObjectTypes: 124
-  Variables: 25744
+  TotalNodeCount: 33801
+  Objects: 7539
+  ObjectTypes: 125
+  Variables: 26078
   VariableTypes: 0
   DataTypes: 6
   Methods: 53
-  References: 412
+  References: 422
   ReferenceTypes: 0
-  Files: 76
+  Files: 78
  Nodes:
  - File: Nodes/FeaturesDemo2.yaml

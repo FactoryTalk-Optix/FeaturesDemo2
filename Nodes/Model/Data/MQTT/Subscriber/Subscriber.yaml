@@ -1,0 +1,16 @@
+Name: Subscriber
+Id: g=e2ef067d12f76291381b21607f40b642
+Type: FolderType
+Children:
+- Name: Sin
+  Id: g=13961ea875bf95c2fbb804e48038aaf3
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Cos
+  Id: g=a25f30198eaff1a0ad39d11371da4bd9
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Ramp
+  Id: g=2edd88ce64be4577f88b0be5ee34db38
+  Type: BaseDataVariableType
+  DataType: Int32

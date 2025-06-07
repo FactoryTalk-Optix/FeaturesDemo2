@@ -3,6 +3,7 @@ using System;
 using FTOptix.NetLogic;
 using UAManagedCore;
 using FTOptix.MQTTClient;
+using FTOptix.MQTTBroker;
 #endregion
 
 public class DataloggerVariablesSimulator : BaseNetLogic

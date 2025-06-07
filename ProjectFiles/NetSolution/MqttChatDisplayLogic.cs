@@ -22,6 +22,7 @@ using FTOptix.UI;
 using FTOptix.Core;
 using FTOptix.MQTTClient;
 using System.Linq;
+using FTOptix.MQTTBroker;
 #endregion
 
 public class MqttChatDisplayLogic : BaseNetLogic
@@ -50,7 +51,7 @@ public class MqttChatDisplayLogic : BaseNetLogic
         try
         {
             // Get my client ID
-            string myClientId = Project.Current.GetVariable("MQTT/MQTTClient/ClientId").Value;
+            string myClientId = Project.Current.GetVariable("MQTT/Mosquitto_MQTTClient/ClientId").Value;
             // Create a new column layout to display the incoming messages
             var newColumnLayout = InformationModel.Make<ColumnLayout>("VerticalLayout");
             newColumnLayout.HorizontalAlignment = HorizontalAlignment.Stretch;
@@ -101,16 +102,16 @@ public class MqttChatDisplayLogic : BaseNetLogic
         }
 
         // Get my client ID
-        string myClientId = Project.Current.GetVariable("MQTT/MQTTClient/ClientId").Value;
+        string myClientId = Project.Current.GetVariable("MQTT/Mosquitto_MQTTClient/ClientId").Value;
         // Create a new message
         var dateTime = DateTime.UtcNow.ToString("yyyy/MM/dd HH:mm:ss");
         var mqttMessage = new MqttChatLogic.FeaturesDemo2MqttMessage(myClientId, content, dateTime);
         // Load the MQTT configuration
-        var mqttPublisher = Project.Current.Get<MQTTPublisher>("MQTT/MQTTClient/MQTTPublisher");
+        var mqttPublisher = Project.Current.Get<MQTTPublisher>("MQTT/Mosquitto_MQTTClient/MQTTPublisher");
         var mqttConfig = new MqttChatLogic.OptixMqttConfig(mqttPublisher);
         var mqttConfigJson = mqttConfig.Serialize();
         // Publish the message to the MQTT topic
-        var mqttClient = Project.Current.Get<MQTTClient>("MQTT/MQTTClient");
+        var mqttClient = Project.Current.Get<MQTTClient>("MQTT/Mosquitto_MQTTClient");
         var mqttMessageJson = mqttMessage.Serialize();
         mqttClient.Publish(mqttConfigJson, mqttMessageJson);
     }

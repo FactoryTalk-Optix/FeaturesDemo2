@@ -3,6 +3,7 @@ using FTOptix.NetLogic;
 using FTOptix.UI;
 using UAManagedCore;
 using FTOptix.MQTTClient;
+using FTOptix.MQTTBroker;
 #endregion
 
 public class LoginFormOutputMessageLogic : BaseNetLogic

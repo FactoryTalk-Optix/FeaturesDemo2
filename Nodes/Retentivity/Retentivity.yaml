@@ -194,7 +194,7 @@ Children:
       Id: g=ae1bb9427c4ad9c29727b12d366887d5
       Type: NodePointer
       DataType: NodeId
-      Value: "/Objects/FeaturesDemo2/MQTT/MQTTClient/ClientId"
+      Value: "/Objects/FeaturesDemo2/MQTT/Mosquitto_MQTTClient/ClientId"
       Children:
       - Name: Kind
         Id: g=f3980b315fc505f67e23478502254ede

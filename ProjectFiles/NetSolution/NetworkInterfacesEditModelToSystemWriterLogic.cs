@@ -5,6 +5,7 @@ using FTOptix.NetLogic;
 using FTOptix.System;
 using UAManagedCore;
 using FTOptix.MQTTClient;
+using FTOptix.MQTTBroker;
 #endregion
 
 public class NetworkInterfacesEditModelToSystemWriterLogic : BaseNetLogic

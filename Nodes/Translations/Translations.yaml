@@ -11,7 +11,7 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [681,4],
+    "Dimensions": [688,4],
     "Body": [
      "","en-US","it-IT","zh-CN",
      "Acknowledge","Ack","Riconosci","确认",
@@ -693,7 +693,14 @@ Children:
      "MqttSend","Send","Invia","发送",
      "MqttSendMessage","Message","Messaggio","留言",
      "MqttTopic","Topic","Topic","主题",
-     "FromSenderId","From: {#senderId}","Da: {#senderId}","发件人： {#senderId}"
+     "FromSenderId","From: {#senderId}","Da: {#senderId}","发件人： {#senderId}",
+     "MqttConnected","Connected","Connesso","已连接",
+     "MqttDisconnected","Disconnected","Disconness","断开",
+     "MqttStatus","Status","Stato","现状",
+     "MqttOptixToOptix","Optix to Optix MQTT","MQTT da Optix a Optix","Optix 至 Optix MQTT",
+     "MqttOptixToOptixDescription","How to sync variables values from an Optix application to a different Optix application","Sincronizzazione di variabili via MQTT tra due applicativi Optix","如何将 Optix 应用程序中的变量值同步到不同的 Optix 应用程序中",
+     "MqttPublishedValues","Published values","Valori pubblicati via MQTT","公布值",
+     "MqttSubscribedValues","Subscribed values","Valori ricevuti via MQTT","订阅值"
     ]
    }
 - Name: ImportAndExportTranslations

@@ -2,7 +2,7 @@ Name: MQTT
 Id: g=bbcdf0e6159dcf90c32ac50d0b81f4e2
 Type: MQTTCategoryFolder
 Children:
-- Name: MQTTClient
+- Name: Mosquitto_MQTTClient
   Id: g=0b1f8f0ef577c5d32176436b65d228f5
   Type: MQTTClient
   Children:
@@ -163,3 +163,243 @@ Children:
         Id: g=f24cbb7b369eb52b9b0369946be23333
         Type: PropertyType
         DataType: NodeId
+- Name: Optix_MQTTBroker
+  Id: g=f9bd2cbaaca0016e00139df7c10bf1f4
+  Type: MQTTBroker
+  Children:
+  - Name: ListenerPort
+    Id: g=78dc4fb2ef1b6bb4f55eb014cc589255
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 8883
+  - Name: MaxConnections
+    Id: g=5685a0aa9e0d6285b5560104cbfd4512
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 25
+  - Name: MaxQoS
+    Id: g=a92cc27c0acb625c244b87c32982bf51
+    Type: BaseDataVariableType
+    DataType: MaxQoSEnum
+    Value: 2
+  - Name: MaxInflightMessages
+    Id: g=2228433f1a012ac6ffed554c1c0e583e
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 20
+  - Name: MaxQueuedMessages
+    Id: g=0b78584e38984275c0c4b312e31b8c5e
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1000
+  - Name: MessageSizeLimit
+    Id: g=2ed7e952d473684bd760d077caa6670f
+    Type: BaseDataVariableType
+    DataType: UInt32
+  - Name: RetainAvailable
+    Id: g=7b1713182aa3b94ef61304b4ea83b6ce
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: DataPersistence
+    Id: g=af9adda777c4a489c542a0fad9cf58d7
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: PersistentClientExpiration
+    Id: g=35350243abd67767af7fce779be8a255
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: AutosaveOnChanges
+    Id: g=adb7af8bac1b86d82a410dacee83c99d
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: AutosaveInterval
+    Id: g=47b95fad4a203edf7d6c53e0a97f9b9a
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 20
+  - Name: AnonymousAuthentication
+    Id: g=a37def024d4473f8879f9aeccd0059b7
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: RequireClientCertificate
+    Id: g=79e4260c4a3c82013996084c3f4d6c29
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: CACertificateFile
+    Id: g=57eef93a1b99601647ce0265ad95e083
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+  - Name: CertificateFile
+    Id: g=7d3f267627bed77a9accdfb7567999be
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+  - Name: CertificateKeyFile
+    Id: g=923ab56186faac1c90fa18ec72e09d98
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+  - Name: Running
+    Id: g=f7f7bd7d742ce42622e43dae851563ab
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+- Name: Optix_MQTTClient
+  Id: g=659e964f6a8fbd0900d3f28bef4aa160
+  Type: MQTTClient
+  Children:
+  - Name: BrokerAddress
+    Id: g=9c6b27c08fe1931667c27ebb3e1a3533
+    Type: PropertyType
+    DataType: String
+    Value: "localhost"
+  - Name: BrokerPort
+    Id: g=2dec42f2f896c8437a7c1e52ea5d145a
+    Type: PropertyType
+    DataType: UInt16
+    Value: 8883
+  - Name: ClientId
+    Id: g=a5a07fe40c8cd366e5adebff29faeac5
+    Type: PropertyType
+    DataType: String
+    Value: "FTOptix-Variables"
+  - Name: Status
+    Id: g=c5a121c0c87cee00e0366aa6a81ca29f
+    Type: BaseDataVariableType
+    DataType: StatusEnum
+    ReferenceType: HasProperty
+    AccessLevel: Read
+  - Name: UserIdentityType
+    Id: g=6e66743fc41d0b6a39aece9cdcea4b21
+    Type: BaseDataVariableType
+    DataType: UserIdentityTypeEnum
+  - Name: SSLTLSEnabled
+    Id: g=32ac11bca32ccd6f55d887a6b57bf246
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: ValidateBrokerCertificate
+    Id: g=096c1bc2244caf9bedc83cc8605a2f28
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Class: Reference
+    Target: ns=37;i=12
+    Direction: Forward
+  - Class: Reference
+    Target: ns=37;i=44
+    Direction: Forward
+  - Name: MQTTPublisher
+    Id: g=22d4a51f9a791fb62f854752e1fe7abb
+    Type: MQTTPublisher
+    Children:
+    - Name: SamplingMode
+      Id: g=01bd7da6de8222c111e78c5ef43233fb
+      Type: PropertyType
+      DataType: ns=37;SamplingModeEnum
+      Value: 1
+    - Name: Folder
+      Id: g=bdeafca1c74dc727648fabdfb60e0a5e
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/FeaturesDemo2/Model/Data/MQTT/Publisher"
+      Children:
+      - Name: Kind
+        Id: g=c7b9f5aa745cc15fa286ee27f3d31d9f
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
+      - Name: ItemKind
+        Id: g=97b318a1246ef9d439e750dd370491fc
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Objects/FeaturesDemo2/Model/Data/MQTT/Publisher/Sin"
+    - Name: Topic
+      Id: g=102041f3a9d6af6716d98b92c7653f39
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "/FTOptixFeaturesDemo2/Variables"
+    - Name: QoS
+      Id: g=88bc45bfa71a108c50dedc0fa63a698d
+      Type: BaseDataVariableType
+      DataType: QoSLevelEnum
+      Value: 1
+    - Name: Retain
+      Id: g=3276b04257b995442173de458db125ad
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: PFEnabled
+      Id: g=27bcdc0c6ce57585a310a7933f6ff6ee
+      Type: PropertyType
+      DataType: Boolean
+    - Name: PayloadUpdateTimestamp
+      Id: g=28c030dc518707705daac230469b50c6
+      Type: BaseDataVariableType
+      DataType: DateTime
+      ReferenceType: HasProperty
+      AccessLevel: Read
+    - Name: Item
+      Id: g=f555da8dd0485532aa227444fc37d8c3
+      Type: Alias
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Id: g=ea817b8bc8cda775a67d6db8ba562488
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Objects/FeaturesDemo2/Model/Data/MQTT/Publisher/Sin"
+    - Name: SamplingPeriod
+      Id: g=a2d942d02ab67afb4f5478c6c324735e
+      Type: PropertyType
+      DataType: Duration
+      Value: "0:00:00:00.3330000"
+  - Name: MQTTSubscriber
+    Id: g=4ca908452d4251272461a3e8bd890345
+    Type: MQTTSubscriber
+    Children:
+    - Name: Subscriptions
+      Id: g=06f973a967b31a36ef7d352fc1bafe59
+      Type: BaseObjectType
+      Children:
+      - Name: DefaultJSONSubscription1
+        Id: g=74243f7f38e780b4454da726dfb8e813
+        Type: Subscription
+        ReferenceType: HasOrderedComponent
+        Children:
+        - Name: Folder
+          Id: g=3f021ea55f9c7489fa1fd385d61823d9
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/FeaturesDemo2/Model/Data/MQTT/Subscriber"
+          Children:
+          - Name: Kind
+            Id: g=13f9d34d6b12fc0a7957f38d66356fa5
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
+        - Name: Topic
+          Id: g=81ad49669a75d22271e84bd57483bc65
+          Type: BaseDataVariableType
+          DataType: String
+          Children:
+          - Name: DynamicLink
+            Id: g=e5cae2ff1604a6be2e91bde1b394cb19
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../MQTTPublisher/Topic"
+            Children:
+            - Name: Mode
+              Id: g=c80acedf9e8f267fd10d3498de675d4d
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+        - Name: QoS
+          Id: g=3b87ef5614df26777dab2788dd2132ca
+          Type: BaseDataVariableType
+          DataType: QoSLevelEnum
+          Value: 1
+    - Class: Reference
+      Target: ns=37;i=47
+      Direction: Forward
+  - Name: Username
+    Id: g=773b46062e5aafaf545f8c659377de36
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MQTTUser"

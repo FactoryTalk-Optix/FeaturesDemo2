@@ -6,6 +6,7 @@ using FTOptix.NetLogic;
 using FTOptix.UI;
 using UAManagedCore;
 using FTOptix.MQTTClient;
+using FTOptix.MQTTBroker;
 using OpcUa = UAManagedCore.OpcUa;
 #endregion
 

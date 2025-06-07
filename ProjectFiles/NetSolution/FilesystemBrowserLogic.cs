@@ -12,6 +12,7 @@ using System.Diagnostics;
 
 using FeaturesDemo2;
 using FTOptix.MQTTClient;
+using FTOptix.MQTTBroker;
 
 public class FilesystemBrowserLogic : BaseNetLogic
 {

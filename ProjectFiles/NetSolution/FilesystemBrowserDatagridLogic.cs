@@ -8,6 +8,7 @@ using System;
 
 using FeaturesDemo2;
 using FTOptix.MQTTClient;
+using FTOptix.MQTTBroker;
 
 public class FilesystemBrowserDatagridLogic : BaseNetLogic
 {

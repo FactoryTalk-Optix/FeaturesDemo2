@@ -12,3 +12,5 @@ Children:
   Id: g=9fc71b3395a92f42ac0955548e7b244f
   Type: BaseDataVariableType
   DataType: String
+- File: Publisher/Publisher.yaml
+- File: Subscriber/Subscriber.yaml

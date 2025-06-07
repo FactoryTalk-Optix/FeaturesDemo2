@@ -22,6 +22,7 @@ using FTOptix.UI;
 using FTOptix.UI;
 using FTOptix.WebUI;
 using UAManagedCore;
+using FTOptix.MQTTBroker;
 using OpcUa = UAManagedCore.OpcUa;
 #endregion
 
