@@ -148,3 +148,6 @@ Children:
 - Name: MqttChatLogic
   Id: g=6e06e675146741e95d2330b18318c529
   Type: NetLogic
+- Name: MqttClientIdGeneratorLogic
+  Id: g=86efc8821b6ddaef1325887be3dcbfde
+  Type: NetLogic

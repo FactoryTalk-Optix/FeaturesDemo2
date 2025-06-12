@@ -25,16 +25,18 @@ using System.Linq;
 using FTOptix.MQTTBroker;
 #endregion
 
-public class ClientIdGeneratorLogic : BaseNetLogic
+public class MqttClientIdGeneratorLogic : BaseNetLogic
 {
     public override void Start()
     {
         // Insert code to be executed when the user-defined logic is started
-        var mqttClient = (MQTTClient)Owner;
+        var mqttClient = Project.Current.Get<MQTTClient>("MQTT/Mosquitto_MQTTClient");
         if (mqttClient.ClientId == "FTOptix-1")
         {
             mqttClient.ClientId = $"OptixUser-{Guid.NewGuid().ToString().Split("-")[0]}";
-            Log.Warning("ClientIdGeneratorLogic", $"ClientId was set to {mqttClient.ClientId}, please restart the application to load the new value");
+            mqttClient.Stop();
+            mqttClient.Start();
+            Log.Info("ClientIdGeneratorLogic", $"ClientId was set to {mqttClient.ClientId}");
         }
     }
 

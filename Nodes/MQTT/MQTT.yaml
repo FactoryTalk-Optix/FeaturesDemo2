@@ -46,9 +46,6 @@ Children:
   - Class: Reference
     Target: ns=37;i=44
     Direction: Forward
-  - Name: ClientIdGeneratorLogic
-    Id: g=86efc8821b6ddaef1325887be3dcbfde
-    Type: NetLogic
   - Name: MQTTSubscriber
     Id: g=8bfc39e0a611a7e5d32d83da5c2f3f2b
     Type: MQTTSubscriber
