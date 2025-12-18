@@ -1418,7 +1418,7 @@ Children:
             Id: g=43f4fb57a0cb07aed072dcda622eb998
             Type: BaseDataVariableType
             DataType: Duration
-            Value: "0:00:00:59.0000000"
+            Value: "0:00:05:00.0000000"
           - Name: Interactive
             Id: g=e38dbc76f6310e3d4fab037a3954250a
             Type: BaseDataVariableType
@@ -1429,10 +1429,10 @@ Children:
             DataType: DateTime
             Children:
             - Name: DynamicLink
-              Id: g=2663bc6118d3d2140e4833f501d0e01d
+              Id: g=6b373339b552324479796cee64c0a3d1
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../../../../../../NetLogic/ClockLogic/Time"
+              Value: "../../../../../PrintDateTime"
         - Name: YAxis
           Id: g=ab785b5633c6047935bcf03f7b642554
           Type: ValueAxis
@@ -1455,6 +1455,7 @@ Children:
             Id: g=b111500c0c75d655fae9a1f1d2e265e1
             Type: BaseDataVariableType
             DataType: Boolean
+            Value: true
           - Name: Interactive
             Id: g=ace2e730dee34cd26c0d25f7044ea85d
             Type: BaseDataVariableType
@@ -1593,7 +1594,7 @@ Children:
           Id: g=19fbcc2c7373f761e55e424446ceb14c
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/FeaturesDemo2/Loggers/DataLogger"
+          Value: "/Objects/FeaturesDemo2/DataStores/EmbeddedDatabase"
           Children:
           - Name: ItemKind
             Id: g=75f8fa72fc927d8ed4957df2e0fe3686
@@ -1607,6 +1608,70 @@ Children:
           Id: g=1cb3d28e851011a297a2304d79c53e80
           Type: BaseDataVariableType
           DataType: TrendModeEnum
+        - Name: Query
+          Id: g=0615d498b998c4eaf670fd842ed45c3f
+          Type: BaseDataVariableType
+          DataType: String
+          Children:
+          - Name: StringFormatter1
+            Id: g=7e9f109b8c9d00d3f04b9fdec63391bd
+            Type: StringFormatter
+            Children:
+            - Name: Format
+              Id: g=8dcb0c0502cee3bdcf416d0b56ed9ca5
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ReferenceType: HasParameter
+              Value: {"LocaleId":"en-US","Text":"SELECT * FROM DataLogger WHERE LocalTimestamp BETWEEN {#start:sql_literal} AND {#stop:sql_literal}"}
+            - Name: ns=2;Sourcestart
+              Id: g=2ea2f24f2b65d5873f8ae7b693fc394f
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: ExpressionEvaluator1
+                Id: g=fa5dc2fd1583e4b78c0e807c5efd66a9
+                Type: ExpressionEvaluator
+                Children:
+                - Name: Expression
+                  Id: g=ca58869db2a05aed6e697329a32de18b
+                  Type: BaseDataVariableType
+                  DataType: String
+                  ReferenceType: HasParameter
+                  Value: "{#stop}-{#duration}"
+                - Name: ns=2;Sourcestop
+                  Id: g=73dfcc827134157bacb84724f543b48b
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Id: g=6e0080d34b1928a87f09561800ea1bd4
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../../../../../PrintDateTime"
+                - Name: ns=2;Sourceduration
+                  Id: g=1ad14f373186ddf6011507b88c62e126
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Id: g=bb2319ba631d36caf230993ed223ed7a
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../../XAxis/Window"
+            - Name: ns=2;Sourcestop
+              Id: g=7bb4467ea80ca9e5837a0c56f574b8fd
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Id: g=70fd757d6d7d3d3fa888508ff10fc36e
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../PrintDateTime"
     - Name: PageBreak4
       Id: g=2e75568e9cda3ef968c1f7483eefc03c
       Type: PageBreak

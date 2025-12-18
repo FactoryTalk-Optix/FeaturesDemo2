@@ -55,75 +55,6 @@ Children:
         Type: BaseDataVariableType
         DataType: UInt32
         Value: 1000
-    - Name: AlarmsEventLogger
-      Id: g=43d16d7e9c88baaf592fcb29dc7c338e
-      Type: SQLiteStoreTable
-      Children:
-      - Class: Reference
-        Target: ns=25;i=12
-        Direction: Forward
-      - Class: Reference
-        Target: ns=25;i=15
-        Direction: Forward
-      - Class: Reference
-        Target: ns=25;i=21
-        Direction: Forward
-      - Class: Reference
-        Target: ns=25;i=20
-        Direction: Forward
-      - Name: Columns
-        Id: g=f3e95a984a6b578c2c02eed3ef091f8d
-        Type: BaseObjectType
-        Children:
-        - Name: ConfirmedState_Id
-          Id: g=feff1d91e8d97f158ed10e61eff1ac86
-          Type: StoreColumn
-          DataType: Boolean
-        - Name: 'Message_en-US'
-          Id: g=ececb12e28488fbdad7a65e27d27aa57
-          Type: StoreColumn
-          DataType: String
-        - Name: 'Message_it-IT'
-          Id: g=483b172bef5e5dfe11d307db5435a85f
-          Type: StoreColumn
-          DataType: String
-        - Name: 'Message_zh-CN'
-          Id: g=bdb804efdcfefc28aaf2cf15743c355f
-          Type: StoreColumn
-          DataType: String
-        - Name: LocalTime
-          Id: g=24a5ee3c9a33f63a959fde84a8a1317c
-          Type: StoreColumn
-          DataType: DateTime
-        - Name: AckedState_Id
-          Id: g=5232ec49c3cb0fadab3296d291202016
-          Type: StoreColumn
-          DataType: Boolean
-        - Name: ConditionName
-          Id: g=9dec8a94d60d9f283077e7e303f1f562
-          Type: StoreColumn
-          DataType: String
-        - Name: EnabledState_Id
-          Id: g=5a605aa1a940edf5fcba7bb72f57053c
-          Type: StoreColumn
-          DataType: Boolean
-        - Name: Severity
-          Id: g=5beafa202352df75d4d9a2c8f51089a3
-          Type: StoreColumn
-          DataType: UInt16
-        - Name: SourceName
-          Id: g=d9890c499e645eff02934f081ecd3909
-          Type: StoreColumn
-          DataType: String
-        - Name: Time
-          Id: g=54d33e361c80382c91eb418d3cdb7739
-          Type: StoreColumn
-          DataType: UtcTime
-      - Name: RecordLimit
-        Id: g=f6b870c2d2e119df9c353407f0c859a5
-        Type: BaseDataVariableType
-        DataType: UInt32
-        Value: 1000
     - Name: TrendDataLogger
       Id: g=056a952cd877f803295ff6a643ff3188
       Type: SQLiteStoreTable
@@ -331,6 +262,74 @@ Children:
           Id: g=3d08dbed75553cebae011e39ba3eacc7
           Type: StoreColumn
           DataType: Int32
+    - Name: AlarmsEventLogger
+      Id: g=761e181c2b282a242b6a5c83153c914b
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=25;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=25;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=25;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=25;i=20
+        Direction: Forward
+      - Name: Columns
+        Id: g=7e1f7cd2dc70da0c0bf545b716d84b10
+        Type: BaseObjectType
+        Children:
+        - Name: ActiveState_Id
+          Id: g=91a273f8bf737f486f7e1cdf3d8e7e46
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: AckedState_Id
+          Id: g=15de46f6d352e9543b4282d21a221746
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: ConfirmedState_Id
+          Id: g=ed8975437c8b2e434eaaaeb064c2fbae
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: ConditionName
+          Id: g=757320d461854babd602f262e6fab95e
+          Type: StoreColumn
+          DataType: String
+        - Name: EnabledState_Id
+          Id: g=033af8b328894909acf3d25b9dfe7233
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: SourceName
+          Id: g=0ffecc2668bb5f36365abfd6d37aee24
+          Type: StoreColumn
+          DataType: String
+        - Name: Time
+          Id: g=5b3d22721555b4c87c8abb5afa5a20af
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: 'Message_en-US'
+          Id: g=c48e047ee6555f2d2279a01712bb470c
+          Type: StoreColumn
+          DataType: String
+        - Name: 'Message_it-IT'
+          Id: g=72b3927f2c3ec7678a26db291180dc40
+          Type: StoreColumn
+          DataType: String
+        - Name: 'Message_zh-CN'
+          Id: g=6aa5c8623b2f25ca9c92fcf649453dc7
+          Type: StoreColumn
+          DataType: String
+        - Name: Severity
+          Id: g=4f09df73da49bff561b0cca3eb809fd2
+          Type: StoreColumn
+          DataType: UInt16
+        - Name: LocalTime
+          Id: g=818094da9f68d827a8d1abb6d049ce0d
+          Type: StoreColumn
+          DataType: DateTime
   - Class: Reference
     Target: ns=27;i=30
     Direction: Forward
