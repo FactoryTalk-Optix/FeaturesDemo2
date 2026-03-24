@@ -330,6 +330,11 @@ Children:
           Id: g=818094da9f68d827a8d1abb6d049ce0d
           Type: StoreColumn
           DataType: DateTime
+      - Name: RecordLimit
+        Id: g=7bce2a54e7150c43e212432a2f3479d5
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 1000
   - Class: Reference
     Target: ns=27;i=30
     Direction: Forward

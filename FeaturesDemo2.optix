@@ -155,10 +155,10 @@ Project:
    Module: FTOptix.MQTTBroker.Net
    Version: 6.0
  Statistics:
-  TotalNodeCount: 34631
+  TotalNodeCount: 34632
   Objects: 7703
   ObjectTypes: 132
-  Variables: 26733
+  Variables: 26734
   VariableTypes: 0
   DataTypes: 6
   Methods: 57
