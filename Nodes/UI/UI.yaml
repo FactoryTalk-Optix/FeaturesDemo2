@@ -210,7 +210,7 @@ Children:
     DataType: String
     ValueRank: OneDimension
     ArrayDimensions: [0]
-    Value: ["*"]
+    Value: ["*.png","*.jpg","*.jpeg","*.gif","*.bmp","*.svg","*.avi","*.mov","*.mkv","*.mpg","*.mp4","*.wmv","*.pdf","*.ttf","*.otf","*.html","*.css","*.js","*.mjs"]
 - Name: NativePresentationEngine
   Id: g=f97bf56f837beb7fa47c15159e5db05a
   Type: NativePresentationEngine
@@ -2329,6 +2329,407 @@ Children:
           DataType: HorizontalAlignment
           ModellingRule: Optional
           Value: 3
+        - Name: LanguagesList
+          Id: g=5dd9b1a01427f1ca5e262031f18e31ce
+          Type: ColumnLayout
+          Children:
+          - Name: Width
+            Id: g=c9cc67cfe5548f1942217b16011a25ab
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 50.0
+          - Name: Height
+            Id: g=615b1ab36d867d5856f41395c630d81f
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: -1.0
+          - Name: HorizontalAlignment
+            Id: g=d0688ace09f1ea5061572a820155fc9e
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: Language
+            Id: g=c5204080f0ba1e828c1b312eb98dc07e
+            Type: Label
+            Children:
+            - Name: Text
+              Id: g=c482d6f286d13e597d7b626654f26b94
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"NamespaceIndex":8,"TextId":"Language"}
+            - Name: TextColor
+              Id: g=f70538096015aa206bcc9a357537a7c7
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#808080"
+            - Name: TextVerticalAlignment
+              Id: g=db29adc9f2c9c4b48d9968ba4b25c62e
+              Type: BaseVariableType
+              DataType: TextVerticalAlignment
+              ModellingRule: Optional
+              Value: 1
+            - Name: FontSize
+              Id: g=4709df86f672298e7be32c31f28e2a20
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 12.0
+            - Name: TopMargin
+              Id: g=2616d983b27e5a09996399245cfb7390
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 8.0
+            - Name: LeftMargin
+              Id: g=23ac10a9288f18e1f04f346b7b021b47
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 20.0
+            - Name: BottomMargin
+              Id: g=646bc0ceeb85fc75cca014ba4f3744db
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 16.0
+            - Name: FontWeight
+              Id: g=e5a9d6f2dd4c33cecc2316c77d71705f
+              Type: BaseDataVariableType
+              DataType: FontWeightEnum
+              ModellingRule: Optional
+              Value: 400
+          - Name: Italian
+            Id: g=0bfc8297e8cdece2b9f320b91ded56be
+            Type: SideMenuButtonLanguage
+            Children:
+            - Name: MouseClickEventHandler1
+              Id: g=50bc7f4571902eca464e7e325a618708
+              Type: EventHandler
+              Children:
+              - Name: ListenEventType
+                Id: g=3af7e154b82dacb71654687bb0516cef
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+              - Name: MethodsToCall
+                Id: g=46296cf50ee5e474a2ad67ace8ef6212
+                Type: BaseObjectType
+                Children:
+                - Name: MethodContainer1
+                  Id: g=0e38d4a79fa2f0a4cf6b3214e2645717
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ObjectPointer
+                    Id: g=13ca57a25e9dddd98a44ba3423da435c
+                    Type: NodePointer
+                    DataType: NodeId
+                    Value: "/Objects/Commands/VariableCommands"
+                    Children:
+                    - Name: Kind
+                      Id: g=e3a4f82e399230ec42dd84229e11c9e2
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                  - Name: Method
+                    Id: g=c7073ee899f5a32be090dc4c94f37e96
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Set"
+                  - Name: InputArguments
+                    Id: g=a0249c15fb8fdbe34c5ca79794854023
+                    Type: BaseObjectType
+                    Children:
+                    - Name: VariableToModify
+                      Id: g=f4c9d5925b5f525689196f2e61dd8fc4
+                      Type: BaseDataVariableType
+                      DataType: VariablePointer
+                      Children:
+                      - Name: DynamicLink
+                        Id: g=fa0d4a0e55dae62f01880f511393b140
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "{Session}/ActualLanguage@NodeId"
+                    - Name: Value
+                      Id: g=f8deaea60ec9a243c5ecdb3b0c02b8e4
+                      Type: BaseDataVariableType
+                      DataType: LocaleId
+                      Value: "it-IT"
+                    - Name: ArrayIndex
+                      Id: g=2668d19717beacd61bb22bf0cbee50a7
+                      Type: BaseDataVariableType
+                      DataType: UInt32
+                      ValueRank: ScalarOrOneDimension
+              - Name: EventArguments
+                Id: g=b6b815e4db614da129a350f5e5bc12a1
+                Type: MouseClickEvent
+                Children:
+                - Name: EventId
+                  Id: g=3bd6517cd447811d593aab04ce6862ee
+                  Type: PropertyType
+                  DataType: ByteString
+                - Name: EventType
+                  Id: g=29621ab2c9dad5a625edf51db7934647
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceNode
+                  Id: g=2383ace1a1410870cbbe98c0206354df
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceName
+                  Id: g=ba97e23db632c2c46fb96e6501d3bc55
+                  Type: PropertyType
+                  DataType: String
+                - Name: Time
+                  Id: g=b8b9e20ce79e9290cb1901d6e6ddf38a
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: ReceiveTime
+                  Id: g=ba84ef3f8a63638c986dc1419e760757
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: Message
+                  Id: g=ba37753b2262ce955e51c418989e13ba
+                  Type: PropertyType
+                  DataType: LocalizedText
+                - Name: Severity
+                  Id: g=b027f96bd44bda65dd2c21f4b0c9cee4
+                  Type: PropertyType
+                  DataType: UInt16
+            - Name: Text
+              Id: g=616a8609361e24499ad6772350baf94f
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"LocaleId":"en-US","Text":"Italiano"}
+            - Name: Enabled
+              Id: g=bb0c2e462b765db670669104fbd5e680
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+          - Name: English
+            Id: g=32c32fe259ec390c66cba97652be7313
+            Type: SideMenuButtonLanguage
+            Children:
+            - Name: MouseClickEventHandler1
+              Id: g=c4daf409461602c4fe0bdc1ccb6dafaa
+              Type: EventHandler
+              Children:
+              - Name: ListenEventType
+                Id: g=585591ff250e9f29b304ddafeff54db3
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+              - Name: MethodsToCall
+                Id: g=4f566f11e836d697674c6b7ee2728f7f
+                Type: BaseObjectType
+                Children:
+                - Name: MethodContainer1
+                  Id: g=ca8f7666055eef09dd13c8066bd97355
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ObjectPointer
+                    Id: g=a4e826917ab707955feb4c659d21cc47
+                    Type: NodePointer
+                    DataType: NodeId
+                    Value: "/Objects/Commands/VariableCommands"
+                    Children:
+                    - Name: Kind
+                      Id: g=6989901c872dd7896c58fbed4d4222aa
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                  - Name: Method
+                    Id: g=689a1498862ba8c7da80a6bc722673f6
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Set"
+                  - Name: InputArguments
+                    Id: g=33d5575d2da0f2b3807b5c0852ecfdf6
+                    Type: BaseObjectType
+                    Children:
+                    - Name: VariableToModify
+                      Id: g=44253b860b98a6e750ed790f068172d5
+                      Type: BaseDataVariableType
+                      DataType: VariablePointer
+                      Children:
+                      - Name: DynamicLink
+                        Id: g=6f752a21704df400b92bb6d2ce679cb7
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "{Session}/ActualLanguage@NodeId"
+                    - Name: Value
+                      Id: g=0d9fd92d8f6f1d271c24d82c133b43c8
+                      Type: BaseDataVariableType
+                      DataType: LocaleId
+                      Value: "en-US"
+                    - Name: ArrayIndex
+                      Id: g=8b96877095f41762d769f5c35e274d99
+                      Type: BaseDataVariableType
+                      DataType: UInt32
+                      ValueRank: ScalarOrOneDimension
+              - Name: EventArguments
+                Id: g=1ac2f151634c00b5d4a2855b2fb562cb
+                Type: MouseClickEvent
+                Children:
+                - Name: EventId
+                  Id: g=3fbb6db037805474d370a37200caa143
+                  Type: PropertyType
+                  DataType: ByteString
+                - Name: EventType
+                  Id: g=ce2881b37fd7ba7d455009b3fd12ac0d
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceNode
+                  Id: g=f03b7da90005107cbd5d1294e6491a2a
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceName
+                  Id: g=901c158e8827e19b0720a1172d45addc
+                  Type: PropertyType
+                  DataType: String
+                - Name: Time
+                  Id: g=3125c7453ba12becdeb14288d339a607
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: ReceiveTime
+                  Id: g=d032033c54faff7b473701ac3c32ae58
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: Message
+                  Id: g=e127429da23ee2f83659ceb97d3379be
+                  Type: PropertyType
+                  DataType: LocalizedText
+                - Name: Severity
+                  Id: g=4612f19f8ccedda187de28067e9ee1cb
+                  Type: PropertyType
+                  DataType: UInt16
+            - Name: Text
+              Id: g=73d3a609bd251da550ac4502ae96dccc
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"LocaleId":"en-US","Text":"English"}
+            - Name: Enabled
+              Id: g=b6a31b19091ac38f822c7ad5d81dda5f
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+          - Name: Chinese
+            Id: g=d65eab4d3c4ce6bcd9a111f2e026160e
+            Type: SideMenuButtonLanguage
+            Children:
+            - Name: MouseClickEventHandler1
+              Id: g=3774bd5949ed1f41d07fceb01e2db815
+              Type: EventHandler
+              Children:
+              - Name: ListenEventType
+                Id: g=a7f7bfda17cfa9fff4838b12e42b351a
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+              - Name: MethodsToCall
+                Id: g=3d867221d0112f27b61537e1eaa2a958
+                Type: BaseObjectType
+                Children:
+                - Name: MethodContainer1
+                  Id: g=6ab68cdfd540897b7837a5456e728e59
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ObjectPointer
+                    Id: g=7fd8db1476b7fc12cc8b12002556a1d2
+                    Type: NodePointer
+                    DataType: NodeId
+                    Value: "/Objects/Commands/VariableCommands"
+                    Children:
+                    - Name: Kind
+                      Id: g=a981cb7de391a7b53d366d1d77f0c4bb
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                  - Name: Method
+                    Id: g=44216c1f82f0f58e765092d55ff8b024
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Set"
+                  - Name: InputArguments
+                    Id: g=d48e036df081c2d88e22e3de61c78330
+                    Type: BaseObjectType
+                    Children:
+                    - Name: VariableToModify
+                      Id: g=898c93997c6ee4f2e2597bc87cfab675
+                      Type: BaseDataVariableType
+                      DataType: VariablePointer
+                      Children:
+                      - Name: DynamicLink
+                        Id: g=379c4380cdb52c6530785049ed38cdf4
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "{Session}/ActualLanguage@NodeId"
+                    - Name: Value
+                      Id: g=761bbed13e282c9b7e17ff2935b55836
+                      Type: BaseDataVariableType
+                      DataType: LocaleId
+                      Value: "zh-CN"
+                    - Name: ArrayIndex
+                      Id: g=593dfc209df198f7f10a47521aefc343
+                      Type: BaseDataVariableType
+                      DataType: UInt32
+                      ValueRank: ScalarOrOneDimension
+              - Name: EventArguments
+                Id: g=b4f87e4b4f4c457f5b28ad39dec18763
+                Type: MouseClickEvent
+                Children:
+                - Name: EventId
+                  Id: g=38dce8ecf9b073125ade933a3253c40f
+                  Type: PropertyType
+                  DataType: ByteString
+                - Name: EventType
+                  Id: g=b6dcab1555411810cf075c4641039711
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceNode
+                  Id: g=cc5977b6f87d782b4e1d769a60ac267f
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceName
+                  Id: g=dbfd6394e554217a3ff0e9a35cb00722
+                  Type: PropertyType
+                  DataType: String
+                - Name: Time
+                  Id: g=e9955ab6ff1da12ff4631dd6d1b03514
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: ReceiveTime
+                  Id: g=c609eb72a6e769298b90104086bc7c28
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: Message
+                  Id: g=cdcb786087fe7e292d3dad6c9351d95d
+                  Type: PropertyType
+                  DataType: LocalizedText
+                - Name: Severity
+                  Id: g=1302996bb12a00cbb640884c15b1ddfc
+                  Type: PropertyType
+                  DataType: UInt16
+            - Name: Text
+              Id: g=83fc03531622ac0754a95bd86d0b6147
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"LocaleId":"en-US","Text":"中国人"}
+            - Name: Enabled
+              Id: g=6e171cc775a7145dfe031b82d146ad8f
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+          - Name: Separator
+            Id: g=49aba1f4b5795b892fd3b45481799db1
+            Type: SideMenuSectionSeparator
         - Name: UserInterfaceCategory
           Id: g=50e4f409ca99f5eb33dccb1a6d7cdbd1
           Type: ColumnLayout
@@ -4320,6 +4721,659 @@ Children:
               Type: BaseDataVariableType
               DataType: Boolean
               ModellingRule: Optional
+              Value: true
+          - Name: ScrollView
+            Id: g=74122875175e753912bb145bf780e0f1
+            Type: SideMenuButton
+            Children:
+            - Name: Text
+              Id: g=4d994a6739ddc17a7bb90f273bf83f1b
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"NamespaceIndex":8,"TextId":"ScrollView"}
+            - Name: MouseClickEventHandler1
+              Id: g=453fb30f73b7dca8842b63cbd9a1780a
+              Type: EventHandler
+              Children:
+              - Name: ListenEventType
+                Id: g=f5e26b7f7e3c3e148e3b5c474c67225a
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+              - Name: MethodsToCall
+                Id: g=e448b563d86a430da2ffba296cc45c76
+                Type: BaseObjectType
+                Children:
+                - Name: MethodContainer1
+                  Id: g=501d687cba92e7f30ce6e40cf5a16c51
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ObjectPointer
+                    Id: g=ccb114ed1630003a799f628ce385913d
+                    Type: NodePointer
+                    DataType: NodeId
+                    Children:
+                    - Name: Kind
+                      Id: g=cdf2da60aef7779ba3c8c6307f1b3276
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                    - Name: DynamicLink
+                      Id: g=026fc20e64acdeb794308707d6e03b9d
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "{PanelLoader}@NodeId"
+                  - Name: Method
+                    Id: g=dc39408474b94f8b4a804317ca2637c6
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "ChangePanel"
+                  - Name: InputArguments
+                    Id: g=91f17a49cc5222b40e52ab0d8b576e94
+                    Type: BaseObjectType
+                    Children:
+                    - Name: NewPanel
+                      Id: g=1dce36e01eb57079dceb0ace07f42ea5
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      Value: "/Objects/FeaturesDemo2/UI/Screens/UIDesign/ScrollViewImage"
+                    - Name: AliasNode
+                      Id: g=03afa09e52efa87bea8f8994253fe66e
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      ValueRank: ScalarOrOneDimension
+                - Name: MethodContainer2
+                  Id: g=1913d64de3cd61e06182d468007dabef
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ObjectPointer
+                    Id: g=7211a5c0a0f59440b05ed7ddb5b16254
+                    Type: NodePointer
+                    DataType: NodeId
+                    Value: "/Objects/Commands/VariableCommands"
+                    Children:
+                    - Name: Kind
+                      Id: g=c4445b71313a329273cea64b7ef402ad
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                  - Name: Method
+                    Id: g=2d0558c2647adb753b3c23ffdcde8703
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Set"
+                  - Name: InputArguments
+                    Id: g=4b866c98195e75500a04acd8eefc601e
+                    Type: BaseObjectType
+                    Children:
+                    - Name: VariableToModify
+                      Id: g=ea911b41814a0ead7fa34f0080a89916
+                      Type: BaseDataVariableType
+                      DataType: VariablePointer
+                      Children:
+                      - Name: DynamicLink
+                        Id: g=89c1dd8995852a0f354da41184e6c751
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../../VarMenuClick@NodeId"
+                    - Name: Value
+                      Id: g=a3ac9f373417bf8e66d68bf8d33c2d1f
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                    - Name: ArrayIndex
+                      Id: g=c5ca2ee8cabb7032e99aede453494178
+                      Type: BaseDataVariableType
+                      DataType: UInt32
+                      ValueRank: ScalarOrOneDimension
+              - Name: EventArguments
+                Id: g=c822b5e06016605ac3ae3096443f5426
+                Type: MouseClickEvent
+                Children:
+                - Name: EventId
+                  Id: g=7e1f84efe2c28d46ffd31be3387af119
+                  Type: PropertyType
+                  DataType: ByteString
+                - Name: EventType
+                  Id: g=6c9c7b246a577638a5028b386a69770a
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceNode
+                  Id: g=a56dd82b0ed3a4960051ed0ca031dca2
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceName
+                  Id: g=87c89493605cb87cb260710f7170fff7
+                  Type: PropertyType
+                  DataType: String
+                - Name: Time
+                  Id: g=63713f7990db6baf23a1fcab3544b30a
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: ReceiveTime
+                  Id: g=89fef03c35b4b1a87edacd90cd807255
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: Message
+                  Id: g=9593ab313604dbe28387b5541d0bafe1
+                  Type: PropertyType
+                  DataType: LocalizedText
+                - Name: Severity
+                  Id: g=6eb6c4d143b51acf1ff1ff5d23f61acc
+                  Type: PropertyType
+                  DataType: UInt16
+            - Name: VarMenuClick
+              Id: g=548d6af008790626ddbd68a01907cd2f
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Children:
+              - Name: DynamicLink
+                Id: g=c770eb34771910ea2e816875eb88ffd1
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../click_menu"
+                Children:
+                - Name: Mode
+                  Id: g=6c51493bb58d56a48b7d30895f35fce3
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: Enabled
+              Id: g=cdcdece960463f768a1cd1cef820815c
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ModellingRule: Optional
+              Value: true
+          - Name: BufferManipulation
+            Id: g=2a6eff9afca11601484d8f81ff920800
+            Type: SideMenuButton
+            Children:
+            - Name: Text
+              Id: g=17d90fe4bf6569a9a9f93eddf680d578
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"NamespaceIndex":8,"TextId":"SvgBufferManipulation"}
+            - Name: MouseClickEventHandler1
+              Id: g=8afc11d2b379e78bedbc0c5369133dc4
+              Type: EventHandler
+              Children:
+              - Name: ListenEventType
+                Id: g=6d364a685087544a9be5b5eb75d1e436
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+              - Name: MethodsToCall
+                Id: g=94ff460b3341face6284fba647bd33ea
+                Type: BaseObjectType
+                Children:
+                - Name: MethodContainer1
+                  Id: g=ee3c162a44749ebe452333d39b65d78d
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ObjectPointer
+                    Id: g=738b53a9fc69ee6553ce62f54e072878
+                    Type: NodePointer
+                    DataType: NodeId
+                    Children:
+                    - Name: Kind
+                      Id: g=d4cc9ef6e14b2f59d0d5730091d2f38c
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                    - Name: DynamicLink
+                      Id: g=6ee4b9fbc52a259b2e599992abca441e
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "{PanelLoader}@NodeId"
+                  - Name: Method
+                    Id: g=6512ee2a23596a96de72e84c2026431e
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "ChangePanel"
+                  - Name: InputArguments
+                    Id: g=bcc28f1d14117136259c7a57ead3aa85
+                    Type: BaseObjectType
+                    Children:
+                    - Name: NewPanel
+                      Id: g=8e0cb45a64bf7d88f5e0d59eda4b2af4
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      Value: "/Objects/FeaturesDemo2/UI/Screens/UIDesign/SVGManipulation"
+                    - Name: AliasNode
+                      Id: g=720151241ac024aa2d9d65059bb61918
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      ValueRank: ScalarOrOneDimension
+                - Name: MethodContainer2
+                  Id: g=e3c6e05b0deccf69f72322f77498f17d
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ObjectPointer
+                    Id: g=859831837ad92fbe9e28d7311f712c19
+                    Type: NodePointer
+                    DataType: NodeId
+                    Value: "/Objects/Commands/VariableCommands"
+                    Children:
+                    - Name: Kind
+                      Id: g=00339c815188afeacb8512ac62fae06b
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                  - Name: Method
+                    Id: g=4b45f075728e70332aee67d337d0581e
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Set"
+                  - Name: InputArguments
+                    Id: g=61aa463450c8bb3b2d37c6cd53b33d8f
+                    Type: BaseObjectType
+                    Children:
+                    - Name: VariableToModify
+                      Id: g=56c042d5d8c713d480d810633a895aa7
+                      Type: BaseDataVariableType
+                      DataType: VariablePointer
+                      Children:
+                      - Name: DynamicLink
+                        Id: g=8402be6dabe285094adf3b7a8672e8ed
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../../VarMenuClick@NodeId"
+                    - Name: Value
+                      Id: g=2c23b2d8e9c0e0122112596813e544ea
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                    - Name: ArrayIndex
+                      Id: g=7d35ad79648461b190a17dc9e427124f
+                      Type: BaseDataVariableType
+                      DataType: UInt32
+                      ValueRank: ScalarOrOneDimension
+              - Name: EventArguments
+                Id: g=15c7fa1b5c0e6eeb5eb4f3e2883f8f1d
+                Type: MouseClickEvent
+                Children:
+                - Name: EventId
+                  Id: g=32ecbf9f4ee9384453c9775f983fb370
+                  Type: PropertyType
+                  DataType: ByteString
+                - Name: EventType
+                  Id: g=93313fa09934a2b14b90a47980b14eaa
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceNode
+                  Id: g=be8deb31396dc95b6f0336d4a88e7e99
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceName
+                  Id: g=86c84597410f5ecfed6217a3c2b9a94d
+                  Type: PropertyType
+                  DataType: String
+                - Name: Time
+                  Id: g=e2bbca9d902f001d1133b3238aa6b92f
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: ReceiveTime
+                  Id: g=1a9076f712c9c413dec796c3b884b6c0
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: Message
+                  Id: g=86d6e532423a921f86c1047a70feb489
+                  Type: PropertyType
+                  DataType: LocalizedText
+                - Name: Severity
+                  Id: g=fda24f450ac95d5c7857e99011e1eec7
+                  Type: PropertyType
+                  DataType: UInt16
+            - Name: VarMenuClick
+              Id: g=4c9361e3b596f31a5f53f19d47fada73
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Children:
+              - Name: DynamicLink
+                Id: g=d4e3ced3d81cb83375301aee61509b31
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../click_menu"
+                Children:
+                - Name: Mode
+                  Id: g=5c93836bbf1fa48aac57b052ba166fdd
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: Enabled
+              Id: g=6561ce1bb9f92e03f2b78e66c585a6b2
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ModellingRule: Optional
+              Value: true
+          - Name: ValueChangeAnimation
+            Id: g=48ca320294f507460d1da3037e9e6e28
+            Type: SideMenuButton
+            Children:
+            - Name: Text
+              Id: g=01ad0490cdd4de9df3808b05b607ce06
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"NamespaceIndex":8,"TextId":"AnimationsOnBehavior"}
+            - Name: MouseClickEventHandler1
+              Id: g=9e768deb87674811b612476756787e31
+              Type: EventHandler
+              Children:
+              - Name: ListenEventType
+                Id: g=898c032b6f03d53909a7551152b93aa3
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+              - Name: MethodsToCall
+                Id: g=1ee0b88a882d275211d93b71e53e8b0a
+                Type: BaseObjectType
+                Children:
+                - Name: MethodContainer1
+                  Id: g=0898632cd2a7a866d22de7ebc31c1914
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ObjectPointer
+                    Id: g=52a14369e12097421baa5c317fbf5973
+                    Type: NodePointer
+                    DataType: NodeId
+                    Children:
+                    - Name: Kind
+                      Id: g=6a480f058387809687916f0c838e39c4
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                    - Name: DynamicLink
+                      Id: g=850a96c8d5e862aaa6e516c22d5b91e7
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "{PanelLoader}@NodeId"
+                  - Name: Method
+                    Id: g=7b10e28b477d23de58f550b44168550a
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "ChangePanel"
+                  - Name: InputArguments
+                    Id: g=b3c62ae1aa5528c2ea6f2c6fcaaa5150
+                    Type: BaseObjectType
+                    Children:
+                    - Name: NewPanel
+                      Id: g=f3ddbc0cb6fe5ded492934c0879e182c
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      Value: "/Objects/FeaturesDemo2/UI/Screens/UIDesign/ValueChangeAnimation"
+                    - Name: AliasNode
+                      Id: g=5e1ffc2ce1351aa25da959de844f5daa
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      ValueRank: ScalarOrOneDimension
+                - Name: MethodContainer2
+                  Id: g=5ff776a90c5de40c17ee1fbd55d77672
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ObjectPointer
+                    Id: g=df9eef22d1a0843df17649b1f5dbaef5
+                    Type: NodePointer
+                    DataType: NodeId
+                    Value: "/Objects/Commands/VariableCommands"
+                    Children:
+                    - Name: Kind
+                      Id: g=c60716b536967bc81d196cd83dc35aa7
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                  - Name: Method
+                    Id: g=0bad2a2ffbdf620bf5ca202a62592f8a
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Set"
+                  - Name: InputArguments
+                    Id: g=719df9f17e69962ab825a337c5542e27
+                    Type: BaseObjectType
+                    Children:
+                    - Name: VariableToModify
+                      Id: g=222b8432e54d58d25aa606d46f603409
+                      Type: BaseDataVariableType
+                      DataType: VariablePointer
+                      Children:
+                      - Name: DynamicLink
+                        Id: g=3a5f66c8077e1bf0cdd4fd38bee25002
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../../VarMenuClick@NodeId"
+                    - Name: Value
+                      Id: g=b9b25985f94c54252320fd633a8c6f83
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                    - Name: ArrayIndex
+                      Id: g=b5d154fc9cd558b71a2695c003657b20
+                      Type: BaseDataVariableType
+                      DataType: UInt32
+                      ValueRank: ScalarOrOneDimension
+              - Name: EventArguments
+                Id: g=97db722c1eb2c654fe42474a0c78d729
+                Type: MouseClickEvent
+                Children:
+                - Name: EventId
+                  Id: g=ce0c09fb8b1745ada17b6c5025f10e47
+                  Type: PropertyType
+                  DataType: ByteString
+                - Name: EventType
+                  Id: g=5bfa980cf37f89d463d3b287fa095005
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceNode
+                  Id: g=9bbcfd8323092a9b1d46dfd05a30a98b
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceName
+                  Id: g=6895d5a19271405294fdf89cc9ac2367
+                  Type: PropertyType
+                  DataType: String
+                - Name: Time
+                  Id: g=7b718e559eccfe25b94d6b9ea9b13805
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: ReceiveTime
+                  Id: g=855c7beb858a2f2018886ecff36cd592
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: Message
+                  Id: g=d7167f98e150a2646b67982cc0c156e9
+                  Type: PropertyType
+                  DataType: LocalizedText
+                - Name: Severity
+                  Id: g=427f50dc400d0100529f5197511b2221
+                  Type: PropertyType
+                  DataType: UInt16
+            - Name: VarMenuClick
+              Id: g=c2227a906b73afdae58b15bbdae6b807
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Children:
+              - Name: DynamicLink
+                Id: g=89d332a4dbbc4f666c449ef76651acc7
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../click_menu"
+                Children:
+                - Name: Mode
+                  Id: g=19c6787766c40e3dba1b4d8cf7156273
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: Enabled
+              Id: g=43934ac2f972a8bcdc1e52217540b7d3
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ModellingRule: Optional
+              Value: true
+          - Name: ListView
+            Id: g=9aeefc47dd108ce2f63064daa285b741
+            Type: SideMenuButton
+            Children:
+            - Name: Text
+              Id: g=2d68d02d5f7fbbffe9dbeb055d8e1d3e
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"NamespaceIndex":8,"TextId":"ListView"}
+            - Name: MouseClickEventHandler1
+              Id: g=44ee855eb526e2ba2f45385389049508
+              Type: EventHandler
+              Children:
+              - Name: ListenEventType
+                Id: g=1d4539227e4ebd18b0b0bc5ef5eded03
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+              - Name: MethodsToCall
+                Id: g=20a3792dc323c7921fc1fe588b699e41
+                Type: BaseObjectType
+                Children:
+                - Name: MethodContainer1
+                  Id: g=36f9127bbf0132f82fabab3dacaf7f18
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ObjectPointer
+                    Id: g=d07a5fb2330e59692690e35be1873729
+                    Type: NodePointer
+                    DataType: NodeId
+                    Children:
+                    - Name: Kind
+                      Id: g=4a5d903d24bb2ad31af2057237f5e575
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                    - Name: DynamicLink
+                      Id: g=cc901ad6d0f80c9d1f03b1e88f12dd2e
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "{PanelLoader}@NodeId"
+                  - Name: Method
+                    Id: g=8ca3846b56b58fd3a0b2d005d7f68644
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "ChangePanel"
+                  - Name: InputArguments
+                    Id: g=15c8d446c924509ee9c9c521874dbc91
+                    Type: BaseObjectType
+                    Children:
+                    - Name: NewPanel
+                      Id: g=71585dde6b3089e9bfc6016e8dbc0557
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      Value: "/Objects/FeaturesDemo2/UI/Screens/UIDesign/ListViewControl"
+                    - Name: AliasNode
+                      Id: g=9e6ce3181985c97ee7616ec56b74e532
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      ValueRank: ScalarOrOneDimension
+                - Name: MethodContainer2
+                  Id: g=00b05efca53e22db6146ef4cce2fb114
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ObjectPointer
+                    Id: g=441865a73a8f32267a91f69ef06eb972
+                    Type: NodePointer
+                    DataType: NodeId
+                    Value: "/Objects/Commands/VariableCommands"
+                    Children:
+                    - Name: Kind
+                      Id: g=d1fe9c7220a301b3848da13229140884
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                  - Name: Method
+                    Id: g=4a2f7381b0cf271d309c31161c342449
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Set"
+                  - Name: InputArguments
+                    Id: g=2e74202065c266dc01d8679c0157a86c
+                    Type: BaseObjectType
+                    Children:
+                    - Name: VariableToModify
+                      Id: g=64a634ce856ad45f06e05fc2fc2d9dbf
+                      Type: BaseDataVariableType
+                      DataType: VariablePointer
+                      Children:
+                      - Name: DynamicLink
+                        Id: g=0348d73fa501c26fef939f91387d7aac
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../../VarMenuClick@NodeId"
+                    - Name: Value
+                      Id: g=d8444d9887235eb17cd0aaf9709ef812
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                    - Name: ArrayIndex
+                      Id: g=f4b5b9c72e7c9375f986a4d72527644b
+                      Type: BaseDataVariableType
+                      DataType: UInt32
+                      ValueRank: ScalarOrOneDimension
+              - Name: EventArguments
+                Id: g=c6bab35db8c3d6d46c9507e7883de7dd
+                Type: MouseClickEvent
+                Children:
+                - Name: EventId
+                  Id: g=7d4ab5cff23f180fe1d4bc037602c9d0
+                  Type: PropertyType
+                  DataType: ByteString
+                - Name: EventType
+                  Id: g=52c61e73d3bb48f67ca3de7b7f262c74
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceNode
+                  Id: g=4c07c127cdcfc8f3d035100e1a61e323
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceName
+                  Id: g=bda0b46c5987560a01f20762066fcca3
+                  Type: PropertyType
+                  DataType: String
+                - Name: Time
+                  Id: g=ee431883a7fb230d1b21ca132c2e5333
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: ReceiveTime
+                  Id: g=c34b66f26061eb932fe5bd91ee321d85
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: Message
+                  Id: g=2f640e48b9483c71ef1fc67f02009541
+                  Type: PropertyType
+                  DataType: LocalizedText
+                - Name: Severity
+                  Id: g=226e9fc46d7dad2da2769758c03b9263
+                  Type: PropertyType
+                  DataType: UInt16
+            - Name: VarMenuClick
+              Id: g=fb687d84837a3c5875bec912d58cddf5
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Children:
+              - Name: DynamicLink
+                Id: g=b1b284bf84b31f7197adf58d1a9b8a93
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../click_menu"
+                Children:
+                - Name: Mode
+                  Id: g=8a7e2ad42750314d9a10d31be903a91d
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: Enabled
+              Id: g=282851a96e708aba5448c8ffee239f5c
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ModellingRule: Optional
+              Value: true
           - Name: Separator
             Id: g=fdb12c85ba3709defd28d056d0ad4c71
             Type: SideMenuSectionSeparator
@@ -6996,6 +8050,164 @@ Children:
                   DataType: DynamicLinkMode
                   ModellingRule: Optional
                   Value: 2
+          - Name: Reports
+            Id: g=8a3c177af17ae73aababf1671a0ed8fc
+            Type: SideMenuButton
+            Children:
+            - Name: MouseClickEventHandler1
+              Id: g=224471051c775c75f5706288ab9b1912
+              Type: EventHandler
+              Children:
+              - Name: ListenEventType
+                Id: g=cdb82c9b2d1af5558dfd5323c244e034
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+              - Name: MethodsToCall
+                Id: g=bb46fe2f517a62799495dca1226c4bf7
+                Type: BaseObjectType
+                Children:
+                - Name: MethodContainer1
+                  Id: g=a9f6b513e10370fc7f8aaed556b7e9e8
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ObjectPointer
+                    Id: g=9f8f9d603580e9dfe63fdfb6629f450c
+                    Type: NodePointer
+                    DataType: NodeId
+                    Children:
+                    - Name: Kind
+                      Id: g=cc138663e1904eba7838d3e83e0d872a
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                    - Name: DynamicLink
+                      Id: g=8b59846a0d48f8aa78fcf38037dd7038
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "{PanelLoader}@NodeId"
+                  - Name: Method
+                    Id: g=22eca3ee52631d87dd14f4f847dadae7
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "ChangePanel"
+                  - Name: InputArguments
+                    Id: g=b9de6574db10f26c3a5a247048ad080c
+                    Type: BaseObjectType
+                    Children:
+                    - Name: NewPanel
+                      Id: g=db2eb0b974c30f59a153bcef5ad447de
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      Value: "/Objects/FeaturesDemo2/UI/Screens/Data/Reports"
+                    - Name: AliasNode
+                      Id: g=0f7eef8ffb526f11dbbfde6c5d0a1cf6
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      ValueRank: ScalarOrOneDimension
+                - Name: MethodContainer2
+                  Id: g=b4c09ac2277405c44d4b8816b15ee654
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ObjectPointer
+                    Id: g=dd8e26dbbb4dfe06f198a7d819899f47
+                    Type: NodePointer
+                    DataType: NodeId
+                    Value: "/Objects/Commands/VariableCommands"
+                    Children:
+                    - Name: Kind
+                      Id: g=6b75c9486227449eada84c8e3b1c8ff4
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                  - Name: Method
+                    Id: g=47e5218c8b84010b6dc951bbfa303e2a
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Set"
+                  - Name: InputArguments
+                    Id: g=c5c588a0ba1b3fdd4177e829a9b08cec
+                    Type: BaseObjectType
+                    Children:
+                    - Name: VariableToModify
+                      Id: g=97dc4c192c384194b32127a98e57c381
+                      Type: BaseDataVariableType
+                      DataType: VariablePointer
+                      Children:
+                      - Name: DynamicLink
+                        Id: g=c272a8817510f5e6b2e476f8db0baf82
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../../VarMenuClick@NodeId"
+                    - Name: Value
+                      Id: g=92984d25a07f27e782921e0eb56cd1a8
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                    - Name: ArrayIndex
+                      Id: g=429b58b376781774c9b2e085238975bd
+                      Type: BaseDataVariableType
+                      DataType: UInt32
+                      ValueRank: ScalarOrOneDimension
+              - Name: EventArguments
+                Id: g=862617d70335c4c9f74d5ff75a4abf4f
+                Type: MouseClickEvent
+                Children:
+                - Name: EventId
+                  Id: g=b7430cb5a2e82e59e04026d093414142
+                  Type: PropertyType
+                  DataType: ByteString
+                - Name: EventType
+                  Id: g=a8a9118caaee213f01e1381d6d9b8cb1
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceNode
+                  Id: g=b66560bcc46a749aee341aa13011007d
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceName
+                  Id: g=2fb1beb936762aabafff0abba1021b0e
+                  Type: PropertyType
+                  DataType: String
+                - Name: Time
+                  Id: g=b8d04b327339211de7a528aa5814c4d3
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: ReceiveTime
+                  Id: g=5ab38ea4da1204926c80bd4cdbc8fd30
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: Message
+                  Id: g=0000161fef5bd365ce2886a5a0195a6a
+                  Type: PropertyType
+                  DataType: LocalizedText
+                - Name: Severity
+                  Id: g=0d88b1dfd771fdf30f12471fee4c9738
+                  Type: PropertyType
+                  DataType: UInt16
+            - Name: Text
+              Id: g=798fc998d182f953b6e84233495ead0f
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"NamespaceIndex":8,"TextId":"Reports"}
+            - Name: VarMenuClick
+              Id: g=078e3691dd917367ba7581acec7c14f8
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+              Children:
+              - Name: DynamicLink
+                Id: g=bdbc3fb5fcbfd607752e281fe8347aff
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../click_menu"
+                Children:
+                - Name: Mode
+                  Id: g=feb35d614fec2fe82ecce7c359016389
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
           - Name: XYChart
             Id: g=97024752685ae78af2cde82d46f4c08f
             Type: SideMenuButton
@@ -7625,160 +8837,476 @@ Children:
                   DataType: DynamicLinkMode
                   ModellingRule: Optional
                   Value: 2
-          - Name: Reports
-            Id: g=8a3c177af17ae73aababf1671a0ed8fc
+          - Name: Sparkline
+            Id: g=e37a2553952d436796e8b30bced0fa08
             Type: SideMenuButton
             Children:
             - Name: MouseClickEventHandler1
-              Id: g=224471051c775c75f5706288ab9b1912
+              Id: g=e5d6f8f975bd0b38ee8dbae2cad57d66
               Type: EventHandler
               Children:
               - Name: ListenEventType
-                Id: g=cdb82c9b2d1af5558dfd5323c244e034
+                Id: g=1769a8f8536ab4b27e1b6e09b58611e3
                 Type: PropertyType
                 DataType: NodeId
                 Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
               - Name: MethodsToCall
-                Id: g=bb46fe2f517a62799495dca1226c4bf7
+                Id: g=80de12deacfdb2e3f4576597355b1aae
                 Type: BaseObjectType
                 Children:
                 - Name: MethodContainer1
-                  Id: g=a9f6b513e10370fc7f8aaed556b7e9e8
+                  Id: g=384cc475dc0712dc163e64756393a60c
                   Type: BaseObjectType
                   Children:
                   - Name: ObjectPointer
-                    Id: g=9f8f9d603580e9dfe63fdfb6629f450c
+                    Id: g=ab4544a07b51bb294f3e1ef0cb0d0ed2
                     Type: NodePointer
                     DataType: NodeId
                     Children:
                     - Name: Kind
-                      Id: g=cc138663e1904eba7838d3e83e0d872a
+                      Id: g=2c4bf18163f4d9ecaecabd51b6035be2
                       Type: PropertyType
                       DataType: NodeId
                       Value: "/Types/ObjectTypes/BaseObjectType"
                     - Name: DynamicLink
-                      Id: g=8b59846a0d48f8aa78fcf38037dd7038
+                      Id: g=09e923de491b4223329f3f5c53142721
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "{PanelLoader}@NodeId"
                   - Name: Method
-                    Id: g=22eca3ee52631d87dd14f4f847dadae7
+                    Id: g=722c73b43ddca3b7efdb2f6163ac4a6e
                     Type: BaseDataVariableType
                     DataType: String
                     Value: "ChangePanel"
                   - Name: InputArguments
-                    Id: g=b9de6574db10f26c3a5a247048ad080c
+                    Id: g=8afb6aad3e4407febaeb6771e1a4f5b4
                     Type: BaseObjectType
                     Children:
                     - Name: NewPanel
-                      Id: g=db2eb0b974c30f59a153bcef5ad447de
+                      Id: g=ad2d516db867b1fe186d546c02684ed7
                       Type: BaseDataVariableType
                       DataType: NodeId
-                      Value: "/Objects/FeaturesDemo2/UI/Screens/Data/Reports"
+                      Value: "/Objects/FeaturesDemo2/UI/Screens/Data/Sparklines"
                     - Name: AliasNode
-                      Id: g=0f7eef8ffb526f11dbbfde6c5d0a1cf6
+                      Id: g=8066d86ead4f98f8db0fc3a8d5c6acac
                       Type: BaseDataVariableType
                       DataType: NodeId
                       ValueRank: ScalarOrOneDimension
                 - Name: MethodContainer2
-                  Id: g=b4c09ac2277405c44d4b8816b15ee654
+                  Id: g=ae0b2d111c2ee80d3f51a81d8ca84ad3
                   Type: BaseObjectType
                   Children:
                   - Name: ObjectPointer
-                    Id: g=dd8e26dbbb4dfe06f198a7d819899f47
+                    Id: g=0dcf7f9f755ec975a1130698a8bb2ac2
                     Type: NodePointer
                     DataType: NodeId
                     Value: "/Objects/Commands/VariableCommands"
                     Children:
                     - Name: Kind
-                      Id: g=6b75c9486227449eada84c8e3b1c8ff4
+                      Id: g=7860cda308c2be40038e5f9888db8b30
                       Type: PropertyType
                       DataType: NodeId
                       Value: "/Types/ObjectTypes/BaseObjectType"
                   - Name: Method
-                    Id: g=47e5218c8b84010b6dc951bbfa303e2a
+                    Id: g=e03e231bc689d50040dd97f3cc1f2ec7
                     Type: BaseDataVariableType
                     DataType: String
                     Value: "Set"
                   - Name: InputArguments
-                    Id: g=c5c588a0ba1b3fdd4177e829a9b08cec
+                    Id: g=79758e253fc49ac162336c7176bd9655
                     Type: BaseObjectType
                     Children:
                     - Name: VariableToModify
-                      Id: g=97dc4c192c384194b32127a98e57c381
+                      Id: g=359b4d2d05dab8193a324086a4712a37
                       Type: BaseDataVariableType
                       DataType: VariablePointer
                       Children:
                       - Name: DynamicLink
-                        Id: g=c272a8817510f5e6b2e476f8db0baf82
+                        Id: g=a4fc587a065a32eddd08801f089178c2
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../../../../VarMenuClick@NodeId"
                     - Name: Value
-                      Id: g=92984d25a07f27e782921e0eb56cd1a8
+                      Id: g=9577d9d5866497ffb13339f1b1b659e7
                       Type: BaseDataVariableType
                       DataType: Boolean
                     - Name: ArrayIndex
-                      Id: g=429b58b376781774c9b2e085238975bd
+                      Id: g=1cf60812ba9c2094cede10d4fc90ed80
                       Type: BaseDataVariableType
                       DataType: UInt32
                       ValueRank: ScalarOrOneDimension
               - Name: EventArguments
-                Id: g=862617d70335c4c9f74d5ff75a4abf4f
+                Id: g=7631576f62146bd5754b745bd590f512
                 Type: MouseClickEvent
                 Children:
                 - Name: EventId
-                  Id: g=b7430cb5a2e82e59e04026d093414142
+                  Id: g=83fc284f3272b7f2644f036cb9007a61
                   Type: PropertyType
                   DataType: ByteString
                 - Name: EventType
-                  Id: g=a8a9118caaee213f01e1381d6d9b8cb1
+                  Id: g=7f577b3266f571a391e328861bb20515
                   Type: PropertyType
                   DataType: NodeId
                 - Name: SourceNode
-                  Id: g=b66560bcc46a749aee341aa13011007d
+                  Id: g=013d12d7055b56ef74a5699fafb7e96d
                   Type: PropertyType
                   DataType: NodeId
                 - Name: SourceName
-                  Id: g=2fb1beb936762aabafff0abba1021b0e
+                  Id: g=54c339318c38f10bb40b4b688c0abe08
                   Type: PropertyType
                   DataType: String
                 - Name: Time
-                  Id: g=b8d04b327339211de7a528aa5814c4d3
+                  Id: g=966a9b3ac4958f270a445642ad4fb1da
                   Type: PropertyType
                   DataType: UtcTime
                 - Name: ReceiveTime
-                  Id: g=5ab38ea4da1204926c80bd4cdbc8fd30
+                  Id: g=8e46ed019d8c203575610f50f086066a
                   Type: PropertyType
                   DataType: UtcTime
                 - Name: Message
-                  Id: g=0000161fef5bd365ce2886a5a0195a6a
+                  Id: g=02aeefbf23385bcb48c56822bea81c15
                   Type: PropertyType
                   DataType: LocalizedText
                 - Name: Severity
-                  Id: g=0d88b1dfd771fdf30f12471fee4c9738
+                  Id: g=c63a36d329b53c2419e8e75917d647d7
                   Type: PropertyType
                   DataType: UInt16
             - Name: Text
-              Id: g=798fc998d182f953b6e84233495ead0f
+              Id: g=db226e272fc6972d644c963dcc232bc6
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"NamespaceIndex":8,"TextId":"Reports"}
+              Value: {"NamespaceIndex":8,"TextId":"Sparkline"}
             - Name: VarMenuClick
-              Id: g=078e3691dd917367ba7581acec7c14f8
+              Id: g=6ae4990ef0ca65d84235d37959bf679a
               Type: BaseDataVariableType
               DataType: Boolean
               Value: true
               Children:
               - Name: DynamicLink
-                Id: g=bdbc3fb5fcbfd607752e281fe8347aff
+                Id: g=0e1ccc4a6b3186bd239e038d62a849c6
                 Type: DynamicLink
                 DataType: NodePath
                 Value: "../../../../../click_menu"
                 Children:
                 - Name: Mode
-                  Id: g=feb35d614fec2fe82ecce7c359016389
+                  Id: g=941399757f7d78d90b4165dc266c5c2f
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+          - Name: MQTTChat
+            Id: g=4602ea97cd97055e9f5cb30ff80c806c
+            Type: SideMenuButton
+            Children:
+            - Name: MouseClickEventHandler1
+              Id: g=5aeaef003ced86c7015649db71d602e8
+              Type: EventHandler
+              Children:
+              - Name: ListenEventType
+                Id: g=b4c06c7ec3fc5d3a34615cb8519602e7
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+              - Name: MethodsToCall
+                Id: g=0ee10638712e9b784553069dd05ebb91
+                Type: BaseObjectType
+                Children:
+                - Name: MethodContainer1
+                  Id: g=fc4eefeafee8f28aa811b7091588f15d
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ObjectPointer
+                    Id: g=bc600e76155608ea90a4239c7fdaf160
+                    Type: NodePointer
+                    DataType: NodeId
+                    Children:
+                    - Name: Kind
+                      Id: g=2970f4e1870213bed6374adc77276282
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                    - Name: DynamicLink
+                      Id: g=ae9237266e35366afd0c8669446eaca4
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "{PanelLoader}@NodeId"
+                  - Name: Method
+                    Id: g=6dabb2cd482a6aebcca947b8ed2c6ec9
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "ChangePanel"
+                  - Name: InputArguments
+                    Id: g=ac644aff27e9f37da0111b6d7f6a3c48
+                    Type: BaseObjectType
+                    Children:
+                    - Name: NewPanel
+                      Id: g=ee9e0ee7ec5e1cee793b11f10e169e5e
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      Value: "/Objects/FeaturesDemo2/UI/Screens/Data/MqttChat"
+                    - Name: AliasNode
+                      Id: g=8d140bb2f69a0fe65a8755f5afb3b8dc
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      ValueRank: ScalarOrOneDimension
+                - Name: MethodContainer2
+                  Id: g=ef7c062bd298b98aee415e3fe8863dac
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ObjectPointer
+                    Id: g=46a39f72ed747ad419e035cff0125498
+                    Type: NodePointer
+                    DataType: NodeId
+                    Value: "/Objects/Commands/VariableCommands"
+                    Children:
+                    - Name: Kind
+                      Id: g=1991798aaab0b0af7e906ab8f2c578c6
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                  - Name: Method
+                    Id: g=5ef9de221b0a0c9152f29c7f1c107f0b
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Set"
+                  - Name: InputArguments
+                    Id: g=30fa42604d027e721efbccaffe90f238
+                    Type: BaseObjectType
+                    Children:
+                    - Name: VariableToModify
+                      Id: g=04a63670674a15dfb4cd971cd646ce97
+                      Type: BaseDataVariableType
+                      DataType: VariablePointer
+                      Children:
+                      - Name: DynamicLink
+                        Id: g=84873f2e36dd74c8b27b607d06aee936
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../../VarMenuClick@NodeId"
+                    - Name: Value
+                      Id: g=59a6c4e8870cf0d8a643b696debb95bd
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                    - Name: ArrayIndex
+                      Id: g=daeeca4382f8d292c4bda301ef0e4308
+                      Type: BaseDataVariableType
+                      DataType: UInt32
+                      ValueRank: ScalarOrOneDimension
+              - Name: EventArguments
+                Id: g=3049e3c882cc9a67e411475538d36f04
+                Type: MouseClickEvent
+                Children:
+                - Name: EventId
+                  Id: g=c983392ecc767b61c4dc62a6b4625397
+                  Type: PropertyType
+                  DataType: ByteString
+                - Name: EventType
+                  Id: g=266c0b6d404b98936f3cd5c1dcd233ad
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceNode
+                  Id: g=944aa695d3fe005feb880b60cebdad06
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceName
+                  Id: g=e65cbf0d5dbdd3a038357cb69c4bb59f
+                  Type: PropertyType
+                  DataType: String
+                - Name: Time
+                  Id: g=53cf07f93d40a7dc707934da11df5ba2
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: ReceiveTime
+                  Id: g=7fe3b18a11204d3c4fb47801f5cf57a8
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: Message
+                  Id: g=33047ceb4c922212efa741bd2defaafa
+                  Type: PropertyType
+                  DataType: LocalizedText
+                - Name: Severity
+                  Id: g=534b2a03b970a39b7ac1db9e6b2dea88
+                  Type: PropertyType
+                  DataType: UInt16
+            - Name: Text
+              Id: g=6b6b8e5c130869cc509409298935f6c1
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"NamespaceIndex":8,"TextId":"MqttChat"}
+            - Name: VarMenuClick
+              Id: g=267d9effd1f67299a8944599bab4ea65
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+              Children:
+              - Name: DynamicLink
+                Id: g=411597f7ee4ebc3a989fb5ce1f599266
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../click_menu"
+                Children:
+                - Name: Mode
+                  Id: g=1c63c5e3b0ec47ff886d1477c2476e56
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+          - Name: OptixToOptixMQTT
+            Id: g=3bca3031b59354731d8f62aa58fa59c5
+            Type: SideMenuButton
+            Children:
+            - Name: MouseClickEventHandler1
+              Id: g=0559304db50a10a93d6195369aa2f62b
+              Type: EventHandler
+              Children:
+              - Name: ListenEventType
+                Id: g=8a04b63c370d10ea0f910663dde962a1
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+              - Name: MethodsToCall
+                Id: g=ce64afaa1f23e47ea574dd18a848fcf4
+                Type: BaseObjectType
+                Children:
+                - Name: MethodContainer1
+                  Id: g=2de3ca831d92ee5a6a50a3a6ef91201f
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ObjectPointer
+                    Id: g=af433289a4916aa21b058d629ea44e9e
+                    Type: NodePointer
+                    DataType: NodeId
+                    Children:
+                    - Name: Kind
+                      Id: g=66c0968b95c124ab7be795253e803af0
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                    - Name: DynamicLink
+                      Id: g=2f8726832b5a58de18011d1d1990e67f
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "{PanelLoader}@NodeId"
+                  - Name: Method
+                    Id: g=bbab99281127cabc894bf94f12ebdd94
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "ChangePanel"
+                  - Name: InputArguments
+                    Id: g=6c297f35ab16311226d1d60255d493df
+                    Type: BaseObjectType
+                    Children:
+                    - Name: NewPanel
+                      Id: g=0edf25251a3ff8c84588102b5b00d04e
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      Value: "/Objects/FeaturesDemo2/UI/Screens/Data/MqttOptixToOptix"
+                    - Name: AliasNode
+                      Id: g=88d61b0c7728cb2a29afa0f47f996f60
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      ValueRank: ScalarOrOneDimension
+                - Name: MethodContainer2
+                  Id: g=a5c2aaad3b036e982a135d414deb4f09
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ObjectPointer
+                    Id: g=3eb351879f7f67db7262c7b58dadbd45
+                    Type: NodePointer
+                    DataType: NodeId
+                    Value: "/Objects/Commands/VariableCommands"
+                    Children:
+                    - Name: Kind
+                      Id: g=a56e77087be2f0ea7e810b048580de29
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                  - Name: Method
+                    Id: g=2706d082e16f21b460a95590dda8e2aa
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "Set"
+                  - Name: InputArguments
+                    Id: g=bd6be598d757ea0dc7cfdab33b616cab
+                    Type: BaseObjectType
+                    Children:
+                    - Name: VariableToModify
+                      Id: g=ae28f5e1de8a4e2204e8fbc4969a69ca
+                      Type: BaseDataVariableType
+                      DataType: VariablePointer
+                      Children:
+                      - Name: DynamicLink
+                        Id: g=58c03de30425e7903d91a58b5aef1a6f
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../../VarMenuClick@NodeId"
+                    - Name: Value
+                      Id: g=7434550052fc55a84baefee2681c3e6c
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                    - Name: ArrayIndex
+                      Id: g=8cbe1edb18a49c24b57849da3e83258b
+                      Type: BaseDataVariableType
+                      DataType: UInt32
+                      ValueRank: ScalarOrOneDimension
+              - Name: EventArguments
+                Id: g=09336245a4c1a4d7d087e9c8a63a3108
+                Type: MouseClickEvent
+                Children:
+                - Name: EventId
+                  Id: g=cddb9378ba39a9863547012ce1a05908
+                  Type: PropertyType
+                  DataType: ByteString
+                - Name: EventType
+                  Id: g=e09f7bf048fabd56192fb434bcf69450
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceNode
+                  Id: g=3663e6f12c578f5be1321a37405b90d7
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceName
+                  Id: g=408dfccbe756635584ee1f4038141ac7
+                  Type: PropertyType
+                  DataType: String
+                - Name: Time
+                  Id: g=72a6aace497ed7d79c5b73073eabbf49
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: ReceiveTime
+                  Id: g=8dd9ec892a20b4c720b7ecdf39a74824
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: Message
+                  Id: g=3edf7fa96869b1212faeb2477b542102
+                  Type: PropertyType
+                  DataType: LocalizedText
+                - Name: Severity
+                  Id: g=83743ad7bd8b73b57f7c23b29d3c2504
+                  Type: PropertyType
+                  DataType: UInt16
+            - Name: Text
+              Id: g=83837dd1a2544bd4b0dd0c56d9955874
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"NamespaceIndex":8,"TextId":"MqttOptixToOptix"}
+            - Name: VarMenuClick
+              Id: g=5712991a0153ca52d44518d59c510bf2
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+              Children:
+              - Name: DynamicLink
+                Id: g=c136abdf221cee3023bcc1af54eeee63
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../click_menu"
+                Children:
+                - Name: Mode
+                  Id: g=877bc67b28aef0301423bc02c63be8af
                   Type: BaseVariableType
                   DataType: DynamicLinkMode
                   ModellingRule: Optional

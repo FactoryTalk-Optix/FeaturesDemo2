@@ -70,26 +70,33 @@ public class AdvacedSvgRotationLogic : BaseNetLogic
 
     private void DoRotate()
     {
-        int degrees = 3;
-
-        while (keepGoing)
+        try
         {
-            if (myLRT.IsCancellationRequested)
-                return;
+            int degrees = 3;
 
-            Thread.Sleep(50);
+            while (keepGoing)
+            {
+                if (myLRT.IsCancellationRequested)
+                    return;
 
-            degrees += 3;
-            if (degrees > 360)
-                degrees = 0;
-            string newTransformPoly = new string("rotate(" + degrees + ", 50, 250)");
-            polyTransformAttribute.SetValue(newTransformPoly);
+                Thread.Sleep(50);
 
-            string newTransformPath = new string("rotate(" + degrees + ", 96, 97)");
-            pathTransformAttribute.SetValue(newTransformPath);
+                degrees += 3;
+                if (degrees > 360)
+                    degrees = 0;
+                string newTransformPoly = new string("rotate(" + degrees + ", 50, 250)");
+                polyTransformAttribute.SetValue(newTransformPoly);
 
-            //Update the SVG
-            svgImage.SetImageContent(xDocument.ToString());
+                string newTransformPath = new string("rotate(" + degrees + ", 96, 97)");
+                pathTransformAttribute.SetValue(newTransformPath);
+
+                //Update the SVG
+                svgImage.SetImageContent(xDocument.ToString());
+            }
+        }
+        catch (Exception ex)
+        {
+            Log.Verbose1("Error in DoRotate: " + ex.Message);
         }
     }
 

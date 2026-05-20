@@ -95,6 +95,7 @@ Children:
       Id: g=80f8ef012a99d934534be60cb89eccd0
       Type: NodePointer
       DataType: NodeId
+      Value: "/Objects/FeaturesDemo2/Model/Data/MQTT/Publisher"
       Children:
       - Name: Kind
         Id: g=1967d9097cd627a0fddeda7280304e8b
@@ -105,6 +106,7 @@ Children:
         Id: g=efffe9dc290a28283c784247580107b0
         Type: PropertyType
         DataType: NodeId
+        Value: "/Objects/FeaturesDemo2/Model/Data/MQTT/MessagesHistory"
     - Name: Topic
       Id: g=7745f5c46bfbb0693bb114e66b9e1ddc
       Type: BaseDataVariableType
@@ -160,6 +162,7 @@ Children:
         Id: g=f24cbb7b369eb52b9b0369946be23333
         Type: PropertyType
         DataType: NodeId
+        Value: "/Objects/FeaturesDemo2/Model/Data/MQTT/MessagesHistory"
     - Name: DataSource
       Id: g=c9b0c709b8d0531d5a167812a6aaf1c4
       Type: BaseDataVariableType

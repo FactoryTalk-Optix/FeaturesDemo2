@@ -1,0 +1,19 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Attach to FTOptixRuntime",
+			"type": "coreclr",
+			"request": "attach",
+			"processName": "FTOptixRuntime.exe",
+			"justMyCode": true,
+		},
+		{
+			"name": "Attach to FTOptixStudio",
+			"type": "coreclr",
+			"request": "attach",
+			"processName": "FTOptixStudio.exe",
+			"justMyCode": true,
+		}
+	]
+}
