@@ -16,3 +16,6 @@ ProjectFiles/UserDefinedModule.xml
 !LICENSE
 
 !*.optixt
+
+!CONTRIBUTING.md
+!SECURITY.md
